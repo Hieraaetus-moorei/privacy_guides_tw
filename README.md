@@ -1,3 +1,7 @@
-# privacy_guides_tw
+# 私路 - 隱私之路
 
-Digital privacy guides written in Traditional Chinese
+正體中文的數位隱私教育素材
+
+> :warning: **重要聲明** :warning::
+> 本專案的**文件資料**採用 CC-BY-SA 4.0 許可證。
+> 若使用本專案的資料進行 **AI 模型訓練、微調** 或 **軟體服務架設**，則 **衍生作品（如模型權重、程式碼）須以 AGPL-3.0 許可證開放原始碼及權重**。
