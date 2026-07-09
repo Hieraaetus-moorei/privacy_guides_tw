@@ -13,9 +13,9 @@
 
 ### 「圖」個方便  
 [deGoogle translator](image link)  
-^圖源：不用想，當然是我^  
-^FOSS^ ^指免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^  
-^privacy^ ^proxy^ ^為保護隱私的代理服務，但仍仰賴^ ^Google^ ^翻譯^  
+<sup>圖源：不用想，當然是我</sup>  
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
+<sup>privacy proxy 為保護隱私的代理服務，但仍仰賴 Google 翻譯</sup>  
 
 ### 該換掉的服務  
 撤換 Google、[百度](https://www.reuters.com/technology/cybersecurity/chinas-baidu-denies-data-breach-after-executives-daughter-leaks-personal-info-2025-03-20/)翻譯，可能沒太多疑慮  

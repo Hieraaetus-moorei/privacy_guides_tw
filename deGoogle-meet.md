@@ -9,9 +9,9 @@
 
 #### 先看圖再說  
 [deGoogle meet](image link)  
-^製圖：移幣^ ^aka^ ^我^  
-^FOSS^ ^指免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^  
-^non-profit^ ^指不以營利為目的  
+<sup>製圖：移幣 aka 我</sup>  
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
+<sup>non-profit 指不以營利為目的</sup>  
 
 ### 欠換產品  
 #### Google Meet  

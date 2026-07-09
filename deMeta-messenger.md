@@ -10,9 +10,9 @@
 
 ### 看圖最快  
 [deMeta WhatsApp](image link)  
-^FOSS^ ^指免費開源軟體^  
-^non-profit^ ^指「不以營利為目的」^  
-^最下排是^ ^Discord^ ^替代品^  
+<sup>FOSS 指免費開源軟體</sup>  
+<sup>non-profit 指「不以營利為目的」</sup>  
+<sup>最下排是 Discord 替代品</sup>  
 
 該換的有：  
 * Facebook / IG Messenger  

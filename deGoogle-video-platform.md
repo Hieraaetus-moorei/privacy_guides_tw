@@ -23,9 +23,9 @@
 Google 老早就收購 Youtube 了，可想而知是隱私噩夢  
 先看個圖  
 [deGoogle Youtube](image link)  
-^FOSS^ ^指免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^  
-^non-profit^ ^指「不以營利為目的」^  
-^下半部多個湊在一起的，主要依特質做分群^  
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
+<sup>non-profit 指「不以營利為目的」</sup>  
+<sup>下半部多個湊在一起的，主要依特質做分群</sup>  
 
 <br/>
 

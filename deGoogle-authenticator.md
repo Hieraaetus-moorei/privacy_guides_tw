@@ -109,9 +109,10 @@ _# 例如 API 驗證，開發者可能比較有感_
 
 ### 圖來囉！  
 [deGoogle authenticator](image link)  
-^FOSS^ ^指免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^  
-^non-profit^ ^指就該品相而言，「不以營利為目的」^  
-^e2ee^ ^syncing^ ^指「提供端對端加密備份方式」^  
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
+<sup>non-profit 指就該品相而言，「不以營利為目的」</sup>  
+<sup>e2ee syncing 指「提供端對端加密備份方式」</sup>  
+
 ### 欠換名單  
 #### Google Authenticator  
 不意外，先從 Google 開刀  

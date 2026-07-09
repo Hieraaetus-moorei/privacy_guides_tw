@@ -17,8 +17,8 @@ Threads 身為 Meta 用來[搶推特難民](https://www.arabnews.com/node/233557
 
 ### 圖先來：  
 [deMeta Threads](image link)  
-^FOSS^ ^指免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^  
-^End-to-end^ ^encrypted^ ^chat^ ^指私訊為端對端加密^  
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
+<sup>End-to-end encrypted chat 指私訊為端對端加密</sup>  
 
 ### 應換能換而未換  
 #### Threads  

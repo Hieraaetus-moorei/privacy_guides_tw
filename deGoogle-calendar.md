@@ -12,10 +12,10 @@ Google 極可能積極配合，不論要求是否合理
 
 #### 開換吧！  
 [deGoogle Calendar](image link)  
-^圖源：隱私倡議者^ ^-^ ^我^  
-^FOSS^ ^指免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^^，或開源、至少有長久免費版者^  
-^End-to-end^ ^encryption^ ^為端對端加密，僅當事人、經授權者能看到內容^  
-^non-profit^ ^指「不以營利為目的」，不是「非營利機構」^  
+<sup>圖源：隱私倡議者 - 我</sup>  
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)，或開源、至少有長久免費版者</sup>  
+<sup>End-to-end encryption 為端對端加密，僅當事人、經授權者能看到內容</sup>  
+<sup>non-profit 指「不以營利為目的」，不是「非營利機構」</sup>  
 除了 Google 日曆，Apple Calendar 也該換  
 Apple Calendar [沒端對端加密](https://support.apple.com/en-us/102651)，即使開啟進階資料保護 (Advanced Data Protection, ADP)仍[不支援](https://support.apple.com/en-ca/guide/security/sec973254c5f/web)  
 _# 端對端加密代表只有你、經授權者能看到內容，即便公司方亦無從窺探_  
@@ -89,10 +89,10 @@ _# 可用日、週、月檢視，有亮、暗主題..._
 純粹替代 Google 日曆應用程式，很夠用  
 且社群評價不錯，值得一試  
 
-#### [DAVx^5^](https://www.davx5.com/)  
+#### [DAVx<sup>5</sup>](https://www.davx5.com/)  
 奧地利公司 bitfire web engineering 維運，遵守歐盟 [GDPR](https://gdpr-info.eu/) 隱私保護法規  
 橋接線上服務和應用程式，用以同步日曆、聯絡人，可視為轉接器  
-前述 Fossify、Etar 都能靠 DAVx^5^ 連上想要的服務  
+前述 Fossify、Etar 都能靠 DAVx<sup>5</sup> 連上想要的服務  
 缺點：  
 * 僅支援 Android  
 * 無端對端加密  
@@ -137,7 +137,7 @@ _# 核心以 AGPL [開源](https://github.com/calcom/cal.com)、部分企業版�
     不排斥付費的話，可訂閱享完整功能  
 * 免費仔、想要離線 app → [Etar](https://github.com/Etar-Group/Etar-Calendar) / [Fossify Calendar](https://www.fossify.org/apps/)  
 * 想要 Email、日曆一個 app 搞定 → [Thunderbird](https://www.thunderbird.net/en-US/calendar/)  
-* 喜歡客製化的開發者 → [Nextcloud Calendar](https://apps.nextcloud.com/apps/calendar) (可配 [DAVx^5^](https://www.davx5.com/) 再串接至 [Etar](https://github.com/Etar-Group/Etar-Calendar) / [Fossify Calendar](https://www.fossify.org/apps/))  
+* 喜歡客製化的開發者 → [Nextcloud Calendar](https://apps.nextcloud.com/apps/calendar) (可配 [DAVx<sup>5</sup>](https://www.davx5.com/) 再串接至 [Etar](https://github.com/Etar-Group/Etar-Calendar) / [Fossify Calendar](https://www.fossify.org/apps/))  
 * ~~墮落者~~想要類似 Calendly 服務者 → [Cal.com](https://cal.com/)  
 
 ---

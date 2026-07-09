@@ -12,9 +12,9 @@
 
 ### ~~大膽狂~~圖  
 [deGoogle mobile OS](image link)  
-^FOSS^ ^指免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^  
-^non-profit^ ^指「不以營利為目的」^  
-^in^ ^time^ ^update^ ^指適時、及時更新^  
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
+<sup>non-profit 指「不以營利為目的」</sup>  
+<sup>in time update 指適時、及時更新</sup>  
 
 個別深入前，先補充背景知識 (開發者可略)：  
 

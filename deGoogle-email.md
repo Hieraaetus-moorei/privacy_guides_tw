@@ -17,10 +17,10 @@ Email 形同網路世界的身分證，又取代傳統書信成為正式聯繫�
 
 別急，替代品這不就來了：  
 [deGoogle email](image link)  
-圖源：~~做那麼精美~~當然是我  
-^non-profit^ ^不是指「非營利機構」，而是「不以盈利為目的」^  
-^FOSS^ ^指免費^ ^(^^free^^)^^且開源^ ^(^^open^ ^source^^)^^的軟體^ ^(^^software^^)^  
-^皇冠是很推薦的意思，就算同為替代品，仍有出類拔萃者^  
+<sup>圖源：~~做那麼精美~~當然是我</sup>  
+<sup>non-profit 不是指「非營利機構」，而是「不以盈利為目的」</sup>  
+<sup>FOSS 指免費 (free)且開源 (open source)的軟體 (software)</sup>  
+<sup>皇冠是很推薦的意思，就算同為替代品，仍有出類拔萃者</sup>  
 ### 端對端加密  
 講解之前，先提一下「端對端加密 (end-to-end encryption, e2ee)」  
 端對端加密是個「概念」，可用不同技術達成  

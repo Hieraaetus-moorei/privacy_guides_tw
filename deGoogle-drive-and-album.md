@@ -14,9 +14,9 @@
 ### 來人，上圖！  
 [deGoogle drive and album](image link)  
 雲端硬碟替代方案  
-^製圖：我^  
-^FOSS^ ^指^ ^Free^ ^and^ ^Open^ ^Source^ ^Software^^，即免費開源軟體^  
-^端對端加密^ ^(^^End-to-end^ ^encryption^^)^^，僅你、獲授權者才能看到內容，公司也不知你傳了什麼^  
+<sup>製圖：我</sup>  
+<sup>FOSS 指 Free and Open Source Software，即免費開源軟體</sup>  
+<sup>端對端加密 (End-to-end encryption)，僅你、獲授權者才能看到內容，公司也不知你傳了什麼</sup>  
 * Google 雲端硬碟 / 相簿  
     不只對外[安全性問題](https://www.technice.com.tw/techmanage/infosecurity/187175/)，Google 更能[掃描](https://proton.me/blog/is-google-drive-secure)你的雲端硬碟內容  
     Android 手機預設的 Google 相簿，也有[照片被拿去練 AI](https://proton.me/blog/is-google-photos-safe#ai-training)、烏龍[指控兒少性犯罪](https://www.nytimes.com/2022/08/21/technology/google-surveillance-toddler-photo.html?unlocked_article_code=1.80w.nigh.XohWLd4Vrdgd)及其他隱私疑慮  

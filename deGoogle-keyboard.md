@@ -14,9 +14,9 @@ _# 別以為語音、手寫輸入就沒事，那些攻擊面積更大_
 
 ### 從圖開始看吧！  
 [deGoogle keyboard](image link)  
-^圖源：除了我還會有誰？^  
-^FOSS^ ^指「免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^^」^  
-^non-profit^ ^指「不以營利為目的」^  
+<sup>圖源：除了我還會有誰？</sup>  
+<sup>FOSS 指「免費開源軟體 (Free and Open Source Software)」</sup>  
+<sup>non-profit 指「不以營利為目的」</sup>  
 
 ### 欠換鍵盤  
 #### Gboard  

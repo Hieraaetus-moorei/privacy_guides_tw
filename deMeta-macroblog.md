@@ -11,9 +11,9 @@ Meta 可推知你當時位置、有興趣的東西、在參加的活動...
 
 ### 先上圖，再來細數罪狀  
 [deMeta Macroblog](image link)  
-^FOSS^ ^指免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^  
-^non-profit^ ^指「不以營利為目的」^  
-^End-to-end^ ^encrypted^ ^chat^ ^指私訊有端對端加密^  
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
+<sup>non-profit 指「不以營利為目的」</sup>  
+<sup>End-to-end encrypted chat 指私訊有端對端加密</sup>  
 
 ### 非換不可  
 #### 非死不可 (臉書 aka FB = Facebook)  

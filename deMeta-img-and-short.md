@@ -12,8 +12,8 @@ _# Meta 會轉移去偷 (Meta 幾乎可當偷個資、窺探的同義詞)你的 
 論及短影音、照片平台，主流軟體問題都不小，先看圖再說  
 ### 替換指南  
 [deMeta Instagram](image link)  
-^FOSS^ ^指免費開源軟體^ ^(^^Free^ ^and^ ^Open^ ^Source^ ^Software^^)^  
-^non-profit^ ^指「不以營利為目的」^  
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
+<sup>non-profit 指「不以營利為目的」</sup>  
 
 ### 該換的服務  
 

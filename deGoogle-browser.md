@@ -60,7 +60,7 @@ Android 機種綁死 Google 生態系，甚至在更新中偷渡 Gemini app
 
 終於來到懶人圖了：  
 [deGoogle Chrome](image link)  
-^圖源：我本人^  
+<sup>圖源：我本人</sup>  
 有些瀏覽器只有桌面版、有些則只有行動版  
 至於 Telemetry (遙測)、fingerprint、Tor、uBlock Origin 是什麼，稍後會解說  
 該換的除了 [Chrome](https://www.forbes.com/sites/zakdoffman/2021/03/20/stop-using-google-chrome-on-apple-iphone-12-pro-max-ipad-and-macbook-pro/) ([醜聞](https://www.forbes.com/sites/zacharyfolk/2024/04/01/google-will-destroy-incognito-mode-browsing-data-heres-what-that-means-for-users/)超多)、[Edge](https://www.zdnet.com/article/a-professor-says-edge-is-the-worst-for-privacy-microsoft-isnt-happy/)、[Safari](https://www.theregister.com/2024/04/30/apple_safari_europe_tracking/) (比前二者好「一點」，但閉源、廣告追蹤無法擋、隱私外掛不支援、綑綁生態系...)，還有 Opera  
