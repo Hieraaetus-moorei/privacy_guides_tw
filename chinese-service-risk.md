@@ -1,15 +1,15 @@
-# 中國線上服務，安全嗎？
+# 中國線上服務，安全嗎？  
 
 先不論中國為獨裁政體，政府索求資料哪須理由  
 即便從法律層面，中國政府也能「合法」向企業要個資  
 所以使用中國軟體、線上服務，就冒著資料被政府拿走的風險  
 尤其兩岸「特殊」的關係，對岸政府更有動機出手  
 
-![Xi the Pooh raising mug with a smile](https://media.tenor.com/DKk4Fbz8AoYAAAAC/brindis-xi-jinping.gif)。 
+![Xi the Pooh raising mug with a smile](https://media.tenor.com/DKk4Fbz8AoYAAAAC/brindis-xi-jinping.gif)  
 
 ---
 
-### 法條簡述
+### 法條簡述  
 中國政權「獲取」資料的法源依據：  
 * 《[國家情報法](https://www.lawfaremedia.org/article/beijings-new-national-intelligence-law-defense-offense)》  
     * 第七條：「任何組織和公民都應當依法支持、協助和配合國家情報工作，保守所知悉的國家情報工作秘密」  

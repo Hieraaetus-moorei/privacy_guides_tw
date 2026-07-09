@@ -147,7 +147,7 @@ _# 今年 (2025)美國、法國才都[罰過](https://www.computerworld.com/arti
 
 如此危險，能不換嗎？  
 
-#### Microsoft Authenticator 
+#### Microsoft Authenticator  
 微軟也不遑多讓，官方[明講](https://support.microsoft.com/en-us/account-billing/microsoft-authenticator-faqs-12d283d1-bcef-4875-9ae5-ac360e2945dd#:~:text=Authenticator%20collects%20your%20GPS%20information,to%20access%20the%20protected%20resource.)會蒐集：  
 * GPS 地理位置  
 * 微軟帳號資訊 (若你要備份)  
@@ -229,7 +229,7 @@ iPhone 預設用 iCloud，Android 則是 Google Drive
 缺點：  
 * 新版非立刻開源  
     官方[授權](https://raw.githubusercontent.com/twofas/2fas-pass-android/main/LICENSE-FAQ.md)寫明，推出後是「原始碼公開」，商用須申請  
-    每版兩年後，才[自動流用](https://raw.githubusercontent.com/twofas/2fas-pass-android/main/LICENSE) GPL 3.0 (開源) 
+    每版兩年後，才[自動流用](https://raw.githubusercontent.com/twofas/2fas-pass-android/main/LICENSE) GPL 3.0 (開源)  
 
 支援 TOTP、HOTP，想要的功能基本上都有  
 
@@ -271,7 +271,7 @@ _# I.e. 端對端加密_
 高度可客製化，字體、縮圖都能改  
 同樣能輕鬆匯入 / 匯出 token，不綁死生態系  
 官方說：  
-> Authman is open, just export tokens for any purpose you want 
+> Authman is open, just export tokens for any purpose you want  
 
 算有良心吧？  
 也可用生物辨識解鎖，生物特徵僅存於本地  

@@ -1,19 +1,19 @@
-# deGoogle - 替換 Play 商店
+# deGoogle - 替換 Play 商店  
 
-> 可以到 Google Play 或 App Store 下載我們的應用程式喔！
+> 可以到 Google Play 或 App Store 下載我們的應用程式喔！  
 
 對許多人來說，下載手機軟體不外乎那兩處  
 Android 去 Google Play、iPhone 則是 App Store  
 但這有幾個大問題：  
-* 多數軟體下載，須「登入」Google 或 iCloud 帳戶
-    _# 裝什麼軟體他們都知道_
-* 開發者上架軟體，需給 Google 個資、交蘋果稅
-    做免費軟體造福大眾，卻要被貪婪公司吃一口？
+* 多數軟體下載，須「登入」Google 或 iCloud 帳戶  
+    _# 裝什麼軟體他們都知道_  
+* 開發者上架軟體，需給 Google 個資、交蘋果稅  
+    做免費軟體造福大眾，卻要被貪婪公司吃一口？  
 
 若輕忽「軟體下載管道」，則 deGoogle、deApple 淪為空談  
 
-### 極權應用程式商店
-#### App Store
+### 極權應用程式商店  
+#### App Store  
 蘋果最為人詬病的，莫過於應用程式商店  
 Mac (電腦)、iOS (手機)下載軟體，都得從官方商店下載  
 蘋果不只監控你裝什麼程式，也限制軟體分發自由  
@@ -42,13 +42,13 @@ _# 抽成無理又高額，開發者戲稱「蘋果稅」_
 * 收費雙標，大財團可享更低價  
     例如 [Netflix](https://embed.documentcloud.org/documents/21043962-2018-july-netflix-tried-to-get-lower-than-15-percent-no-tv-app/#document/p1) 只被收 15%  
 * [審核放水](https://embed.documentcloud.org/documents/21043962-2018-july-netflix-tried-to-get-lower-than-15-percent-no-tv-app/#document/p1)，博弈、色情、盜版遊戲照樣[給過](https://www.theverge.com/2019/2/20/18232583/apple-ios-developer-enterprise-program-store-mobile-apps)，錢有付就好  
-    說好的安全性和審查呢？
+    說好的安全性和審查呢？  
 * 上架商店程式是[**不允許**](https://www.theverge.com/2020/9/18/20912689/apple-cloud-gaming-streaming-xcloud-stadia-app-store-guidelines-rules)**的**，畢竟那會[妨礙蘋果利益](https://embed.documentcloud.org/documents/21043907-2011-august-erb-meetings-stores-within-store-not-allowed/#document/p3)  
     別小看 App Store，其營收甚至[超過 Mac、iPad](https://embed.documentcloud.org/documents/21043942-2016-app-store-billings-bigger-than-mac-ipad/#document/p4)  
     蘋果曾為利益拒絕大魚遊戲上架，且[自知此舉無根據](https://embed.documentcloud.org/documents/21043933-2013-february-shoemaker-still-no-guidelines-about-store-within-store/#document/p1)  
 總之 App Store [非全為安全著想](https://www.theverge.com/c/22611236/epic-v-apple-emails-project-liberty-app-store-schiller-sweeney-cook-jobs)，**利益最大化是關鍵考量，且收費雙標**  
 
-#### Google Play
+#### Google Play  
 Android 用戶別高興太早，Google 從來不是什麼好東西  
 同樣綁定 Google Play 付款方式，於是也[被 Epic Games 告](https://www.theverge.com/23945184/epic-v-google-fortnite-play-store-antitrust-trial-updates)了  
 不少國家[跟進](https://www.business-standard.com/article/companies/apps-and-payments-what-is-the-controversy-about-google-play-billing-system-122102600748_1.html)，對 Google 惡意壟斷行為[開罰](https://edition.cnn.com/2023/12/19/tech/google-play-store-settlement-hnk-intl)  
@@ -90,8 +90,8 @@ _# Google 大概濫用個資慣了，覺得軟體開發不能少這環_
 
 鑑於此般惡劣行徑，只換掉 Google Play 還便宜他們了  
 
-### 開換！
-#### 圖先來：
+### 開換！  
+#### 圖先來：  
 [deGoogle Play Store](image link)  
 <sup>圖源：捨我其誰</sup>  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
@@ -99,13 +99,13 @@ _# Google 大概濫用個資慣了，覺得軟體開發不能少這環_
 ### 其他欠換程式商店
 左半邊那堆東西，最上面是 Google Play、App Store  
 剩下：  
-* AppGallery 是華為的
-* Oppo store 理所當然是 Oppo 的
-* MyApp 是騰訊的
-* MI Store 是小米的
-* Vivo Store 是 Vivo 的
-* Baidu mobile assistant 是百度手機助理
-* 360 mobile assistant 是 360 的
+* AppGallery 是華為的  
+* Oppo store 理所當然是 Oppo 的  
+* MyApp 是騰訊的  
+* MI Store 是小米的  
+* Vivo Store 是 Vivo 的  
+* Baidu mobile assistant 是百度手機助理  
+* 360 mobile assistant 是 360 的  
 
 以上皆為中國公司的程式商店，同樣該換  
 Android 本身開源，所以中國廠為了符合政治、市場需求  
@@ -120,7 +120,7 @@ Android 本身開源，所以中國廠為了符合政治、市場需求
 
 ---
 
-#### [F-Droid](https://f-droid.org/)
+#### [F-Droid](https://f-droid.org/)  
 大名鼎鼎的**開源應用程式**商店，本身也開源  
 開頭的 F 代表 Freedom，免費與自由之意  
 後端可自架、不受制特定公司，不需帳號、也不追蹤你  
@@ -132,7 +132,7 @@ _# 開發者社群會嚴格審查，全開源、免費、安全才放行_
 堪稱最棒的 Android 應用程式商店  
 
 缺點：  
-* **僅支援 Android**
+* **僅支援 Android**  
     誰叫 iOS 生態系封閉，去怪蘋果  
 * 沒有 Line、Instagram、Uber 等應用程式  
     同前述，F-Droid 只有**免費開源**軟體  
@@ -141,7 +141,7 @@ _# 開發者社群會嚴格審查，全開源、免費、安全才放行_
 
 和 Google 脫鉤，又不需要專業知識，Android 用戶還不趕緊試試  
 
-#### [Aurora Store](https://auroraoss.com/)
+#### [Aurora Store](https://auroraoss.com/)  
 直翻極光商店，本身開源、免費   
 Aurora Store 原理是，提供代理前端連線至 Google Play  
 本質上仍是 Google Play，該有的程式都有，但更保障隱私  
@@ -150,19 +150,19 @@ Aurora Store 原理是，提供代理前端連線至 Google Play
 _# 會以 anonymous@gmail.com 登入，其他使用者亦然_  
 和 Google Play 不同的是，app 都經第三方程式 [Exodus](https://exodus-privacy.eu.org/) 審閱  
 有無追蹤器、需要的權限都會顯示，還能知道是哪些追蹤器  
-_# 例如 Line 伴隨多個 [Google 追蹤器](https://reports.exodus-privacy.eu.org/en/reports/jp.naver.line.android/latest/)_
+_# 例如 Line 伴隨多個 [Google 追蹤器](https://reports.exodus-privacy.eu.org/en/reports/jp.naver.line.android/latest/)_  
 把關比 Google Play 嚴格多了  
 
-缺點：
+缺點：  
 * 未完全脫離 Google，只是增加隱私層  
     畢竟是 Google Play 的替代前端，所以 iOS 沒有  
 * 程式仍仰仗 Google Play Service  
-    可用 [MicroG](https://github.com/microg/GmsCore/wiki) 替代，但需要技術能力
+    可用 [MicroG](https://github.com/microg/GmsCore/wiki) 替代，但需要技術能力  
 
 因為只是換介面，對熟悉 Google Play 的人來說，幾乎無痛轉移  
 你愛用的~~偷個資爛~~程式都能找到，轉換成本較低  
 
-#### [Aptoide](https://en.aptoide.com/)
+#### [Aptoide](https://en.aptoide.com/)  
 全球第三大應用程式商店，開源、去中心化  
 葡萄牙公司維運，總部位於里斯本，新加坡、深圳等地設有據點  
 服務可自架，在用戶端新增商店 URL 即可連線至特定商店實例 (instance)  
@@ -189,21 +189,21 @@ Apt- 前綴即取自 apt，-oide 有「類似物」之意，表示「類似 Apt 
 Aptoide 於是踏入 iPhone，是少數跨平台的選項  
 缺點：  
 * iOS 版目前僅支援歐盟  
-    今年初才正式入歐，燒滾滾的呢！
+    今年初才正式入歐，燒滾滾的呢！  
 * 設定可能要摸索一下  
     但熟悉後，大概會愛上它  
 
 F-Droid 是 Aptoide 的一個分支 (fork)，兩者師出同源喔！  
 
-#### [Obtainium](https://obtainium.imranr.dev/)
+#### [Obtainium](https://obtainium.imranr.dev/)  
 開源、非集中化的前端，甚至不是應用程式商店  
 
 不是商店，放這是在搞笑！？  
 
-![anime of a cute angry cat](https://media.tenor.com/F6ku1Q-GjpAAAAAC/ami-ar-tomake-valobashi-na.gif)
+![anime of a cute angry cat](https://media.tenor.com/F6ku1Q-GjpAAAAAC/ami-ar-tomake-valobashi-na.gif)  
 
 ~~沒錯，就是在搞笑~~  
-別生氣，它比商店更棒
+別生氣，它比商店更棒  
 
 ---
 
@@ -239,7 +239,7 @@ Obtainium 前綴 obtain 指「獲得」，意味獲得軟體
 ---
 
 iOS 商店  
-#### [SideStore](https://sidestore.io/)
+#### [SideStore](https://sidestore.io/)  
 「側店」顧名思義，側載 (sideloading)應用程式的商店  
 專為 iOS 設計，可繞過 App Store 下載軟體  
 由社群驅動，免費、[開源](https://github.com/SideStore/SideStore/)  
@@ -269,8 +269,8 @@ _# 刷新會在背景自動運作，不需手動處理_
 嫌麻煩嗎？  
 誰叫你買 iPhone，蘋果生態系閉鎖，沒辦法  
 
-#### [AltStore](https://altstore.io/)
-iOS 的側載商店，Alt- (alternative)和 Store 結合，表示替代商店
+#### [AltStore](https://altstore.io/)  
+iOS 的側載商店，Alt- (alternative)和 Store 結合，表示替代商店  
 _# 當然是替代 App Store 囉！_  
 開源、去中心化，且不需越獄  
 
@@ -319,9 +319,9 @@ App Store 的替代品較受限，畢竟 iOS 閉源、生態系不開放
 
 ---
 
-### 懶人包：
-#### Android
-* 科技小白，想無痛轉移 → [Aurora Store](https://auroraoss.com/)
+### 懶人包：  
+#### Android  
+* 科技小白，想無痛轉移 → [Aurora Store](https://auroraoss.com/)  
 * 免費、開源仔 → [F-Droid](https://f-droid.org/)  
 * 開發者，想自架服務  
     * 只用免費開源軟體 → [F-Droid](https://f-droid.org/)  
@@ -335,8 +335,8 @@ App Store 的替代品較受限，畢竟 iOS 閉源、生態系不開放
 沒人規定只能有一個商店，可用 [Aurora Store](https://auroraoss.com/) 裝日常 app  
 搭配 [F-Droid](https://f-droid.org/) 或 [Obtainium](https://obtainium.imranr.dev/)，在其餘軟體獲得更多隱私  
 
-#### iOS
-* 歐盟用戶
+#### iOS  
+* 歐盟用戶  
     * 想自架伺服器 → [Aptoide](https://en.aptoide.com/ios/)  
     * 一般大眾 → [AltStore PAL](https://altstore.io/) / [Aptoide](https://en.aptoide.com/ios/)  
 * 家有電腦、能自架伺服器 → [AltStore](https://altstore.io/)  
