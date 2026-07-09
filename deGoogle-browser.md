@@ -59,7 +59,7 @@ Android 機種綁死 Google 生態系，甚至在更新中偷渡 Gemini app
 至於近年出現的第三勢力，[Ladybird browser](https://ladybird.org/)，因尚處開發、測試階段，沒程式背景的人應該玩不了，就不在此贅述 (甚至沒下載按鈕)  
 
 終於來到懶人圖了：  
-[deGoogle Chrome](image link)  
+![deGoogle Chrome](./assets/deGoogle/deGoogle-chrome.png)  
 <sup>圖源：我本人</sup>  
 有些瀏覽器只有桌面版、有些則只有行動版  
 至於 Telemetry (遙測)、fingerprint、Tor、uBlock Origin 是什麼，稍後會解說  

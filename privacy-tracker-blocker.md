@@ -109,7 +109,7 @@ _# 看不懂可以當沒這回事，或參考[這篇](./deGoogle-browser.md)學�
     如果可以，[換瀏覽器](./deGoogle-browser.md)是最好的做法  
 * 初學者，想從簡單的開始 → [Ghostery](https://chromewebstore.google.com/detail/ghostery-tracker-ad-block/mlomiejdfkolichcflejclcbmpeaniij)  
 
-[ad blocker](deTracker-content-blocker.png)  
+![ad blocker](./assets/privacy-tracker-blocker.png)  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
 <sup>non-profit 指「不以營利為目的」</sup>  
 

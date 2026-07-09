@@ -16,7 +16,7 @@ Email 形同網路世界的身分證，又取代傳統書信成為正式聯繫�
 > 幾年之後它 (email)可能比我們的真實身分證明還要重要 - [嚴育銓](https://www.twreporter.org/a/protonmail-project)  
 
 別急，替代品這不就來了：  
-[deGoogle email](image link)  
+![deGoogle email](./assets/deGoogle/deGoogle-mail.png)  
 <sup>圖源：~~做那麼精美~~當然是我</sup>  
 <sup>non-profit 不是指「非營利機構」，而是「不以盈利為目的」</sup>  
 <sup>FOSS 指免費 (free)且開源 (open source)的軟體 (software)</sup>  

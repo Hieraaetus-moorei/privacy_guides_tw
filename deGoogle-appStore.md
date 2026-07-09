@@ -92,7 +92,7 @@ _# Google 大概濫用個資慣了，覺得軟體開發不能少這環_
 
 ### 開換！  
 #### 圖先來：  
-[deGoogle Play Store](image link)  
+![deGoogle Play Store](./assets/deGoogle/deGoogle-play_store.png)  
 <sup>圖源：捨我其誰</sup>  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
 <sup>non-profit 指「不以營利為目的」</sup>  

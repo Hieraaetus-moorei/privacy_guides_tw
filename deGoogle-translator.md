@@ -12,7 +12,7 @@
 別忘了，Google 十分擅長[違法蒐集個資](https://www.reuters.com/sustainability/boards-policy-regulation/google-hit-with-314-million-us-verdict-cellular-data-class-action-2025-07-01/)  
 
 ### 「圖」個方便  
-[deGoogle translator](image link)  
+![deGoogle translator](./assets/deGoogle/deGoogle-translate.png)  
 <sup>圖源：不用想，當然是我</sup>  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
 <sup>privacy proxy 為保護隱私的代理服務，但仍仰賴 Google 翻譯</sup>  

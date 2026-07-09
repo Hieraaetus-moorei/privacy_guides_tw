@@ -15,7 +15,7 @@ _# Google 甚至曾[呼籲](https://www.nbcnews.com/technolog/no-googling-says-g
 你可能聽過 [Bing](https://joindeleteme.com/is-site-safe/is-bing-safe/)、Yandex、百度等搜尋引擎，但此處「**不會**」仔細介紹它們，因為那些也是[隱私陷阱](https://www.bankinfosecurity.com/researchers-meta-yandex-broke-android-privacy-a-28578)  
 別忘記這趟旅程，目的是填平隱私坑洞、選擇更好的替代品  
 不囉唆，直接上圖：  
-[deGoogle search engine](image link)  
+![deGoogle search engine](./assets/deGoogle/deGoogle-search.png)  
 <sup>圖源：我辛苦做的</sup>  
 <sup>圖中的「tracker-free」，指前端無可見追蹤器，意思就是至少不公然追蹤你</sup>  
 <sup>non-profit 不是指「非營利機構」，而是「不以盈利為目的」</sup>  
@@ -34,7 +34,7 @@ _# 許多瀏覽器也支援在設定中，手動替換預設搜尋引擎_
 ### [Searxng](https://github.com/searxng/searxng) (前身為 [Searx](https://github.com/searx/searx))  
 Searxng 是社群建立的開源專案，也就是一群人自發合作，**無**商業機構撐腰  
 它是整合搜尋 (meta search)引擎，沒有自己獨立的索引 (index)，但會從各大搜尋引擎如 Google、Bing 抓取結果，混合後送給使用者，例如這樣：  
-[wechat data breach](image link)  
+![wechat data breach](./assets/ref_images/wechat-data-breach.png)  
 <sup>圖源：本人搜尋結果</sup>  
 因為開源，各項設定皆可自訂，搜尋結果也較不易受單一引擎影響  
 你可能會問，結果來自 Google、Bing，還有隱私可言嗎？  

@@ -6,7 +6,7 @@
 多數人根本不知道，還有其他選擇  
 
 #### 讓我們細說從圖  
-[deGoogle Map](image link)  
+![deGoogle Map](./assets/deGoogle/deGoogle-map.png)  
 <sup>圖源：~~地獄歸來者~~我自己</sup>  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
 <sup>non-profit 指「不以營利為目的」</sup>  

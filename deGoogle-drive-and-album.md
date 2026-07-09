@@ -12,7 +12,7 @@
 如果還在用預設相簿且開啟備份，勸你三思  
 
 ### 來人，上圖！  
-[deGoogle drive and album](image link)  
+![deGoogle drive and album](./assets/deGoogle/deGoogle-drive.png)  
 雲端硬碟替代方案  
 <sup>製圖：我</sup>  
 <sup>FOSS 指 Free and Open Source Software，即免費開源軟體</sup>  

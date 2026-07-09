@@ -99,7 +99,7 @@ _# 即使帳密被盜，對方沒你的手機 / 信箱 / 驗證 app，仍無法�
 
 背景知識介紹結束  
 ### 來看圖吧！  
-[deGoogle password manager](image link)  
+![deGoogle password manager](./assets/deGoogle/deGoogle-pswd_manager.png)  
 <sup>製圖者：只能是我</sup>  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
 <sup>non-profit 指「不以營利為目的」</sup>  

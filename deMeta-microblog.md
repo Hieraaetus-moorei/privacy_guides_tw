@@ -16,7 +16,7 @@ Threads 身為 Meta 用來[搶推特難民](https://www.arabnews.com/node/233557
 兩者為同質性產品，且對用戶隱私、平台管理都有劣跡，該換就換  
 
 ### 圖先來：  
-[deMeta Threads](image link)  
+![deMeta Threads](./assets/deMeta/deMeta-Threads.png)  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
 <sup>End-to-end encrypted chat 指私訊為端對端加密</sup>  
 

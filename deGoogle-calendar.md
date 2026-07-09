@@ -11,7 +11,7 @@ Google 極可能積極配合，不論要求是否合理
 畢竟 [PRISM](https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data) 都跪過了，哪可能為了你得罪政府？  
 
 #### 開換吧！  
-[deGoogle Calendar](image link)  
+![deGoogle Calendar](./assets/deGoogle/deGoogle-calendar.png)  
 <sup>圖源：隱私倡議者 - 我</sup>  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)，或開源、至少有長久免費版者</sup>  
 <sup>End-to-end encryption 為端對端加密，僅當事人、經授權者能看到內容</sup>  

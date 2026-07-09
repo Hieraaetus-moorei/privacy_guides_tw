@@ -6,12 +6,12 @@
 每次論壇有人問手機，總會引來兩派論戰  
 彷彿不買 iPhone，就只能選 Android  
 情況過於好笑，忍不住做了哏圖：  
-[果粉果黑鬥劍，Custom ROM 使用者看戲](image link)  
+![果粉果黑鬥劍，Custom ROM 使用者看戲](./assets/ref_images/mobile-OS-meme.png)  
 雖然標題說換 Android，但本篇**不支持任何一方**  
 因為兩邀都爛，都欠換！  
 
 ### ~~大膽狂~~圖  
-[deGoogle mobile OS](image link)  
+![deGoogle mobile OS](./assets/deGoogle/deGoogle-Android.png)  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
 <sup>non-profit 指「不以營利為目的」</sup>  
 <sup>in time update 指適時、及時更新</sup>  

@@ -8,7 +8,7 @@
 
 
 #### 先看圖再說  
-[deGoogle meet](image link)  
+![deGoogle meet](./assets/deGoogle/deGoogle-meet.png)  
 <sup>製圖：移幣 aka 我</sup>  
 <sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup>  
 <sup>non-profit 指不以營利為目的</sup>  
