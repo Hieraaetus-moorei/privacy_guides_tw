@@ -1,6 +1,6 @@
 # privacy_guides_tw  
 
-#### English version of Traditional Chinese digital privacy education materials  
+#### Traditional Chinese digital privacy education materials  
 
 Replacing surveillance services with privacy-respecting free and open source alternative, reclaiming your digital privacy!  
 **Free** mainstream online services often come at a cost: your data.  
