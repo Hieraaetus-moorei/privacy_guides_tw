@@ -25,7 +25,7 @@ _# 明文儲存代表公司和員工能用你的密碼登入，當然，跑進�
 後來 IG 又[未經允許](https://www.gdprregister.eu/news/instagram-unauthorized-camera-access/)，[偷拿](https://www.cnet.com/tech/mobile/lawsuit-accuses-instagram-of-peeping-with-iphone-camera/)用戶相機權限，被集體訴訟告上加州法庭  
 Meta 說那是 iPhone 的 bug，但兩家公司信用比一比，怎樣也不會相信 Meta 吧！  
 如果你覺得偷拍很噁，那怎麼能忍受別人「用你的手機偷拍你」？  
-[Instagram 在 app store 宣稱會拿的個資](ig-threads-app-data-collection.png)  
+![Instagram 在 app store 宣稱會拿的個資](./assets/ref_images/ig-app-data-collection.png)  
 而且 Meta 將在 2026 年底，[移除](https://proton.me/blog/instagram-end-to-end-encryption) IG 私訊的端對端加密  
 原因沒細講，不過沒端對端加密，他們就能看到對話內容  
 個人化廣告很缺這類素材  

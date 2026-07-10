@@ -52,7 +52,7 @@ Google 可能用「同住家人」當藉口， 合理化此舉
 更別提[神奇](https://forum.gamer.com.tw/C.php?bsn=60030&snA=635141)的[文字獄](https://www.mobile01.com/topicdetail.php?f=514&t=6900986)，[國內外網友](https://www.reddit.com/r/youtube/comments/11wgrlc/youtube_keeps_deleting_my_comments_for_no_reason/)都是[受災戶](https://www.dcard.tw/f/talk/p/254644138)，標準令人納悶  
 _# 能想像是為了擋機器人、廣告騷擾、仇恨言論，但那演算法也寫太爛了吧！_  
 
-[censored tube](https://www.mobile01.com/topicdetail.php?f=514&t=6900986)  
+![BanTube](./assets/ref_images/censored-tube.png)  
 
 
 ### Vimeo  
@@ -119,7 +119,7 @@ _# 區塊鏈 (block chain)是虛擬貨幣的基石，不懂沒差，就當很分
 奧德視介面很像 Youtube，轉換成本不高  
 
 畫面看起來像這樣：  
-[odysee snapshot, 30 分鐘認識深度學習](odysee-interface.png)  
+![odysee snapshot, 30 分鐘認識深度學習](./assets/ref_images/odysee-interface.png)  
 影片連結：[點我](https://odysee.com/@%E9%81%8A%E8%95%A9%E8%80%85:4/30-minute-deep-learning:4)  
 
 平台給創作者的獎勵，比 Youtube 有感多了  
@@ -210,7 +210,7 @@ _# 因為使用者提供部分算力_
 
 Peertube 的吉祥物，是隻可愛的墨魚 Sepia  
 官方發文 Sepia 通常也會跟著露面，很想抱一隻來養 (？)  
-[By David Revoy - https://joinpeertube.org/, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=84134714](peertube-sepia.jpg)  
+![By David Revoy - https://joinpeertube.org/, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=84134714](./assets/ref_images/peertube-sepia.jpg)  
 
 ### DTube  
 和奧德視相似，同樣建構於區塊鏈上、靠虛擬貨幣打賞  

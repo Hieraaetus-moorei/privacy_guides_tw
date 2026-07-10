@@ -171,7 +171,7 @@ _# 雲端備份的端對端加密，得由用戶手動開啟_
 
 隱私政策說會和第三方合作，蒐集、共享資料，用途卻寫得頗模糊  
 信任 Line 就算了，來歷不明的第三人也能存取，風險有點高  
-[[Line 蒐集的個資種類，直追 WhatsApp](https://apps.apple.com/us/app/line/id443904275)](line-app-data-collection.png)  
+![[Line 蒐集的個資種類，直追 WhatsApp](https://apps.apple.com/us/app/line/id443904275)](./assets/ref_images/line-app-data-collection.png)  
 
 接下來是資安  
 Line 的端對端加密並非業界標準，而是自行研發的 Letter Sealing protocol  

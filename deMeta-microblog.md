@@ -28,7 +28,7 @@ Threads [隱私政策](https://adguard.com/en/blog/guide-to-metas-threads-app-pr
 健康、財務、用戶位置、搜尋紀錄[...](https://www.theguardian.com/technology/2023/jul/11/threads-app-privacy-user-data-meta-policy)  
 許多是[非必要](https://www.cpomagazine.com/data-privacy/newly-launched-threads-already-raising-privacy-concerns-with-sensitive-data-collection-instagram-sharing/)、且侵略性的個資  
 這不是我說的，是 Meta 說的：  
-[threads 在 app store 宣稱會拿的個資](threads-app-data-collection.png)  
+![threads 在 app store 宣稱會拿的個資](./assets/ref_images/threads-app-data-collection.png)  
 
 何況 Meta [名聲不太好](https://proton.me/blog/meta-threads-privacy)，把個資交給他們不太安全  
 
@@ -52,7 +52,7 @@ _# 小提醒，原推特也和 Meta 一樣會亂關帳喔！_
 為什麼說「可能」和「推測」？  
 因為官方沒說清楚，資訊很不透明  
 至於位置，官方說會拿、還會追蹤你：  
-[推特在 app store 宣稱會拿的個資](twitter-app-data-collection.png)  
+![推特在 app store 宣稱會拿的個資](./assets/ref_images/twitter-app-data-collection.png)  
 Χ 用戶應該很有感，位置甚至[公開](https://www.tesaaworld.com/en/news/a-new-feature-on-x-raises-privacy-concerns-among-users)讓大家看  
 會推送[個人化廣告](https://www.cnbc.com/2023/12/14/musks-x-hit-with-complaint-alleging-it-broke-europes-privacy-laws.html)，而且[缺乏透明性](https://ec.europa.eu/commission/presscorner/detail/en/ip_24_3761)  
 [資料外洩](https://www.foxnews.com/tech/200-million-social-media-records-leaked-major-x-data-breach)也沒少，資安和隱私都沒顧到  

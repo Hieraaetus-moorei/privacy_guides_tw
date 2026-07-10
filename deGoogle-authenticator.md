@@ -204,8 +204,8 @@ _# [社群解方](https://discuss.techlore.tech/t/i-lost-my-raivo-otp-passwords/
 還沒完，最惡劣的是**誤導行銷**  
 上述內容可知，Ravio OTP 早已商業化、非開源  
 但[官網](https://raivo-otp.com/)迄今仍自稱「非商業」、「開源」  
-![Ravio OTP self-claimed non-commercial](ravio-commercial-scam.png)  
-![Ravio OTP self-claimed as an OSS](ravio-open-scam.png)  
+![Ravio OTP self-claimed non-commercial](./assets/ref_images/ravio-commercial-scam.png)  
+![Ravio OTP self-claimed as an OSS](./assets/ref_images/ravio-open-scam.png)  
 程式碼倉庫[宣稱](https://github.com/raivo-otp/ios-application?tab=readme-ov-file)不蒐集個資，但 Mobime [隱私政策](https://mobime.org/privacy/)說使用 Facebook、Google AdMod  
 _# 個人化廣告追蹤器，會蒐集 IP 等資訊_  
 問題頗大，不換不行  

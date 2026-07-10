@@ -127,7 +127,7 @@ BigBlueButton 直翻大藍鈕 (縮寫 BBB)，2007 年加拿大學界推出的開
 開發者覺得  
 > 發起線上會議，應像按下一顆藍色大按鈕一樣簡單  
 
-[smash a blue button](bigbluebotton-meme.jpg)  
+![smash a blue button](./assets/ref_images/bigbluebotton-meme.jpg)  
 目標受眾是教學者，例如學校老師  
 主要[功能](https://bigbluebutton.org/tutorials/)：  
 * 線上會議  
