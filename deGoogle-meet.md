@@ -288,6 +288,9 @@ _# 現有 AI 新功能 [Leo](https://support.brave.app/hc/en-us/articles/2572893
 
 鑑於 Brave Talk [開源](https://github.com/brave/brave-talk)、隱私政策友善，所以還是予以介紹  
 
+Proton (質子科技)也出了 [Proton Meet](https://proton.me/meet)，[開源](https://github.com/ProtonMeet)、可免費使用
+不過除非專門訂閱此服務，不然訂閱 Proton 生態系或免費用戶，最多都只能用 50 分鐘  
+
 ---
 
 ### 懶人包  
