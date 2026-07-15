@@ -40,6 +40,7 @@ _# 歐盟國數量過多，請容我不一一枚舉_
 * [中華民國](https://www.jrf.org.tw/articles/3211) i.e. 台灣 (正在[走進濁流](https://www.amnesty.tw/node/24339))  
 * [...](https://segpay.com/blog/mandatory-age-verification-asia/)  
 _# 新加坡[不完全](https://freedomhouse.org/country/singapore)民主自由所以沒入列。[日本模式](https://www.biometricupdate.com/202604/japan-moves-toward-age-verification-for-social-media-filters-and-risk-labels)則可能侵害較小，值得期待_  
+目前以歐美、東南亞為主，可參考 Proton 做的[監測網站](https://proton.me/age-verification)  
 
 <br/>
 
