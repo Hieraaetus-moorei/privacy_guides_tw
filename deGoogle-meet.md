@@ -214,6 +214,16 @@ _# 若自架伺服器，就不擔心資料被偷_
 
 裝置有瀏覽器就能加入會議，各大桌面平台也有 app 可下載 (非必須)  
 
+#### [Proton Meet](https://proton.me/meet)  
+隱私平台 Proton 的產品，前端[開源](https://github.com/ProtonMeet)  
+通訊用 MLS 協議端對端加密，所以伺服器看不到與會者在~~密謀犯案~~做什麼  
+_# 影像、音訊、和聊天室都端對端加密_  
+免費版單次通聯最多一小時、至多 50 人參與，且不必登入就能用 (這會隨商模動態改變)  
+可從手機或電腦應用程式、瀏覽器加入，也能排定在 Proton 月曆的議程中  
+缺點：  
+* 一般訂閱的額度上限，和免費版相同  
+    需額外訂閱此產品，或訂 Workspace 方案才有包含  
+
 #### [Jitsi](https://jitsi.org/)  
 最知名的開源會議軟體，莫過於 Jitsi  
 _# Jitsi 是保加利亞語「電線」之意_  
@@ -297,13 +307,13 @@ Proton (質子科技)也出了 [Proton Meet](https://proton.me/meet)，[開源](
 選擇障礙？  
 可參考以下推薦：  
 * **少數**朋友私下視訊：  
-    * 極簡主義、不想下載軟體 → [MiroTalk](https://p2p.mirotalk.com/newcall) / [brie.fi](https://brie.fi/ng)  
+    * 極簡主義、不想下載軟體 → [MiroTalk](https://p2p.mirotalk.com/newcall) / [brie.fi](https://brie.fi/ng) / [Brave Talk](https://talk.brave.com/)  
     * 開發者，有在玩 Nextcloud → [Nextcloud Talk](https://nextcloud.com/talk/)  
     * 有自己的 [Jitsi](https://jitsi.org/) 伺服器 → [Jitsi](https://jitsi.org/)  
-    * 有裝 Brave 瀏覽器 → [Brave Talk](https://talk.brave.com/)  
 * ~~詐團~~公司 / 機構 / 朋友**多人會議**：  
     * 能自架伺服器 → [Jitsi](https://jitsi.org/) / [Nextcloud Talk](https://nextcloud.com/talk/) / [MiroTalk SFU](https://sfu.mirotalk.com/)  
-    * 若有細緻協作需求 → [BigBlueButton](https://bigbluebutton.org/)  
+        若有細緻協作需求 → [BigBlueButton](https://bigbluebutton.org/)  
+    * 想用現成服務 → [Proton Meet](https://proton.me/meet)
 * 教育機構會議、**線上教學** → [BigBlueButton](https://bigbluebutton.org/)  
 [MiroTalk](https://p2p.mirotalk.com/newcall)、[brie.fi](https://brie.fi/ng)、[Brave Talk](https://talk.brave.com/) 算最簡單的，進官網、點擊發起會議即可  
 若無法自架伺服器，[Jitsi](https://jitsi.org/) 官方登入途徑有隱私疑慮，但操作同樣簡單  
