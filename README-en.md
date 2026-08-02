@@ -23,6 +23,7 @@ If you're concerning about privacy but unsure where to start, we will help you e
 - [Privacy vs Cybersecurity](./privacy-and-cybersecurity.md)  
 - [FOSS and Privacy Relationship](./foss-and-privacy.md)  
 - [Democratic Countries Embraced Surveillance](./democracy_corruption.md)  
+- [Dark side behind online KYC tide](./online-kyc-origin.md)
 - [Zero Trust](./zero-trust_persecurity-delusion.md)  
 
 ### Privacy-Preserving Free and Open Source Choices  
@@ -55,7 +56,7 @@ Community immunity against surveillance and power abuse can only be reached if e
 
 ---
 
-## Sponsorship  
+### Donation  
 *You **may** donate if you resonate with these ideals and have the means to do so*  
 * Monero (XMR):  
 `8AEyT2biCC7S5impodPReHdRrUipEnj3GLFRZStyeUHiWWzq9q8emkpibJiPRxScXranJqKrinEere938k9pWkVcFWYTDzG`  

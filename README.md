@@ -21,6 +21,7 @@
 - [隱私和資安的異同](./privacy-and-cybersecurity.md)  
 - [開源和隱私的關係](./foss-and-privacy.md)  
 - [民主國家擁抱監控](./democracy_corruption.md)  
+- [網路實名浪潮起因](./online-kyc-origin.md)  
 - [零信任](./zero-trust_persecurity-delusion.md)  
 
 ### 尊重、保障隱私的免費開源選擇  
@@ -53,7 +54,7 @@
 
 ---
 
-贊助管道：  
+### 贊助管道：  
 *你**可以**提供贊助，如果你認同這些理念且行有餘力*  
 * 門羅幣 (Monero, XMR)：  
 `8AEyT2biCC7S5impodPReHdRrUipEnj3GLFRZStyeUHiWWzq9q8emkpibJiPRxScXranJqKrinEere938k9pWkVcFWYTDzG`  
