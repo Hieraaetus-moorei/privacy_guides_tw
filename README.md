@@ -50,3 +50,15 @@
 
 言論自由是民主的基石，而兩者的前提都是隱私權  
 當人人都有基礎隱私意識，才能達成對監控、濫權的集體免疫  
+
+---
+
+贊助管道：  
+*你**可以**提供贊助，如果你認同這些理念且行有餘力*  
+* 門羅幣 (Monero, XMR)：  
+`8AEyT2biCC7S5impodPReHdRrUipEnj3GLFRZStyeUHiWWzq9q8emkpibJiPRxScXranJqKrinEere938k9pWkVcFWYTDzG`  
+* 比特幣 (Bitcoin, BTC)：  
+`bc1qr0h3h9dlhzdu067psskwfsa8c0mfzaryv5626g`  
+
+***我不會私下教學如何使用虛擬貨幣，不會用就不要捐，如遇私訊絕對是詐騙***  
+
