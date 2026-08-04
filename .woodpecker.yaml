@@ -58,7 +58,7 @@ steps:
     image: alpine:edge
     commands:
       - apk add --no-cache zola
-      - zola build --base-url "https://${CI_REPO_OWNER}.codeberg.page/${CI_REPO_NAME}"
+      - zola build
     when:
       event: [push, pull_request]
 
