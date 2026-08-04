@@ -24,7 +24,10 @@ steps:
         title = "私路 - 隱私之路"
         description = "正體中文的數位隱私教育素材"
         default_language = "zh_TW"
-        theme = "hyde"  # Built-in theme; replace if needed
+        theme = "hyde"
+
+        base_url = "https://${CI_REPO_OWNER}.codeberg.page/${CI_REPO_NAME}"
+
         output_dir = "public"
         
          [markdown]
@@ -55,7 +58,7 @@ steps:
      image: alpine:edge
      commands:
        - apk add zola
-       - zola build --base-url "https://${CI_REPO_OWNER}.codeberg.page/${CI_REPO_NAME}"
+      #  - zola build --base-url "https://${CI_REPO_OWNER}.codeberg.page/${CI_REPO_NAME}"
      when:
        event: [push, pull_request]
 
