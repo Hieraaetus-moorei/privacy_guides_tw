@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="degoogle-ti-huan-fan-yi-ruan-ti">deGoogle - 替換翻譯軟體</h1>
+<blockquote>
+<p>要你逐字翻，還不如丟 Google 翻譯</p>
+</blockquote>
+<p>撇除正確性問題，Google 翻譯也存在安全、隱私<a href="https://naipnews.naipo.com/17095">風險</a><br />
+此服務沒出過大事，但<a href="https://policies.google.com/privacy?hl=en-US">隱私權政策</a>都有載明<br />
+用戶內容可能被用於「個人化廣告」、「改善服務」、「開發新產品」等<br />
+意思是，最好別用 Google 翻譯處理機敏文件</p>
+<p>重視隱私者，也應儘量避免<br />
+畢竟把一堆資料交給單一實體 (Google)，是非常危險的<br />
+別忘了，Google 十分擅長<a href="https://www.reuters.com/sustainability/boards-policy-regulation/google-hit-with-314-million-us-verdict-cellular-data-class-action-2025-07-01/">違法蒐集個資</a></p>
+<h3 id="tu-ge-fang-bian">「圖」個方便</h3>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-translator/./assets/deGoogle/deGoogle-translate.png" alt="deGoogle translator" /><br />
+<sup>圖源：不用想，當然是我</sup><br />
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup><br />
+<sup>privacy proxy 為保護隱私的代理服務，但仍仰賴 Google 翻譯</sup></p>
+<h3 id="gai-huan-diao-de-fu-wu">該換掉的服務</h3>
+<p>撤換 Google、<a href="https://www.reuters.com/technology/cybersecurity/chinas-baidu-denies-data-breach-after-executives-daughter-leaks-personal-info-2025-03-20/">百度</a>翻譯，可能沒太多疑慮<br />
+兩者都非開源、由<a href="https://www.sixthtone.com/news/1016839">隱私爭議</a><a href="https://www.chosun.com/english/industry-en/2024/09/23/REM66Q63QRDX3AOXEIEBVSJHLE/">不斷</a>的企業維運<br />
+但不少台灣人，可能已習慣「沉浸式翻譯 (Immersive Translate)」</p>
+<p>什麼，那也有風險嗎！？</p>
+<p><img src="https://media.tenor.com/SpCaZonGbLUAAAAC/joey-shocked.gif" alt="shocked meme gif" /></p>
+<p>沒錯，而且跟百度是同個等級</p>
+<h4 id="chen-jin-shi-fan-yi-zi-an-feng-xian">沉浸式翻譯 - 資安風險</h4>
+<ul>
+<li>公司背景<br />
+<a href="https://ithelp.ithome.com.tw/m/articles/10364522">沉浸式翻譯</a> 2023 年被「<a href="https://news.qq.com/rain/a/20230525A02W6N00">推文科技</a>」收購，推文科技是中國公司<br />
+海外市場由 Funstory.ai Limited 負責，登記在香港 (本質上是同家公司)<br />
+<em># Funstory.ai Limited 為推文科技 2020 年<a href="https://www.ltddir.com/companies/funstoryai-limited/">在港註冊</a>的「海外實體」</em><br />
+服務條款也誠實<a href="https://immersivetranslate.com/zh-TW/docs/TERMS/">標示</a>，自己是<strong>中國公司</strong></li>
+<li>隱私條款<br />
+沉浸式翻譯自家<a href="https://immersivetranslate.com/docs/PRIVACY/">隱私條款</a>，寫著：
+<ul>
+<li>網頁翻譯時，會將內容傳送給第三方 (你選的翻譯引擎)<br />
+此屬合理，因為它是橋接器，把網頁內容丟給翻譯引擎，再回傳結果給你<br />
+有點類似翻譯外包，沉浸式翻譯當郵差<br />
+第三方包括、Google、微軟、Qwen (阿里巴巴)...<br />
+那些公司的<a href="https://phys.org/news/2018-01-china-alibaba-customer.html">黑歷史</a>，可說十分「<a href="https://www.cpomagazine.com/cyber-security/web-scraping-on-alibabas-taobao-resulted-in-data-leak-of-1-1-billion-records/">輝煌</a>」</li>
+<li>收集的個資 (metadata)
+<ul>
+<li>各功能使用頻率</li>
+<li>裝置 ID</li>
+<li>瀏覽器版本</li>
+<li>IP</li>
+<li>Email (若有登入)</li>
+<li>上傳的檔案、偵錯日誌，號稱用於「改善服務」(Google 也常這麼說)<br />
+用個翻譯，交出如此個人化的資訊，似乎不太划算</li>
+</ul>
+</li>
+<li>第三方共享<br />
+Mathpix：翻譯 PDF 時，會將檔案傳給 Mathpix 以獲得維持排版的結果<br />
+<strong>Google</strong> Analytics、Adjust、<strong>Meta</strong> Pixel<br />
+沒錯，就是 Google 和 Meta，人家要靠廣告賺錢哪！<br />
+Adjust 是美國公司 AppLovin 的產品，用於分析行動裝置活動 (e.g. 廣告歸因)</li>
+<li>權限
+<ul>
+<li>沉浸式翻譯瀏覽器外掛，取得的是 &lt;all_urls&gt;<br />
+意思是「能閱讀並修改你開啟的<strong>所有</strong>網頁內容」，電商、網銀也不例外<br />
+蘋果瀏覽器 Safari 還會警告用戶，該外掛「可讀取信用卡等敏感資訊」<br />
+想清楚再裝吧！</li>
+<li>它的手機 app 可就更有趣了，要求一堆權限：<br />
+使用網路、存取檔案、定位、相機、麥克風、剪貼簿、已安裝 APP 清單<br />
+當然號稱是「翻譯用途」，但權限大，風險就高</li>
+</ul>
+</li>
+<li>出包歷史<br />
+別以為新公司，就沒出過事
+<ul>
+<li>網頁 Snapshot 分享功能，曾將翻譯成果上傳騰訊雲端，並允許搜尋引擎建索引<br />
+什麼意思呢？<br />
+一、你的內容跑進騰訊雲了，而騰訊是中國公司<br />
+二、搜尋引擎建索引，代表<a href="https://www.techbang.com/posts/124832-immersive-translation-security-flaw">別人能搜尋到你的翻譯內容</a>，<a href="https://stable-learn.com/en/immersive-translate-2025-security-incident/">形同公開</a><br />
+如果翻譯重要文件、網頁，用 Google 都查得到喔！</li>
+</ul>
+</li>
+<li>曾想限制第三方 API，強制用戶都用他們的服務<br />
+社群諷刺此舉是故意收割 API 金鑰，然後再說不能用<br />
+太過依賴單一產品，就得承擔「養 → 套 → 殺」風險<br />
+養：先開放給你用，免費、自由度高<br />
+套：用戶固著，不容易隨便棄船<br />
+殺：收割行為，例如收費、限縮權益、置入討厭的功能 (但能賺錢)<br />
+<em># 順帶一提，養套殺方面 Google、Meta 和微軟可是行家</em></li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>給開發者：<br />
+沉浸式翻譯搞「假開源」，從<a href="https://github.com/FilipePS/Traduzir-paginas-web">別人的專案</a>建立分枝 (fork)，修改成<a href="https://github.com/immersive-translate/old-immersive-translate">初版</a><br />
+但初版程式碼已封存，沒意外不會再更新 (截稿時末次修改在 2 年前，只改了 readme)<br />
+新版的呢？<br />
+創了個<a href="https://github.com/immersive-translate/immersive-translate">新倉庫</a>，裡面卻只有文件和版型，根本空殼</p>
+<hr />
+<p>更重要的是，設立在哪國就適用該國法律<br />
+中國有多條法令，能讓政府向企業索取資料 (詳見我<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-translator/./chinese-service-risk.md">另一篇</a>簡介)<br />
+何況兩岸關係微妙，對岸政權動機充分</p>
+<h4 id="grammarly">Grammarly</h4>
+<p><img src="https://media.tenor.com/wDaTHbaIeogAAAAC/spelling.gif" alt="Grammarly ad gif" /><br />
+你可能看過這個廣告，它就是 Grammarly<br />
+用途是修改文法、給寫作建議<br />
+由三位烏克蘭人創辦，後在美國成立公司，因此算<strong>美國企業</strong><br />
+軟體架在 AWS (亞馬遜雲端)上，資料也是<br />
+鑑於閉源，只能透過 Grammarly <a href="https://www.grammarly.com/privacy-policy-november-2024">隱私政策</a>一探究竟：<br />
+身為文法檢查軟體，當然會蒐集寫作資料<br />
+幾乎只要是你打的內容，都會被記錄<br />
+因此社群有<a href="https://news.ycombinator.com/item?id=30470457">不少人說</a>，Grammarly 是<a href="https://www.reddit.com/r/privacy/comments/toskoq/grammarly_is_a_keylogger/">鍵盤側錄器</a> (<a href="https://medium.com/@Anthony-Lam/grammarly-might-be-the-most-polite-keylogger-ever-made-05027b4c54d1">keylogger</a>)<br />
+Email 內文、主旨、收件人、Slack 頻道名稱等項目，也會收集<br />
+使用者的互動內容，預設拿去練 AI 模型、改進產品 (歐盟、英國用戶除外)<br />
+資料「一年內」去識別化，之後最長留存「 13 個月」，實在太久<br />
+Cookie 和個資，會與廣告夥伴合作使用<br />
+<em># I.e. 拿你的資料推廣告，有沒有很眼熟啊 (Google、Meta)？</em><br />
+也因為追蹤功能，常跳出<a href="https://100mediaflow.com/article/3751">過多</a>視窗、建議<br />
+佔據大量資源，拖慢電腦效能<br />
+閉源美企，隱私政策也不友善，就換掉吧！</p>
+<h3 id="ti-dai-xuan-xiang">替代選項</h3>
+<h4 id="lingva-translate"><a href="https://lingva.ml/">Lingva Translate</a></h4>
+<p><del>凌華翻譯</del> (沒人那樣叫)，是社群發起的<a href="https://github.com/thedaviddelta/lingva-translate">開源</a>、非營利專案<br />
+<em># Lingva 自己翻成「語言翻譯」，因 Lingua 是拉丁文「語言」之意</em><br />
+<a href="https://github.com/thedaviddelta">主要開發者</a>多為<a href="https://github.com/thedaviddelta/lingva-translate/graphs/contributors">歐洲人</a>，重視開源和隱私<br />
+原理是提供中間層，代替用戶訪問 Google 翻譯、再回傳翻譯結果<br />
+Lingva 不蒐集機敏個資，也不將之傳給 Google<br />
+本質上形同 Google 翻譯，但多了隱私保障<br />
+<em># 稱為<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-translator/./deGoogle-search-engine.md">隱私代理伺服</a>：敵國很可怕，但信使幫你跑這趟</em><br />
+代理伺服器可自架，也有<a href="https://lingva.ml/">官方</a>、<a href="https://github.com/thedaviddelta/lingva-translate?tab=readme-ov-file#instances">志願者</a>的服務<br />
+缺點：</p>
+<ul>
+<li>依賴 Google 翻譯，內文仍會被 Google 看到<br />
+<em># 使者替你犯險，但還是得讓對方讀信，不然怎麼回覆？</em></li>
+<li>翻譯品質就是 Google 翻譯水準 <del>(啊它就 Google 翻譯，不然你想怎樣？)</del></li>
+</ul>
+<p>習慣用 Google 翻譯的人，可以無痛轉換<br />
+至少拿點隱私回來，又不會犧牲太多體驗</p>
+<h4 id="libretranslate"><a href="https://libretranslate.com/">LibreTranslate</a></h4>
+<p>社群自主開發的專案，靠 <a href="https://github.com/argosopentech/argos-translate/">Argos Translate</a> 引擎驅動，非營利<br />
+LibreTranslate 自己翻成「自由翻譯」，「Libre-」前綴是拉丁文的「自由」<br />
+靠機器學習模型翻譯，但用的是開源、自架的模型<br />
+能翻譯文字、檔案，也可<a href="https://portal.libretranslate.com/">訂閱</a>獲得 API 金鑰<br />
+伺服器可<a href="https://github.com/LibreTranslate/LibreTranslate">自架</a>、也有<a href="https://libretranslate.com/">官方服務</a>，要包自己的 API 服務也行<br />
+幾乎可說是「人人能架設的翻譯服務」<br />
+缺點：</p>
+<ul>
+<li>尚待發掘，歡迎讀者補充</li>
+</ul>
+<p>介面簡潔乾淨，也很直觀，不妨試試</p>
+<h4 id="simplytranslate"><a href="https://simplytranslate.org/">SimplyTranslate</a></h4>
+<p>直翻「簡單翻譯」，同樣是<a href="https://codeberg.org/ManeraKai/simplytranslate">社群</a>非營利專案<br />
+其為隱私前端，連接至 Google 翻譯 (和 Lingva 類似)<br />
+<em># 已可改選 iCIBA、Reverso 翻譯引擎</em><br />
+<a href="https://f-droid.org/packages/com.simplytranslate_mobile/">應用程式</a>只有 Android 版，網頁版則瀏覽器都能訪問<br />
+缺點：</p>
+<ul>
+<li>頁面設計較舊，方便性不若其他選擇</li>
+<li>App 只有 Android 版</li>
+<li>仍依賴 Google (或其他第三方翻譯)</li>
+</ul>
+<p>適合原本有裝 Google 翻譯的 Android 用戶</p>
+<h4 id="linguist"><a href="https://linguister.io/">Linguist</a></h4>
+<p>社群創立的<a href="https://github.com/translate-tools/linguist">開源專案</a>，主要作者之一是賽普勒斯人<br />
+Linguist 為瀏覽器外掛，提供「離線翻譯」功能<br />
+也支援 ChatGPT、DeepL、Yandex 等翻譯服務，但就非離線<br />
+<em># 線上服務的缺點，就是第三方會拿到你翻譯的內容</em><br />
+本地翻譯使用「香檸翻譯器 (<a href="https://github.com/browsermt/bergamot-translator">bergamot-translator</a>)」，同樣開源<br />
+<em># 好處是資料只經過你的電腦，沒外人會看到</em><br />
+如果是開發者，也能架個 LibreTranslate 提供 API 給 Linguist 用<br />
+功能很全面，可翻譯：</p>
+<ul>
+<li>輸入的內容</li>
+<li>整個網頁</li>
+<li>反白文字</li>
+<li>Netflix 字幕</li>
+<li>私人訊息</li>
+<li>...<br />
+亦可儲存個人字典、唸出譯文</li>
+</ul>
+<p>缺點：</p>
+<ul>
+<li>若選第三方服務，仍會交出資料 (但那是用戶自己選的，嚴格來說不算缺點？)</li>
+<li>僅支援 <a href="https://chromewebstore.google.com/detail/linguist-web-page-transla/gbefmodhlophhakmoecijeppjblibmie">Chrome</a>、<a href="https://addons.mozilla.org/en-GB/firefox/addon/linguist-translator/">Firefox</a> 外掛商店，Safari 無福消受</li>
+</ul>
+<p>定位像「開源版的沉浸式翻譯」，但不局限於中文 (支援 130 種語言)</p>
+<h4 id="harper"><a href="https://writewithharper.com/">Harper</a></h4>
+<p><a href="https://elijahpotter.dev/">社群開發者</a>做的文法檢查工具，主打<a href="https://github.com/automattic/harper">開源</a>、重隱私 (本地運作)、高效能<br />
+可完全離線運作，資料不離開你的電腦<br />
+由 Rust 編寫，執行效率極高<br />
+類似 Grammarly，但更快、更輕量、更保障隱私<br />
+本身以外掛形式推出，兼容於許多軟體<br />
+<a href="https://addons.mozilla.org/en-US/firefox/addon/private-grammar-checker-harper/">Firefox</a>、<a href="https://chromewebstore.google.com/detail/private-grammar-checker-h/lodbfhdipoipcjmlebjbgmmgekckhpfb">Chrome</a> 商店、<a href="https://marketplace.visualstudio.com/items?itemName=elijah-potter.harper">VS code</a> (程式開發工具)、Obsidian 都能用<br />
+缺點：</p>
+<ul>
+<li>現為美國公司 <a href="https://github.com/Automattic">Automattic</a> 所有 (專案被收購後，作者也加入該公司)<br />
+Automattic 創辦人之一，也建立了 <a href="https://wordpress.org/">WordPress</a>、並構築周圍生態系<br />
+<em># WordPress 是知名開源部落格工具</em><br />
+鑑於 Harper 開源、離線運作，該公司也尚無隱私爭議，仍值得推薦</li>
+</ul>
+<h4 id="languagetool"><a href="https://languagetool.org/">LanguageTool</a></h4>
+<p>直翻為「語言工具」，可協助文法、拼字檢查，和文章改寫<br />
+<em># 類似 Grammarly 或 DeepL Write</em><br />
+有官方網站服務，和支援各種軟體的外掛<br />
+例如<a href="https://addons.mozilla.org/en-GB/firefox/addon/languagetool/">瀏覽器</a>、<a href="https://languagetool.org/insights/post/product-libreoffice/#how-to-enable-languagetool-on-libreoffice">Office</a>、<a href="https://languagetool.org/thunderbird">Email</a>、<a href="https://apps.apple.com/us/app/languagetool-grammar-checker/id1534275760">iOS app</a>，以及<a href="https://languagetool.org/mac-desktop">桌面版</a><br />
+免費版即享多數服務，也可付費訂閱</p>
+<hr />
+<p>公司背景：<br />
+德國計算語言學者所創，公司設立於德國漢堡<br />
+因在歐盟境內，適用歐盟隱私法規<br />
+2023 年初被<strong>美國</strong>公司 Learneo 收購，法定資料主體也在同年底移替<br />
+Learneo 併購後，仍維持 LanguageTool 的開源性，且號稱不會拿用戶資料練 AI 模型<br />
+不過 Learneo 前身 Course Hero，曾出過<a href="https://www.insidehighered.com/news/2022/02/15/course-hero-contends-student-privacy-concerns">隱私爭議</a><br />
+<em># 鼓勵學生上傳機敏內容，以獲得免費獎勵。但移除流程、授權條款不友善</em></p>
+<ul>
+<li>偵錯、記錄工具和許多第三方<a href="https://assets.coursehero.com/privacy-policies/privacy_policy_master.html">合作</a>，包括 FullStory、Amplitude 和<strong>微軟</strong> Clarity<br />
+可能蒐集 IP、裝置資訊、互動行為與按鍵記錄<br />
+雖侵入性，但至少做到透明、揭露</li>
+<li>改寫功能與模型供應商合作，例如 OpenAI、Aleph Alpha</li>
+<li>雲端用 Cloudflare、AWS、Google Cloud</li>
+</ul>
+<hr />
+<p>缺點：</p>
+<ul>
+<li>美國公司擁有</li>
+<li>改寫功能合作企業，對隱私很不友善 (e.g. OpenAI)</li>
+<li>速度較 Harper 慢、所需資源較多<br />
+<a href="https://writewithharper.com/">Harper</a> 說法，速度差距 50 倍以上 (但都比 Grammarly 快)</li>
+<li>自行架設的社群版，幾乎只有免費功能<br />
+畢竟他們想要你付錢哪！</li>
+<li>網頁很繚亂</li>
+</ul>
+<hr />
+<h3 id="deepl"><a href="https://www.deepl.com/en/translator">DeepL</a>？</h3>
+<p>DeepL 前身是 Linguee 字典服務，累積許多高品質資料<br />
+後來訓練了人工神經網路 (AI 模型)，提供優質翻譯<br />
+2017 年改名為 DeepL，成為專業翻譯知名品牌<br />
+旗下有：</p>
+<ul>
+<li><a href="https://www.deepl.com/en/translator">DeepL Translator</a> (翻譯)<br />
+類似 Google 翻譯，但品質好很多，還能<a href="https://www.deepl.com/en/translator/files">翻譯檔案</a></li>
+<li><a href="https://www.deepl.com/en/write">DeepL Write</a> (改寫工具)<br />
+用於檢查文法錯誤、提供修訂建議<br />
+亦可改善文風、措辭語氣，讓內容更道地<br />
+品質非常高，甚至可用於論文、商業文書撰寫</li>
+<li><a href="https://www.deepl.com/en/products/voice">DeepL Voice</a> (語音處理)<br />
+即時語音翻譯，或為語音產字幕</li>
+</ul>
+<p>有網頁服務、瀏覽器外掛、Office 整合等<br />
+亦提供 API，對開發者算友善<br />
+雖為付費服務，但也有免費版<br />
+對散戶來說，免費版就很夠用</p>
+<p>那為什麼不推薦呢？</p>
+<p>DeepL 付費版<a href="https://www.deepl.com/en/pro-data-security">遵守歐盟 GDPR</a>，資料僅存於記憶體、客戶端，且不用於模型訓練<br />
+翻譯完成即刪除資料，不永久儲存<br />
+<em># 通過 ISO/IEC 27001 與 SOC 2 Type II，也合規於 HIPAA (可進美國醫療場域)</em><br />
+伺服器主要部署在歐洲、傳輸有 TLS 加密，防止第三方竊取</p>
+<p>！！！但是！！！</p>
+<p>免費版的互動資料，會被用於改善服務、訓練模型<br />
+雖匿名化蒐集，依舊不適合上傳機敏資訊<br />
+<strong>那些美妙的個資保護，是付費用戶 (DeepL PRO)才有的福利</strong><br />
+<em># 但對免費戶的隱私政策，仍比 Google 翻譯友善得多</em><br />
+且 DeepL <strong>非開源</strong>，無法審視原始碼<br />
+不能檢查，如何相信他們的承諾呢？</p>
+<hr />
+<h3 id="lan-ren-bao">懶人包</h3>
+<ul>
+<li>Google 翻譯愛好者 (有這種人？)：
+<ul>
+<li>習慣至特定網站翻譯 → <a href="https://libretranslate.com/">LibreTranslate</a> / <a href="https://lingva.ml/">Lingva Translate</a></li>
+<li>想下載手機應用程式 → <a href="https://simplytranslate.org/">SimplyTranslate</a><br />
+<em># 只有 Android 版</em><br />
+<em># 若身為開發者，不妨自架伺服器</em></li>
+</ul>
+</li>
+<li>開發者，有翻譯 API 需求 → <a href="https://libretranslate.com/">LibreTranslate</a></li>
+<li>想替換「沉浸式翻譯」外掛 → <a href="https://linguister.io/">Linguist</a><br />
+Linguist 亦可自架翻譯服務，或完全本地運作</li>
+<li>想替換 Grammarly 者 → <a href="https://writewithharper.com/">Harper</a> / <a href="https://languagetool.org/">LanguageTool</a></li>
+<li>開發者，會在 IDE 寫文件 → <a href="https://writewithharper.com/">Harper</a></li>
+<li><del>盤子、傻子</del>不排斥付費、閉源產品者 → <a href="https://www.deepl.com/en/pro">DeepL <strong>PRO</strong></a><br />
+<em># 沒訂閱的話，資料一樣會被拿去練 AI 唷！</em></li>
+</ul>
+<hr />
+<p>若「Google 翻譯」在你瀏覽器書籤裡，可以現在就換掉它</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="degoogle-liang-bu-zou-yan-zheng-qi">deGoogle - 兩步驟驗證器</h1>
+<blockquote>
+<p>兩步驟驗證好煩，密碼打對了還要被擋</p>
+</blockquote>
+<p>好奇為什麼設計此擾人機制嗎？</p>
+<h3 id="liang-bu-zou-yan-zheng">兩步驟驗證</h3>
+<h4 id="na-shi-shen-mo-gui">那是什麼鬼？</h4>
+<p>兩步驟驗證 (2-step <del><a href="https://www.youtube.com/channel/UC3swwxiALG5c0Tvom83tPGg">from the hell</a></del> verification) = 雙因素驗證 (2-factor authentication)<br />
+指「需要過兩關才能登入」，通常是密碼和簡訊 / app / 認證信等<br />
+雖然有點麻煩，但其為安全而生<br />
+設想以下情境：<br />
+電郵地址通常是公開資訊，被人知道不奇怪<br />
+而你貪圖方便，用懶人密碼<code>P@ssw0rd</code><br />
+某天駭客對郵件服務施展「密碼噴灑 (password spray)」，企圖竊取使用者身份<br />
+「密碼噴灑」指嘗試用同一組密碼，對多個帳號進行登入<br />
+通常密碼是外流、或常用的懶人款<br />
+如果大眾都設懶人密碼，一次噴灑能獲得的帳號就很可觀<br />
+重點是只嘗試一次，所以「三次失敗就鎖帳」機制擋不住<br />
+於是，駭客輕鬆取得你的郵件，改個密碼你就無法登入了</p>
+<p>兩步驟驗證，能幫上什麼忙呢？</p>
+<p>假設你有開啟 2FA，駭客就會被擋在第二道門外<br />
+當他用<strong>正確帳密</strong>登入，系統便跳出「請輸入 app 上顯示的 6 位數字」<br />
+結果綁定的 app 在你手機裡，他什麼事也做不了<br />
+<em># 除非你手機被偷</em><br />
+好的服務還會寄信通知你，有人嘗試登入帳戶<br />
+你可以改密碼、檢查問題、變換登入方式...<br />
+兩步驟驗證，對資安有莫大助益</p>
+<hr />
+<p>資安人士的苦衷：<br />
+沒出事大眾總嫌麻煩，出事又怪系統不安全<br />
+幫幫忙好嗎？<br />
+疫苗不打、口罩不帶、衛生不顧，危險的事 (e.g. 重複、懶人密碼)一直做<br />
+被感染又怪衛生單位沒做事，到底誰的問題？</p>
+<hr />
+<p>兩步驟驗證常見做法，有簡訊認證碼、email 驗證信<br />
+還有本次主角 - 應用程式一次性密碼 (One-Time Password, OTP)<br />
+OTP 又分基於時間 (Time-based OTP, TOTP)、或雜湊函數 (Hash-based OTP, HOTP)</p>
+<h4 id="totp">TOTP</h4>
+<p>原理：<br />
+雙方先綁定時間戳記、約定密鑰，之後就可以離線<br />
+每次登入時，系統基於當下時間 + 演算法，變換鎖孔形狀 (改變認證碼)<br />
+神奇的是，鑰匙也會同步更新形狀，因為時間戳記和密鑰早就綁定了<br />
+<em># 有點像「雙方約好調整鎖鑰」，且每秒用固定方式共同變換</em><br />
+除了當初綁定者，其他人無法得知鎖鑰狀態<br />
+尤其認證碼多半「每 30 秒」、「每分鐘」自動更換，非法入侵難度高</p>
+<h4 id="hotp">HOTP</h4>
+<p>嗯，得先解釋雜湊 (Hash)</p>
+<hr />
+<p>雜湊簡單解釋 (其實不太簡單)：<br />
+雜湊函數 (Hash function)是一類演算法，可將各種輸入轉成「固定長度」的輸出<br />
+輸出稱為雜湊值 (hash value / hash)、摘要 (digest)、或雜湊碼 (hash code)<br />
+因安全性高，常用於密碼轉換、儲存<br />
+雜湊具以下特性：</p>
+<ul>
+<li>不論輸入多長，輸出長度都一樣<br />
+每個人密碼長度不同，但都用同樣 Hash 長度儲存<br />
+I.e. 無法從雜湊長度推測密碼位數，保護長度資訊</li>
+<li>快速計算<br />
+任何輸入都能高效產生雜湊值，避免運算時間暴露輸入性質<br />
+I.e. 密碼多長、多複雜，運算時間都差不多，保護密碼長度、複雜性</li>
+<li>抗碰撞性 (Collision resistance)<br />
+「兩種輸入產生同樣輸出」非常困難，通常以「機率極低」當標準<br />
+和安全性較無關，只是避免撞號<br />
+<em># 此處「碰撞」可理解成「撞衫」，不同人碰巧用到一樣的值</em></li>
+<li>抗篡改 / 微調 (又稱雪崩效應，Avalanche effect)<br />
+輸入稍改，輸出就會巨幅改變，如雪崩一般<br />
+I.e. 無法每次微調一點，觀察輸出變化來破解</li>
+<li>抗預像性 (Preimage resistance)<br />
+難以用雜湊值回推密碼，運算過程不可逆<br />
+I.e. 駭客取得雜湊值，也推不出你的密碼</li>
+</ul>
+<p>雖然身為函數，像是 h(x) = y<br />
+不過雜湊函數很複雜，不是隨便手算可破解的<br />
+<em># 如果你手算破解了主流 Hash 演算法，請聯繫<a href="https://abelprize.no/">阿貝爾獎</a> (Abel prize)</em><br />
+只要使用高強度密碼，暴力破解就會<a href="https://specopssoft.com/blog/sha256-hashing-password-cracking/">曠日費時</a><br />
+<em># 如 12 位數大小寫字母 + 數字 + 特殊符號，用 RTX 4090 得花近 20 <strong>萬</strong>年破解</em><br />
+鑑於高度安全性，Hash 幾乎被所有需要密碼的服務採用<br />
+機構只儲存 Hash value，密碼留在用戶手上</p>
+<hr />
+<p>HOTP 以雜湊為基礎，用「遞增計數」變換驗證碼<br />
+雙方先約定密鑰，並共享計數器<br />
+每次使用計數器就 + 1，演算後鎖孔、鑰匙跟著協變<br />
+意思是，每次開鎖都會改變鎖鑰，適合用在手動觸發的情況<br />
+<em># 例如 API 驗證，開發者可能比較有感</em></p>
+<br/>  
+<p>知道那些要幹嘛？</p>
+<br/>  
+<p>手機應用程式，能用來綁定 TOTP、HOTP<br />
+多半本地儲存，資料不離手機<br />
+有些會提供雲端備份，但加密與否各家殊異<br />
+常見選擇有 Google、微軟 Authenticator，或 Twilio Authy<br />
+知道我要說什麼了吧？<br />
+沒錯，換掉那些東西！</p>
+<h3 id="tu-lai-luo">圖來囉！</h3>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-authenticator/./assets/deGoogle/deGoogle-authenticator.png" alt="deGoogle authenticator" /><br />
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup><br />
+<sup>non-profit 指就該品相而言，「不以營利為目的」</sup><br />
+<sup>e2ee syncing 指「提供端對端加密備份方式」</sup></p>
+<h3 id="qian-huan-ming-dan">欠換名單</h3>
+<h4 id="google-authenticator">Google Authenticator</h4>
+<p>不意外，先從 Google 開刀<br />
+Google 驗證器從前無備份機制，所以手機壞掉、弄丟，就完蛋了<br />
+<em># 綁定的服務都會無法登入</em><br />
+2023 年<a href="https://security.googleblog.com/2023/04/google-authenticator-now-supports.html">推出</a>雲端備份，登入 Google 就能同步各裝置、備份密鑰<br />
+然而同年有研究員<a href="https://www.scworld.com/news/google-authenticators-syncing-security-concerns">指出</a>，Google 備份<strong>未</strong>端對端加密<br />
+換句話說，官方<strong>能看到你的密鑰</strong><br />
+Google 收到輿論壓力後<a href="https://www.malwarebytes.com/blog/news/2023/05/google-will-eventually-add-end-to-end-encryption-to-google-authenticator">表示</a>，端對端加密在計劃中，準備好就會加上</p>
+<p>猜猜怎麼著？<br />
+他們加了嗎？</p>
+<p>沒有！<br />
+2023-2025，至截稿前都沒端對端加密<br />
+這技術很難？<br />
+才怪！有公版能照著走、也已有開源實作能參考，最好兩年做不出來<br />
+Google 身為全球頂尖軟體公司，遲遲沒下文只有一個可能 -
+<strong>不想做</strong>，說不定還賭用戶們忘記此事了<br />
+風頭一過就裝傻充愣，資料到手再說<br />
+而且想用雲端備份，就得辦 Google 帳戶<br />
+別忘記在 Google 生態系中，就算你選擇「關閉追蹤」，個資照樣被偷<br />
+<em># 今年 (2025)美國、法國才都<a href="https://www.computerworld.com/article/4051435/google-hit-with-806m-in-penalties-from-us-and-french-authorities-over-privacy-issues.html">罰過</a>，熱騰騰的<strong>八億美金</strong>呢！</em><br />
+驗證器<a href="https://sites.google.com/view/authenticator-privacy-policy/">隱私政策</a>又說明，蒐集超多個資、Metadata：</p>
+<ul>
+<li>IP</li>
+<li>Email</li>
+<li>地區</li>
+<li>SIM 卡綁定的地區</li>
+<li>每次使用的時間</li>
+<li><strong>廣告識別資料</strong></li>
+</ul>
+<p>除了優化服務，也明言會用於<strong>個人化廣告</strong>喔！</p>
+<p>如此危險，能不換嗎？</p>
+<h4 id="microsoft-authenticator">Microsoft Authenticator</h4>
+<p>微軟也不遑多讓，官方<a href="https://support.microsoft.com/en-us/account-billing/microsoft-authenticator-faqs-12d283d1-bcef-4875-9ae5-ac360e2945dd#:~:text=Authenticator%20collects%20your%20GPS%20information,to%20access%20the%20protected%20resource.">明講</a>會蒐集：</p>
+<ul>
+<li>GPS 地理位置</li>
+<li>微軟帳號資訊 (若你要備份)<br />
+<em># 雲端備份<strong>無</strong>端對端加密 (<a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/how-it-works-backup-and-restore-for-microsoft-authenticator/1006678">微軟能打開</a>、看到內容)</em></li>
+<li>生物辨識資訊 (如果用臉、指紋登入)</li>
+</ul>
+<p>個資除了優化服務，同樣也<a href="https://www.microsoft.com/en-us/privacy/privacystatement">用於</a>推薦產品、<strong>個人化廣告</strong><br />
+更噁心的是微軟拿手絕活 - 綑綁行銷<br />
+許多微軟服務如 Azure，<a href="https://learn.microsoft.com/en-us/answers/questions/5253276/i-am-being-forced-to-install-the-ms-authenticator">要求</a>用戶使用微軟驗證器<br />
+或許能用他牌軟體，但預設指引是微軟 (有多少人會去查呢？)<br />
+很遺憾，不少深陷微軟體系的<a href="https://discuss.privacyguides.net/t/work-is-requiring-me-to-install-miscrosoft-authenticator/14769">公司</a>，會<a href="https://www.reddit.com/r/privacy/comments/17vvaey/work_is_requiring_me_to_install_microsoft/">規定</a>員工得用那些東西<br />
+理論上因工所需，公司應提供「工作機」給你裝個資盜竊軟體<br />
+個人手機應保持乾淨、安全，所以碰到這類情況請堅守立場<br />
+要馬拒絕安裝，要馬索取工作機<br />
+外國論壇都是一片倒，公司得提供手機或給予補償<br />
+這才是正當應對，千萬別奴到交出權益！</p>
+<h4 id="twilio-authy">Twilio Authy</h4>
+<p>Twilio 是美國公司，2015 年收購 Authy (兩步驟驗證軟體)<br />
+雲端備份<strong>有</strong>端對端加密，且免費使用<br />
+<em># 每月有免費額度，超過要按次計費</em></p>
+<p>聽起來不錯，為什麼要換呢？</p>
+<p>首先，非全免費、不開源<br />
+再者，<strong>安全性不足</strong><br />
+而且，個資會用於<a href="https://www.twilio.com/en-us/legal/privacy">廣告推送</a><br />
+不開源、廣告問題顯而易見<br />
+安全性不足，則可從過往歷史推知：</p>
+<hr />
+<p>2022 年被駭客攻擊，<a href="https://www.twcert.org.tw/tw/cp-104-6471-26455-1.html">部分帳號被竊取</a><br />
+2024 年又被攻擊，用戶<a href="https://thehackernews.com/2024/07/twilios-authy-app-breach-exposes.html">個資外流</a>，包括<a href="https://www.securityweek.com/twilio-confirms-data-breach-after-hackers-leak-33m-authy-user-phone-numbers/">三千三百萬人的門號</a></p>
+<hr />
+<p>非開源的壞處，就是公正第三方無從審核<br />
+宣稱安全、自詡隱私，只要沒被審查都能吹牛<br />
+漏洞也無法預先察覺，被駭客滲透了才知道<br />
+這也正好印證，資安、隱私的準則 - 不該拿的資料就別拿<br />
+若未蒐集手機號碼、Email 等個資，就不會被偷</p>
+<h4 id="ravio-otp">Ravio OTP</h4>
+<p>有在關注開源的人，應該會驚呼：「等等，那不是開源 iOS OTP 軟體嗎！？」<br />
+抱歉，<strong>不再</strong>是了<br />
+2023 年，法國公司 Mobime 買下開源專案 Ravio OTP<br />
+調整<a href="https://github.com/raivo-otp/ios-application/blob/master/LICENSE.md">授權規範</a>，僅「公開程式碼」而不「開源」<br />
+且一次更新<a href="https://www.reddit.com/r/privacy/comments/1dcr5zn/raivo_otp_is_now_deleting_data_and_asking_for/">刪光用戶資料</a>，付費才能取回 (根本勒索軟體)<br />
+之後備份、匯出都要<a href="https://www.reddit.com/r/privacy/comments/1d3ha4f/raivootp_do_not_update/">訂閱</a>，已完全商業化<br />
+<em># <a href="https://discuss.techlore.tech/t/i-lost-my-raivo-otp-passwords/8755">社群解方</a>是先備份資料、再更新軟體；終極做法當然是<strong>換掉</strong>！</em><br />
+夠爛了嗎？<br />
+還沒完，最惡劣的是<strong>誤導行銷</strong><br />
+上述內容可知，Ravio OTP 早已商業化、非開源<br />
+但<a href="https://raivo-otp.com/">官網</a>迄今仍自稱「非商業」、「開源」<br />
+<img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-authenticator/./assets/ref_images/ravio-commercial-scam.png" alt="Ravio OTP self-claimed non-commercial" /><br />
+<img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-authenticator/./assets/ref_images/ravio-open-scam.png" alt="Ravio OTP self-claimed as an OSS" /><br />
+程式碼倉庫<a href="https://github.com/raivo-otp/ios-application?tab=readme-ov-file">宣稱</a>不蒐集個資，但 Mobime <a href="https://mobime.org/privacy/">隱私政策</a>說使用 Facebook、Google AdMod<br />
+<em># 個人化廣告追蹤器，會蒐集 IP 等資訊</em><br />
+問題頗大，不換不行</p>
+<hr />
+<h3 id="ti-dai-pin-men">替代品們</h3>
+<h4 id="2fas"><a href="https://2fas.com/auth/">2FAS</a></h4>
+<p>創立者為<a href="https://www.linkedin.com/in/marcbpunk/">美國人</a>，不過比較像社群專案<br />
+主要貢獻者是<a href="https://github.com/GrzegorzZajac000">波蘭人</a>，其餘成員<a href="https://2fas.com/about-us/">來自各地</a><br />
+免費、開源、資料存於地端 (e.g. 你手機)，無雲端伺服器<br />
+<em># 沒伺服器就不會拿資料</em><br />
+提供端對端加密備份，備份雲端依裝置而定<br />
+iPhone 預設用 iCloud，Android 則是 Google Drive<br />
+因為有加密，Google 和蘋果看不到內容 (當然，你也可以不備份)<br />
+可設定生物辨識解鎖，增加方便性<br />
+使用毋需帳號，不必信任特定機構<br />
+匯入 / 匯出功能完善，可無痛從 Google 或 Twilio Authy 轉來、轉走<br />
+還有出瀏覽器外掛，和手機 app 同步就不必手打驗證碼<br />
+商業模式來自贊助，認同理念的話不妨打賞</p>
+<p>缺點：</p>
+<ul>
+<li>新版非立刻開源<br />
+官方<a href="https://raw.githubusercontent.com/twofas/2fas-pass-android/main/LICENSE-FAQ.md">授權</a>寫明，推出後是「原始碼公開」，商用須申請<br />
+每版兩年後，才<a href="https://raw.githubusercontent.com/twofas/2fas-pass-android/main/LICENSE">自動流用</a> GPL 3.0 (開源)</li>
+</ul>
+<p>支援 TOTP、HOTP，想要的功能基本上都有</p>
+<h4 id="freeotp"><a href="https://freeotp.github.io/">FreeOTP</a></h4>
+<p>顧名思義，免費的 OTP 驗證軟體<br />
+<em># HOTP 和 TOTP 都支援</em><br />
+<a href="https://f-droid.org/packages/org.fedorahosted.freeotp/">Android</a> 和 <a href="https://apps.apple.com/us/app/freeotp-authenticator/id872559395">iOS</a> 皆可取得，完全離線使用<br />
+由紅帽 (<a href="https://www.redhat.com/">Red Hat</a>) 公司贊助開發，會長期、穩定維護<br />
+<em># 你沒看錯，此紅帽即 Red Hat Linux 那家公司</em><br />
+身為開源產品推動者，紅帽<a href="https://www.redhat.com/en/blog/identity-management-and-two-factor-authentication-using-one-time-passwords">不想走上</a> Google 閉源道路<br />
+於是贊助 FreeOTP 開發，旨在提供「免費」、「開源」、「跨平台」的選擇<br />
+不蒐集任何個資、不需帳號，也不會連線到伺服器<br />
+支援多數主流服務，可透過 QR code 或手動將 token 加入<br />
+<em># 白話文：可以掃碼或打字串綁定 2FA</em><br />
+雖然紅帽是營利企業，但此專案屬非營利性質</p>
+<p>缺點：</p>
+<ul>
+<li>紅帽為美國公司，近期有重大爭議<br />
+Linux 是開源專案，但 Red Hat <a href="https://arstechnica.com/information-technology/2023/06/red-hats-new-source-code-policy-and-the-intense-pushback-explained/">限制</a>大眾查看紅帽 Linux (RHEL)原始碼<br />
+此舉有悖開源初衷，下游開源版 CentOS 甚至<a href="https://www.redhat.com/en/topics/linux/centos-linux-eol">被終止</a><br />
+GPL 授權僅規範「取得二進制檔案者須可檢視原始碼」，非所有人<br />
+紅帽的做法是：訂閱戶可看原始碼，但「重新分發」就會終止合約<br />
+意思是，付錢才能看程式碼，一旦你要重製 (開源核心價值)就終止授權<br />
+若終止你還分發，則屬違法侵權<br />
+<em># 很會鑽漏洞吧？法務堪比甲骨文公司</em><br />
+這種做法違反開源精神，因此招來社群反彈<br />
+誰知道哪天，Red Hat 會不會對 FreeOTP 如法炮製呢？</li>
+<li>介面有點「復古」，至於美醜因人而異</li>
+<li>社群回報備份功能異常，似乎尚未修復<br />
+如果你沒備份需求，就不影響</li>
+</ul>
+<h4 id="authman"><a href="https://authman.simular.co/">Authman</a></h4>
+<p>台灣公司夏木樂 (Simular)所開發，隸屬百岳國際集團<br />
+開源、免費、跨平台的 OTP 軟體，可用於 TOTP 驗證<br />
+<em># Android、iOS、Window 和 Mac 都能用</em><br />
+可自選備份雲端，或用官方伺服器<br />
+備份前資訊會先加密，伺服器看不到明碼<br />
+<em># I.e. 端對端加密</em><br />
+高度可客製化，字體、縮圖都能改<br />
+同樣能輕鬆匯入 / 匯出 token，不綁死生態系<br />
+官方說：</p>
+<blockquote>
+<p>Authman is open, just export tokens for any purpose you want</p>
+</blockquote>
+<p>算有良心吧？<br />
+也可用生物辨識解鎖，生物特徵僅存於本地</p>
+<p>缺點：</p>
+<ul>
+<li>須辦帳號</li>
+<li>幾乎形同沒文件，對開發者不友善</li>
+<li>疑似不支援 Linux</li>
+</ul>
+<p>無明顯商業模式，推測可能是內部使用<br />
+只不過寫都寫了，就放開源給大眾共享</p>
+<h4 id="proton-authenticator"><a href="https://proton.me/authenticator">Proton Authenticator</a></h4>
+<p>老面孔 Proton，台裔瑞士物理學家創立<br />
+開源、免費、跨平台，所有主流系統都能用<br />
+<em># Linux、Windows、Mac，手機 iOS、Android 皆可下載</em><br />
+不需帳號，支援 TOTP、HOTP<br />
+提供端對端加密備份、同步，不過此功能需 Proton 帳號<br />
+<em># 免費帳號就行，畢竟沒登入誰知道你哪位</em><br />
+可掃碼、手動綁定 OTP 服務，功能基礎但充足</p>
+<p>缺點：</p>
+<ul>
+<li>App 還很新，偶爾會有 bug、運作不穩定</li>
+</ul>
+<p>有趣的是， 明明已有 Proton Pass 能處理兩步驟驗證<br />
+他們還出 Proton Authenticator，引發社群好奇討論<br />
+此程式相對輕量，只有 2FA 相關功能<br />
+且不需訂閱 Proton，完全免費<br />
+<em># Proton 訂閱方案「不包含」此產品，所以本篇歸為<strong>非營利</strong></em></p>
+<h4 id="ente-auth"><a href="https://ente.io/auth/">Ente Auth</a></h4>
+<p>即 <a href="https://ente.io/">Ente Photo</a> 那家公司，背景可見<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-authenticator/./deGoogle-drive-and-album.md">這篇</a><br />
+支援各大主流平台，手機電腦都行<br />
+<em># <a href="https://f-droid.org/packages/io.ente.auth/">Android</a>、<a href="https://apps.apple.com/us/app/ente-auth-2fa-authenticator/id6444121398">iOS</a>、<a href="https://github.com/ente-io/ente/releases?q=tag%3Aauth-v4">Linux</a>、<a href="https://github.com/ente-io/ente/releases/download/auth-v4.4.4/ente-auth-v4.4.4.dmg">Mac</a>、<a href="https://github.com/ente-io/ente/releases/download/auth-v4.4.4/ente-auth-v4.4.4.dmg">Windows</a></em><br />
+免費、<a href="https://github.com/ente-io/ente">開源</a>、不需帳號，提供端對端加密的雲端備份<br />
+<em># 和 Proton Authenticator 一樣，雲端備份請辦帳號</em><br />
+此項目完全免費，無訂閱方案<br />
+所以儘管 Ente 是商業公司，Ente Auth 仍算非營利項目<br />
+Ente Auth 棲位與 Proton Authenticator 接近，但相對成熟<br />
+支援 TOTP、HTOP，功能穩定、程式碼也積極維護</p>
+<p>缺點：</p>
+<ul>
+<li>美國公司開發、維護<br />
+<em># 不過核心團隊、創辦者都是印度人</em></li>
+</ul>
+<p>Ente Auth 廣獲社群好評，對新手也很友善</p>
+<h4 id="aegis-authenticator"><a href="https://getaegis.app/">Aegis Authenticator</a></h4>
+<p>直翻神盾驗證器，支援 TOTP、HOTP<br />
+<a href="https://github.com/beemdevelopment">社群</a>發起的<a href="https://github.com/beemdevelopment/aegis">開源</a>專案，<a href="https://github.com/michaelschattgen">兩位</a>主要<a href="https://github.com/alexbakker">開發者</a>都是荷蘭人<br />
+可用生物辨識、密碼解鎖，也能自訂排序、圖示、有暗色主題<br />
+從各種服務匯入 / 匯出都相容，可匯出明文 / 加密資訊<br />
+掃碼、手動綁定服務都行，亦可開啟「專家模式」細緻調教</p>
+<p>缺點：</p>
+<ul>
+<li>僅在 Android 發行<br />
+Google Play、<a href="https://f-droid.org/packages/com.beemdevelopment.aegis/">F-Droid</a> 都能下載</li>
+</ul>
+<p>社群評價很高，Android 用戶發問幾乎都會被推薦 Aegis</p>
+<h4 id="stratum"><a href="https://stratumauth.com/">Stratum</a></h4>
+<p>層疊驗證器，免費、開源、社群發起<br />
+<em># <a href="https://jmh.me/">主要貢獻者</a>為法國人</em><br />
+從前叫 Authenticator Pro，不需帳號、能離線使用<br />
+支援 TOTP、HOTP 等，介面可客製化、有暗色模式<br />
+匯出 / 匯入容易，且先加密才轉出，讓你安全放到喜歡的雲端<br />
+<em># 官方未提供雲端，請自選<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-authenticator/./deGoogle-drive-and-album.md">適當服務</a>，謝謝</em><br />
+最特別之處，莫過於「穿戴式裝置相容」，是少數設計給穿戴裝置的驗證器</p>
+<p>缺點：</p>
+<ul>
+<li>僅在 Android 發行</li>
+</ul>
+<p>沒辦法，<em>某公司</em>就很愛鎖生態系</p>
+<hr />
+<h4 id="tofu"><a href="https://tofuauth.com/">Tofu</a></h4>
+<p>社群的<a href="https://github.com/iKenndac/Tofu?tab=readme-ov-file">開源</a>專案，免費、不需網路<br />
+看到「豆腐 (Tofu)」，就以為是華人功勞嗎？<br />
+不，<a href="https://github.com/calleluks">發起</a>、<a href="https://github.com/iKenndac">繼任者</a>都是瑞典人<br />
+免帳號、支援 TOTP、HOTP，基礎功能都有</p>
+<p>缺點：</p>
+<ul>
+<li>僅發行 iOS 版 (Android 好像也不缺這個？)</li>
+<li>備份只能靠 iOS 機制，如 iCloud、iTune / Finder 連至 Mac</li>
+</ul>
+<p>機密存於 iOS keychain，是好是壞就看你對蘋果的信任度囉！</p>
+<h4 id="mauth"><a href="https://github.com/X1nto/Mauth?tab=readme-ov-file">Mauth</a></h4>
+<p>官方說唸做「Moth」，是社群發起的開源專案<br />
+<em># 開發者喬治亞人，喬治亞尚未入歐盟，所以不算 EU alternative</em><br />
+<a href="https://github.com/X1nto/Mauth?tab=readme-ov-file#inspiration">作者說</a>既有產品介面不直觀，所以自己做一個<br />
+主打功能多、好看、隱私，支援 HOTP 和 TOTP<br />
+可用密碼或生物辨識解鎖，也能掃碼、手動、或輸入深度連結綁服務<br />
+<em># Deeplink 名字很炫，但其實只是「導向至特定頁面的超連結」</em><br />
+許多功能尚在開發中，上次維護是 7 個月前，可能要等很久</p>
+<p>缺點：</p>
+<ul>
+<li>僅有 <a href="https://f-droid.org/en/packages/com.xinto.mauth/">Android</a> 版</li>
+<li>文件更新落後，已有的功能沒全寫上去</li>
+</ul>
+<p>介面高度可客製化，能調成喜歡的樣子</p>
+<hr />
+<h3 id="jia-ma">加碼！</h3>
+<p>之前<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-authenticator/./deGoogle-pswd-manager.md">介紹過</a>密碼管理軟體，此時派上用場啦！<br />
+許多密碼管理軟體，也附帶 OTP 驗證功能<br />
+例如 <a href="https://keepassxc.org/">KeePassXC</a>、<a href="https://proton.me/pass">Proton Pass</a>、Bitwarden<br />
+<em># KeePass 系列都有</em><br />
+已入坑密碼管理器的，可直接使用</p>
+<hr />
+<h3 id="lan-ren-bao-zai-wo-shen-shang">懶人包<del>在我身上</del></h3>
+<p>同樣依照需求推薦：</p>
+<ul>
+<li>想要穩定、老牌服務 → <a href="https://freeotp.github.io/">FreeOTP</a> / <a href="https://2fas.com/auth/">2FAS</a></li>
+<li>喜歡一個服務用到底，最好各平台都支援：
+<ul>
+<li>不<del>爽</del>想辦帳號 → <a href="https://proton.me/authenticator">Proton Authenticator</a> / <a href="https://ente.io/auth/">Ente Auth</a></li>
+<li>可接受辦帳號 → <a href="https://authman.simular.co/">Authman</a></li>
+</ul>
+</li>
+<li>新手，什麼都不想懂，無腦入坑就好 → <a href="https://ente.io/auth/">Ente Auth</a> / <a href="https://proton.me/authenticator">Proton Authenticator</a></li>
+<li>想要完備服務：
+<ul>
+<li>Android 用戶 → <a href="https://getaegis.app/">Aegis Authenticator</a> / <a href="https://2fas.com/auth/">2FAS</a>
+<ul>
+<li>有穿戴裝置需求 → <a href="https://stratumauth.com/">Stratum</a></li>
+</ul>
+</li>
+<li>iOS 用戶 → <a href="https://2fas.com/auth/">2FAS</a></li>
+</ul>
+</li>
+<li>極簡主義者：
+<ul>
+<li>iOS → <a href="https://tofuauth.com/">Tofu</a></li>
+<li>Android → <a href="https://github.com/X1nto/Mauth?tab=readme-ov-file">Mauth</a></li>
+</ul>
+</li>
+<li>密碼管理軟體用戶：
+<ul>
+<li><a href="https://keepassxc.org/">KeePass</a> 系列 → 請繼續用</li>
+<li><a href="https://bitwarden.com/download/">Bitwarden</a> → 裝手機應用程式即可</li>
+<li><a href="https://proton.me/pass">Proton Pass</a> → 繼續用吧！</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="yi-zhu-zhi-han">遺珠之憾？</h3>
+<h4 id="bitwarden-authenticator">Bitwarden Authenticator</h4>
+<p>你或許會問，有介紹 Proton Authenticator，為何漏掉 Bitwarden Authenticator？<br />
+答案很簡單，官方<a href="https://github.com/bitwarden/authenticator-ios">不再維護</a> Bitwarden Authenticator 了<br />
+<em># 技術上來說，它已被<a href="https://github.com/bitwarden/authenticator-android?tab=readme-ov-file">封存</a></em><br />
+Bitwarden 將之<a href="https://github.com/bitwarden/ios">併入</a>手機 app，二者直接<a href="https://github.com/bitwarden/android">合一</a><br />
+免費、開源，歡迎自由取用</p>
+<h4 id="andotp"><a href="https://github.com/andOTP/andOTP?tab=readme-ov-file">andOTP</a></h4>
+<p>曾享負盛名的 andOTP，也已不再維護<br />
+程式碼被封存，因為<a href="https://xdaforums.com/t/unmaintained-app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655">作者</a>大學畢業後，沒足夠時間無償付出<br />
+身為 Android 開源驗證器先鋒，終止確實可惜</p>
+<h4 id="ovault"><a href="https://ovault.net/">OVault</a></h4>
+<p>iOS 的開源驗證器，使用 iOS keychain<br />
+地端存放資料，不需連網<br />
+免費使用、開發者為英國人<br />
+他當初覺得 Authy 太複雜，決定自己做個簡單、方便的<br />
+支援 TOTP、HOTP，能用 iCloud 同步、備份</p>
+<p>看起來不錯，為何沒介紹？</p>
+<p>因為沒特別好，且使用人數少<br />
+用戶少的缺點，就是會跑去幫忙開發、審核的也少<br />
+漏洞不易發現，維護進程也相對慢<br />
+結論就是<strong>無重大缺失</strong>，你想用我也沒意見<br />
+就當報給你知</p>
+<h4 id="otpauth">OTPAuth</h4>
+<p>抱歉，此非遺珠之憾，而是刻意排除<br />
+OTPAuth 是 iOS 平台的驗證器，「號稱」開源、免費<br />
+問題是<a href="https://github.com/CooperRS">作者程式碼倉庫</a>，<strong>找不到原始碼！</strong><br />
+還記得一路走來，最忌諱什麼嗎？<br />
+謊言行銷，尤其假開源<br />
+就算是良善 app，不開源就上不了推薦榜<br />
+且蓄意誤導大眾，實在不可取</p>
+<hr />
+<p>Apple Authenticator，為何沒在替換名單內？<br />
+首先，它可離線使用<br />
+且蘋果提供進階資料保護 (Advanced Data Protection)，能自行切換<br />
+若開啟 ADP，蘋果驗證器即享端對端加密，可在雲端同步、備份<br />
+雖然閉源，但尚無重大缺失<br />
+所以不推薦，可是也不到替換標準<br />
+果粉可以<del>親吻對方</del>歡呼了</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

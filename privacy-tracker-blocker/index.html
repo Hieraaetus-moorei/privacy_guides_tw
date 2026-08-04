@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="ni-zai-zhao-de-guang-gao-lan-jie-qi-ad-blocker">你在找的廣告攔截器 (ad blocker)</h1>
+<blockquote>
+<p>上網搜尋時，記得開廣告攔截器</p>
+</blockquote>
+<p>這不是我說的，是 FBI <a href="https://www.pcmag.com/news/fbi-recommends-installing-an-ad-blocker-to-dodge-scammers?test_uuid=04IpBmWGZleS0I0J3epvMrC&amp;test_variant=A">說的</a><br />
+因為仿冒、詐騙廣告過多，FBI 給了<a href="https://www.ic3.gov/PSA/2022/PSA221221">幾個建議</a>：<br />
+<em># <a href="https://www.reuters.com/investigations/meta-tolerates-rampant-ad-fraud-china-safeguard-billions-revenue-2025-12-15/">Meta</a> 不喜歡這段言論</em></p>
+<ul>
+<li>手打網址<br />
+怕搜尋結果包含惡意仿冒網站，最好的做法就是不靠搜尋引擎<br />
+雖然我常常這麼做，但對一般人來說可能有點難，退而求其次就是善用書籤<br />
+<em># 如果你也都腦背網址，那很棒</em></li>
+<li>點網址前再三確認，是否為官方連結<br />
+這也有點難，如果背得起來直接自己打不就好了<br />
+何況仿冒網址越來越真偽莫辨，和正牌擺在一起都不見得能一眼判斷</li>
+<li><strong>用廣告攔截器！</strong><br />
+只要都沒廣告，就不怕點到詐騙廣告<br />
+寧可錯殺，不可錯放！</li>
+</ul>
+<p>問題是，該用哪個？</p>
+<h3 id="guang-gao-lan-jie-qi">廣告攔截器</h3>
+<p>相信各位都是為了瀏覽體驗...我是說安全性，所以選擇擋廣告<br />
+這就推薦幾個，<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/privacy-tracker-blocker/./foss-and-privacy.md">開源</a>、免費、高效的廣告攔截器<br />
+<em># 本篇未受任何贊助，<del>沒人要給我錢嗚嗚嗚</del></em></p>
+<p>首發當然是：</p>
+<h4 id="ublock-origin"><a href="https://ublockorigin.com/">uBlock Origin</a></h4>
+<p>地表最強廣告攔截器，常簡稱 uBO<br />
+uBO 是瀏覽器外掛，Google 調整 Chrome 之後不再支援<br />
+但 <a href="https://brave.com/">Brave</a>、<a href="https://www.firefox.com/">Firefox</a> 系列瀏覽器都完整支援，<strong>免費</strong>、<strong>開源</strong>、積極維護<br />
+<em># 瀏覽器細節請參見<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/privacy-tracker-blocker/./deGoogle-browser.md">前文</a>，過去就介紹過 uBlock Origin</em></p>
+<p><img src="https://raw.githubusercontent.com/gorhill/uBlock/master/src/img/ublock.svg" alt="神級廣告攔截器 - uBlock Origin" /></p>
+<p>到應用程式商店就能裝，還被 <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">Firefox 官方推薦</a><br />
+只要安裝，就會進入幾乎無廣告的世界<br />
+Facebook、一般網站、甚至 Youtube 廣告都會消失無蹤<br />
+廣告過濾在瀏覽器端發生，沒人偷窺你<br />
+<em># uBO 背後是以 <a href="https://github.com/gorhill">Gorhill</a> 為首的社群開發者，<strong>Gorhill 本人拒絕贊助</strong>，非常有個性</em><br />
+他的態度有點像：「<strong>給我安裝、享受體驗，除非有 bug 不然就閉嘴</strong>」<br />
+廣告載入前就擋掉，所以頁面跳轉甚至會變快 (i.e. 體感網速上升)<br />
+本身又輕，不太耗 CPU 效能<br />
+裝久甚至會忘記世上有廣告，安全又免費，何樂而不為？<br />
+<em># 如果看到付費版，那<strong>絕對是假的</strong></em><br />
+還能阻擋惡意連結，有基礎防呆功能<br />
+如果非得裝一個廣告攔截器，絕對非 uBlock Origin 莫屬</p>
+<h4 id="ublock-origin-lite"><a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh?hl=en">uBlock Origin Lite</a></h4>
+<p>別看到輕量版就急著裝，<del>想</del>離不開 <a href="https://github.com/uazo/cromite">Chrome</a> 者才該用<br />
+<img src="https://raw.githubusercontent.com/gorhill/uBlock/a85fc33ce8ba8de5ae8f400cc6473243803deae6/platform/mv3/extension/img/ublock.svg" alt="uBlock Origin Lite" /><br />
+同個開發者所做，因為 Google 調整了協定，<a href="https://github.com/uazo/cromite">Chrome</a> 和 uBO 不再相容<br />
+所以 <a href="https://github.com/uazo/cromite">Chrome</a> 用戶只能裝 Lite 版，少了蠻多功能<br />
+不過少的幾乎都是進階功能，日常網站、Youtube 廣告依舊不見蹤影<br />
+<em># 支援 Chrome 和 <strong>Safari</strong>，同樣<a href="https://github.com/uBlockOrigin/uBOL-home">開源</a>、免費</em></p>
+<p>有個趣事是，Mozilla <a href="https://www.ghacks.net/2024/10/01/mozillas-massive-lapse-in-judgement-causes-clash-with-ublock-origin-developer/">搞錯狀況</a>不小心拒絕了 uBO Lite 上架<br />
+即使後來道歉、邀請再次送交申請，Gorhill 仍拒絕繼續周旋<br />
+所以 Firefox 外掛商店裡，找不到 uBlock Origin Lite<br />
+<em># 往好處想，有完整版幹嘛裝弱化版？</em><br />
+如果硬要裝，必須去 <a href="https://github.com/uBlockOrigin/uBOL-home/releases">Gorhill 程式碼倉庫</a>取得</p>
+<h4 id="adguard"><a href="https://adguard.com/en/welcome.html">AdGuard</a></h4>
+<p>廣告守衛，從前是俄國公司，後來跑到賽普勒斯<br />
+有免費和付費版，付費可多享一些隱私功能，但擋廣告免費版足矣<br />
+免費版程式都<a href="https://github.com/AdguardTeam">開源</a>，沒隱藏的商業模式<br />
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/AdGuard.svg" alt="AdGuard，跨平台的高效廣告攔截器" /><br />
+<a href="https://www.bromite.org/">Chrome</a> / Safari / <a href="https://www.firefox.com/">Firefox</a>，所有平台皆可取得外掛<br />
+甚至能裝在系統裡，Windows / MacOS / Android / iOS 都有 app 能下載<br />
+裝在系統裡，可以擋其他 app 中的廣告、濾除追蹤器<br />
+日常用途很夠，Youtube 廣告也能擋<br />
+和 uBlock Origin 一樣，對惡意連結有基礎防範<br />
+<em># 兩者不互斥，可開啟對方的過濾清單</em></p>
+<h4 id="ghostery"><a href="https://www.ghostery.com/">Ghostery</a></h4>
+<p>幽靈廣告攔截器，所有瀏覽器都能裝 (包括 Chrome、Safari)<br />
+<img src="https://duckduckgo.com/i/f964bea01fecbf91.png" alt="Ghostery 廣告攔截器，有可愛的 logo" /><br />
+從前由美企 Evidon 所有，能擋廣告但預設會蒐集、甚至販售用戶個資<br />
+<em># 號稱用於改善服務，有沒有很眼熟？</em><br />
+被德國公司 Cliqz 買走後，變成尊重隱私、<a href="https://github.com/ghostery">開源</a>的專案<br />
+可付費成為貢獻者，算現在僅有的商業模式之一，做法很像非營利<br />
+<em># 據說貢獻者會多一些花俏功能，但基本防護大致相同</em><br />
+優勢是擋掉的廣告、追蹤器，會用直觀的圖形界面顯示給你看<br />
+<em># 你就會知道自己信任的網站，多數其實是偷窺狂</em><br />
+缺點是效率較低，瀏覽體驗會變慢一些</p>
+<h4 id="brave-shield"><a href="https://brave.com/shields/">Brave shield</a></h4>
+<p>沒錯，就是你想的那個 Brave<br />
+<img src="https://images.unsplash.com/photo-1730818877233-a29f2702f071?w=900&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJhdmUlMjBicm93c2VyfGVufDB8fDB8fHww" alt="Brave browser" /><br />
+<a href="https://brave.com/">Brave 瀏覽器</a>內建廣告攔截器，能擋掉多數廣告 (e.g. 日常網站、Youtube)<br />
+最大的特點是，Brave Shield 屬於瀏覽器的一部份，不是外掛<br />
+所以無法裝到其他瀏覽器上，但也因此攻擊面積較小 (更保障資安)<br />
+客製化能力有限，不過下載瀏覽器後開箱即可用，不必手動調整<br />
+你想調也可以，Brave Shield 支援網路指紋隨機化、阻擋腳本<br />
+<em># 看不懂可以當沒這回事，或參考<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/privacy-tracker-blocker/./deGoogle-browser.md">這篇</a>學更多</em><br />
+手機和電腦都能下載，是個<del>臃腫</del>多功能的瀏覽器</p>
+<h3 id="lan-ren-bao">懶人包</h3>
+<p><del>都省掉廣告了還想要懶人包，會不會太誇張？</del></p>
+<ul>
+<li><a href="https://www.firefox.com/">Firefox</a> 系列用戶 → <a href="https://ublockorigin.com/">uBlock Origin</a><br />
+沒第二句話，<del>腦子壞掉才裝別的</del></li>
+<li><a href="https://brave.com/">Brave</a> 粉絲 → <a href="https://brave.com/shields/">Brave Shield</a><br />
+若想高度客製化，追加 <a href="https://ublockorigin.com/">uBlock Origin</a> 無妨</li>
+<li>習慣用 <a href="https://www.bromite.org/">Chrome</a> → <del>換瀏覽器</del> <a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh?hl=en">uBlock Origin Lite</a> / <a href="https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a> / <a href="https://chromewebstore.google.com/detail/ghostery-tracker-ad-block/mlomiejdfkolichcflejclcbmpeaniij">Ghostery</a></li>
+<li><del>果盤</del> Safari 愛好者 → <a href="https://apps.apple.com/us/app/ublock-origin-lite/id6745342698">uBlock Origin Lite</a> / <a href="https://apps.apple.com/us/app/adguard-adblock-privacy/id1047223162">AdGuard</a> / <a href="https://apps.apple.com/us/app/ghostery-privacy-ad-blocker/id6504861501">Ghostery</a><br />
+<a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh?hl=en">uBlock Origin Lite</a> 會使 Chrome、Safari 變慢 10% 左右，不過體感差異不大<br />
+且攔截效果最佳，是相對理想的選擇<br />
+<a href="https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a> 也很會阻攔廣告，但比較笨重<br />
+<a href="https://chromewebstore.google.com/detail/ghostery-tracker-ad-block/mlomiejdfkolichcflejclcbmpeaniij">Ghostery</a> 比 <a href="https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a> 輕量一點，不過有時會漏擋 Youtube 廣告<br />
+如果可以，<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/privacy-tracker-blocker/./deGoogle-browser.md">換瀏覽器</a>是最好的做法</li>
+<li>初學者，想從簡單的開始 → <a href="https://chromewebstore.google.com/detail/ghostery-tracker-ad-block/mlomiejdfkolichcflejclcbmpeaniij">Ghostery</a></li>
+</ul>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/privacy-tracker-blocker/./assets/privacy-tracker-blocker.png" alt="ad blocker" /><br />
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup><br />
+<sup>non-profit 指「不以營利為目的」</sup></p>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>上述很夠用了，技術人士想讀更多可以往下看<br />
+<strong>一般人請直接去裝 ad blocker</strong>，<del>後面沒你的事</del></p>
+<br/>
+<br/>
+<br/>
+<br/>
+<hr />
+<h3 id="xiang-shen-ru-liao-jie-de-cai-du-xia-qu">想深入瞭解的才讀下去</h3>
+<h4 id="wei-shen-mo-gai-zhuang-guang-gao-lan-jie-qi">為什麼該裝廣告攔截器？</h4>
+<p>撇除免費仔想用又不想付錢，還有很多正當理由，讓你<strong>應該</strong>裝廣告攔截器</p>
+<ol>
+<li>同本篇開頭所言，為安全考量，最好裝廣告攔截器<br />
+尤其 <a href="https://ublockorigin.com/">uBlock Origin</a>、<a href="https://apps.apple.com/us/app/adguard-adblock-privacy/id1047223162">AdGuard</a>，除了擋廣告還能封鎖惡意網站</li>
+<li>重視隱私者<br />
+現代廣告多為「個人化廣告」，往往伴隨追蹤器<br />
+Google 怎麼知道你想買什麼、Meta 怎麼知道要推哪種<a href="https://www.reuters.com/investigations/meta-is-earning-fortune-deluge-fraudulent-ads-documents-show-2025-11-06/">詐騙</a>給你？<br />
+甚至還有<a href="https://adresearch.mpi-sws.org/ccs11.pdf">研究</a>指出，數位廣告能解析一個人的立體生活軌跡<br />
+例如你幾點在哪、做了什麼、性別、健康狀況、對什麼有興趣...<br />
+追蹤器無所不在，想保護數位隱私當然要擋掉<br />
+<em># 如果是美國人，甚至還會在<a href="https://www.bloomberg.com/features/2026-healthcare-advertising-trackers-privacy/">政府健保網站</a>被 Meta 和抖音追蹤呢！</em></li>
+<li>最大廣告商 Google 支持<br />
+你沒看錯，擋掉 Youtube、Gmail 廣告不必覺得對不起誰<br />
+Google 可是「2025 廣告過濾開發者峰會 (<a href="https://adfilteringdevsummit.com/">Ad Filtering Dev Summit</a>)」的金主<br />
+出席峰會的 Google 員工，更<a href="https://www.androidheadlines.com/2023/11/google-sponsors-ad-blocking-conference.html">承諾</a>「讓 Chrome 用戶更容易找到廣告攔截外掛」<br />
+既然 Google 自己支持，還不擋光光？</li>
+<li>支持環保<br />
+<a href="https://www.mdpi.com/2227-7080/8/2/18">研究</a>指出，uBlock Origin 能減少 28% 的網頁載入時間<br />
+如果那些時間都在瀏覽廣告，將會多浪費許多電能<br />
+若你是環保支持者，就應該裝好的廣告攔截器</li>
+<li><strong>抵制美貨最簡單的做法，就是裝廣告攔截器！</strong><br />
+若你對台美關稅有些微詞，想抵制美貨又不知從何做起<br />
+<strong>換掉美國服務</strong>或至少<strong>擋下廣告</strong>，都是減少他們獲利的好方法</li>
+</ol>
+<h4 id="chang-jian-de-adblock-bu-xing-ma">常見的 Adblock 不行嗎？</h4>
+<p>很不推薦 Adblock</p>
+<p>首先 Adblock 閉源、效率差、有<a href="https://adblockplus.org/acceptable-ads">白名單</a>會放特定廣告通關<br />
+<em># 包括 Google、亞馬遜、微軟，不該放的都放了</em><br />
+「能提供足夠利益者給過，小商家擋光光」，違背初衷也不甚公平<br />
+而且廣告清單的實作，存在易被注入攻擊 (injection attack)的<a href="https://www.zdnet.com/article/adblock-plus-filters-can-be-abused-by-hackers-to-execute-malware/">漏洞</a><br />
+<em># 連結裡提到的 uBlock 是 adblock 前身，非 <a href="https://ublockorigin.com/">uBlock Origin</a></em><br />
+重點是官方說，該漏洞應該不太會被利用，似乎沒很重視資安<br />
+你的數位安全，值得託付給這種對象嗎？<br />
+攻擊面太廣，可能連被誰打的都<a href="https://www.dcard.tw/f/mood/p/260157272">不知道</a><br />
+<strong>不在意廣告的話，你裝廣告攔截器幹嘛？</strong><br />
+就算不介意廣告，資安漏洞總該避免吧！<br />
+何況 Adblock 會取得一堆權限，喜歡刺激也不是這樣玩的</p>
+<p>Adblock plus 呢？</p>
+<p>你要失望了，Adblock 和 Adblock Plus 是同公司所有<br />
+從前 Adblock 閉源，是美企經營的產品<br />
+後來被德國公司 Eyeo 收購後，推出<a href="https://github.com/adblockplus">開源</a>產品 Adblock Plus<br />
+兩者都有廣告白名單、背後又是公司，存在商業模式<br />
+想要更好的功能得付錢、還很容易被網站偵測到，用起來不太順暢<br />
+<em># 嫌錢多可以買 <a href="https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a> 終身方案、或捐給 <a href="https://chromewebstore.google.com/detail/ghostery-tracker-ad-block/mlomiejdfkolichcflejclcbmpeaniij">Ghostery</a>，<del>不然送我也行</del></em></p>
+<h4 id="privacy-badger-ni">Privacy Badger 呢？</h4>
+<p>電子前鋒基金會 (<a href="https://www.eff.org/">Electronic Frontier Foundation</a>, EFF)做的<a href="https://github.com/EFForg/privacybadger">開源</a>外掛<br />
+直翻隱私鼬獾，<strong>不推薦</strong>安裝<br />
+EFF 算數位隱私先行者，做很多倡議、調查和報告，是值得敬重的單位</p>
+<p>開源又值得信任，為什麼不推薦呢？</p>
+<p>從前 Privacy Badger 會依據使用習慣學習，增強廣告攔阻能力<br />
+但後來被發現，此舉會暴露網路指紋，EFF 就拿掉該功能了<br />
+所以現在只剩清單過濾，效果沒特別好<br />
+尤其 <a href="https://ublockorigin.com/">uBlock Origin</a> 更強效，沒理由選 Privacy Badger</p>
+<h3 id="jin-jie-ban-hua-shi-dang-guang-gao">進階版：花式擋廣告</h3>
+<p>想「系統性」移除廣告，從源頭做起很重要<br />
+廣告來自網路，所以阻截特定網域，就能擋掉不少廣告<br />
+有些 VPN 提供此類功能，如 <a href="https://protonvpn.com/">ProtonVPN</a>、<a href="https://mullvad.net/en">Mullvad VPN</a><br />
+也可以從 DNS 過濾，<a href="https://mullvad.net/en">Mullvad</a>、<a href="https://adguard-dns.io/en/public-dns.html">AdGuard DNS</a> 都支援<br />
+<em># DNS (Domain Name System)，用於翻譯主機名稱和 IP<br />
+例如你在網址列打 dns.google，實際上電腦看到的是 8.8.8.8</em><br />
+<a href="https://mullvad.net/en">Mullvad</a> 和 <a href="https://adguard-dns.io/en/public-dns.html">AdGuard DNS</a>，都有<strong>免費</strong>、公開的伺服器<br />
+如果你用 <a href="https://www.firefox.com/">FireFox</a>，可在設定裡搜尋 DNS，然後選 DNS over HTTPS<br />
+接著有個 choose provider (選擇服務提供者)區塊，選「自訂」<br />
+把以下網域打進去，就能從 DNS 層級攔截部分廣告了：</p>
+<ul>
+<li><a href="https://mullvad.net/en/help/dns-over-https-and-dns-over-tls">Mullvad</a>：<code>https://base.dns.mullvad.net/dns-query</code></li>
+<li><a href="https://adguard-dns.io/en/welcome.html">AdGuard</a>：<code>https://dns.adguard.com/dns-query</code></li>
+</ul>
+<p>兩者都開源、聲稱不會留紀錄，不過 <a href="https://mullvad.net/en">Mullvad</a> 經第三方審核，更可信賴<br />
+<em># 你也可以把作業系統 DNS 改掉，鑑於太離題日後再提</em></p>
+<p>Android 用戶還可考慮 <a href="https://rethinkdns.com/">RethinkDNS</a> (廣告過濾 + 防火牆)、<a href="https://blokada.org/index.html">Blokada</a>、<a href="https://netguard.me/">NetGuard</a><br />
+上述都開源、有免費和付費版，主要藉 Android VPN 功能運作<br />
+簡單說就是它們算一種 VPN，所以無法和其他 VPN 併用<br />
+<a href="https://adaway.org/">Adaway</a> 則需要 root 權限，好處是完全免費 (付費版是違法仿冒者)</p>
+<p>若想全家都享 DNS 過濾，架個 <a href="https://github.com/pi-hole/pi-hole">Pi-hole</a> 篩所有流量也行<br />
+不過 DNS 過濾無法攔截「和服務來自相同網域」的廣告，除非你不使用該服務<br />
+<em># Facebook 就是典型案例</em><br />
+也擋不了 JavaScript，因為那在網頁互動才解析，一定得靠瀏覽器外掛<br />
+<em># 許多追蹤器都用 JS 寫成，瀏覽器外掛還是有必要</em></p>
+<p>廣告攔截器和 DNS 過濾，原理其實相近，都是「比對清單，截持特定內容 / 流量」<br />
+主要差別在過濾層級：從瀏覽器或網域解析時阻擋<br />
+若你是一般大眾，裝瀏覽器外掛就很夠了<br />
+進階版的措施，交給開發者、對廣告恨之入骨的人去玩就好</p>
+<hr />
+<p>在看文章的你，如果覺得平台廣告礙事，不妨立刻去裝廣告攔截器<br />
+雖然免費文章的流量，能為我帶來一點微薄收入<br />
+但大眾的數位隱私，比那點零頭重要多了，當然要所有人都裝！</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="kai-yuan-deng-yu-sui-bian-yong-ma">開源等於隨便用嗎？</h1>
+<p><img src="https://images.unsplash.com/photo-1562412692-26406e1bf600?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3wyNTY4N3wwfDF8c2VhcmNofDF8fGNvcHlyaWdodHxlbnwwfHx8fDE3NTQ0NTQxMzB8MA&amp;ixlib=rb-4.1.0&amp;q=85" alt="cc by nc nd logo" /></p>
+<blockquote>
+<p>在軟體、AI界，常聽到「開源」一詞，但開源究竟是什麼？<br />
+是隨便用的意思嗎？</p>
+</blockquote>
+<p>開源 (open source)一詞，相對於專有 (proprietary)、或閉源 (closed source)<br />
+專有軟體需獲得授權才能使用，通常：</p>
+<ol>
+<li>程式碼不公開 (可能是商業機密)</li>
+<li>不能自由分發 (否則侵權)</li>
+<li>要錢 (很貴)</li>
+<li>背景運作細節不明 (含「主要功能以外」的東西，可能藏在同意條款中，也可能偷偷來)</li>
+</ol>
+<p>例如：你買了 Windows 電腦，只是希望有個「即開即用」的體驗<br />
+首先，大部分 Windows 的程式碼都不公開，所以你不知道裡面有些什麼<br />
+再來，你不能任意拷貝 Windows 系統，安裝給其他電腦 (或許你做得到，但此行為就是「<strong>盜版</strong>」)<br />
+第三，買 Windows 電腦要錢<br />
+你可能會說，我花的是硬體的錢，但軟體費早就包含在零售商的電腦價格中了，你實質上「付了硬體和軟體的錢」<br />
+第四，很多人可能沒關注，微軟的 <a href="https://brave.com/privacy-updates/35-block-recall/">Windows Recall</a> 每幾秒就會進行螢幕截圖，號稱是為了 AI 體驗，但鑑於微軟過去的<a href="https://www.justice.gov/archives/opa/pr/microsoft-agrees-pay-20-million-civil-penalty-alleged-violations-children-s-privacy-laws">惡形惡狀</a>，你的個資、機密早已不是你的<br />
+所以不少開發者，倡議、帶頭實行「開源」，也就是公開原始碼，任何人都看得到<br />
+而且不只公開原始碼，更允許多種形式的取用<br />
+例如直接使用、修改內容再推出新品 (有點像你買了衣服，改個配色就賣出，還說那是自己的)、甚至允許商用<br />
+開源的好處，不只讓大眾享受免費、安心的軟體，還能避免其他開發者「重複造輪」<br />
+也就是輪子 (有某功能的程式)已被發明，其他人不必浪費數小時甚至數天，再做出一模一樣的輪子<br />
+開源可促進互相學習 (東西已經有了，可參考他人之作再行創新)、刺激良性競爭 (你有的東西大家都有，不繼續前進就等著被超車)、易於推廣作品 (要錢、不透明的產品 vs 免費、透明，多數人應該會選後者)</p>
+<hr />
+<h3 id="kai-yuan-ding-yi">開源定義</h3>
+<p>對於開源，不同人可能有不同定義<br />
+廣為接受的開源共識，至少需符合以下特性：</p>
+<ul>
+<li>可自由重新分發<br />
+即取用、複製該作品不應受限制，且不得要求付費</li>
+<li>開放原始碼 (廢話，不然哪叫開源？)<br />
+程式碼要公開，讓大家都能看到</li>
+<li>允許修改、產出衍生作品，且允許衍生作品開源</li>
+</ul>
+<p>若每個人分發軟體都要寫一份授權書，可能定義會因人而異 (每個人表達方式不同)，使用者每次都得讀長文，實在很困擾<br />
+因此許多機構紛紛推出開源「定型化契約」，也就是公定版開源授權書<br />
+開發者僅需複製貼上、使用者看授權書名就知道，很方便吧？</p>
+<hr />
+<h3 id="chang-jian-de-kai-yuan-shou-quan-tiao-kuan">常見的開源授權條款</h3>
+<ul>
+<li>General Public Licence, <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL</a><br />
+此系列起源甚早，有各種變體<br />
+特徵就是條款超長，且有感染性 (infectious 或稱 viral effect)，因為其規定衍生作品、有引用「任何一行程式碼」者，也<strong>須用相同方式授權</strong><br />
+其中最嚴厲者 <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL</a> 更要求，「用於網路分發、架設線上服務」的程式碼，也得跟著開源<br />
+<em>身為極端開源信徒，我超愛這東西！</em></li>
+<li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache licence</a><br />
+由 Apache 基金會制定，相較 GPL 快十頁 A4 的條款，「只有」一兩頁 A4 寫滿<br />
+且不要求衍生作品開源與否，僅須載明修改了什麼、附上原始授權聲明就行</li>
+<li>Berkeley Software Distribution Licence, <a href="https://opensource.org/license/bsd-3-clause">BSD</a> Licence<br />
+加州大學柏克萊分校推出的，非常簡明<br />
+幾乎可說是只要求開源基本定義、附上著作權聲明，其他隨便</li>
+<li><a href="https://opensource.org/license/mit">MIT</a> Licence<br />
+<em># 此 MIT 是麻省理工學院，不是台灣製造</em><br />
+條文同樣非常短，和 BSD 有 87% 像，除了著作權聲明也要求附上副本，同樣很寬鬆<br />
+兩者都一頁 A4 不到，就算全讀完也花不了幾秒鐘</li>
+<li>Creative Common, <a href="https://creativecommons.org/licenses/by/4.0/">CC</a>，即大名鼎鼎的<a href="https://creativecommons.org/licenses/by/4.0/legalcode.zh-hant">創用 CC</a><br />
+CC 系列常用於藝文創作，較少用於軟體、AI 模型，常有「程式碼 MIT 授權、文章 CC-BY 4.0」此類混血<br />
+但有幾家公司特立獨行，喜歡用 CC 條款授權 AI 模型，例如加拿大 <a href="https://huggingface.co/CohereLabs/command-a-vision-07-2025">Cohere</a>、美國 <a href="https://huggingface.co/nvidia/OpenMath-Nemotron-14B">Nvidia</a><br />
+常用的版本有 <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>，即公領域授權 (public domain)，白話文就是<strong>放棄著作權 (no right reserved)</strong>，誰愛用、愛怎麼用都行<br />
+還有 <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>，要求標示作者姓名；<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC-BY-SA</a> 要求衍生作品用相同方式分發 (和 GPL 「感染性」有異曲同工之妙)；<a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</a> 不可商用等<br />
+基本上 CC 是本體，其他 BY (by attribution)、NC (NonCommercial)、SA (Share Alike)等裝備可任意搭配，作者爽就好</li>
+</ul>
+<hr />
+<h3 id="ai-chan-ye-de-kai-yuan">AI 產業的開源</h3>
+<p>AI 產業和傳統軟體開發，對「開源」的詮釋略有不同<br />
+傳統開源，往往授權整個專案<br />
+但 AI 模型則常常只開源一小部分，甚至非真開源，就以開源名號做行銷<br />
+訓練一個 AI 模型，重要的成分有：</p>
+<ul>
+<li>模型權重 (weight, 即模型本身)</li>
+<li>訓練資料 (training dataset)</li>
+<li>訓練 / 部署用程式碼 (training / deployment code)</li>
+</ul>
+<p>各位常聽到的 Meta Llama、Stable Diffusion 模型，就是權重、程式碼開源，但訓練資料不公開的經典案例 (Black Forest Labs 比較誠實，說旗下的 <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev">Flux</a> 是「<a href="https://bfl.ai/blog/flux-1-kontext-dev">開放權重</a>」模型)<br />
+DeepSeek 旗下的 Janus 系列製圖模型，則是僅開放模型權重，其他都不給看<br />
+<a href="https://huggingface.co/nvidia/OpenMath-Nemotron-14B">Nvidia</a>、<a href="https://huggingface.co/datasets/tiiuae/falcon-refinedweb">TII</a> 則部分模型有公開訓練資料、權重、程式碼、甚至訓練細節，是少見的慷慨做法</p>
+<hr />
+<h3 id="qu-wen">趣聞</h3>
+<p>大家耳熟能詳的 Stable Diffusion、Llama 系列模型，向來享有「開源」美譽<br />
+然而，就算不計入訓練資料，他們仍<strong>非</strong>真開源<br />
+前面提到，開源必須允許衍生作品、自由分發，但 Stable Diffusion 與 Llama、DeepSeek V3、阿里巴巴<a href="https://huggingface.co/Qwen/Qwen2.5-3B-Instruct">部分 Qwen 模型</a>，都有限制使用範圍<br />
+有的規定「獲利」、「每月活躍使用者」超過門檻，就必須另行申請授權 (當然不會免費)<br />
+簡言之就是賺錢的企業會變標靶，他們也要分一杯羹<br />
+Llama 的限制更多，除了賺太多要分潤外，還要求微調後的模型需冠名，所以才有不少模型叫 llama-ooxx-@#%^，例如聯發科的 <a href="https://huggingface.co/MediaTek-Research/Llama-Breeze2-8B-Instruct">Breeze</a>、Nous research 的 <a href="https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B">Hermes</a><br />
+從前只有 GPT 的時代，開源語言模型很少，大家想客製化自己的模型，就只能接受 Meta 的假開源條款<br />
+<em># 註：GPT 的公司 OpenAI 雖然名字裡有 Open，但知名模型全都閉源，因此被諷為「CloseAI」。直至截稿日前才開源<a href="https://huggingface.co/openai/gpt-oss-120b">一組</a> GPT 模型</em><br />
+但後來開源模型如雨後春筍般冒出，有更好、更寬鬆的模型能用，很多人就不理 Meta 了</p>
+<hr />
+<p>總之，看到軟體、模型寫「開源」時，不代表能恣意亂用<br />
+記得先看是什麼授權條款，多數真開源也不代表「拿去用不必註明出處」，多半是需要給作者榮譽標註的喔！</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

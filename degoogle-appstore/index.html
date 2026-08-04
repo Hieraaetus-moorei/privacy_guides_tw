@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="degoogle-ti-huan-play-shang-dian">deGoogle - 替換 Play 商店</h1>
+<blockquote>
+<p>可以到 Google Play 或 App Store 下載我們的應用程式喔！</p>
+</blockquote>
+<p>對許多人來說，下載手機軟體不外乎那兩處<br />
+Android 去 Google Play、iPhone 則是 App Store<br />
+但這有幾個大問題：</p>
+<ul>
+<li>多數軟體下載，須「登入」Google 或 iCloud 帳戶<br />
+<em># 裝什麼軟體他們都知道</em></li>
+<li>開發者上架軟體，需給 Google 個資、交蘋果稅<br />
+做免費軟體造福大眾，卻要被貪婪公司吃一口？</li>
+</ul>
+<p>若輕忽「軟體下載管道」，則 deGoogle、deApple 淪為空談</p>
+<h3 id="ji-quan-ying-yong-cheng-shi-shang-dian">極權應用程式商店</h3>
+<h4 id="app-store">App Store</h4>
+<p>蘋果最為人詬病的，莫過於應用程式商店<br />
+Mac (電腦)、iOS (手機)下載軟體，都得從官方商店下載<br />
+蘋果不只監控你裝什麼程式，也限制軟體分發自由<br />
+電腦還能用指令解決，手動移除系統的「損毀標記」<br />
+例如：<br />
+<code>brew install librewolf --no-quarantine</code><br />
+<sup>用 <a href="https://brew.sh/">Homebrew</a> 下載 <a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-appstore/./deGoogle-browser.md">LibreWolf</a>，並信任來源</sup><br />
+<sup>不過今年蘋果強制軟體簽核，沒交蘋果稅的不能用了</sup><br />
+但 iPhone 除非破解系統或歐盟用戶，否則軟體只能從 App Store 下載<br />
+<em># 歐盟反壟斷法，讓該地重獲自由</em><br />
+如政府有背後<a href="https://rsf.org/en/apple-s-complicity-russian-censorship-rsf-calls-tech-giant-refuse-compliance-regulators-do-not">政治考量</a>，蘋果也樂於<a href="https://www.businessinsider.com/apple-iceblock-app-big-tech-power-censorship-donald-trump-bondi-2025-10">下架程式</a>，是個中心化獨裁園地<br />
+<em># 有沒有很熟悉呀？跟<strong>隔壁國家</strong> 87% 像呢！</em></p>
+<p>且蘋果對 App Store 的應用程式，抽取 <strong>30%</strong> 利潤<br />
+小規模生意、<a href="https://embed.documentcloud.org/documents/21043962-2018-july-netflix-tried-to-get-lower-than-15-percent-no-tv-app/#document/p1">特殊財團</a>得申請減為 15%，依舊非常高<br />
+<em># 抽成無理又高額，開發者戲稱「蘋果稅」</em><br />
+你以為上架免費軟體就沒事？<br />
+錯！<br />
+就算是免費軟體，年費仍需近<strong>百元美金</strong>，公然搶錢<br />
+官方聲稱為安全性著想，因審核軟體需要成本</p>
+<p>蘋果哪有那麼好心？</p>
+<p>遊戲公司 Epic Games <a href="https://www.reuters.com/sustainability/boards-policy-regulation/apple-loses-bid-pause-app-store-reform-order-epic-games-case-2025-06-04/">訴蘋果案</a>，揭露了背後動機<br />
+蘋果內部信件顯示：</p>
+<ul>
+<li>收費雙標，大財團可享更低價<br />
+例如 <a href="https://embed.documentcloud.org/documents/21043962-2018-july-netflix-tried-to-get-lower-than-15-percent-no-tv-app/#document/p1">Netflix</a> 只被收 15%</li>
+<li><a href="https://embed.documentcloud.org/documents/21043962-2018-july-netflix-tried-to-get-lower-than-15-percent-no-tv-app/#document/p1">審核放水</a>，博弈、色情、盜版遊戲照樣<a href="https://www.theverge.com/2019/2/20/18232583/apple-ios-developer-enterprise-program-store-mobile-apps">給過</a>，錢有付就好<br />
+說好的安全性和審查呢？</li>
+<li>上架商店程式是<a href="https://www.theverge.com/2020/9/18/20912689/apple-cloud-gaming-streaming-xcloud-stadia-app-store-guidelines-rules"><strong>不允許</strong></a><strong>的</strong>，畢竟那會<a href="https://embed.documentcloud.org/documents/21043907-2011-august-erb-meetings-stores-within-store-not-allowed/#document/p3">妨礙蘋果利益</a><br />
+別小看 App Store，其營收甚至<a href="https://embed.documentcloud.org/documents/21043942-2016-app-store-billings-bigger-than-mac-ipad/#document/p4">超過 Mac、iPad</a><br />
+蘋果曾為利益拒絕大魚遊戲上架，且<a href="https://embed.documentcloud.org/documents/21043933-2013-february-shoemaker-still-no-guidelines-about-store-within-store/#document/p1">自知此舉無根據</a><br />
+總之 App Store <a href="https://www.theverge.com/c/22611236/epic-v-apple-emails-project-liberty-app-store-schiller-sweeney-cook-jobs">非全為安全著想</a>，<strong>利益最大化是關鍵考量，且收費雙標</strong></li>
+</ul>
+<h4 id="google-play">Google Play</h4>
+<p>Android 用戶別高興太早，Google 從來不是什麼好東西<br />
+同樣綁定 Google Play 付款方式，於是也<a href="https://www.theverge.com/23945184/epic-v-google-fortnite-play-store-antitrust-trial-updates">被 Epic Games 告</a>了<br />
+不少國家<a href="https://www.business-standard.com/article/companies/apps-and-payments-what-is-the-controversy-about-google-play-billing-system-122102600748_1.html">跟進</a>，對 Google 惡意壟斷行為<a href="https://edition.cnn.com/2023/12/19/tech/google-play-store-settlement-hnk-intl">開罰</a></p>
+<p>你猜怎麼著，Google 收斂了嗎？</p>
+<p>不，只有變本加厲<br />
+他們：</p>
+<ul>
+<li>索求更多用戶個資，<a href="https://www.techspot.com/news/109268-google-enhancing-play-games-profiles-more-data-collection.html">聲稱</a>「為改善遊戲體驗」</li>
+<li>應用程式<strong>將</strong>只能從 Google Play 下載，其他管道會大幅<a href="https://www.aftvnews.com/how-androids-upcoming-sideload-blocking-will-affect-you-your-apps-and-your-devices/">限制</a><br />
+Android 之所以「開放」、自由，就是因為 Google 服務非強制<br />
+應用程式商店很多種，不爽 Google Play 換掉就好，至少從前如此<br />
+現在 Google 學蘋果的爛招，顯然搞不清楚自己市場定位<br />
+<em># 若接受極權管制，那我買 iPhone 就好啦！</em><br />
+<a href="https://arstechnica.com/gadgets/2025/08/google-will-block-sideloading-of-unverified-android-apps-starting-next-year/">預計</a> 2026 從新加坡、印尼、泰國、巴西開始，2027 禍及全球<br />
+<em># 有些報導稱「其他下載管道」為「側載 (sideloading)」<br />
+但那只適用蘋果，因為開放性的平台，所有下載行為都是正當的 (正載)<br />
+Windows 用戶也不會說，我「側載」了某軟體</em><br />
+有望豁免的對象是學生、社群開發者，或已有程式在 Google Play 上的單位<br />
+<em># 前兩者但書是向 Google 註冊，基本上就是貪個資</em></li>
+</ul>
+<p>Google 的藉口呢？</p>
+<p><a href="https://www.howtogeek.com/googles-attack-on-sideloading-will-rob-android-of-one-of-its-best-features/">號稱</a>為了「仔細審查」，有沒有似曾相識呀？<br />
+沒錯，與蘋果如出一徹，找各種名目遮掩貪婪的嘴臉<br />
+可是集中管理，有比較安全嗎？<br />
+Google Play 上的惡意軟體，<a href="https://www.forbes.com/sites/zakdoffman/2025/03/16/google-confirms-play-store-app-deletion-what-you-do-now/">多到不勝枚舉</a><br />
+更有<a href="https://www.globenewswire.com/news-release/2024/10/30/2972120/0/en/Pixalate-Releases-September-2024-Google-Play-Store-Privacy-Violation-Risk-Report-Over-12-000-Apps-With-Open-Programmatic-Advertising-Enabled-Have-No-Detected-Privacy-Policies.html">調查</a>顯示，多數 Google Play 上的主流應用程式，都違反自己發布的隱私政策<br />
+高達一萬多個 app，未如實揭露「含侵入式廣告、追蹤」<br />
+<em># Mozilla 也取得一致的<a href="https://www.mozillafoundation.org/en/privacynotincluded/articles/mozilla-study-data-privacy-labels-for-most-top-apps-in-google-play-store-are-false-or-misleading/">調查結果</a>，可參見<a href="https://www.mozillafoundation.org/en/campaigns/googles-data-safety-labels/">完整報告</a></em><br />
+此現象行之有年，Google 可有善盡審查義務？<br />
+早些年前，Google Play 甚至擅自將用戶個資傳給開發者<br />
+<a href="https://www.fierce-network.com/developer/google-play-privacy-scandal-has-developers-calling-for-change">宣稱</a>開發者需要那些資料，用以優化服務<br />
+重點是<a href="https://www.tumblr.com/phetdreams/42959902001/massive-google-play-privacy-issue">開發者也嚇到</a>，他們根本沒要求那些東西<br />
+<em># Google 大概濫用個資慣了，覺得軟體開發不能少這環</em><br />
+退一萬步說，Android 已內建 <a href="https://developers.google.com/android/play-protect">Google Play Protect 服務</a><br />
+本來就會掃描應用程式，根本不必額外管制<br />
+個資和錢一把抓，吃相極其難看</p>
+<p>鑑於此般惡劣行徑，只換掉 Google Play 還便宜他們了</p>
+<h3 id="kai-huan">開換！</h3>
+<h4 id="tu-xian-lai">圖先來：</h4>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-appstore/./assets/deGoogle/deGoogle-play_store.png" alt="deGoogle Play Store" /><br />
+<sup>圖源：捨我其誰</sup><br />
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup><br />
+<sup>non-profit 指「不以營利為目的」</sup></p>
+<h3 id="qi-ta-qian-huan-cheng-shi-shang-dian">其他欠換程式商店</h3>
+<p>左半邊那堆東西，最上面是 Google Play、App Store<br />
+剩下：</p>
+<ul>
+<li>AppGallery 是華為的</li>
+<li>Oppo store 理所當然是 Oppo 的</li>
+<li>MyApp 是騰訊的</li>
+<li>MI Store 是小米的</li>
+<li>Vivo Store 是 Vivo 的</li>
+<li>Baidu mobile assistant 是百度手機助理</li>
+<li>360 mobile assistant 是 360 的</li>
+</ul>
+<p>以上皆為中國公司的程式商店，同樣該換<br />
+Android 本身開源，所以中國廠為了符合政治、市場需求<br />
+客製化 Android 給自家手機，並塞入自己的生態系，包括應用程式商店<br />
+中企的隱私問題就更可怕了，除了利益，可能還有政治目的<br />
+光<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-appstore/./chinese-service-risk.md">法規</a>就夠不友善，自然替換掉<br />
+離開 Google、Apple 等惡劣美企，不代表陸企沒問題<br />
+跳出一個火坑，不該再跳入另一個火海</p>
+<p>憂心忡忡了嗎？<br />
+趕快看替代品吧！</p>
+<hr />
+<h4 id="f-droid"><a href="https://f-droid.org/">F-Droid</a></h4>
+<p>大名鼎鼎的<strong>開源應用程式</strong>商店，本身也開源<br />
+開頭的 F 代表 Freedom，免費與自由之意<br />
+後端可自架、不受制特定公司，不需帳號、也不追蹤你<br />
+重點是，上面全是 FOSS - <strong>免費</strong>、<strong>開源</strong>軟體<br />
+<em># 開發者社群會嚴格審查，全開源、免費、安全才放行</em><br />
+白話文就是，軟體全都不用錢，而且是正版<br />
+下載頁面都有標明，該軟體是否有缺陷 (anti-feature)<br />
+依賴第三方非開源服務者、會追蹤用戶者，都會警告你<br />
+堪稱最棒的 Android 應用程式商店</p>
+<p>缺點：</p>
+<ul>
+<li><strong>僅支援 Android</strong><br />
+誰叫 iOS 生態系封閉，去怪蘋果</li>
+<li>沒有 Line、Instagram、Uber 等應用程式<br />
+同前述，F-Droid 只有<strong>免費開源</strong>軟體<br />
+那些閉源、要錢、貪個資的東西，找不到很正常<br />
+<em># 或許反而是個優點？</em></li>
+</ul>
+<p>和 Google 脫鉤，又不需要專業知識，Android 用戶還不趕緊試試</p>
+<h4 id="aurora-store"><a href="https://auroraoss.com/">Aurora Store</a></h4>
+<p>直翻極光商店，本身開源、免費<br />
+Aurora Store 原理是，提供代理前端連線至 Google Play<br />
+本質上仍是 Google Play，該有的程式都有，但更保障隱私<br />
+初次下載時，可選擇登入 Google 或「匿名登入」<br />
+選匿名登入，就不會暴露過多個資<br />
+<em># 會以 anonymous@gmail.com 登入，其他使用者亦然</em><br />
+和 Google Play 不同的是，app 都經第三方程式 <a href="https://exodus-privacy.eu.org/">Exodus</a> 審閱<br />
+有無追蹤器、需要的權限都會顯示，還能知道是哪些追蹤器<br />
+<em># 例如 Line 伴隨多個 <a href="https://reports.exodus-privacy.eu.org/en/reports/jp.naver.line.android/latest/">Google 追蹤器</a></em><br />
+把關比 Google Play 嚴格多了</p>
+<p>缺點：</p>
+<ul>
+<li>未完全脫離 Google，只是增加隱私層<br />
+畢竟是 Google Play 的替代前端，所以 iOS 沒有</li>
+<li>程式仍仰仗 Google Play Service<br />
+可用 <a href="https://github.com/microg/GmsCore/wiki">MicroG</a> 替代，但需要技術能力</li>
+</ul>
+<p>因為只是換介面，對熟悉 Google Play 的人來說，幾乎無痛轉移<br />
+你愛用的<del>偷個資爛</del>程式都能找到，轉換成本較低</p>
+<h4 id="aptoide"><a href="https://en.aptoide.com/">Aptoide</a></h4>
+<p>全球第三大應用程式商店，開源、去中心化<br />
+葡萄牙公司維運，總部位於里斯本，新加坡、深圳等地設有據點<br />
+服務可自架，在用戶端新增商店 URL 即可連線至特定商店實例 (instance)<br />
+<em># E.g. 你自己架的服務</em><br />
+Aptoide 有<a href="https://blog.aptoide.com/evolution-of-aptoide-malware-detection-system/">掃毒系統</a>，持續掃描商店內的程式<br />
+並<a href="https://en.aptoide.com/company/faq/is-aptoide-safe-trusted">標示</a>是否值得信任，為使用者把關<br />
+<em># 反觀 Google Play 消極作為，贏翻了</em><br />
+商店內也可購買付費軟體，收費機制獨立於 Google</p>
+<hr />
+<p>趣聞 (可略)：<br />
+名稱很奇怪嗎？<br />
+開發者受 Linux Debian 分支啟發，覺得讀索引、抓取多重套件來源的做法甚是絕妙
+因以為號焉<br />
+<em># apt 是 Debian 的套件管理器，有名的 <a href="https://ubuntu.com/">Ubuntu</a> 也用它</em><br />
+Apt- 前綴即取自 apt，-oide 有「類似物」之意，表示「類似 Apt 的東西」</p>
+<hr />
+<p>有個大好消息：<strong>Aptoide 也有 iOS 版！</strong><br />
+壞消息是：僅限歐盟用戶<br />
+《歐盟數位市場法》 (DMA)使蘋果開放歐洲市場，<a href="https://connect.aptoide.com/blog/aptoide-ios">其他應用程式商店</a>可進駐<br />
+Aptoide 於是踏入 iPhone，是少數跨平台的選項<br />
+缺點：</p>
+<ul>
+<li>iOS 版目前僅支援歐盟<br />
+今年初才正式入歐，燒滾滾的呢！</li>
+<li>設定可能要摸索一下<br />
+但熟悉後，大概會愛上它</li>
+</ul>
+<p>F-Droid 是 Aptoide 的一個分支 (fork)，兩者師出同源喔！</p>
+<h4 id="obtainium"><a href="https://obtainium.imranr.dev/">Obtainium</a></h4>
+<p>開源、非集中化的前端，甚至不是應用程式商店</p>
+<p>不是商店，放這是在搞笑！？</p>
+<p><img src="https://media.tenor.com/F6ku1Q-GjpAAAAAC/ami-ar-tomake-valobashi-na.gif" alt="anime of a cute angry cat" /></p>
+<p><del>沒錯，就是在搞笑</del><br />
+別生氣，它比商店更棒</p>
+<hr />
+<p>常見手機軟體開發流程：<br />
+開發者、公司們製作應用程式，送到 Google Play 註冊、審核<br />
+若通過，就能上架給消費者用<br />
+此為「集中化」管理</p>
+<p>Obtainium 呢？</p>
+<p>直接連接到程式下載檔 (APK)，不透過第三方平台<br />
+減少中間人窺探風險，也因此不受制獨裁公司<br />
+白話文：<br />
+佃農種稻收成後，交給中盤商販售<br />
+中盤商會亂砍收購價、削爆消費者<br />
+<em># 中盤商即為 Google、蘋果</em><br />
+此時農會來了，辦理市集讓小農、消費者直接買賣<br />
+農會便是 Obtainium，小農就是開發者</p>
+<hr />
+<p>Obtainium 前綴 obtain 指「獲得」，意味獲得軟體<br />
+缺點：</p>
+<ul>
+<li>僅支援 Android<br />
+同樣原因，蘋果生態系閉鎖，是 Apple 的問題</li>
+</ul>
+<p>開源、閉源軟體都有，是很理想的選擇</p>
+<p>你可能好奇，Uptodown、Apkpure 呢？<br />
+首先，此二者都非開源，光這點就出局了<br />
+再者，Apkpure 是中國公司，<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-appstore/./chinese-service-risk.md">風險</a>過高不予推薦</p>
+<hr />
+<p>iOS 商店</p>
+<h4 id="sidestore"><a href="https://sidestore.io/">SideStore</a></h4>
+<p>「側店」顧名思義，側載 (sideloading)應用程式的商店<br />
+專為 iOS 設計，可繞過 App Store 下載軟體<br />
+由社群驅動，免費、<a href="https://github.com/SideStore/SideStore/">開源</a></p>
+<hr />
+<p>背景與原理：<br />
+蘋果允許免費開發者不透過 App Store 安裝、測試軟體<br />
+SideStore 會在 iPhone 架設本地伺服器，並建立特殊 VPN 通道<br />
+從本地跨接回本地，讓系統誤以為是正常安裝過程<br />
+礙於蘋果規定，每個軟體有 7 天期限，到期就會失效<br />
+所以 SideStore 每 7 天會刷新一次軟體，避免過期問題<br />
+<em># 刷新會在背景自動運作，不需手動處理</em></p>
+<hr />
+<p>毋須越獄，不影響蘋果保固、安全性</p>
+<p>缺點：</p>
+<ul>
+<li>首次安裝須外接電腦<br />
+<em># 但之後運作只需 Wi-Fi</em></li>
+<li>只能裝三個 app<br />
+<em># 蘋果僅授權免費開發者 3 個 app 的額度，去<a href="https://docs.sidestore.io/docs/faq/">怪 Apple</a></em><br />
+可付費買蘋果開發者帳戶，但那就失去替代品的意義了<br />
+也能用其他方式繞過，詳見<a href="https://docs.sidestore.io/docs/advanced/sparserestore/">官方教學</a></li>
+</ul>
+<p>嫌麻煩嗎？<br />
+誰叫你買 iPhone，蘋果生態系閉鎖，沒辦法</p>
+<h4 id="altstore"><a href="https://altstore.io/">AltStore</a></h4>
+<p>iOS 的側載商店，Alt- (alternative)和 Store 結合，表示替代商店<br />
+<em># 當然是替代 App Store 囉！</em><br />
+開源、去中心化，且不需越獄</p>
+<hr />
+<p>講古：<br />
+創建者 Riley Testut 是果粉，自學開發 iOS app<br />
+當初為了玩 Pokémon Go，做了一款任天堂模擬器「Delta」<br />
+當他興高采烈想上架 app 時，被蘋果拒絕了<br />
+要知道，忠實粉絲由紅轉黑是很可怕的<br />
+Testut 憤而投入 AltStore 開發，三年後推出此商店</p>
+<hr />
+<p>原理是欺騙手機，讓它以為下載的是自行開發的軟體<br />
+同樣利用蘋果給開發者的特權，繞過 App Store 限制<br />
+使用者須用電腦架設 AltServer，作為應用程式託管器<br />
+<em># 支援 Windows 和 MacOS，Linux 有非官方版本</em><br />
+手機連到 AltServer 後，便可開始下載軟體<br />
+蘋果免費開發者，同樣會面臨 7 日到期問題<br />
+不過只要手機和 AltServer 在同個 Wi-Fi 下，就能自動刷新</p>
+<p>看起來很眼熟？</p>
+<p>沒錯，SideStore 就是 AltStore 的社群分支<br />
+只是 AltStore 須自架伺服器，比較麻煩<br />
+歐盟更爽，<a href="https://rileytestut.com/blog/2024/04/17/introducing-altstore-pal/">AltStore PAL</a> 能直接取代 App Store<br />
+不需蘋果開發者 ID，且 App <strong>不會到期</strong><br />
+<em># 不必再自架伺服器，因為上架的 App 形同獲蘋果認可</em><br />
+用戶可藉 Patreon 贊助開發者，開發者也能上架付費軟體<br />
+而 AltStore 對 Patreon 贊助不抽佣金，和 <em>某企業</em> 不一樣</p>
+<p>缺點：</p>
+<ul>
+<li>須架伺服器，有技術門檻<br />
+如有困難，可參考<a href="https://ivonblog.com/posts/ios-altstore/">中文教學</a></li>
+<li>只能裝 3 個 app，同樣受蘋果限制<br />
+貼心提醒，AltStore 本身也算一個喔！</li>
+<li>應用程式會到期，需定時讓手機和 AltServer 在同個網域下<br />
+歐盟用戶選 AltStore PAL，就沒這問題</li>
+<li>AltStore PAL 年費約 1.5 歐元<br />
+但 Epic Games <a href="https://www.iclarified.com/94612/altstore-pal-now-free-thanks-to-megagrant-from-epic-games">慷慨捐助</a>下，大眾免費使用<br />
+<em># 沒錯，就是告蘋果 App Store、Google Play Store 的那家 Epic Games</em></li>
+</ul>
+<p>App Store 的替代品較受限，畢竟 iOS 閉源、生態系不開放<br />
+沮喪的話下次買手機請三思，<del>誰叫你當果盤</del>是否繼續支持蘋果的商業模式</p>
+<hr />
+<h3 id="lan-ren-bao">懶人包：</h3>
+<h4 id="android">Android</h4>
+<ul>
+<li>科技小白，想無痛轉移 → <a href="https://auroraoss.com/">Aurora Store</a></li>
+<li>免費、開源仔 → <a href="https://f-droid.org/">F-Droid</a></li>
+<li>開發者，想自架服務
+<ul>
+<li>只用免費開源軟體 → <a href="https://f-droid.org/">F-Droid</a></li>
+<li>不設限 → <a href="https://en.aptoide.com/">Aptoide</a></li>
+</ul>
+</li>
+<li>同時有 iPhone 和 Android 的歐盟人，想用同個商店 → <a href="https://en.aptoide.com/">Aptoide</a></li>
+<li>不爽集中化管理，想直接下載安裝檔 → <a href="https://obtainium.imranr.dev/">Obtainium</a><br />
+不靠 <a href="https://obtainium.imranr.dev/">Obtainium</a>，直接到程式碼倉庫拉 APK 檔也行<br />
+<em># APK 檔為 Android 套件包，用來安裝軟體</em></li>
+</ul>
+<p>選擇障礙嗎？<br />
+沒人規定只能有一個商店，可用 <a href="https://auroraoss.com/">Aurora Store</a> 裝日常 app<br />
+搭配 <a href="https://f-droid.org/">F-Droid</a> 或 <a href="https://obtainium.imranr.dev/">Obtainium</a>，在其餘軟體獲得更多隱私</p>
+<h4 id="ios">iOS</h4>
+<ul>
+<li>歐盟用戶
+<ul>
+<li>想自架伺服器 → <a href="https://en.aptoide.com/ios/">Aptoide</a></li>
+<li>一般大眾 → <a href="https://altstore.io/">AltStore PAL</a> / <a href="https://en.aptoide.com/ios/">Aptoide</a></li>
+</ul>
+</li>
+<li>家有電腦、能自架伺服器 → <a href="https://altstore.io/">AltStore</a></li>
+<li>不想跟電腦扯上邊 → <del>搬到歐盟用 AltStore PAL</del> <a href="https://sidestore.io/">SideStore</a><br />
+iOS 的安裝檔 IPA 限制較多，一般人不易使用</li>
+</ul>
+<hr />
+<p>要知道，消費者<code>買的不只是手機，而是整個生態系</code><br />
+每個購買行為，都是對特定生態系的支持<br />
+Android 手機較能客製化，甚至可以<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-appstore/./deGoogle-mobile-OS.md">換掉 OS</a><br />
+iPhone 很閉鎖，連替代品都處處受限<br />
+蘋果可能比 Google「稍微」尊重隱私，但絕非良善之輩<br />
+之前在「用戶不知情」的情況啟用 Siri，側錄對話用於優化廣告<br />
+東窗事發後，蘋果付出<a href="https://www.reuters.com/legal/apple-pay-95-million-settle-siri-privacy-lawsuit-2025-01-02/">近千萬美元代價</a><br />
+還完全信任蘋果嗎？<br />
+請再想想吧！</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="degoogle-ti-huan-ri-li">deGoogle - 替換日曆</h1>
+<blockquote>
+<p>你有記得把時間加到 Google Calendar 上嗎？</p>
+</blockquote>
+<p>雖然 Google 宣稱不會用日曆內容推廣告，但仍會蒐集用戶資訊<br />
+包括時間、事件標題、描述、參與者...<br />
+<em># 何況 Google 無信用可言</em><br />
+且無端對端加密，所以 Google 能輕鬆如意地拿到資料<br />
+再者，Google 身為美國企業，若該國政府用<a href="https://proton.me/blog/us-warrantless-surveillance">監聽法案</a>索取資料<br />
+Google 極可能積極配合，不論要求是否合理<br />
+畢竟 <a href="https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data">PRISM</a> 都跪過了，哪可能為了你得罪政府？</p>
+<h4 id="kai-huan-ba">開換吧！</h4>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-calendar/./assets/deGoogle/deGoogle-calendar.png" alt="deGoogle Calendar" /><br />
+<sup>圖源：隱私倡議者 - 我</sup><br />
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)，或開源、至少有長久免費版者</sup><br />
+<sup>End-to-end encryption 為端對端加密，僅當事人、經授權者能看到內容</sup><br />
+<sup>non-profit 指「不以營利為目的」，不是「非營利機構」</sup><br />
+除了 Google 日曆，Apple Calendar 也該換<br />
+Apple Calendar <a href="https://support.apple.com/en-us/102651">沒端對端加密</a>，即使開啟進階資料保護 (Advanced Data Protection, ADP)仍<a href="https://support.apple.com/en-ca/guide/security/sec973254c5f/web">不支援</a><br />
+<em># 端對端加密代表只有你、經授權者能看到內容，即便公司方亦無從窺探</em><br />
+蘋果曾參與稜鏡計劃 (PRISM)，過去也<a href="https://www.reuters.com/legal/apple-must-face-narrowed-privacy-lawsuit-over-its-apps-2024-09-27/">不甚光彩</a><br />
+沒端對端加密、程式碼又閉源，實在不怎麼隱私</p>
+<p>替代品眾多，畢竟日曆不是什麼艱深科技<br />
+更因如此，不必拘泥特定公司的<del>噁爛</del>產品</p>
+<h4 id="proton-calendar"><a href="https://proton.me/calendar">Proton Calendar</a></h4>
+<p>沒錯，又是 Proton！<br />
+專做隱私產品，自然常常出現<br />
+Proton 是瑞士公司，從加密郵件起家<br />
+<em># Proton 品牌故事，可參見我<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-calendar/./deGoogle-email.md">介紹 Email 的文章</a></em><br />
+日曆開源、端對端加密<br />
+<a href="https://proton.me/pricing">免費版</a>可創三個日曆，欲分享則須訂閱<br />
+<em># 訂閱可享有 Proton 生態系服務</em><br />
+缺點：</p>
+<ul>
+<li>免費版功能較少</li>
+<li>會蒐集意外資訊<br />
+<em># 例如 app 當機、意外掛掉</em></li>
+</ul>
+<h4 id="tuta-calendar"><a href="https://tuta.com/calendar">Tuta Calendar</a></h4>
+<p>就是做<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-calendar/./deGoogle-email.md">加密 Email</a> 的那家德國公司，Tuta，<del>土塔</del> (官方沒這樣翻)<br />
+幾乎什麼資料都不蒐集，日曆端對端加密、開源<br />
+免費版可建單一自用日曆，訂閱則享更多服務<br />
+<img src="https://tuta.com/assets/google-calendar-app-privacy-review.DCRafG9D_Z1NhQuq.webp" alt="Tuta calendar vs Google calendar" /><br />
+圖源：Tuta 日曆<a href="https://tuta.com/blog/private-calendar-alternative-to-google#google-calendar-alternatives-tuta-vs-proton-vs-ourcal">介紹</a><br />
+官方的比較圖，可見左方 Tuta 不蒐集個資，右方 Google 日曆則搜刮一堆<br />
+缺點：</p>
+<ul>
+<li>免費版功能較少</li>
+<li><del>過於安全</del></li>
+</ul>
+<h4 id="nextcloud-calendar"><a href="https://apps.nextcloud.com/apps/calendar">Nextcloud Calendar</a></h4>
+<p>同樣是熟面孔德國公司，Nextcloud<br />
+產品百分百開源，體驗類似 Google 的整合雲端服務<br />
+因可自行架設，日曆無端對端加密<br />
+<em># 你應該不必擔心，自己偷自己資料</em><br />
+缺點：</p>
+<ul>
+<li>自行架設有技術門檻</li>
+<li>無端對端加密<br />
+若和親友共享服務，則架設者有機會看到眾人資訊</li>
+</ul>
+<h4 id="fossify-calendar"><a href="https://www.fossify.org/apps/">Fossify Calendar</a></h4>
+<p>從名稱可知，想把東西變「開源免費」<br />
+<em># FOSS: Free and Open Source; Fossify: 把東西 FOSS 化</em><br />
+社群建立的免費、開源專案，可完全離線使用<br />
+若欲同步日期、各種功能，須找到適當服務<br />
+<em># 其為 Android app，支援 CalDAV protocol</em><br />
+意思是，想更新日期、連結信箱的話，仍須串接線上服務<br />
+和 Google、Nextcloud 等各種 CalDAV 伺服器相容<br />
+缺點：</p>
+<ul>
+<li>同步功能須找服務支持，Google 或第三方都行<br />
+<em># 你可以不同步，當離線 app 用</em></li>
+<li>僅支援 Android</li>
+<li>無端對端加密</li>
+</ul>
+<p>Fossify 亦提供「聯絡人」、「檔案管理員」、「相簿」、「簡訊」等 app</p>
+<h4 id="etar"><a href="https://github.com/Etar-Group/Etar-Calendar">Etar</a></h4>
+<p>開源、免費的社群專案， 用於替代 Google 日曆<br />
+介面簡潔直觀，功能齊全<br />
+<em># 可用日、週、月檢視，有亮、暗主題...</em><br />
+能完全離線使用，若想同步則須連接線上服務 (和 Fossify 類似)<br />
+缺點：</p>
+<ul>
+<li>只有 Android 版</li>
+<li>無端對端加密</li>
+<li>同步功能仰賴線上服務<br />
+<em># 但可離線使用，不一定得同步</em></li>
+</ul>
+<p>純粹替代 Google 日曆應用程式，很夠用<br />
+且社群評價不錯，值得一試</p>
+<h4 id="davx5"><a href="https://www.davx5.com/">DAVx<sup>5</sup></a></h4>
+<p>奧地利公司 bitfire web engineering 維運，遵守歐盟 <a href="https://gdpr-info.eu/">GDPR</a> 隱私保護法規<br />
+橋接線上服務和應用程式，用以同步日曆、聯絡人，可視為轉接器<br />
+前述 Fossify、Etar 都能靠 DAVx<sup>5</sup> 連上想要的服務<br />
+缺點：</p>
+<ul>
+<li>僅支援 Android</li>
+<li>無端對端加密<br />
+畢竟是轉接器，傳輸層加密比較合理</li>
+</ul>
+<h4 id="thunderbird"><a href="https://www.thunderbird.net/en-US/calendar/">Thunderbird</a></h4>
+<p>Thunderbird (直翻雷鳥) 是萬用郵件前端，可連接各家 email 信箱<br />
+由 Mozilla 開發，後脫離成獨立專案<br />
+開源、免費，各大桌面平台、Android 都可取得</p>
+<p>在這裡提 email app，跑錯篇了？</p>
+<p>別走！你聽我解釋 (八點檔戲碼)！<br />
+從前官方外掛 lightning，賦予雷鳥日曆功能<br />
+後來 lightning 被整入雷鳥，不必再另裝外掛<br />
+意思是，下載 Thunderbird 就會有內建日曆<br />
+可離線使用，也可連接線上服務以同步資訊<br />
+缺點：</p>
+<ul>
+<li>非獨立日曆，跟郵件 app 同捆<br />
+對某些人可能是優點，兩個願望一次滿足<br />
+我<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-calendar/./deGoogle-email.md">替換郵件</a>那篇文，有介紹 <a href="https://www.thunderbird.net/en-US/">Thunderbird</a></li>
+<li>日曆無端對端加密</li>
+<li>尚無 iOS 版 (仍在開發中)<br />
+<em># 官方<a href="https://blog.thunderbird.net/2025/06/thunderbird-mobile-progress-report-may-2025/">說法</a>：預計 2025 年底進入 alpha 測試</em></li>
+</ul>
+<h4 id="cal-com"><a href="https://cal.com/">Cal.com</a></h4>
+<p>開源議程排定工具，由<strong>美國公司</strong>開發<br />
+串接其他日曆服務，用以排定開會時間、設定提醒等<br />
+產品定位是 Calendly 繼任者，提供較隱私友善、開源的選擇<br />
+有個人用免費版，也可訂閱<br />
+<em># 核心以 AGPL <a href="https://github.com/calcom/cal.com">開源</a>、部分企業版功能需商業授權，個人用途基本上可自架</em><br />
+缺點：</p>
+<ul>
+<li>僅協調議程排定，無完整日曆功能</li>
+<li>美國公司所有、無端對端加密<br />
+<em># 鑑於開源、相對友善的隱私政策，才提此 app</em></li>
+</ul>
+<p>若習慣 Calendly，不妨換 Cal.com 玩玩看</p>
+<hr />
+<h3 id="bie-zhao-liao-lan-ren-bao-zai-ci">別找了，懶人包在此</h3>
+<ul>
+<li><del>無知愚民</del>一般大眾、想要完整功能者 → <a href="https://proton.me/calendar">Proton</a> / <a href="https://tuta.com/calendar">Tuta Calendar</a><br />
+不排斥付費的話，可訂閱享完整功能</li>
+<li>免費仔、想要離線 app → <a href="https://github.com/Etar-Group/Etar-Calendar">Etar</a> / <a href="https://www.fossify.org/apps/">Fossify Calendar</a></li>
+<li>想要 Email、日曆一個 app 搞定 → <a href="https://www.thunderbird.net/en-US/calendar/">Thunderbird</a></li>
+<li>喜歡客製化的開發者 → <a href="https://apps.nextcloud.com/apps/calendar">Nextcloud Calendar</a> (可配 <a href="https://www.davx5.com/">DAVx<sup>5</sup></a> 再串接至 <a href="https://github.com/Etar-Group/Etar-Calendar">Etar</a> / <a href="https://www.fossify.org/apps/">Fossify Calendar</a>)</li>
+<li><del>墮落者</del>想要類似 Calendly 服務者 → <a href="https://cal.com/">Cal.com</a></li>
+</ul>
+<hr />
+<p>至於社群有些討論的 <a href="https://ourcal.com/">OurCal</a>，為何沒提呢？<br />
+開源、端對端加密，又主打隱私，似乎挺不錯？<br />
+因為：</p>
+<ul>
+<li>OurCal 免費試用 14 天，之後就要錢<br />
+I.e. 無永久免費版，不符合廣義 FOSS</li>
+<li>蒐集較多 metadata，如聯絡人、用量、個人識別資訊等<br />
+<em># 僅日曆本身隱私，何況公司在<a href="https://www.amnesty.org/en/latest/news/2025/02/https-www-amnesty-org-en-latest-news-2025-02-uk-encryption-order-threatens-global-privacy-rights/">隱私災難地</a>英國</em></li>
+</ul>
+<p>光第一點就出局，所以不推薦</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

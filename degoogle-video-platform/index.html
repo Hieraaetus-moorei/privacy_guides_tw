@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="degoogle-ti-huan-youtube">deGoogle - 替換 Youtube</h1>
+<blockquote>
+<p>Youtube 又來一堆詐騙廣告，煩死了！</p>
+</blockquote>
+<p>受夠 Youtube <a href="https://www.dcard.tw/f/talk/p/258840958">劣質廣告</a>了嗎？<br />
+<a href="https://www.dcard.tw/f/talk/p/235733734">色情</a>、<a href="https://www.dcard.tw/f/talk/p/238916782">噁爛</a>通通來，簡直沒底線<br />
+實際上，那正是<a href="https://www.inside.com.tw/article/16293-ie6-killed-by-youtube-engineer">狡猾</a> Google 的行銷策略<br />
+撒劣質廣告，讓你受不了而入坑 Youtube Premium，進而增加訂閱率<br />
+若大眾因此訂閱，反而助長 Google「撒爛廣告就能增加訂閱率、收益」的行為<br />
+屈服，只會鼓勵 Google 無良行銷，看看他們<a href="https://affmaven.com/youtube-statistics/">營收</a>便知</p>
+<p>為什麼敢如此囂張？</p>
+<p>因為影音市場中，Youtube 市占率極高，可說已經壟斷<br />
+不論<a href="https://tw.news.yahoo.com/%E5%B0%BC%E7%88%BE%E6%A3%AE%E6%9C%80%E6%96%B0%E8%AA%BF%E6%9F%A5-youtube%E6%93%8A%E6%95%97netflix%E6%90%B6%E4%B8%8B%E5%B8%82%E5%8D%A0%E7%AC%AC-%E7%8E%8B%E5%BA%A7-223000404.html">電視</a><a href="https://techcrunch.com/2009/06/09/youtube-video-streams-top-1-billionday/">串流</a>、<a href="https://www.digitalinformationworld.com/2020/02/youtube-dominates-all-the-major-apps-takes-away-most-streaming-time-on-smartphones.html">影音 app</a>、還是<a href="https://www.bloomberg.com/news/newsletters/2024-08-22/apple-loses-its-podcasting-lead-to-youtube-and-spotify">數位廣播(Podcast)</a><br />
+就算非壟斷的戰場，<a href="https://www.affiliatebooster.com/youtube-shorts-statistics/">短影音</a>、<a href="https://streamhatchet.com/blog/youtube-stealing-live-streaming-market-share/">直播</a>、<a href="https://www.forbes.com/sites/billrosenblatt/2024/03/30/music-industry-annual-reports-show-stable-growth-and-youtube-strength/">音樂播放</a>等，Youtube 仍佔有一席之地<br />
+尤其影片平台，並非「做得比較好」就能有效競爭<br />
+哪怕消費者願意換，「內容」和「創作者」多半已定居特定平台<br />
+想看 <a href="https://www.youtube.com/@HungyiLeeNTU">AI 界唯一真神的公開課</a>，幾乎只能上 Youtube，畢竟人家只 po 在那</p>
+<p>拉回正題，那隱私呢？</p>
+<p>Google 老早就收購 Youtube 了，可想而知是隱私噩夢<br />
+先看個圖<br />
+<img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./assets/deGoogle/deGoogle-Youtube.png" alt="deGoogle Youtube" /><br />
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup><br />
+<sup>non-profit 指「不以營利為目的」</sup><br />
+<sup>下半部多個湊在一起的，主要依特質做分群</sup></p>
+<br/>
+<h2 id="qian-huan-ping-tai">欠換平台</h2>
+<h3 id="youtube">Youtube</h3>
+<p>首先登場的是 - <strong>兒童權益剝削</strong><br />
+Youtube 因未經允許追蹤兒少，付出<a href="https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law">一億七千美金</a>的代價<br />
+他們<a href="https://www.bbc.com/news/technology-49578971">被罰</a><a href="https://techweez.com/2025/08/20/google-youtube-kids-privacy-lawsuit/">又被罰</a>，卻仍<a href="https://www.bbc.com/news/technology-64786968">死性不改</a>，今年 (2025)再度<a href="https://www.reuters.com/sustainability/boards-policy-regulation/google-settles-youtube-childrens-privacy-lawsuit-2025-08-19/">砸錢消災</a><br />
+如果賠錢就會收斂，那絕不是我們認識的 Google<br />
+甚至順勢推出<a href="https://tech.udn.com/tech/story/123454/8938080">年齡推算</a>機制，「兒童權益」正好當擋箭牌<br />
+你填幾歲僅供參考，官方會用影片瀏覽記錄，推算實際年齡<br />
+<em># 太愛看卡通、又會造訪成人片，可能導致你被 ban</em><br />
+停權與否非重點，Google 大概不想踢除客戶<br />
+重點是，合理化添加新演算法、追蹤紀錄<br />
+年齡區間，也是個人化廣告的一環<br />
+別忘了，<a href="https://kids.youtube.com/t/terms">Youtube 使用</a> <a href="https://policies.google.com/privacy">Google 隱私政策</a><br />
+該拿的都沒少，個資也會用於廣告推送<br />
+近期還有新舉措 - <a href="https://www.dcard.tw/f/talk/p/259687722">抓家庭方案濫用</a>，<a href="https://support.google.com/youtube/answer/7507744?hl=zh-Hant&amp;co=GENIE.Platform%3DiOS#:~:text=%E5%AE%B6%E5%BA%AD%E6%96%B9%E6%A1%88%E9%87%8D%E8%A6%81%E9%A0%88%E7%9F%A5,YouTube%20%E5%AE%B6%E5%BA%AD%E6%96%B9%E6%A1%88%E7%9A%84%E8%B3%87%E6%A0%BC%E3%80%82">規定</a>「訂閱者須同住」<br />
+<em># 旅居外地、住宿舍的，Google 不承認家人關係，謝謝</em><br />
+Google 可能用「同住家人」當藉口， 合理化此舉<br />
+但也變相確立哪些人，真的是彼此親屬 (親屬關係是重要 metadata 喔！)<br />
+搭配瀏覽類型，幾乎可推出誰是父母、兒女<br />
+親子相關廣告、教材、電玩，都能更精準硬塞給你<br />
+更別提<a href="https://forum.gamer.com.tw/C.php?bsn=60030&amp;snA=635141">神奇</a>的<a href="https://www.mobile01.com/topicdetail.php?f=514&amp;t=6900986">文字獄</a>，<a href="https://www.reddit.com/r/youtube/comments/11wgrlc/youtube_keeps_deleting_my_comments_for_no_reason/">國內外網友</a>都是<a href="https://www.dcard.tw/f/talk/p/254644138">受災戶</a>，標準令人納悶<br />
+<em># 能想像是為了擋機器人、廣告騷擾、仇恨言論，但那演算法也寫太爛了吧！</em></p>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./assets/ref_images/censored-tube.png" alt="BanTube" /></p>
+<h3 id="vimeo">Vimeo</h3>
+<p>呃，可能很多人沒聽過這平台，那跳過也無妨<br />
+本段落旨在提醒既有用戶，此服務並<strong>不</strong>保障隱私、使用體驗<br />
+Vimeo 主打高品質內容、無廣告、使用者付費，試圖營造高階形象<br />
+然而，其服務尚欠優化，載入影片速度極慢，酷似早年 Youtube<br />
+<em># 還記得從前 Youtube 的轉圈符號嗎？用 Vimeo 常會有此困擾</em><br />
+<img src="https://media.tenor.com/JcKHX9Ev7SoAAAAC/youtube-you-tube.gif" alt="youtube loading gif" /><br />
+隱私部分呢？<br />
+來看看官方<a href="https://vimeo.com/legal/privacy/policy">隱私政策</a>，為什麼該換掉：</p>
+<ul>
+<li>蒐集的資訊：
+<ul>
+<li>註冊時的電郵、姓名、電話等，或連動登入的相關資訊 (e.g. 以 Google 登入)<br />
+若你在特定國家，為確保年齡還要自拍照 / 證件資訊 (e.g. 身分證)</li>
+<li>瀏覽器、OS 種類</li>
+<li>IP 位址 (還會用來<a href="https://vimeo.com/legal/privacy/policy#automatically-collected-information">推算地理位置</a>唷！)</li>
+<li>互動紀錄，像是：
+<ul>
+<li>搜尋了什麼</li>
+<li>滑鼠軌跡、頁面捲動</li>
+<li>鍵盤活動，如按下的按鍵</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>拿來做什麼？</p>
+<p>不外乎優化服務、營運所需、帳號管理等<br />
+但是！<br />
+個資也用於廣告推送，包括第三方廣告商<br />
+嘿嘿，你以為影片無廣告，就沒廣告商介入嗎？<br />
+蒐集統計資料、看過哪些影片、在哪停留最久，可以推斷個人偏好<br />
+如 Google、Meta 這類無處不在的廣告商，就算你跨站也躲不掉<br />
+在 Vimeo 收集資訊，到其他網站用來推廣告，還是能賺</p>
+<p>不僅如此，他們還會蒐集、儲存上傳影片中的生物特徵<br />
+細緻入微的臉部資訊，用於辨識年齡、性別、和位置<br />
+最大的問題是，那些行為未經用戶同意，甚至沒告知<br />
+所以被告了，也<a href="https://www.scworld.com/news/vimeo-ai-biometric-privacy-lawsuit">付出 200 多萬美金</a>的代價<br />
+<em># 此事發生在 Vimeo 旗下平台 Magisto，其他服務能亂搞，難保 Vimeo 本身不會</em></p>
+<h3 id="bilibili">Bilibili</h3>
+<p>社群罵 Youtube 時，總會有人推薦 Bilibili (嗶哩嗶哩)<br />
+不過就隱私角度而言，兩者半斤八兩<br />
+閉源、中資、個人化廣告，壞事全包辦<br />
+<em># 之前提過中國線上服務的<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./chinese-service-risk.md">風險</a></em><br />
+曾<a href="https://pandaily.com/bilibili-responds-to-member-privacy-concerns/">索求過</a>用戶姓名、電話、身分證號、地址等私密資訊<br />
+且會和其他商家，如中國聯通共享<br />
+也有過內部員工，<a href="https://www.thepaper.cn/newsDetail_forward_29988567">注入惡意程式碼</a>到網頁服務<br />
+雖已開除始作俑者，但這顯示安全性漏洞和權限管控問題<br />
+大概未落實零信任，無法保證員工還能搞出什麼花樣<br />
+<em># 資安的零信任概念，可見<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./zero-trust_persecurity-delusion.md">前文</a></em><br />
+最「精彩」的事蹟，莫過於後端<a href="https://technode.com/2019/04/23/bilibili-source-code-leaked-on-github-containing-usernames-and-passwords/">程式碼外洩</a>，包括用戶姓名、密碼<br />
+要知道，資訊一旦拋上網，就難以回收</p>
+<h2 id="du-li-ti-dai-pin">獨立替代品</h2>
+<h3 id="odysee"><a href="https://odysee.com/">Odysee</a></h3>
+<p>希臘史詩奧德賽取諧音，不過似乎沒官方中譯<br />
+既然後綴是 -see，我就亂叫它「奧德視」<br />
+美國公司，背後是 LBRY Inc. (讀作 Library)<br />
+成立背景是不滿 Youtube 過度商業化、偏袒廣告商、詭譎文字獄、<a href="https://www.blocktempo.com/lbry-100a-blockchain-based-decentralized-digital-content-marketplace/">胡亂貼黃標</a><br />
+於是推出「開源」、「自由」、去中心化的替代品<br />
+之所以叫 Library，是希望成為數位圖書館，分享影片、音樂等<br />
+Odysee 的去中心化非常徹底，建構在區塊鏈上，沒任何人能「擁有」整個服務<br />
+「用戶」本身也是系統的一部份，哪怕只是觀看影片<br />
+<em># 區塊鏈 (block chain)是虛擬貨幣的基石，不懂沒差，就當很分散、自由</em><br />
+所以形同無審查，因為沒人能恣意把區塊鏈上的東西刪掉<br />
+奧德視介面很像 Youtube，轉換成本不高</p>
+<p>畫面看起來像這樣：<br />
+<img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./assets/ref_images/odysee-interface.png" alt="odysee snapshot, 30 分鐘認識深度學習" /><br />
+影片連結：<a href="https://odysee.com/@%E9%81%8A%E8%95%A9%E8%80%85:4/30-minute-deep-learning:4">點我</a></p>
+<p>平台給創作者的獎勵，比 Youtube 有感多了<br />
+發影片、有流量、開贊助，各種管道都能獲取報償<br />
+甚至當觀眾也很爽，看影片、完成特定任務，一樣能拿獎勵<br />
+<em># 立基虛擬貨幣協定，理所當然用自家貨幣 LBRY Credits (LBC)給酬勞</em><br />
+有人<a href="https://dianxiaoeryu.com/lbry-odysee-%e7%9c%8b%e5%bd%b1%e7%89%87%e5%85%8d%e5%bb%a3%e5%91%8a%e6%89%93%e6%93%be%e3%80%81%e9%82%84%e5%8f%af%e8%b3%ba%e9%9b%b6%e7%94%a8%e9%8c%a2/">實測</a>過，光看影片一年就能拿 450 台幣<br />
+雖然也蒐集<a href="https://lbry.com/faq/privacy-and-data">不少資料</a>，但多數可選擇退出</p>
+<p>缺點：</p>
+<ul>
+<li>無自動字幕、外加字幕檔功能<br />
+字幕得內嵌在影片中</li>
+<li>自由度高，不當內容難杜絕<br />
+Covid-19 時期，充斥許多假訊息、政治陰謀論<br />
+有時也會出現恐怖主義、盜版、血腥內容<br />
+區塊鏈的優點，是把雙面刃<br />
+沒人能輕易移除區塊鏈上的東西，包括營運者<br />
+<em># 各地不同的節點上，都存有複本</em><br />
+官方做法是，受舉報、確認違規後，會取消那些內容的分潤<br />
+違規影片也會從官網屏蔽，所以你就不會看到了<br />
+畢竟雖可自不同節點存取，但多數人都是從官方入口造訪<br />
+刪不掉沒差，看不到就行了<br />
+<em># Odysee 可視為 LBRY 的一個前端</em></li>
+<li>美企，受制美國政府<br />
+近年美國政府<a href="https://www.theguardian.com/technology/2023/jul/16/lbry-closes-odysee-cryptocurrency-tech-sec-fraud-extremist">說</a>，LBRY 未妥善登記就發行虛擬貨幣，違法應裁罰<br />
+所以 LBRY Inc. 要關門了，LBRY 很快也會從 Odysee 消失<br />
+不過別擔心，Forward Research 接手 Odysee 了<br />
+且會以 <a href="https://help.odysee.tv/category-monetization/wander/">Wander wallet</a> 替代，簡單說就是換湯不換藥<br />
+繼續用 Odysee，不會有任何問題</li>
+</ul>
+<p>你可能會<a href="https://finance.yahoo.com/news/google-buys-odysee-googl-investors-193807588.html">查到</a> Google 收購 Odysee，但那是同名相片軟體，和奧德視沒半點關係</p>
+<h3 id="peertube"><a href="https://joinpeertube.org/">PeerTube</a></h3>
+<p>同儕管 (？)，法國非營利組織 <a href="https://framasoft.org/">Framasoft</a> 主導<a href="https://joinpeertube.org/zh_Hant/faq#who-is-working-on-peertube">開發</a>的自由軟體<br />
+程式碼採 AGPLv3 開源，任何人都能自行架設<br />
+沒錯，就是架設</p>
+<hr />
+<p>且容我細細說來：</p>
+<ul>
+<li>
+<p>聯邦宇宙 (Fediverse) 實現<strong>半</strong>分散式架構<br />
+Fediverse 藉一系列獨立服務串連，形成完整的社群生態系<br />
+Peertube 代替 Youtube、Mastodon 替換推特、Pixelfed 替換 Ig...<br />
+<em># 有趣的是，Meta 的<del>降智程式</del> Threads，也支援 Fediverse 的協議唷！</em><br />
+每個極權、貪取個資的服務，幾乎都有 Fediverse 替代品<br />
+且正因為互通，你可以用任一服務的帳號，去追另一個服務的帳號、頻道<br />
+Fediverse 生態系還有個特色 - 半分散式架構<br />
+任何人得自行架設實例 (instance)，加入整個生態系統，和其他實例互通有無<br />
+<em># 各種服務都採 W3C 標準的 ActivityPub protocol，所以溝通無礙</em><br />
+E.g. 你爽的話，立刻架個 Peertube 伺服器，就能變成 Fediverse 的一分子</p>
+<p>為什麼叫「半」分散式？</p>
+<p>分散式系統，通常會為資料製作複本，儲存到每個節點 (node)上<br />
+節點和實例不盡相同，就算你炸掉任何一個節點，複本仍會保障資料安全<br />
+經典案例就是區塊鏈 (blockchain)，如前述 LBRY 奧德視<br />
+但 Fediverse 的做法，是多個「獨立」伺服器彼此聯繫<br />
+除非事先備份、遷移，否則若實例突然掛掉，資料難以救回<br />
+儘管能訪問其他實例，但登入時須從註冊的伺服器進場<br />
+雖不被單一公司 / 政權控制，但每個實例都受維運者管轄<br />
+伺服器所在國的法令，當然也適用<br />
+<em># 好處是當你看所有人都不爽，自己架服務、制定規則即可</em><br />
+因此多數情況下，Peertube 沒有統一的「官方」，但也不到完全無政府<br />
+如果說 Youtube 為「帝國制」，Fediverse 就是「封建制」，區塊鏈則是「直接式民主」<br />
+當然，沒人規定你一定要架服務，選個喜歡的實例註冊也行<br />
+<em># 只想看影片的話，甚至不用註冊、登入，就像 Youtube 一樣</em></p>
+</li>
+</ul>
+<hr />
+<p>既然名叫「Peer」，當然有用上對等網路 (peer-to-peer, p2p)<br />
+<em># 翻成「對等管路」可能更好？</em><br />
+靠瀏覽器的 WebRTC、WebTorrent 技術，讓用戶分攤伺服器負載<br />
+所以越多人看同一部影片，伺服器反而越省資源<br />
+<em># 因為使用者提供部分算力</em><br />
+官方沒商業模式，多數實例志願維護者也沒有 (僅少數服務要訂閱、引入廣告外掛)</p>
+<p>缺點：</p>
+<ul>
+<li>影片載入速度較慢<br />
+沒像 Youtube 或 Odysee 那般，對影片做壓縮優化 (或做得不多)</li>
+<li>一樣有不當內容問題<br />
+推廣時被朋友問過：「那不是放 A 片的地方嗎？」<br />
+呃，Peertube 只是平台，不違法、合乎實例規定都能上架，自然什麼影片都有<br />
+官方預設隱藏 NSFW 內容，你也可以自行設定屏蔽 (用戶、站方都行)<br />
+有些實例標榜 NSFW，人家都標明了，是否加入就看你決定囉！<br />
+若有侵害著作權、違法影片 (e.g. 屠殺)，須自行向營運者檢舉<br />
+相較區塊鏈，至少不到近乎無法可管的程度<br />
+且官方統計，所有實例中僅約 1% 為 NSFW 內容，不慎點入的機率低</li>
+</ul>
+<p>Peertube 的吉祥物，是隻可愛的墨魚 Sepia<br />
+官方發文 Sepia 通常也會跟著露面，很想抱一隻來養 (？)<br />
+<img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./assets/ref_images/peertube-sepia.jpg" alt="By David Revoy - https://joinpeertube.org/, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=84134714" /></p>
+<h3 id="dtube">DTube</h3>
+<p>和奧德視相似，同樣建構於區塊鏈上、靠虛擬貨幣打賞<br />
+不過易用程度天差地遠，新手、甚至開發者，初次進入往往會很困惑<br />
+<a href="https://d.tube/">官方入口</a>看不到影片，得從<a href="https://dtube.luminade.fun/">其他</a>節點進入<br />
+<em># 此情形存在已久，恐怕等不到修復</em></p>
+<hr />
+<p>講古：</p>
+<p>法國工程師 <a href="https://www.crunchbase.com/person/adrien-marie">Adrien Marie</a> (網名 heimindanger)，原為 Steem 社群開發者<br />
+2016 年嘗試結合 Steem 區塊鏈、影片分享，隔年推出 DTube (可見結合應該算成功)<br />
+2020 年開始轉到自研區塊鏈 Avalon 上，使用 DTube Coin (DTC)<br />
+由社群選出領銜人 (Leader)，架設節點供大家使用<br />
+任何「上傳、轉貼、投票、留言、標籤」都會<a href="https://token.d.tube/">寫入</a>區塊鏈，並按演算法即時發放 DTC<br />
+持幣者每小時會獲得投票權 (Vote Power)，可投票挖礦或贊助創作者<br />
+投票權能按讚、倒讚，靠互動決定影片排序<br />
+DTube 分配 90% 收益給用戶、創作者，<strong>和 Odysee 一樣沒有廣告</strong><br />
+<em># Odysee 甚至只抽 5% 平台費，加上 2.5% 交易手續費也不過 7.5%</em><br />
+相較之下，Youtube 創作者僅得到 55% 廣告分潤、70% 「超級感謝」贊助<br />
+也就是平台拿走 45% 廣告費、三成贊助金<br />
+很多人說擋 Youtube 廣告傷害創作者，拜託，<strong>選 Youtube 才是傷害創作者！</strong></p>
+<hr />
+<p>缺點：</p>
+<ul>
+<li>易用性低<br />
+官方入口沒影片，對用戶很不友善<br />
+得找其他頁面進入，有被仿冒、釣魚的風險</li>
+<li>若帳戶裡沒 DTC，互動能力受限<br />
+畢竟投票權來自虛擬貨幣，沒錢就沒<del>人</del>權</li>
+<li>流量、內容不多，月活躍用戶大約 20 萬人而已<br />
+<em># Youtube 有數十億以上</em><br />
+那麼難用，當然不易吸引新用戶</li>
+<li>同樣有不當內容問題<br />
+身為區塊鏈，幾乎不可能強制刪除內容<br />
+只能靠大眾給倒讚、平台屏蔽，緩解負面效應<br />
+因此盜版影片、不當內容，管理難度較高<br />
+<em># 除非難用到侵權者也不想來 XD</em></li>
+</ul>
+<br/>
+<hr />
+<br/>
+<h2 id="quan-yi-ti-dai-pin">權宜替代品</h2>
+<p>怎麼會有這項？<br />
+因為 Youtube 已壟斷市場，許多創作者、內容都在上面<br />
+雖然 Google 仗著高市佔率胡作非為，但直接離席對許多人來說有難度<br />
+<em># 當你追的網紅、愛聽的音樂只在 Youtube 上，換平台就等於放棄一切</em><br />
+所以「相對保障隱私」、「提升使用體驗」、「開源」的選擇，因此變得重要<br />
+以下選項多是 <strong>Youtube 隱私前端</strong>，未完全擺脫 Google<br />
+<em># 由於種類繁多但原理相似，介紹會相對簡略</em></p>
+<h3 id="invidious"><a href="https://invidious.io/">Invidious</a></h3>
+<p>社群開發者 <a href="https://omar.yt/">Omar Roth</a> 希望使用 Youtube 時，不必犧牲隱私<br />
+所以創立 Invidious，作為代理伺服器取得 Youtube 影片資料、標題等 Metadata<br />
+原理是「你訪問 Invidious，Invidious 替你訪問 Youtube，再把資料回傳給你」<br />
+Invidious 未使用 Youtube API，而是用爬蟲方式搜羅資料<br />
+變成「少了廣告、追蹤器的 Youtube」，仍有訂閱、播放清單功能<br />
+還支援 <a href="https://sponsor.ajay.app/">SponsorBlock</a>，能把業配片段拔掉</p>
+<p>缺點：</p>
+<ul>
+<li>依賴 Youtube，且服務不穩定<br />
+Google 三不五時調整 Youtube 結構，常導致爬取流程出狀況</li>
+<li>仰賴服務架設者<br />
+Invidious 代理伺服器人人可架設，營運者會不會哪天停掉 instance 無法保證<br />
+2020 年時，連創辦人 Omar Roth 都從 Invidious 退休了，長期服務堪慮<br />
+<em># 創辦人說無法負荷龐大工作量、心理健康出問題，畢竟這是無償的</em></li>
+</ul>
+<p>想試試的，可參見實例 (instance)<a href="https://docs.invidious.io/instances/">列表</a></p>
+<h3 id="piped"><a href="https://piped.video/">Piped</a></h3>
+<p>和 Invidious 原理相似，都透過第三方 instance，用爬蟲取得 Youtube 內容轉發給用戶<br />
+創辦人厭倦 Invidious 常常掛掉，所以另立新專案<br />
+<em># 諷刺的是，Piped 也常崩潰</em><br />
+Invidious 有的功能，Piped 大致都有，還能跨越年齡限制<br />
+且效率更高，前端用 Vue、後端用 Java (使用 NewPipeExtractor)<br />
+代理伺服器則以 Rust 寫成，架設可參考<a href="https://ivonblog.com/posts/piped-youtube-alternative-frontend/">中文指南</a><br />
+只想使用的話，請見實例 (instance)<a href="https://github.com/TeamPiped/documentation/blob/main/content/docs/public-instances/index.md">列表</a></p>
+<p>缺點：</p>
+<ul>
+<li>依賴 Youtube，且服務不穩定</li>
+</ul>
+<h3 id="freetube"><a href="https://freetubeapp.io/">FreeTube</a></h3>
+<p>社群做的<strong>電腦版</strong> Youtube app，<a href="https://github.com/FreeTubeApp/FreeTube">開源</a>、免費<br />
+可避開 Youtube 廣告、追蹤器，甚至不用帳號<br />
+支援 SponsorBlock 和訂閱頻道，也能透過 Invidious 代理連線至 Youtube<br />
+<em># 否則會直接依賴 Youtube，所以官方建議翻 VPN 或 <a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./deGoogle-browser.md">Tor</a></em><br />
+Windows、MacOS、多種 Linux 分支都能用</p>
+<p>缺點：</p>
+<ul>
+<li>系統<a href="https://github.com/FreeTubeApp/FreeTube?tab=readme-ov-file#official-downloads">有限制</a>，太舊的可能不相容<br />
+官方說 Windows 要 10 以上、MacOS 12 以上</li>
+<li>若未使用代理伺服器、VPN 或 Tor，IP 仍會被 Google 知道<br />
+畢竟是直接連線到 Youtube，透過非官方手段取得內容<br />
+所以連線資訊如 IP，依舊會傳給 Google</li>
+</ul>
+<hr />
+<p><strong>接下來連三個是 Android App</strong></p>
+<h3 id="newpipe"><a href="https://github.com/FreeTubeApp/FreeTube?tab=readme-ov-file#official-downloads">NewPipe</a></h3>
+<p>新管 (？)，是社群開發的 Android app，用以代替 Youtube 應用程式<br />
+無廣告、可匯入播放清單、能追頻道，同樣不需 Youtube 帳號<br />
+且不只 Youtube，NewPipe 也支援 <a href="https://joinpeertube.org/">PeerTube</a> 和諸多平台，功能很多樣<br />
+優勢是效能高 (幾乎無延遲)、服務穩定，可從 <a href="https://f-droid.org/packages/org.schabi.newpipe/">F-Droid</a> 取得<br />
+<em># F-Droid 是開源 Google Play 替代品，詳情請見<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./deGoogle-appStore.md">這篇</a></em><br />
+連 Piped 都採相同 API，Android 玩家值得一試</p>
+<p>缺點：</p>
+<ul>
+<li>仰賴 Youtube (除非你拿來看 Peertube 或其他平台)<br />
+NewPipe 本質是隱私前端，所以仍需有後端服務<br />
+因無代理伺服器，你的 IP 會被 Youtube 看到<br />
+<em># 在意的話請翻 VPN、Tor</em></li>
+<li>目前在 Beta 公測，可能有 bug<br />
+說是這麼說，但除了斷網會跳 bug 警示，鮮少碰到問題</li>
+<li>不支援 SponsorBlock<br />
+官方團隊說，業配屬「非侵入式廣告」，且對創作者來說是重要收入來源<br />
+因此不納入考量，確實頗合理</li>
+</ul>
+<p>支援多種語言，包括<a href="https://github.com/TeamNewPipe/NewPipe/blob/dev/doc/README.zh_TW.md">正體中文</a>，不怕語言隔閡</p>
+<h3 id="youtube-revanced"><a href="https://vanced.to/">Youtube ReVanced</a></h3>
+<p>常簡稱 ReVanced，不過 ReVanced 本身是個社群，推出各種 app<br />
+只是 Youtube ReVanced 特別受歡迎，因以為號焉</p>
+<hr />
+<p>鑑於發展歷程精彩，來講古一下：<br />
+從前 Vanced 破解 Youtube 應用程式，用戶能免費享受無廣告、背景播放功能<br />
+但這種逆向工程違法，被 Google 警告後停止更新<br />
+後繼者 ReVanced 於是接手，改釋出「工具」給用戶<br />
+換句話說，破解是你破解的、擋廣告程式是你裝的，不關他們的事<br />
+<em># 即「刀子放在路邊，是你自己拿去砍人的」</em><br />
+程式碼<a href="https://github.com/revanced">開源</a>、免費，沒有「不當獲益」的把柄給 Google 抓</p>
+<hr />
+<p>缺點：</p>
+<ul>
+<li>仰賴 Youtube，畢竟它只是應用程式</li>
+<li>需手動「補丁」，有些技術門檻<br />
+不過<a href="https://www.reddit.com/r/revancedapp/comments/10nyr2t/complete_guide_frequently_asked_questions/">社群資源</a>很多，也有<a href="https://ivonblog.com/posts/youtube-revanced/">中文教材</a>，應該不是難事</li>
+</ul>
+<h3 id="libretube"><a href="https://libretube.dev/">LibreTube</a></h3>
+<p>社群的<a href="https://github.com/libre-tube/LibreTube?tab=readme-ov-file">開源</a>專案，用以替代 Youtube Android 應用程式<br />
+「號稱」可建播放清單、無廣告、支援 SponsorBlock、影片下載...<br />
+但使用 Piped API，可想而知只要 Piped 掛了就會跟著掛<br />
+<em># Piped 又常常掛，所以 LibreTube 可用性難保證</em><br />
+假設運作正常，則不會暴露 IP (畢竟連到代理伺服器)、輕量、保障隱私</p>
+<p>缺點：</p>
+<ul>
+<li>服務不穩定<br />
+看得見吃不著，優點再多也沒用啊！</li>
+</ul>
+<p>鑑於頗受歡迎，就還是提一下</p>
+<hr />
+<p>果迷別急，接下來就該你們了</p>
+<h3 id="yattee"><a href="https://github.com/yattee/yattee">Yattee</a></h3>
+<p>社群開源專案，不僅 iOS，Mac 也能用<br />
+原理是連到代理伺服器，獲取影片再傳給用戶<br />
+<em># 代理伺服器通常是 Piped 或 Invidious</em><br />
+無廣告、免費，可背景播放、懸浮視窗播放，也支援 SponsorBlock<br />
+為掩人耳目 (？)，Yattee 剛下載會發現只能播放本機影片<br />
+但別擔心，把站台網址加進去就能用了</p>
+<p>缺點：</p>
+<ul>
+<li>非全自動化，下載完尚需手動初始化站台 (代理伺服器端點)<br />
+不知道怎麼加的，可參閱<a href="https://ivonblog.com/posts/ios-yattee/">中文教學</a></li>
+<li>仰賴 Invidious 或 Piped 服務，可想而知很不穩定</li>
+</ul>
+<h3 id="ytliteplus"><a href="https://ytliteplus.github.io/">YTLitePlus</a></h3>
+<p>社群有 <a href="https://github.com/dayanch96/YTLite?tab=readme-ov-file">YTLite</a> 和 <a href="https://github.com/YTLitePlus/YTLitePlus">YTLitePlus</a>，兩者皆開源<br />
+都是 iOS Youtube app 的修改版，堪稱 iOS 版的 ReVanced<br />
+前者極簡、重效能，所以僅有背景播放、去除廣告、下載影片等核心功能<br />
+後者除基礎功能，還有 OLED 暗色模式、倒讚、iSponsorBlock...<br />
+<em># iSponsorBlock 就是 iOS 版的 SponsorBlock，用於移除業配片段</em></p>
+<p>缺點：</p>
+<ul>
+<li>服務不穩定，偶有用戶<a href="https://www.reddit.com/r/sideloaded/comments/1l82ke3/ytliteplus_not_working/">反映</a>當機</li>
+<li>使用者較小眾，維護、更新的頻率都較低<br />
+也因為用的人少，可能有潛在優 / 缺點沒被我查到<br />
+如果你用後發現極大亮點、或大爛 bug，歡迎補充</li>
+</ul>
+<hr />
+<p>再來就是其餘<del>人口</del>裝置</p>
+<h3 id="smarttube-next"><a href="https://smarttubeapp.github.io/">SmartTube(Next)</a></h3>
+<p>給 Android 電視的 Youtube app 開源替代品，主要開發者為烏克蘭人<br />
+近期改名叫 SmartTube，兩者是<a href="https://smarttubenext.com/faq/">同一回事</a><br />
+基本上就是「電視版 Youtube ReVanced」，Android TV <a href="https://github.com/yuliskov/SmartTube#device-support">相關設備</a>都支援<br />
+特色包括無廣告、整合 SponsorBlock、登入功能...，詳見<a href="https://github.com/yuliskov/SmartTube#-features">官方說明</a></p>
+<p>缺點：</p>
+<ul>
+<li>主要支援烏文、俄文、英文，其他語言可能要等<br />
+<em># 或是你去幫忙翻譯</em></li>
+<li><a href="https://github.com/yuliskov/SmartTube#-limitations">部分功能</a>不穩定，或效果不佳</li>
+<li>安裝、建置較麻煩，有技術門檻</li>
+</ul>
+<h3 id="avideo"><a href="https://www.avideo.com/">Avideo</a></h3>
+<p>舊稱 YouPHPTube，可想而知使用 PHP 語法、生態系<br />
+開源，不過<strong>背後是美國公司</strong> WWBN (World Wide Broadcast Network, Inc.)<br />
+是「可自架的串流平台」，類似 PeerTube</p>
+<p>缺點：</p>
+<ul>
+<li>資安問題大，<a href="https://portswigger.net/daily-swig/vulnerabilities-in-open-source-streaming-platforms-youphptube-and-avideo-could-lead-to-rce">漏洞</a><a href="https://github.com/Chocapikk/CVE-2024-31819">層出不窮</a><br />
+資安有破口，隱私便不保</li>
+<li>美國公司所有，<strong>受制美國政府</strong><br />
+優點是開源，若有後門容易被發現</li>
+</ul>
+<p>主要開發者蠻奇葩的，還在程式碼倉庫<a href="https://github.com/WWBN/AVideo#first-thing">傳教</a><br />
+論功能完整性、易用性、社群活躍與健全度，怎樣也是<strong>選 PeerTube</strong><br />
+但人家開源，就還是提一下囉！</p>
+<br/>
+<hr />
+<br/>
+<h2 id="jia-ma">加碼！</h2>
+<h3 id="brave-liu-lan-qi"><a href="https://brave.com/zh-tw/download/">Brave 瀏覽器</a></h3>
+<p>想要零廣告、背景播放的 Youtube，直接裝 Brave 瀏覽器就行了<br />
+內建的廣告攔截器，就能給你絲滑體驗<br />
+且各大桌面平台、行動裝置，通通都支援<br />
+<em># 這應該算公開的秘密了</em><br />
+當正常瀏覽器用，也沒問題！</p>
+<h3 id="ublock-origin"><a href="https://ublockorigin.com/">uBlock Origin</a></h3>
+<p>簡稱 UBO，堪稱地表最強內容攔截器，是個瀏覽器外掛<br />
+能高效擋下追蹤器、廣告，卻幾乎不影響使用體驗<br />
+開源、完全免費，詳情見我的<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./deGoogle-browser.md">瀏覽器介紹</a><br />
+找個 Firefox 基底的瀏覽器，加裝 uBlock Origin，就進入無廣告世界啦！<br />
+<em># 連 Youtube 廣告，也完全不會感覺到喔！</em></p>
+<h3 id="grayjay"><a href="https://grayjay.app/">Grayjay</a></h3>
+<p>一言難盡，這是個程式碼公開的 Youtube 隱私前端<br />
+可訪問 Youtube、PeerTube 和 Odysee<br />
+然而 Grayjay 推出時，暫時使用 <a href="https://discuss.privacyguides.net/t/grayjay-frontend/14616/2?u=jonah">FUTO 授權</a><br />
+程式碼可取得，但<strong>非開源</strong><br />
+<em># 詳情請見<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-video-platform/./open-source-intro.md">開源簡介</a></em><br />
+雖然只是暫時，但作者預計將來會<a href="https://discuss.techlore.tech/t/louis-rossmann-announces-grayjay-app/5838/2">收費</a><br />
+既不開源、也非免費，完全不符合 FOSS 定義，所以沒放到推薦圖中<br />
+順帶一提，應用程式裡有遙測喔！</p>
+<p>社群有人推薦過 Tube PiP，是蘋果生態系的 Youtube 前端<br />
+雖然免費但<strong>閉源</strong>，因此不推薦</p>
+<p>電腦版還有 <a href="https://ivonblog.com/posts/th-ch-youtube-music/">Youtbe Music</a> (後改名 <a href="https://github.com/pear-devs/pear-desktop">pear-desktop</a>)，從官方 PWA 改來，有興趣者可參考<br />
+<em># 手機可直接用 NewPipe、Yattee</em></p>
+<br/>
+<hr />
+<br/>
+<h2 id="lan-ren-bao">懶人包</h2>
+<ul>
+<li>
+<p>一般用戶，以收看、收聽為主：</p>
+<ul>
+<li>想完全甩掉偷窺狂 Google → <a href="https://odysee.com/">Odysee</a> / <a href="https://joinpeertube.org/">PeerTube</a> / <a href="https://d.tube/">DTube</a><br />
+看你追的創作者在哪，就選那個平台</li>
+<li>線上訪問 → <a href="https://invidious.io/">Invidious</a> / <a href="https://piped.video/">Piped</a><br />
+瀏覽器用 <a href="https://brave.com/zh-tw/download/">Brave</a>，或 <a href="https://www.firefox.com">Firefox</a> 系列 + <a href="https://ublockorigin.com/">uBlock Origin</a> 也行</li>
+<li>Android 用戶 → <a href="https://newpipe.net/">NewPipe</a><br />
+有技術能力者可選 <a href="https://vanced.to/">Youtube ReVanced</a></li>
+<li>想要電腦應用程式 → <a href="https://freetubeapp.io/">FreeTube</a></li>
+<li>iOS 用戶 → <a href="https://github.com/yattee/yattee">Yattee</a> / <a href="https://ytliteplus.github.io/">YTLitePlus</a></li>
+<li>Android TV 使用者 → <a href="https://smarttubeapp.github.io/">SmartTubeNext</a></li>
+</ul>
+</li>
+<li>
+<p>內容創作者</p>
+<ul>
+<li>開發者，想自架服務 → <a href="https://joinpeertube.org/">PeerTube</a></li>
+<li>想多拿點收益 → <a href="https://odysee.com/">Odysee</a> / <a href="https://d.tube/">DTube</a><br />
+不過 <a href="https://d.tube/">DTube</a> 有點難用，<a href="https://odysee.com/">Odysee</a> 比較友善</li>
+</ul>
+<p>流量都在 Youtube 怎麼辦？<br />
+經營多個平台，靠 Youtube 引流到 <a href="https://odysee.com/">Odysee</a> / <a href="https://joinpeertube.org/">PeerTube</a> / <a href="https://d.tube/">DTube</a> 囉！</p>
+</li>
+</ul>
+<hr />
+<p>用廣告攔截器，看似損害創作者<br />
+但形塑這種生態的，正是平台本身<br />
+嚴格來說，是 Youtube 在壓榨內容創作者、把用戶當韭菜割<br />
+利用壟斷優勢做不當行為，大眾走灰色地帶剛好而已<br />
+想像自來水收費十倍漲，9 成 9 民眾根本沒替代選項<br />
+何況 Youtube 盈利來源是<strong>內容</strong>，由創作者產生<br />
+結果還要被削一大筆，錢太多請拿去<a href="https://www.msf.org.tw/">助人</a>，別餵給貪婪企業</p>
+<p>有個影片平台 Dailymotion，為何沒被替換掉？<br />
+因為它的聲量有點低，我不講你恐怕也沒聽過<br />
+放到圖上大肆批評，反而可能有廣告效果，因此略過</p>
+<hr />
+<p>為了以身作則，我也把 <a href="https://www.youtube.com/@%E9%81%8A%E8%95%A9%E8%80%85">Youtube</a> 頻道搬遷至 <a href="https://video.hardlimit.com/c/aibycter/videos">PeerTube</a>、<a href="https://odysee.com/@%E9%81%8A%E8%95%A9%E8%80%85:4">Odysee</a> 了<br />
+全都免費觀看，歡迎捧場 (不看也無所謂)</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

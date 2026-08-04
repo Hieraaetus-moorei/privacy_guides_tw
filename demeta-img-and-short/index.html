@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="demeta-ti-huan-ig-dou-yin">deMeta - 替換 IG、抖音</h1>
+<blockquote>
+<p>Your metadata is now Meta data</p>
+</blockquote>
+<p>社群有人嘲諷 Meta，因為他們太會偷個資了<br />
+如果你是醫界人士，習慣以 meta 簡稱 metastasis (腫瘤轉移)<br />
+就能進一步諷刺：</p>
+<blockquote>
+<p>Meta will meta to meta your metadata</p>
+</blockquote>
+<p><em># Meta 會轉移去偷 (Meta 幾乎可當偷個資、窺探的同義詞)你的 metadata</em></p>
+<p>論及短影音、照片平台，主流軟體問題都不小，先看圖再說</p>
+<h3 id="ti-huan-zhi-nan">替換指南</h3>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-img-and-short/./assets/deMeta/deMeta-Instagram.png" alt="deMeta Instagram" /><br />
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup><br />
+<sup>non-profit 指「不以營利為目的」</sup></p>
+<h3 id="gai-huan-de-fu-wu">該換的服務</h3>
+<h4 id="instagram-ig">Instagram (IG)</h4>
+<p>以防有人不知道，IG 和 Facebook 一樣，都是 Meta 的產品<br />
+Meta 在隱私、<a href="https://thehackernews.com/2024/09/meta-fined-91-million-for-storing.html">資安</a>上都<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-img-and-short/./deMeta-macroblog.md">劣跡斑斑</a>，例如用明文儲存密碼、默許詐騙廣告肆虐<br />
+Facebook 和 IG 都是，光密碼問題就<a href="https://www.pcmag.com/news/meta-faces-101-million-fine-for-storing-facebook-passwords-in-plaintext">被罰</a> 9000 多萬歐元<br />
+<em># 明文儲存代表公司和員工能用你的密碼登入，當然，跑進伺服器的駭客也行</em><br />
+後來 IG 又<a href="https://www.gdprregister.eu/news/instagram-unauthorized-camera-access/">未經允許</a>，<a href="https://www.cnet.com/tech/mobile/lawsuit-accuses-instagram-of-peeping-with-iphone-camera/">偷拿</a>用戶相機權限，被集體訴訟告上加州法庭<br />
+Meta 說那是 iPhone 的 bug，但兩家公司信用比一比，怎樣也不會相信 Meta 吧！<br />
+如果你覺得偷拍很噁，那怎麼能忍受別人「用你的手機偷拍你」？<br />
+<img src="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-img-and-short/./assets/ref_images/ig-app-data-collection.png" alt="Instagram 在 app store 宣稱會拿的個資" /><br />
+而且 Meta 將在 2026 年底，<a href="https://proton.me/blog/instagram-end-to-end-encryption">移除</a> IG 私訊的端對端加密<br />
+原因沒細講，不過沒端對端加密，他們就能看到對話內容<br />
+個人化廣告很缺這類素材</p>
+<h4 id="snapchat">Snapchat</h4>
+<p>老一輩的聊天軟體，可以拍照片、短影片傳給朋友<br />
+沒聽過最好，代表你沒踩到此雷<br />
+地雷們：</p>
+<ul>
+<li>Snapchat 提供「閱後即焚」功能，可以讓訊息在已讀後自動銷毀<br />
+官方以「讀後會從世上消失」行銷，結果卻<a href="https://www.slashgear.com/1563253/shady-side-snapchat-app-controversy-explained/">並非如此</a><br />
+接收者可儲存你的訊息，因為「閱後即焚」只在官方 app 有效<br />
+<em># 意思是，若接收者用非官方的前端，訊息就不會消失</em><br />
+且接收方影片儲存在 app 沙盒外、檔案未加密，可被外接電腦、程式讀取<br />
+傳送者容易產生「隱私的錯覺」，實際上卻幾乎形同一般訊息<br />
+若接收者用舊版 iPhone，你甚至不會收到他截圖訊息的通知<br />
+Android 更慘，官方說不會蒐集、利用地理位置追蹤用戶，實際上卻相反<br />
+資安同樣沒做好，造成 460 萬用戶名字和門號外洩<br />
+種種因素讓美國 FTC (公平交易委員會)，<a href="https://www.ftc.gov/news-events/news/press-releases/2014/05/snapchat-settles-ftc-charges-promises-disappearing-messages-were-false">要求</a> Snapchat 限期改善<br />
+每兩年稽查結果，每起問題開罰 16000 美元</li>
+<li>蒐集許多個資<br />
+直接看官方<a href="https://naapbooks.com/insights/blog/how-snapchat-is-using-the-privacy-data-of-users/">隱私政策</a>，會蒐集許多敏感個資，例如：<br />
+電話、姓名、生日、地理位置 (現在補上了)、廣告 ID、裝置種類...<br />
+一般 app 就算了，Snapchat 資安如此薄弱，豈不形同交給駭客？</li>
+<li>內部濫用 (insider threat)<br />
+最嚴重的莫過於此<br />
+公司內部有個工具叫 <a href="https://www.vice.com/en/article/snapchat-employees-abused-data-access-spy-on-users-snaplion/">SnapLion</a>，原先是應對執法單位，須提供用戶資料時使用<br />
+可以快速搜集使用者資訊，基本上只要 app 蒐集的個資都能打包<br />
+結果公司<a href="https://threatpost.com/snapchat-privacy-blunder-piques-concerns-about-insider-threats/145074/">沒妥善管理</a> SnapLion，曾發生多起內部員工偷窺客戶的事件<br />
+類似「銀行要你給機敏個資，行員卻能不受監控、管理，亂看你的資訊」<br />
+愛拿又不保管好，儼然 Meta 翻版</li>
+<li>還有極具爭議的<a href="https://www.reddit.com/r/SnapchatHelp/comments/1fcn53j/keep_getting_false_snapchat_notifications/">假通知</a>策略，目的是增加用戶黏著度，i.e. 讓你上癮<br />
+App 會跳通知，但該通知實際上<a href="https://www.reddit.com/r/lonely/comments/i6ctxl/the_dopamine_rush_i_get_from_one_snapchat/">和你無關</a>、或你打開 app 時通知不見了<br />
+為什麼？<br />
+因為那只是為了讓你再開啟它、增加停留時間</li>
+</ul>
+<p>看到這還選擇留下來，那你很有台積 DNA (？)</p>
+<h4 id="tiktok">TikTok</h4>
+<p>即<a href="https://proton.me/blog/tiktok-privacy">惡名昭彰</a>的抖音，光入坑、下載就索取<a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">許多資料</a><br />
+例如生日、裝置 IMEI (i.e. 手機的指紋)、瀏覽記錄、IP...<br />
+基本上就是中國版的 Meta，<del>適合有暴露癖的人</del><br />
+座標當然也躲不掉，如果你是美國人，甚至會被精確定位<br />
+<em># 非中國的鍋，這是美國強制收購抖音才有的</em><br />
+<a href="https://www.cbsnews.com/news/tiktok-new-terms-of-service-privacy-geolocation-personal-information/">美國版</a>甚至還蒐集「種族、國籍、信仰、性生活、經濟狀態、駕照號碼、心理健康狀況」<br />
+就算沒填，很多資訊仍可從日常使用推斷出來<br />
+內建瀏覽器更危險，會插入追蹤程式碼，窺探你的：</p>
+<ul>
+<li>瀏覽記錄</li>
+<li>每個按下的按鈕</li>
+<li>選取的文字</li>
+<li>表單欄位的輸入<br />
+包括密碼、信用卡號、地址...</li>
+</ul>
+<p><em># 壞消息，上述資訊 IG、臉書的內建瀏覽器也會拿</em></p>
+<ul>
+<li>每個<a href="https://proton.me/blog/tiktok-keylogging">鍵觸</a></li>
+</ul>
+<p>還不給預設其他瀏覽器，想逃只能手動複製、到外面貼上<br />
+何況取得資料的是中企，幾乎形同<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-img-and-short/./chinese-service-risk.md">交給中國政府</a></p>
+<p>內容和演算法問題也很多<br />
+歐盟因抖音設計使人上癮，對其祭出<a href="https://www.reuters.com/business/media-telecom/tiktok-hit-with-charges-breaching-eu-online-content-rules-app-may-have-change-2026-02-06/">高額罰款</a><br />
+<a href="https://tw.news.yahoo.com/13%E6%AD%B2%E5%B0%91%E5%B9%B4%E7%8C%9B%E5%97%91-3%E5%8C%85%E7%94%9F%E6%B3%A1%E9%BA%B5-%E8%B7%9F%E9%A2%A8-tiktok%E6%8C%91%E6%88%B0-%E6%85%98%E7%8C%9D%E6%AD%BB-081101232.html">降智挑戰</a>也層出不窮，甚至造成<a href="https://www.storm.mg/lifestyle/5359969">不少死傷</a><br />
+坊間才會有「抖音一響，父母白養」的諷喻</p>
+<h3 id="ti-dai-pin">替代品</h3>
+<h4 id="pixelfed"><a href="https://pixelfed.org/">Pixelfed</a></h4>
+<p>聯邦宇宙的 IG 替代品，加拿大<a href="https://pixelfed.social/dansup">社群開發者</a>製作<br />
+<a href="https://github.com/pixelfed/pixelfed">開源</a>、免費、尊重隱私，商業模式靠自願捐助<br />
+聯邦宇宙 (fediverse) 是一系列使用相同協定的專案，服務可互通<br />
+伺服器可自架，也有別人架好的能直接用，沒單一實體掌控整個生態<br />
+簡單說就是「能選要辦哪家的 IG 帳，還能用 IG 追別人推特」<br />
+<em># 不只先前介紹的 <a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-img-and-short/./deMeta-microblog.md">Mastodon</a>、<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-img-and-short/./deMeta-macroblog.md">Friendica</a>，就連 Meta 的 Threads 也通喔！</em><br />
+功能、介面和 IG 相似，只是少了廣告和追蹤器</p>
+<p>缺點：</p>
+<ul>
+<li>快速開發中，偶有功能不穩<br />
+雖已行之有年，但用戶增長頗快，擴展服務會造成一些負擔</li>
+<li>私訊<strong>沒</strong>端對端加密，站方能看到內容，就像 IG 一樣<br />
+不同的是，Pixelfed 隱私政策友善多了，不會沒事偷窺</li>
+<li>無個人化演算法，滑一滑很容易就覺得無聊<br />
+這可能算好處，畢竟目的和主流平台不同，不是為了<a href="https://www.bbc.com/news/articles/c3wlpqpe2z4o">讓你成癮</a>而設計<br />
+協助避免「睡前滑手機的 5 分鐘，是我一天最快樂的三個小時」窘境</li>
+</ul>
+<p>至於怎麼選伺服器，可以看各伺服器的介紹<br />
+用戶多屬哪種類型，會影響平常看到的內容<br />
+<em># 當然，還是可以去翻其他伺服器的圖文</em></p>
+<br/>
+<p>IG 的開源、優質替代品很少，接下來就換抖音了</p>
+<br/>
+<h4 id="divine"><a href="https://divine.video/discovery/classics">diVine</a></h4>
+<p><a href="https://github.com/divinevideo">開源</a>、分散式、非營利的短影片平臺，標榜「人做的 (human-made)」內容、杜絕 AI<br />
+<em># 看到 AI 內容可以檢舉，屬實會遭撤下</em><br />
+影片 6 秒為限，<del>酷似降智抖音</del></p>
+<hr />
+<p>講古 (可略)<br />
+從前有個平台叫 Vine，以 6 秒短影片為特色<br />
+曾盛極一時，擁有 2 億用戶、還被推特收購<br />
+但 2017 因競爭者眾、財源問題，推特終止了 Vine<br />
+後來前推特 CEO Jack Dorsey，靠旗下非營利機構「其他東西 (Other Stuff)」資助復刻<br />
+推出 diVine 當接替者，甚至把許多 Vine 當初的影片重新上架<br />
+diVine 於焉誕生</p>
+<hr />
+<p>缺點：</p>
+<ul>
+<li>不通聯邦宇宙 (fediverse)，想追 <a href="https://pixelfed.org/">Pixelfed</a> 上的內容需要橋接器<br />
+diVine 使用 Nostr protocol，協定不同自然不直接相容</li>
+<li>不接受 AI 內容<br />
+對不喜歡 AI 的人來說，也許算好處</li>
+<li>似乎沒做 SEO，搜尋排序不佳<br />
+拿「diVine」去搜尋引擎找，恐怕無法第一時間挖到此平台</li>
+<li>無端對端加密私訊</li>
+</ul>
+<p>討厭 Jack Dorsey 的人別擔心，他只是提供奧援，並未持有 diVine</p>
+<br/>
+<h4 id="loops"><a href="https://loops.video/">Loops</a></h4>
+<p>直翻「迴圈」，是聯邦宇宙 (fediverse)的抖音替代品<br />
+<a href="https://github.com/joinloops/loops-server">伺服器</a>、<a href="https://github.com/joinloops/loops-expo">應用程式</a>都開源，且免費、無廣告<br />
+<em># 主要開發者和前述 Pixelfed 是同一個喔！</em><br />
+功能和一般短影音平台相近，只是少了追蹤器、大量演算法推送</p>
+<p>缺點：</p>
+<ul>
+<li>尚在早期公測，難保證穩定性<br />
+尖峰時偶爾會 lag，Pixelfed 曾經也有類似情況 (現已改善不少)</li>
+<li>用戶較抖音少，內容也許沒那麼豐富</li>
+</ul>
+<p>聯邦網路的好處，就是能追蹤其他服務，例如 <a href="https://pixelfed.org/">Pixelfed</a>、<a href="https://mastodon.social/explore">Mastodon</a><br />
+且有多個服務站點能選，不爽還可以自己架</p>
+<br/>
+<hr />
+<br/>
+<h3 id="lan-ren-bao">懶人包</h3>
+<ul>
+<li>換 IG → <a href="https://pixelfed.org/">Pixelfed</a></li>
+<li>換抖音：
+<ul>
+<li>想加入聯邦宇宙 (fediverse) → <a href="https://loops.video/">Loops</a></li>
+<li>不喜歡 AI 內容 → <a href="https://divine.video/discovery/classics">diVine</a></li>
+</ul>
+</li>
+</ul>
+<p>應該夠懶人了，畢竟就三個而已</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

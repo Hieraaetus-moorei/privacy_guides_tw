@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="ling-xin-ren-zero-trust-bei-hai-wang-xiang-zheng">零信任 (zero trust) - 被害妄想症</h1>
+<p>資安領域常提「零信任 (zero trust)」原則，幾乎已是設計系統的黃金準則<br />
+<em># 不在乎資安的另當別論</em><br />
+網路上已有<a href="https://moda.gov.tw/press/multimedia/blog/9773">許多</a><a href="https://www.trendmicro.com/zh_tw/what-is/what-is-zero-trust.html">文章</a>，講得也算清楚<br />
+故本文僅做「大眾友善 (i.e. 不專業)」版分享，讓你輕鬆認識零信任</p>
+<hr />
+<h3 id="he-wei-ling-xin-ren">何謂零信任？</h3>
+<p>一言以蔽之：沒驗證前，誰都不相信<br />
+且驗證須週期性進行，非「一旦通關就順風順水」<br />
+像偵探一樣，先懷疑每個人，再分別排除嫌疑<br />
+<em># 靠「驗證」排除嫌疑，驗證方式可自行定義，e.g. 登入</em></p>
+<p>講古：<br />
+尚無零信任概念的黑暗時代，企業資安架構通常是：<br />
+用戶、外部連線視為危險來源，需謹慎防範<br />
+築好防火牆，就不愁吃穿了 (？)</p>
+<p>等等，難道內部人員就絕對沒問題嗎？</p>
+<p>首先，員工可能基於好奇，從內部亂玩系統，挖出不該接觸的機敏資訊<br />
+<em># 抱歉，我就是愛亂挖的那個</em><br />
+再者，若企業把勞工當奴隸，低薪、文化爛、霸凌層出不窮，還只會包庇<br />
+那遭受蓄意刪除、竄改資料，或其他報復行為也不奇怪<br />
+遑論外部利誘，策反的可能性大增<br />
+知名駭客組織 LapSus$，就很擅於「招募」別人企業的員工<br />
+畢竟比起外部強攻，從內部滲透容易得多<br />
+咱垂雅大師<a href="https://comicvine.gamespot.com/profile/shootingnova/blog/compilation-of-kreias-quotes/100071/">曾說</a>：</p>
+<blockquote>
+<p>Do not see every enemy as an enemy. See them instead as an ally, whether they know it or not.</p>
+</blockquote>
+<p><em># 別把所有敵人當敵人，不如當盟友看待，哪怕對方沒意識到</em></p>
+<p><img src="https://media.tenor.com/A_msXGZyRtoAAAAC/kreia-kotor2.gif" alt="kreia speaking gif" /></p>
+<p>即使無惡意，光是簡單、古老的手法 - 釣魚郵件或連結，就能搞倒一票企業<br />
+<em># 且通常一人中招，便足以威脅整個公司個資料</em></p>
+<p>說那麼多，不是要老闆監控員工<br />
+而是設計系統時，應先假設有內鬼、假設防火牆必有疏漏、假設已中毒<br />
+因此系統要能確保，即使某區塊出事，災情也不會肆虐<br />
+例如：ㄒ</p>
+<ul>
+<li>每個區塊各自隔離，無法任意互相存取<br />
+<em># 就是沙盒啦！</em><br />
+鄰居家失火，只要防火巷沒停滿車，你家就還安全</li>
+<li>僅授予必要權限，不該給的都別給<br />
+若權限毫無管制，買通一個人資就能刪掉整個 Google<br />
+用一般產業比喻：一個小小人資卻手握全公司鑰匙，包括金庫<br />
+你會沒事發萬能鑰匙給每位員工嗎？<br />
+不會的話，權限為何不用管控呢？</li>
+<li>偵測機制<br />
+保存活動紀錄，誰、何時、用了哪些功能，最好都留<br />
+不然被駭了都沒發現，事情只會越來越大條<br />
+及早發現，及早治療<br />
+哪怕後知後覺，也好過不知不覺</li>
+<li>應變措施<br />
+發現異常後，總得處理吧！<br />
+自動鎖帳、人工排查、或其他手段都行，至少要有應對 SOP<br />
+隔離區只能避免災害擴大，不會自動消災<br />
+鄰居家遭祝融，哪怕防火巷都正常，大家還是會設法滅火</li>
+</ul>
+<p>零信任是持續性的過程，不會出現「採取了某措施，就永遠安全」的現象<br />
+因為技術會演進、駭客也不曾停下腳步</p>
+<blockquote>
+<p>Bad guys never sleep - <a href="https://www.linkedin.com/in/jeffcrume">IBM Jeff</a></p>
+</blockquote>
+<p>無法保證超前部署，至少也要追平<br />
+魔高一丈，道卻沒高一尺，豈不任人宰割？</p>
+<hr />
+<p>以上論述很眼熟嗎？<br />
+沒錯，零信任也能推廣至消費者<br />
+任何個體、機構、服務未證明可靠前，都不該信任<br />
+即<strong>先假設最糟狀況</strong>，連最壞情境都能防範，其他就毋需擔憂<br />
+前幾篇<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/zero-trust-persecurity-delusion/./deGoogle-search-engine.md">替換文章</a>，就落實此哲學：</p>
+<ul>
+<li>閉源軟體無法自證清白，所以不該信任</li>
+<li>每個服務都先想最糟狀況，例如官方想偷你資料<br />
+許多軟體透過加密、開源供審核、資料不離機等方式，證實自己可受信任<br />
+<em># 就算要做壞事也是公然做，因為程式碼都公開，而使用者能選擇是否接受</em></li>
+<li>假設 NSA 在監控你，挑出「不怕偷窺」的選擇</li>
+</ul>
+<p>需信任的對象越多，攻擊面積就越大<br />
+任何一者出事，你的資料就不安全<br />
+例如用 iPhone 裝 Google 地圖，需要擔心蘋果、Google<br />
+兩者都能盜你資料，且兩者都可能<a href="https://www.livemint.com/technology/tech-news/data-breach-alert-google-warns-hackers-exploited-oracle-apps-to-steal-data-and-send-extortion-emails-11759454790894.html">被駭</a><br />
+相較之下，Android 裝 Google 地圖、iPhone 裝蘋果地圖，對手就只有一個<br />
+<em># 當然，選保障隱私的<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/zero-trust-persecurity-delusion/./deGoogle-map.md">地圖</a>、<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/zero-trust-persecurity-delusion/./deGoogle-mobile-OS.md">OS</a> 更好</em></p>
+<p>有點像被害妄想症，對所有東西都採最嚴格標準<br />
+畢竟防人之心不可無，預防總比治療好<br />
+就像疫苗打了卻沒疾病，頂多浪費資源<br />
+但沒打疫苗遇上疫情，後果難以挽回</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

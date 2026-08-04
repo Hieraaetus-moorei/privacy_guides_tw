@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="degoogle-ti-huan-jian-pan">deGoogle - 替換鍵盤</h1>
+<blockquote>
+<p>我手機超方便的，可以直接用鍵盤搜尋</p>
+</blockquote>
+<p>不少人享受<a href="https://support.google.com/gboard/answer/9058099?hl=zh-Hant&amp;co=GENIE.Platform%3DAndroid">方便性</a>的同時，疏忽了隱私與資安的風險</p>
+<p>「手機鍵盤」接觸許多機敏資訊，說是「最貼身的程式」也不為過<br />
+傳訊息給朋友、輸入銀行帳密、寫電郵給老闆...<br />
+幾乎所有手機功能，都依賴鍵盤<br />
+<em># 別以為語音、手寫輸入就沒事，那些攻擊面積更大</em><br />
+若所有 app 都換了，卻用著預設鍵盤，形同資料裝進保險庫，但忘記關門</p>
+<hr />
+<h3 id="cong-tu-kai-shi-kan-ba">從圖開始看吧！</h3>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-keyboard/./assets/deGoogle/deGoogle-keyboard.png" alt="deGoogle keyboard" /><br />
+<sup>圖源：除了我還會有誰？</sup><br />
+<sup>FOSS 指「免費開源軟體 (Free and Open Source Software)」</sup><br />
+<sup>non-profit 指「不以營利為目的」</sup></p>
+<h3 id="qian-huan-jian-pan">欠換鍵盤</h3>
+<h4 id="gboard">Gboard</h4>
+<p>Android 手機預設鍵盤，多半為 Gboard (Google keyboard)<br />
+顧名思義來自 Google，有不少隱私問題：</p>
+<ul>
+<li>Gboard 使用<a href="https://security.googleblog.com/2020/10/privacy-preserving-smart-input-with.html">聯邦學習</a> (federated learning)，先將資料去識別化再傳給 Google<br />
+理論上 Google 不會看到輸入內容，但<a href="https://arxiv.org/abs/2306.14793">特定情況</a>仍有機會回推</li>
+<li>語音輸入會<a href="https://www.wired.com/story/apple-googles-ai-wizardry-promises-privacy-cost/">傳到雲端</a>，模型運算完再送回<br />
+部分 Pixel 機型支援地端運算，但多數機種、語言並非如此</li>
+<li>Google 會儲存用戶和語音助理的互動內容，員工和承包商還會<a href="https://www.wired.com/story/whos-listening-talk-google-assistant/">抽樣聽取</a><br />
+據稱是用於改善服務，但問題是消費者並不知情</li>
+<li>拼音輸入法風險高，資料常會上傳雲端<br />
+且加密多半<a href="https://blog.lapcom.com.hk/2024/05/29/prevent-android-keylogging-and-ime-spying/">未落實</a>，變成<a href="https://citizenlab.ca/2024/04/vulnerabilities-across-keyboard-apps-reveal-keystrokes-to-network-eavesdroppers/">安全漏洞</a></li>
+<li>輸入語言、當下時間、在哪個應用程式打字、字串長度等 metadata，都會<a href="https://www.kaspersky.com/blog/prevent-android-keylogging-and-ime-spying/51281/">被記錄</a></li>
+<li>索求<a href="https://medium.com/startup-grind/smartphone-keyboards-the-achilles-heel-of-data-privacy-182a69047a7b">過多權限</a>，包括網路、精確座標、硬碟、聯絡人、身份、麥克風、相機...<br />
+麥克風和網路權限，還能用語音輸入、優化服務當藉口<br />
+但請問鍵盤要你的座標 (你人在哪)、聯絡人、相機是想幹嘛？</li>
+</ul>
+<p>寫到這裡，只能說喜歡被偷窺的可以繼續用</p>
+<h4 id="swiftkey">SwiftKey</h4>
+<p>微軟的手機鍵盤，同樣有多項隱私爭議</p>
+<p>等等，微軟連手機市場都沒有，卻推出鍵盤！？</p>
+<p>想笑死誰呀！<br />
+<img src="https://media.tenor.com/sD3x5P_M778AAAAC/spongebob-squarepants-patrick-star.gif" alt="patrick laughing meme" /><br />
+沒錯，他們就是出了鍵盤<br />
+而且華為、三星多款手機，都拿 SwiftKey 當預設鍵盤<br />
+先前 Gboard 的問題，SwiftKey 也不遑多讓：</p>
+<ul>
+<li>要求<a href="https://medium.com/startup-grind/smartphone-keyboards-the-achilles-heel-of-data-privacy-182a69047a7b">過多權限</a>，包括網路、GPS 精確座標、儲存空間、身份</li>
+<li>Google 拿的 <a href="https://www.kaspersky.com/blog/prevent-android-keylogging-and-ime-spying/51281/">metadata</a>，微軟也都要</li>
+</ul>
+<p>該傳到雲端的，當然也沒少<br />
+畢竟人家要練 AI，而你的資料剛好很可口</p>
+<hr />
+<h3 id="ti-dai-pin">替代品</h3>
+<h4 id="heliboard"><a href="https://github.com/Helium314/HeliBoard?tab=readme-ov-file">HeliBoard</a></h4>
+<p>社群開發者<a href="https://github.com/Helium314">氦 314</a> 推動的專案，開源、完全離線<br />
+是 <a href="https://github.com/openboard-team/openboard">OpenBoard</a> 的分支 (fork)，也是繼任者<br />
+<em># OpenBoard 是廣受歡迎的開源鍵盤，但久未維護已被封存</em><br />
+HeliBoard 可自訂：</p>
+<ul>
+<li>個人字典 (包括 emoji、科學符號等)<br />
+也可拿<a href="https://codeberg.org/Helium314/aosp-dictionaries#dictionaries">現成的</a></li>
+<li>鍵盤主題<br />
+風格、背景圖片、亮 / 暗色都行</li>
+<li>鍵盤佈局<br />
+按鍵位置、快捷鍵設定等</li>
+</ul>
+<p>支援單手模式、剪貼簿歷史紀錄、分拆鍵盤等<br />
+拼寫檢查、用字建議也沒少，很受社群推崇</p>
+<p>缺點：</p>
+<ul>
+<li>滑動輸入使用<strong>閉源</strong>函式庫 (但至少透明揭露)</li>
+<li>注音輸入大有障礙，比較適合英語系使用者<br />
+東亞語言支援都較弱，尚在發展階段</li>
+</ul>
+<p>僅上架 <a href="https://f-droid.org/packages/helium314.keyboard/">F-Droid</a>，要跑對地方才能下載唷！<br />
+<em># 不知道 F-Droid 的，可參閱<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-keyboard/./deGoogle-appStore.md">前篇文章</a></em></p>
+<h4 id="florisboard"><a href="https://florisboard.org/">FlorisBoard</a></h4>
+<p>同樣為社群驅動的<a href="https://github.com/florisboard/florisboard">開源專案</a>，成立 FlorisBoard.org 管理開發流程<br />
+<a href="https://florisboard.org/legal/privacy/">開發者</a> <a href="https://github.com/lm41">Lars Mühlbauer</a> 為德國人、<a href="https://github.com/patrickgold">Patrick Goldinger</a> 是奧地利人<br />
+主打高度客製化、離線使用，同樣尊重隱私<br />
+同樣可自訂鍵盤排列、佈景主題、功能手勢、按鍵震動 / 聲響回饋...<br />
+支援滑動輸入、剪貼簿歷史紀錄、單手模式等</p>
+<p>缺點：</p>
+<ul>
+<li>尚在 Beta 測試階段，有些功能不穩定</li>
+<li><strong>還</strong>沒有拼寫檢查<br />
+但列在計劃中，可參見<a href="https://github.com/florisboard/florisboard/blob/main/ROADMAP.md">產品規劃</a></li>
+<li>和 HeliBoard 一樣，不支援注音<br />
+畢竟開發者是歐洲人，對拉丁語系比較熟<br />
+其他語言，還有待社群開發者投入 (例如你我)<br />
+上架在 <a href="https://f-droid.org/packages/dev.patrickgold.florisboard/">F-Droid</a>，<a href="https://apps.obtainium.imranr.dev/redirect.html?r=obtainium://app/%7B%22id%22%3A%22dev.patrickgold.florisboard%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fflorisboard%2Fflorisboard%22%2C%22author%22%3A%22florisboard%22%2C%22name%22%3A%22FlorisBoard%20Stable%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22stable%5C%22%7D%22%7D%0A">Obtanium</a> 亦可取得<br />
+<em># 應用程式商店請見<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-keyboard/./deGoogle-appStore.md">這篇</a></em></li>
+</ul>
+<h4 id="simple-keyboard"><a href="https://github.com/rkkr/simple-keyboard">Simple Keyboard</a></h4>
+<p>直翻簡易鍵盤，超輕量、社群發起的開源鍵盤<br />
+<em># 開發者是立陶宛人</em><br />
+主打純粹、輕量、極簡主義</p>
+<p>多輕量呢？</p>
+<p>大小不到 1MB，非常省空間<br />
+<em># 參考值：一般應用程式動輒幾十、上百 MB</em><br />
+也因此僅具基本功能，花俏的東西都沒有<br />
+當然也可離線使用，因為它沒連網功能 XD<br />
+<a href="https://f-droid.org/packages/rkr.simplekeyboard.inputmethod/">F-Droid</a> 和 Google Play 都能取得</p>
+<p>缺點：</p>
+<ul>
+<li>非常陽春，無滑動輸入、拼寫檢查、表情符號等<br />
+官方自己<a href="https://github.com/rkkr/simple-keyboard#about">說</a>，可能永遠不會加入那些功能</li>
+<li>不支援中文</li>
+</ul>
+<p>極簡主義者或許會喜歡</p>
+<h4 id="anysoftkeyboard"><a href="https://anysoftkeyboard.github.io/">AnySoftKeyboard</a></h4>
+<p>社群發起的離線、<a href="https://github.com/AnySoftKeyboard/AnySoftKeyboard">開源</a>鍵盤，支援<a href="https://github.com/AnySoftKeyboard/AnySoftKeyboard/blob/main/addons/languages/PACKS.md">多種語言</a><br />
+<em># 抱歉，<strong>不</strong>包括中文</em><br />
+可自訂鍵盤佈局，預設就有不少選擇<br />
+甚至有終端機佈局，或許開發者會喜歡 (？)<br />
+支援拼寫檢查、暗色模式、建議選字、語音輸入等<br />
+平時能開按鍵震動、音效，亦可啟動省電模式 (震動音效都取消)<br />
+還有「無痕鍵盤」，拼寫建議不會從此學習<br />
+<em># 做偷雞摸狗的事不影響正常選字</em><br />
+滑動輸入仍在測試，<a href="https://discuss.techlore.tech/t/i-tried-11-mobile-keyboards/10627">社群反映</a>該功能尚不穩定<br />
+最特別之處，莫過於可自訂手勢搭配執行的動作<br />
+<em># E.g. 左滑換語言</em></p>
+<p>缺點：</p>
+<ul>
+<li>不支援中文</li>
+<li>滑動輸入測試中，功能不穩<br />
+<em># I.e. 可能會失效</em></li>
+</ul>
+<p><a href="https://f-droid.org/en/packages/com.menny.android.anysoftkeyboard/">F-Droid</a> 和 Google Play 都有<br />
+<em># Google Play 有，代表<a href="https://anysoftkeyboard.en.aptoide.com/app">其他</a><a href="https://auroraoss.com/https://anysoftkeyboard.en.aptoide.com/app">地方</a>也能找到</em></p>
+<h4 id="8vim"><a href="https://8vim.github.io/">8vim</a></h4>
+<p>8vim 是社群推動、受 8pen 啟發的開源專案<br />
+名字很特殊，評價也頗兩極<br />
+8vim 不像傳統鍵盤，採用特殊佈局<br />
+向各種角度滑動，可產出不同字串、符號<br />
+<em># 畫面可參考 F-Droid 上的<a href="https://f-droid.org/en/packages/inc.flide.vi8/">官方展示</a></em><br />
+設計邏輯是熟悉輸入法後，能準確、高速打字<br />
+可自訂功能鍵、配合游標移動、打出特殊字元 (e.g. emoji)</p>
+<p>缺點：</p>
+<ul>
+<li>想當然爾，學習曲線陡峭<br />
+弄熟後或許能高速輸入，但「弄熟」本身就很難哪！<br />
+困難到官方寫一堆<a href="https://8vim.github.io/docs/category/guides/">教學</a>，幫助新手入坑</li>
+<li>據我所知，應該僅支援英文</li>
+</ul>
+<p>有些人盛讚此鍵盤，它又開源、重隱私<br />
+就放這給各位參考，說不定你是萬中選一的超能使用者</p>
+<h4 id="thumb-key"><a href="https://github.com/dessalines/thumb-key">Thumb-Key</a></h4>
+<p>直翻拇指鍵盤，九宮格<a href="https://raw.githubusercontent.com/dessalines/thumb-key/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png">佈局</a>類似按鍵式手機鍵盤<br />
+社群推出的開源專案，旨在「單手拇指即可操作」<br />
+支援離線使用、emoji、滑動和語音輸入、自訂功能鍵...<br />
+開發者<a href="https://github.com/dessalines/thumb-key?tab=readme-ov-file#about-thumb-key">號稱</a>「變成肌肉記憶後，字可以打得像物理鍵盤一樣快」</p>
+<blockquote>
+<p>As the key positions get ingrained into your muscle memory, eventually you'll be able to approximate the fast speeds of <a href="https://en.m.wikipedia.org/wiki/Touch_typing">touch-typing</a>, your eyes never having to leave the text edit area.</p>
+</blockquote>
+<p>似曾相識？<br />
+是的，8vim 也採類似哲學<br />
+Thumb-Key 比 8vim 易學一點，但仍有上手難度</p>
+<p>缺點：</p>
+<ul>
+<li>得花點工夫學習</li>
+<li>似乎不支援中文</li>
+</ul>
+<p><a href="https://f-droid.org/packages/com.dessalines.thumbkey/">多數商店</a>都能找到，免費使用<br />
+<em># 要錢的我才不會推薦哩！</em></p>
+<h4 id="futo-keyboard"><a href="https://keyboard.futo.org/">Futo Keyboard</a></h4>
+<p>本篇唯一「盈利導向」機構的產品，是家美企<br />
+創辦人 Eron Wolf 曾製作 Yahoo Games、種子輪投資並開發 What's App<br />
+現在全資挹注 Futo，使其不受矽谷投資人左右<br />
+<em># 矽谷投資人的金錢遊戲，常會毀掉美妙產品</em><br />
+Futo <a href="https://futo.org/about/what-is-futo/">使命</a>是「取回數位主導權」，擺脫控制狂企業寡頭</p>
+<blockquote>
+<p>We used to control our computers. Now our computers are used to control us.</p>
+</blockquote>
+<p>欸欸別急著走，Futo 鍵盤<strong>免費</strong>、公開原始碼，沒那麼可怕<br />
+之所以沒 FOSS 標籤，是因為它「公開原始碼，但不開源」</p>
+<p>講什麼鬼話？</p>
+<p>請稍安勿躁，<strong>公開原始碼「不等於」開源</strong><br />
+開源定義更廣，必須能「自由取用、重新分發、可產出衍生作品」等<br />
+<em># 詳見<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-keyboard/./open-source-intro.md">開源簡介</a></em><br />
+Futo Keyboard <a href="https://gitlab.futo.org/keyboard/latinime">公開原始碼</a>，但對重置、分發有諸多<a href="https://gitlab.futo.org/keyboard/latinime/-/raw/master/LICENSE.md">限制</a><br />
+畢竟人家要賺錢，怕其他公司整碗端走<br />
+看看該產品好在哪，為何怕別人偷：</p>
+<ul>
+<li>離線使用，包含語音功能<br />
+官方口號：你的鍵盤不應連網</li>
+<li>支援滑動、語音輸入<br />
+語音模型架在本地，也就是你的手機裡<br />
+中文語音也行，但請選<a href="https://keyboard.futo.org/voice-input-models">專用模型</a></li>
+<li>拼寫檢查、預測選字都沒少</li>
+<li>預載少量佈景主題，可輕鬆個人化</li>
+</ul>
+<p>語音輸入、預測選字功能強大，社群好評聲浪不斷<br />
+這就是為什麼明明一堆開源選擇、Futo 身為盈利美企、僅公開原始碼<br />
+卻仍被選入推薦榜，因為實在值得一試<br />
+<em># 重點是離線使用，個資不怕被偷</em></p>
+<p>缺點：</p>
+<ul>
+<li>還在 Alpha 測試階段，功能不太穩定<br />
+有些人回報自動選字、滑動輸入失靈<br />
+偶爾也會出現詭異的 bug，不過官方修復迅速<br />
+<em># Alpha 完才換 Beta，所以仍屬開發嬰兒期</em></li>
+<li>尚無剪貼簿整合</li>
+<li>缺乏注音鍵盤</li>
+<li>美企</li>
+</ul>
+<p>可一次性付費購買授權，但不給錢也無任何影響 (免費仔鬆一口氣)<br />
+類似捐助，確保 Futo 能存活下去</p>
+<h4 id="guileless-bopomofo-pu-shi-zhu-yin-jian-pan"><a href="https://github.com/hiroshiyui/GuilelessBopomofo">Guileless Bopomofo (樸實注音鍵盤)</a></h4>
+<p>看完一堆美妙鍵盤，卻沒一個能打注音，很惱怒嗎？<br />
+這不就來了 - 本篇第一個 (也是唯一)堪用的注音鍵盤<br />
+由<a href="https://ghostsinthelab.org/">台灣人</a>開發的<a href="https://bobtung.medium.com/">社群</a><a href="https://github.com/cataska">專案</a>，開源、尊重隱私、可離線使用<br />
+Guileless 指「誠實、老實的」，Bopomofo 就是ㄅㄆㄇㄈ啦！<br />
+援引<a href="https://chewing.im/about.html">新酷音</a>輸入法，即你熟悉的注音鍵盤<br />
+一直有在更新，介面越變越好看 (維護錯重點？)<br />
+上架在 <a href="https://f-droid.org/zh_Hant/packages/org.ghostsinthelab.apps.guilelessbopomofo/">F-Droid</a>，永久免費、無廣告</p>
+<p>缺點：</p>
+<ul>
+<li>無自動選字功能，得老老實實拼寫</li>
+<li>偶爾會有 bug，畢竟開發者只有一人、也沒拿錢<br />
+<em># 本文撰寫時，按下該鍵盤逗號都會變成「ㄝ」，後來已修正</em></li>
+</ul>
+<p>能切換英文輸入，還算堪用</p>
+<h4 id="unexpected-keyboard"><a href="https://github.com/Julow/Unexpected-Keyboard">Unexpected Keyboard</a></h4>
+<p>社群推出的開源離線鍵盤，不蒐集個資、也完全免費 (但你可以贊助)<br />
+配置乍看很普通，不過各按鍵四周都被標上小符號<br />
+按住按鍵後，往哪個角落滑就能輸出該角落的符號<br />
+免切換輸入法，就能打出各種文字<br />
+<em># 不易想像的話，可參見<a href="https://github.com/Julow/Unexpected-Keyboard#unexpected-keyboard-">官方示範</a></em><br />
+支援多語言，但不包括注音<br />
+不需學習，裝完大概就會用</p>
+<p>缺點：</p>
+<ul>
+<li>沒注音輸入</li>
+<li>無拼寫檢查、建議詞彙</li>
+<li>社群批評有點醜，不過審美觀因人而異<br />
+<a href="https://f-droid.org/en/packages/juloo.keyboard2/">F-Droid</a>、<a href="https://unexpected-keyboard.en.aptoide.com/app">Google Play</a> 都能取得</li>
+</ul>
+<hr />
+<h4 id="ios-jian-pan">iOS 鍵盤？</h4>
+<p>前面只提 Android 替代品，那 iPhone 用戶呢？<br />
+蘋果預設鍵盤 QuickType，難道不用換嗎？</p>
+<p>QuickType 隱私政策較理想：<br />
+用<a href="https://www.wired.com/2016/06/apples-differential-privacy-collecting-data/">差分隱私</a> (differential privacy)蒐集統計資料，去識別化才拿走<br />
+平常拼寫檢查、自動選字，都在你手機離線完成<br />
+不過若開啟 Siri 聽寫，資料同樣會<a href="https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/">送到雲端</a>，用以處理、優化服務<br />
+雖然閉源，但未達隱私威脅，因此未呼籲替換<br />
+更重要的是，iOS 生態系封閉，想換也沒多少選擇啊！<br />
+唯一優質替代品 <a href="https://apps.apple.com/us/app/qwerty-keyboard/id1434021039">kif - keyboard</a>，2021 年已停止維護</p>
+<hr />
+<p>背景故事：<br />
+開發者<a href="https://github.com/cemheren/akifkeyboard">表示</a>，當初受夠第三方側錄，所以自己做鍵盤<br />
+推出一款開源、尊重隱私，且功能幾乎等同 QuickType (iOS 預設鍵盤)的軟體<br />
+支援多語言、滑動輸入、暗色背景、拼寫檢查等<br />
+但 2021 年時，他說受夠蘋果各種詭異要求，決定不再維護 (說不定蘋果稅也是一環)</p>
+<blockquote>
+<p>I was sick of dealing with Apple's weird demands and focused on other projects</p>
+</blockquote>
+<hr />
+<p>能換當然換，但沒選擇也沒辦法<br />
+買蘋果手機，就只好自認倒霉囉！</p>
+<hr />
+<h3 id="lan-ren-bao-qing-tian">懶人包<del>青天</del></h3>
+<p><del>抓到，偷懶仔，你是不是沒看文章就直接滑到這</del></p>
+<ul>
+<li>拉丁語系 (e.g. 英文)：
+<ul>
+<li>想要 AI 輔助、接受美企 → <a href="https://keyboard.futo.org/">Futo</a></li>
+<li>喜歡滑動輸入、自訂佈局：
+<ul>
+<li>想要拼寫建議 → <a href="https://github.com/Helium314/HeliBoard?tab=readme-ov-file">HeliBoard</a></li>
+<li>偏好高度客製化 → <a href="https://github.com/florisboard/florisboard">FlorisBoard</a> / <a href="https://github.com/Helium314/HeliBoard?tab=readme-ov-file">HeliBoard</a></li>
+</ul>
+</li>
+<li>不需滑動輸入，但想要拼寫建議、自訂功能 → <a href="https://anysoftkeyboard.github.io/">AnySoftKeyboard</a></li>
+<li>極簡主義者，只要最基礎、輕量的鍵盤 → <a href="https://github.com/rkkr/simple-keyboard">Simple Keyboard</a></li>
+<li>不喜歡切輸入法，想全在同介面解決 → <a href="https://github.com/Julow/Unexpected-Keyboard">Unexpected Keyboard</a></li>
+<li>嚮往單手打字：
+<ul>
+<li>願意花時間學、想特立獨行 → <a href="https://github.com/8VIM/8VIM">8vim</a> (學不會不負責)</li>
+<li>喜歡舊式手機九宮格排版 → <a href="https://github.com/dessalines/thumb-key">Thumb-Key</a></li>
+<li>雙手打字時不想換軟體、想客製化 → <a href="https://github.com/Helium314/HeliBoard?tab=readme-ov-file">HeliBoard</a> / <a href="https://github.com/florisboard/florisboard">FlorisBoard</a> (單手模式)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>注音輸入法 → <a href="https://github.com/hiroshiyui/GuilelessBopomofo">Guileless Bopomofo</a> (<a href="https://f-droid.org/en/packages/org.ghostsinthelab.apps.guilelessbopomofo/">樸實注音鍵盤</a>)</li>
+<li>iOS 用戶 → <del>自生自滅</del> <a href="https://github.com/cemheren/akifkeyboard">kif - keyboard</a><br />
+<em># 但專案已停止維護，能否下載、正常運作，全看你造化囉！</em></li>
+</ul>
+<hr />
+<p>細心的讀者可能有發現，以往圖片常加皇冠、偷渡推薦次序<br />
+<em># 例如 <a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-keyboard/./deGoogle-search-engine.md">Searxng</a>、<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-keyboard/./deGoogle-email.md">Proton Mail</a>、<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-keyboard/./deGoogle-appStore.md">F-Droid</a></em><br />
+但鍵盤使用因人而異，本篇沒納入這種考量<br />
+<a href="https://f-droid.org/packages/helium314.keyboard/">HeliBoard</a>、<a href="https://f-droid.org/packages/dev.patrickgold.florisboard/">FlorisBoard</a> 很推薦給英文使用者<br />
+<a href="https://futo.org/">Futo</a> 若非美企，其實也很推薦<br />
+<a href="https://github.com/hiroshiyui/GuilelessBopomofo">樸實</a>是唯一堪用的注音鍵盤，台灣用戶可能需要<br />
+也可以裝一個好用的外文鍵盤 (e.g. <a href="https://f-droid.org/packages/helium314.keyboard/">HeliBoard</a>)，搭配<a href="https://f-droid.org/zh_Hant/packages/org.ghostsinthelab.apps.guilelessbopomofo/">樸實注音鍵盤</a>使用<br />
+每個都玩玩，再做決定也無妨</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

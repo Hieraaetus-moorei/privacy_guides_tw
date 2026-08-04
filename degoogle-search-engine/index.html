@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="degoogle-ti-huan-sou-xun-yin-qing">deGoogle - 替換搜尋引擎</h1>
+<blockquote>
+<p>欸，Google 一下美國又用關稅勒索了什麼</p>
+</blockquote>
+<p>日常生活中，是不是很習慣用「Google」直接替代「搜尋」呢？<br />
+外國人也是，用「Google」當「search」的替代詞，似乎再正常不過<br />
+此般盛況，可見 Google 市佔率多高 (中國人說「百度一下」也是同理)<br />
+<em># Google 甚至曾<a href="https://www.nbcnews.com/technolog/no-googling-says-google-unless-you-really-mean-it-1c9078566">呼籲</a>不要亂用他們的名字，但顯然沒人理</em><br />
+如果你的瀏覽器首頁、預設搜尋引擎都是 Google，那你應該很熟悉上述情景<br />
+有些人甚至不知道，世上除了 Google 還有其他搜尋引擎</p>
+<hr />
+<h3 id="qi-ta-sou-xun-yin-qing">其他搜尋引擎</h3>
+<p>你可能聽過 <a href="https://joindeleteme.com/is-site-safe/is-bing-safe/">Bing</a>、Yandex、百度等搜尋引擎，但此處「<strong>不會</strong>」仔細介紹它們，因為那些也是<a href="https://www.bankinfosecurity.com/researchers-meta-yandex-broke-android-privacy-a-28578">隱私陷阱</a><br />
+別忘記這趟旅程，目的是填平隱私坑洞、選擇更好的替代品<br />
+不囉唆，直接上圖：<br />
+<img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-search-engine/./assets/deGoogle/deGoogle-search.png" alt="deGoogle search engine" /><br />
+<sup>圖源：我辛苦做的</sup><br />
+<sup>圖中的「tracker-free」，指前端無可見追蹤器，意思就是至少不公然追蹤你</sup><br />
+<sup>non-profit 不是指「非營利機構」，而是「不以盈利為目的」</sup><br />
+左方的 Google、百度、Bing 是欠換的引擎，右邊的替代選項稍後會一一介紹<br />
+此處須先聲明，為何不全都用高隱私、開源產品替代<br />
+因為搜尋引擎的本質是資料庫，透過建立索引讓搜尋者找到特定內容，同時還提供排序<br />
+類似為書中每個章節編碼，並放到目錄頁<br />
+也就是，幾乎得爬下整個網際網路，並用特定演算法將內容歸類、排序<br />
+開發和維運都所費不貲，現階段無單一機構提供「不收費」、「保護隱私」、「開源」、「獨立」全數涵蓋的服務，只能適度妥協<br />
+右半邊的替代品，至少符合「免費」、「相對重視隱私」，也有些是開源<br />
+除 Whoogle 外，其餘選項都有瀏覽器外掛，可取代網址列的預設搜尋引擎<br />
+<em># 許多瀏覽器也支援在設定中，手動替換預設搜尋引擎</em></p>
+<p>那就開始吧！</p>
+<h3 id="searxng-qian-shen-wei-searx"><a href="https://github.com/searxng/searxng">Searxng</a> (前身為 <a href="https://github.com/searx/searx">Searx</a>)</h3>
+<p>Searxng 是社群建立的開源專案，也就是一群人自發合作，<strong>無</strong>商業機構撐腰<br />
+它是整合搜尋 (meta search)引擎，沒有自己獨立的索引 (index)，但會從各大搜尋引擎如 Google、Bing 抓取結果，混合後送給使用者，例如這樣：<br />
+<img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-search-engine/./assets/ref_images/wechat-data-breach.png" alt="wechat data breach" /><br />
+<sup>圖源：本人搜尋結果</sup><br />
+因為開源，各項設定皆可自訂，搜尋結果也較不易受單一引擎影響<br />
+你可能會問，結果來自 Google、Bing，還有隱私可言嗎？</p>
+<p>有！</p>
+<p>Meta search 的好處就是，作為使用者的「代理伺服器」向各引擎發送請求<br />
+什麼意思呢？<br />
+就像你叫別人幫你找資料，Google 蒐集到的資訊，來自<strong>幫你搜尋的人</strong>，不是你<br />
+而且代理伺服器，任何人都能自行架設 (只要你有資源)，不必受制於誰<br />
+值得注意的是，如果該代理伺服器只有你一人使用，那就幾乎形同你自己做搜尋，只是換台電腦而已<br />
+理想的做法是，找個多人使用的實例 (<a href="https://searx.space/">instance</a>)當代理，讓大家的資訊混雜在一起，不易個別追蹤、也不用自己花錢架設<br />
+什麼！？哪有人那麼好心，免費架代理伺服器給大家用？<br />
+就是有，別小看重視隱私的人、機構，有些機構純粹追求「隱私是基本人權」，而無償提供服務<br />
+有些人則是想保障自己隱私，但單獨使用形同沒保護層，於是公開給世人用，順路保障自己</p>
+<h3 id="mullvad-leta"><a href="https://leta.mullvad.net/"><del>Mullvad Leta</del></a></h3>
+<p><strong>Mullvad 公司表示，將不再維運此服務</strong><br />
+Mullvad 是一家瑞典 VPN 公司，推出很多開源、保障隱私的產品<br />
+Mullvad Leta 是他們的代理搜尋引擎，「Leta」是瑞典文的「搜尋」<br />
+原理和 searxng 差不多，但介面比較友善，不過代理的對象只有 Brave search 和 Google<br />
+目標用戶比較像大眾，而非開發者</p>
+<h3 id="whoogle-search"><a href="https://github.com/benbusby/whoogle-search">Whoogle search</a></h3>
+<p>Whoogle 是個取名很針對的代理搜尋引擎，可想而知是衝 Google 而來，連首頁都十分神似<br />
+這也是社群自發的開源專案，沒公司撐腰、可自行架設<br />
+官方程式碼倉庫有列出幾個<a href="https://github.com/benbusby/whoogle-search/blob/main/misc/instances.txt">實例</a>，有些已下線，可自行試試</p>
+<p>接下來要介紹的，就都是<strong>非開源</strong>的了</p>
+<h3 id="brave-search"><a href="https://search.brave.com/">Brave search</a></h3>
+<p>你可能聽說過 <a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-search-engine/./deGoogle-browser.md#brave-browser">Brave 瀏覽器</a>，就是被大家當 Youtube premium 的那款<br />
+沒錯！是同一家美國公司！<br />
+Brave 有「自行建立」的索引，只有在搜尋結果不佳、內容過少時，才會導入其他引擎的結果<br />
+前端沒追蹤器、支援 AI 摘要、有適量可自訂功能，且隱私政策友善，算還不錯的替代品<br />
+從前 Brave search 很難用，但改進非常快，現已體驗良好<br />
+缺點：</p>
+<ul>
+<li>非開源，無法驗證隱私政策是否落實</li>
+<li>美國公司，會不會被國家要求提供資料，難以保證 (莫忘 PRISM 稜鏡計畫)</li>
+<li><del>使用加密 VPN 的話，可能會陷入無止盡機器人驗證</del><br />
+<em># 似乎已解決</em></li>
+</ul>
+<p>Claude 的搜尋 API，就是<a href="https://odysee.com/@techlore:3/only-3-search-engines-actually-exist:7">用 Brave search</a> 呢！</p>
+<h3 id="ecosia"><a href="https://www.ecosia.org/">Ecosia</a></h3>
+<p>嗯，看名字就知道，這家德國社會企業很重視環境<br />
+Ecosia 是個代理搜尋引擎，從 Bing 獲取結果，靠非個人化廣告獲利<br />
+利潤全用在改善環境，尤其是種樹，所以如果你在乎環保，不妨把它換成預設搜尋引擎<br />
+<em># 他們真的有做，這家企業的好處就是透明，捐助了什麼機構、在哪造林都能查到</em><br />
+缺點：</p>
+<ul>
+<li>有 10 個以下的可見追蹤器</li>
+<li>隱私政策說明：「用戶資料會在一週內去識別化」，意思就是他們會蒐集 IP、搜尋內容等，但會在一週內將之斷開，僅知道有人搜尋什麼、用戶來自哪裡，但兩者配不起來<br />
+<em># 有些人可接受，但「一週」對我來說太久，明明可以不蒐集、或即時解耦<br />
+所以我幾乎不用 Ecosia，因為<code>隱私不容妥協，不論任何原因</code></em></li>
+<li>搜尋結果不佳，畢竟是來自<del>破 Bing、有 Bing</del> Bing，微軟的搜尋引擎實在...</li>
+</ul>
+<p>現在也有 AI 模式，運作都是靠再生能源，但畫面渲染頗陽春</p>
+<h3 id="mojeek"><a href="https://www.mojeek.com/">Mojeek</a></h3>
+<p>這是家英國公司，<strong>有獨立索引、也可當代理搜尋引擎</strong>，且<a href="https://www.mojeek.com/about/privacy/">隱私政策</a>非常簡短、友善</p>
+<p>不該拿的資料，幾乎都不拿</p>
+<p>對使用者，僅定位到「國家」層級，以提供較好的搜尋結果 (Google 可是連你在哪個行政區，都會知道)<br />
+獲利來源是非個人化廣告，網頁無可見追蹤器，算很棒的選擇<br />
+你可能會擔心，<a href="https://www.bbc.com/news/articles/cgj54eq4vejo">英國對隱私很不友善</a>，不怕出事嗎？<br />
+若 Mojeek 有落實自家隱私政策，就不必擔心<br />
+因為它遵守歐盟 GDPR、不記錄使用者個資，<a href="https://blog.mojeek.com/2020/12/frequently-asked-questions-about-mojeek-business-model-surveillance-privacy.html">官方說</a>「就算政府來要，他們沒記錄的東西如 IP，還是給不出來」，所以別怕！<br />
+一般搜尋模式介面類似傳統搜尋引擎，「summary」則會有 <a href="https://blog.mojeek.com/2024/04/mojeek-search-summary.html">AI 摘要</a><br />
+缺點：</p>
+<ul>
+<li>有個很致命的缺點：非英語系的網頁幾乎都未建索引，意思是不支援中文搜尋<br />
+<em># 我在社群問過官方，他們說「還沒」建，但為日、韓、中文網頁建索引在計劃中</em></li>
+<li>非開源之外，大概沒缺點了</li>
+</ul>
+<p>我搜尋英文內容時，也很愛用 Mojeek</p>
+<h3 id="startpage"><a href="https://www.startpage.com/">Startpage</a></h3>
+<p>顧名思義，它希望代替 Google，變成瀏覽器首頁<br />
+此公司歷史複雜，請容我細細說來<br />
+起初 Starpage 是家荷蘭公司，提供保障隱私的代理伺服器，讓用戶安全連線至 Google search (沒錯，搜尋結果來自 Google)<br />
+因為是荷蘭公司，所以遵守歐盟隱私法規，獲利來自非個人化廣告，且提供匿名造訪網站功能 (改從他們的 IP 進入網站)<br />
+有 Google 等級的搜尋結果，又保障隱私，聽起來很棒吧？<br />
+<strong>注意了</strong>，Startpage 後來被<strong>美國廣告公司</strong> System1 收購，儘管 System1 承諾不改變 Startpage 隱私政策、維持其獨立性 (被收購還獨立？)<br />
+但 System1 是美國公司、主業還是廣告、Startpage 又沒開源，背後究竟怎麼做，誰知道呢？</p>
+<p>缺點：</p>
+<ul>
+<li>有可見追蹤器</li>
+<li>屬<strong>美國廣告公司</strong>、架構非開源</li>
+<li>沒獨立索引，仰仗 Google 結果</li>
+</ul>
+<h3 id="duckduckgo"><a href="https://duckduckgo.com/">DuckDuckGo</a></h3>
+<p>DuckDuckGo (直翻為<strong>鴨鴨跑</strong>，有點可愛 XD) 是知名隱私搜尋引擎，靠非個人化廣告賺錢 (官方宣稱)，幾乎可說是最早的 Google 替代品<br />
+NSA 稜鏡計劃曝光後，創辦人成立 DuckDuckGo，隱私政策聲明「不追蹤個人化資訊」，誓言提供保障個資的選擇<br />
+搜尋結果也加入「相對隱私」的 AI 統整，AI 來自主流供應商，但由 DuckDuckGo 提供代理橋接 (類似代理伺服器)<br />
+<em># 討厭 AI 的人可以手動關閉，或改選<a href="https://noai.duckduckgo.com/">無 AI 版</a></em><br />
+而且 DuckDuckGo 部分組件開源，和開發者社群整合良好<br />
+不過 DuckDuckGo 是<strong>美國公司</strong>，首頁和搜尋結果頁也有數個可見追蹤器<br />
+且旗下的閉源瀏覽器曾<a href="https://cyberinsider.com/duckduckgo-browser-microsoft-tracking/">開後門給微軟</a>追蹤、投放個人化廣告，隱私保障不甚理想<br />
+鴨鴨跑還有另一個輕量化產品，<a href="https://start.duckduckgo.com/lite">DuckDuckGo Lite</a>，版面簡潔許多、沒可見追蹤器 (搜尋結果頁有一兩個)，也沒 AI 統整<br />
+不論是 DuckDuckGo 還是輕量版，官方都宣稱「搜尋引擎」，不過它們其實是整合搜尋引擎 (meta search engine)<br />
+主要結果來自 Bing、少量來自其他引擎 (現在知道為何後門是開給微軟了吧？)，並<strong>無</strong>獨立索引<br />
+烏俄戰爭爆發後，鑑於俄羅斯媒體假訊息氾濫，DuckDuckGo 不再從俄國搜尋引擎 Yandex 獲取結果，因此更依賴美國企業<br />
+缺點：</p>
+<ul>
+<li>有追蹤器</li>
+<li>美國公司，曾有劣跡</li>
+<li>無獨立索引，搜尋品質不若 Google (畢竟是 Bing)</li>
+</ul>
+<h3 id="qi-ta">其他</h3>
+<p>可能有人好奇，怎沒介紹 <a href="https://www.qwant.com/">Qwant</a>、<a href="https://kagi.com/">Kagi</a>、<a href="https://metager.org/">MetaGer</a>？<br />
+因為 Qwant 不支援台灣，本地 IP 無法使用<br />
+Kagi 和 MetaGer 是<strong>付費</strong>服務，此處以免費替代品為主，所以暫不考慮<br />
+<em># Kagi 是<strong>美國</strong>公司，且<strong>非</strong>全開源</em><br />
+<em>MetaGer 則是<strong>德國</strong>非營利機構維運、<strong>開源</strong>的 meta search 引擎，若想付費也是選這個</em></p>
+<hr />
+<h3 id="zong-jie">總結</h3>
+<p><del>總的來說</del> (這篇才不是 AI 寫的)，本文提供的是「替代搜尋引擎的詳細比較」，優缺點都揭露、不偏袒特定公司 (沒人付我錢哪 XD)<br />
+至於選哪個，留給使用者 (對，就是你)決定<br />
+若有選擇障礙，可參考以下指引：</p>
+<ul>
+<li>不想受制任何一方，可在最上排 Searxng、<del>Mullvad Leta</del>、Whoogle 擇一<br />
+<em># 對一般用戶而言，Mullvad Leta 應該比較友善，可惜已停止服務</em></li>
+<li>依任務選擇<br />
+<em># 英語系的搜尋，可用 Mojeek</em></li>
+<li>若可接受美國公司、又想有 AI 體驗，Brave search 是個權衡替代品</li>
+<li>覺得隱私「比 Google 好」就行、且熱愛環保的話，不妨考慮 Ecosia</li>
+<li>如果相信 System1 不會搞爛 Startpage，就用吧 (搜尋效果好，畢竟結果來自 Google)！</li>
+<li>是老牌鴨鴨跑粉絲、願意再次信任<del>等著被背叛</del>，就用 DuckDuckGo 囉！</li>
+</ul>
+<p>對習慣 Google 的人：<br />
+DuckDuckGo、Brave、<del>Mullvad Leta</del> 都支援 Google 的語法、<a href="https://duckduckgo.com/bangs">快捷鍵</a></p>
+<ul>
+<li>例如 <code>/</code> 進入搜尋列</li>
+<li>Google <code>"侵害隱私"</code> 表示搜尋結果需包含「侵害隱私」</li>
+<li><code>!w</code> 直接進入維基百科</li>
+<li>...<br />
+<em># 第一次聽到嗎？那至少你也學會了</em></li>
+</ul>
+<hr />
+<p>如上述內容有誤，歡迎指正</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

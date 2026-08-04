@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="degoogle-yun-duan-ying-die-yu-xiang-bo">deGoogle - 雲端硬碟與相簿</h1>
+<blockquote>
+<p>檔案太大了，用 Google drive 連結分享給我</p>
+</blockquote>
+<p>個資，也順便分享給 Google 了<br />
+不僅 <a href="https://www.techradar.com/pro/security/gemini-ai-platform-caught-scanning-google-drive-files-without-user-permission">Google</a>、<a href="https://proton.me/blog/dropbox-security-issues">Dropbox</a>、<a href="https://gbhackers.com/chinas-baidu-compromised-in-data-leak/">百度</a>...，主流中美企業個資爭議不斷<br />
+畢竟從架構到商業模式，都不是為隱私設計<br />
+免費方案看似慷慨，其實是個人資料換來的<br />
+賺到服務，卻賣了自己</p>
+<p>鑑於性質相似，本篇將一併介紹雲端相簿、檔案分享服務<br />
+如果還在用預設相簿且開啟備份，勸你三思</p>
+<h3 id="lai-ren-shang-tu">來人，上圖！</h3>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-drive-and-album/./assets/deGoogle/deGoogle-drive.png" alt="deGoogle drive and album" /><br />
+雲端硬碟替代方案<br />
+<sup>製圖：我</sup><br />
+<sup>FOSS 指 Free and Open Source Software，即免費開源軟體</sup><br />
+<sup>端對端加密 (End-to-end encryption)，僅你、獲授權者才能看到內容，公司也不知你傳了什麼</sup></p>
+<ul>
+<li>Google 雲端硬碟 / 相簿<br />
+不只對外<a href="https://www.technice.com.tw/techmanage/infosecurity/187175/">安全性問題</a>，Google 更能<a href="https://proton.me/blog/is-google-drive-secure">掃描</a>你的雲端硬碟內容<br />
+Android 手機預設的 Google 相簿，也有<a href="https://proton.me/blog/is-google-photos-safe#ai-training">照片被拿去練 AI</a>、烏龍<a href="https://www.nytimes.com/2022/08/21/technology/google-surveillance-toddler-photo.html?unlocked_article_code=1.80w.nigh.XohWLd4Vrdgd">指控兒少性犯罪</a>及其他隱私疑慮</li>
+<li>Dropbox<br />
+隱私政策<a href="https://proton.me/blog/dropbox-privacy">疑點重重</a>，不只聲明「受法律要求時，他們會基於自身判斷是否提供資料」 (別忘了，<a href="https://techcrunch.com/2014/10/11/edward-snowden-new-yorker-festival/">PRISM</a> 計劃是美國國安局主導，他們會說不嗎？)<br />
+還和不少機構分享資料，又閉源、非端對端加密<br />
+而且過往實在<a href="https://www.theguardian.com/technology/2014/apr/11/dropbox-condoleezza-rice-privacy-surveillance">不怎麼光彩</a>，自然在更換名單內</li>
+<li>OneDrive / SharePoint<br />
+OneDrive 從<a href="https://www.infosecurity-magazine.com/news/microsoft-onedrive-flaw-exposes/">設計</a>上就<a href="https://www.proofpoint.com/us/blog/cloud-security/proofpoint-discovers-potentially-dangerous-microsoft-office-365-functionality">不安全</a>，且微軟也保留檔案存取權<br />
+SharePoint 可分享、協作、儲存檔案，還有多種管理、自動化工具<br />
+可架設企業內網、充當整合工具平台<br />
+然而，SharePoint 和 OnDrive 同樣有安全性問題<br />
+今年才<a href="https://www.forbes.com/sites/siladityaray/2025/07/21/hackers-exploit-microsoft-software-vulnerability-to-reportedly-target-governments-and-businesses-what-to-know/">被駭客利用</a>，造成<a href="https://socradar.io/toolshell-sharepoint-zero-day-cve-2025-53770/">核子機構</a>、<a href="https://www.washingtonpost.com/technology/2025/07/23/sharepoint-microsoft-hack-nih-nnsa/">研究單位</a>等<a href="https://www.securityweek.com/toolshell-attacks-hit-400-sharepoint-servers-us-government-victims-named/">諸多受害者</a>淪陷<br />
+微軟出了不少修補，但也建議使用者改用他家線上平台，變相廣告<br />
+<em># 就不安全了，還付錢用你雲端？</em></li>
+<li>其餘市占率較低的危險雲端，如<a href="https://tw.stock.yahoo.com/news/%E5%9C%8B%E5%AE%89%E5%B1%80-%E5%B0%8F%E7%B4%85%E6%9B%B8-%E5%BE%AE%E5%8D%9A-%E6%8A%96%E9%9F%B3-%E5%BE%AE%E4%BF%A1-030600240.html">百度網盤</a>、<a href="https://www.cloudwards.net/review/yandex-disk/">Yandex Disk</a> 等恕不一一詳述</li>
+</ul>
+<p>開始換吧！</p>
+<h4 id="proton-drive"><a href="https://proton.me/drive">Proton Drive</a></h4>
+<p>在 <a href="https://vocus.cc/article/6895c735fd89780001176a4a">Email 那篇</a>提過，Proton 是保障隱私的瑞士公司，<a href="https://proton.me/blog/author/andy-yen">台裔科學家</a>創立<br />
+他們率先提供「端對端加密」、「開源」、保障隱私的雲端儲存服務<br />
+因為端對端加密，只有你、你授權的人能存取<br />
+<strong>Proton 也看不到你的檔案內容</strong>，所以請牢記密碼、備份金鑰<br />
+<em># 否則一旦忘記密碼，沒人能幫你救回檔案</em><br />
+雲端硬碟和自家文件、郵件整合，類似 Google 雲端的概念<br />
+無廣告、不出售個資，採訂閱制 (且為防特定政權封鎖，接受虛擬貨幣付款)<br />
+缺點：</p>
+<ul>
+<li>手機版 app 偶爾會出狀況</li>
+<li>免費版容量小，不過訂閱能享有整個 Proton 生態系的服務<br />
+月費數百台幣，可等黑色星期五、特定節日再下大單，多半有驚天折扣 (e.g. 三折)</li>
+<li>若想當相簿用，介面可能不太方便 (畢竟產品定位是雲端硬碟)</li>
+</ul>
+<h4 id="filen"><a href="https://filen.io/">Filen</a></h4>
+<p>Filen 是德國公司，提供端對端加密的雲端空間，程式碼開源、支援各大平台<br />
+曾有加密<a href="https://github.com/privacyguides/privacyguides.org/pull/345">安全性不足</a>問題，例如使用 RSA 演算法<br />
+儘管未公開回應，但更新的程式碼已<a href="https://filen.io/hub/">改善</a>此類問題<br />
+訂閱制，免費帳戶給 10GB 儲存空間<br />
+不定期推出終身方案，可一次買足<br />
+<em># 注意：若公司倒閉，終身方案仍形同白搭</em></p>
+<p>缺點：</p>
+<ul>
+<li>免費帳戶三個月沒用，資料就會被刪除<br />
+付費帳戶三年沒用，才會被刪資料<br />
+<em># 付錢又不使用，對商家不是很划算嗎？為何要停權？</em></li>
+<li>定位是雲端硬碟，不太適合當相簿</li>
+<li>曾出過檔案傳輸中斷等 bug，雖已修復但使用上需小心</li>
+</ul>
+<h4 id="nextcloud"><a href="https://nextcloud.com/">Nextcloud</a></h4>
+<p>Nextcloud 也是德國公司，產品 100% 開源，主張去中心化整合雲端<br />
+產品很像 Google 雲端，各種工具整合在一個服務中<br />
+人人皆可自行架設，且企業版和一般版「<strong>沒有差別</strong>」<br />
+主要靠提供企業、政府解決方案來獲利，例如資安認證、客服、穩定版本維護<br />
+簡單說就是賣服務，所以散戶不必擔心隱藏費用<br />
+你可以自行架設雲端，和家人朋友共用<br />
+<em># 自行架設相對隱私，因為只有你可以偷自己的個資</em><br />
+支援端對端加密，雖然自有雲端不見得需要<br />
+純粹儲存、分享檔案外，亦享有整合工具服務<br />
+官方也有合作者事先架好服務，付費即可直接使用<br />
+<em># 但你得信任服務架設者</em><br />
+缺點：</p>
+<ul>
+<li>有技術門檻</li>
+<li>需自行維運相關設備</li>
+</ul>
+<h4 id="syncthing"><a href="https://syncthing.net/">Syncthing</a></h4>
+<p>此為檔案傳輸軟體，非雲端硬碟<br />
+使用對等網路 (peer-to-peer, p2p)，意思是不經中央伺服器<br />
+由你和檔案接收者，直接對傳檔案<br />
+所以儘管只靠 TLS 加密，仍達成<strong>端對端加密</strong></p>
+<hr />
+<p>白話文解釋：<br />
+你想分享檔案給朋友，於是你們下載 <a href="https://syncthing.net/downloads/">Syncthing</a>、保持在線<br />
+接著你上傳檔案、他接收檔案，結束<br />
+只有你本人、該朋友可取得檔案，沒第三人<br />
+有點像搭建一個直通滑道，然後把包裹滑至對方家<br />
+沒有物流公司、撿貨員，參與者只有你們倆</p>
+<hr />
+<p>Syncthing 開源、免費、去中心化，支援各大桌面平台<br />
+Android 有<a href="https://github.com/Catfriend1/syncthing-android">非官方 app</a>，但也開源<br />
+缺點：</p>
+<ul>
+<li>傳輸時須保持在線</li>
+<li>檔案在收發裝置上沒加密，若駭客入侵有機會取得明文<br />
+<em># 簡單說：若你或朋友的電腦中毒，就可能不安全</em></li>
+<li>iOS 尚不支援</li>
+</ul>
+<h4 id="onionshare"><a href="https://onionshare.org/">OnionShare</a></h4>
+<p>同樣是檔案傳輸用，很像 Syncthing<br />
+OnionShare 直翻「洋蔥共享」，用洋蔥路由傳輸資料</p>
+<hr />
+<p>洋蔥路由 (The Onion Router, Tor)<br />
+洋蔥路由連線皆經多層加密 (通常是三層)，無單一伺服器可解析使用者活動<br />
+伺服器群靠志願者、機構架設，分佈於全球各地，不受特定政府管轄<br />
+Tor 專案由非營利組織維運，不必擔心隱藏費用</p>
+<hr />
+<p>開源、端對端加密，支援所有主流平台<br />
+Linux、Windows、MacOS、Android、iOS 都能用<br />
+<em># 行動版由守望者計劃 (<a href="https://guardianproject.info/">Guardian project</a>)開發</em><br />
+除了檔案分享，OnionShare 還提供「架設暗網網站」、「聊天」功能<br />
+沒什麼技術門檻，下載軟體、按指示做即可<br />
+<em># 若真不會用，也可參考<a href="https://odysee.com/@techlore:3/onionshare-for-private-file-sharing,:7">教學影片</a></em><br />
+缺點：</p>
+<ul>
+<li>速度較慢，畢竟要多層加密</li>
+<li>傳輸檔案時，須保持在線上</li>
+</ul>
+<h4 id="immich"><a href="https://immich.app/">Immich</a></h4>
+<p>Immich 為 Google 相簿替代品，開源、可自架伺服器<br />
+由社群自主開發，非盈利項目<br />
+可處理照片、影片，介面人性化<br />
+因伺服器自行架設，就沒端對端加密<br />
+缺點：</p>
+<ul>
+<li>需自備硬體，稍有技術門檻</li>
+</ul>
+<h4 id="cryptomator"><a href="https://cryptomator.org/">Cryptomator</a></h4>
+<p>德國公司 <a href="https://skymatic.de/">Skymatic</a> 開發、維護，是開源、免費軟體<br />
+Cryptomator 本身非雲端、相簿、或檔案共享軟體<br />
+而是相容於各大雲端的<strong>客戶端加密</strong>軟體，可搭配 Dropbox、Google drive、OneDrive...<br />
+功能：把檔案先加密，再傳上任一雲端硬碟<br />
+如此一來，雲端供應商只會看到亂碼，不知檔案內容<br />
+程式和各雲端無縫整合，<a href="https://techlore.tv/w/9KQBtSMJNNwXCaSxRZwT5f?start=1s">操作非常簡單</a><br />
+<strong>幾乎等同使用你習慣的雲端，只是把它變安全了</strong><br />
+有此軟體，任何雲端都能當加密雲端<br />
+缺點：</p>
+<ul>
+<li>比純用特定雲端慢，因為檔案收發須加解密<br />
+不過相較其他端對端加密服務，就無明顯速度差<br />
+用 <a href="https://veracrypt.io/en/Home.html">VeraCrypt</a> 手動加密每個檔案也行，但 Cryptomator 和雲端整合，方便許多<br />
+<em># VeraCrypt 是硬碟加密軟體，日後<strong>可能</strong>會提</em></li>
+</ul>
+<h4 id="ente-photo"><a href="https://ente.io/">Ente Photo</a></h4>
+<p>簡稱 Ente，是 Google Photos 替代品</p>
+<hr />
+<p>講古：<br />
+從前從前，有個<a href="https://ente.io/blog/ama-with-ente-ceo/">印度人</a>在瑞士 Google 工作<br />
+他發現主流相片軟體不保障隱私，卻沒平易近人的替代選項<br />
+於是返回印度後，他開發了相片管理軟體<br />
+也成立公司，提供雲端服務<br />
+公司註冊在美國上市，但主要研發總部在阿姆斯特丹 (荷蘭)、邦加羅爾 (印度)<br />
+資料存於<a href="https://ente.io/help/photos/faq/security-and-privacy#data-encryption-and-storage">歐盟</a> (德國法蘭克福、法國巴黎、荷蘭阿姆斯特丹)，受歐盟隱私法規庇護<br />
+「Ente」源於馬拉雅拉姆語 (Malayalam, 創辦人母語)，意為「我的」<br />
+所以產品指「<a href="https://ente.io/help/#origin-of-the-name">我的相片</a>」</p>
+<hr />
+<p>Ente 軟體<strong>全</strong><a href="https://github.com/ente-io">開源</a>，支援所有主流平台<br />
+資料端對端加密，metadata (相片的資料)也加密<br />
+app <a href="https://ente.io/features/">功能</a>非常多，體驗甚至好過 Google 相簿<br />
+<em># 可鎖 app、隱藏相簿、無廣告、本地運作的 AI 功能...</em><br />
+採訂閱制，免費帳戶 10GB 雲端備份空間，自架空間則視你硬體而定<br />
+也可以不用雲端備份，純粹當本地相簿軟體<br />
+那容量就視你裝置而定，且可離線使用<br />
+缺點：</p>
+<ul>
+<li>公司登記在美國</li>
+<li>過去曾有下載慢、功能少的問題，但很快就解決<br />
+<em># 開發團隊效率高，或許算種優點？</em></li>
+</ul>
+<h4 id="mega"><a href="https://mega.io/">Mega</a></h4>
+<p>紐西蘭公司，母公司登記在香港<br />
+<em># 別急！創辦人<a href="https://www.businessinsider.com/kim-dotcom-data-not-safe-filing-sharing-site-mega-2015-7">說過</a>，中資、美資併購 Mega 的事，都是<a href="https://www.zdnet.com/article/mega-denies-claims-by-kim-dotcom-of-nz-government-control-of-company/">假訊息</a></em><br />
+端對端加密，且提供線上會議功能<br />
+客戶端程式碼公開，但非開源<br />
+I.e. 可檢視程式碼，但不授權各種使用<br />
+<em># 即使是廣義開源，仍非程式碼公開就算，可參考<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-drive-and-album/./open-source-intro.md">本篇</a></em><br />
+最大的優點是，免費帳戶就有 20GB<br />
+<em># <a href="https://www.zdnet.com/article/review-what-to-expect-from-megas-free-50gb-of-cloud-storage/">據說</a>從前免費帳戶有 50GB，但 20GB 也算慷慨了</em><br />
+缺點：</p>
+<ul>
+<li>中資疑慮 (畢竟香港被強硬接管了)<br />
+至少只有母公司在香港，且客戶端加密、公開程式碼 (否則不會入列)</li>
+</ul>
+<hr />
+<h3 id="qi-ta">其他</h3>
+<h4 id="firefox-send"><a href="https://github.com/mozilla/send">Firefox Send</a></h4>
+<p>熟悉開源的人可能好奇，為何沒提 Firefox Send？<br />
+Firefox Send 是 Mozilla 的開源專案，為端對端加密檔案傳輸軟體<br />
+用戶上傳檔案到伺服器、分享連結給別人以供下載<br />
+且可設定下載多少次、或某個期限後，自動焚毀檔案<br />
+更棒的是，伺服器可自架！</p>
+<p>如此美妙，為何不提？</p>
+<p>因為 2020 年官方已<a href="https://support.mozilla.org/en-US/kb/what-happened-firefox-send">停止維護</a>，僅剩社群支援<br />
+且<a href="https://github.com/timvisee/send-instances/">社群服務點</a>需信任第三方，存在安全風險<br />
+<em>#  若不介意仍可使用，<strong>出事不負責</strong></em><br />
+好消息是，Mozilla 說 Thundermail 會復刻、改良 Firefox Send<br />
+讓我們拭目以待</p>
+<h3 id="guo-fen-ke-neng-hui-wen-na-icloud-ni">果粉可能會問，那 iCloud 呢？</h3>
+<p>尚可接受，因其有<a href="https://support.apple.com/en-us/102651">端對端加密</a><br />
+但除此之外，就沒什麼可提<br />
+缺點：</p>
+<ul>
+<li>閉源，程式碼不公開<br />
+所以無從檢核是否落實加密、偷埋後門</li>
+<li>美國公司，又曾參與稜鏡 (PRISM)<a href="https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data">監聽計劃</a><br />
+<em># 何況不開源，如何相信他們呢？</em></li>
+<li>綁蘋果生態系、免費儲存空間少</li>
+<li>需開啟<a href="https://support.apple.com/en-us/102651#advanced">進階資料保護</a> (ADP)，預設<a href="https://support.apple.com/en-us/102651#standard">標準保護</a>沒端對端加密<br />
+<em># 蘋果稱其為「標準」，可見不認為用戶需要太多隱私</em></li>
+<li>蘋果曾在<a href="https://www.theregister.com/2025/02/24/apple_adp_replacements_e2ee/">英國政府要求</a>下，取消端對端加密</li>
+</ul>
+<p>光前兩點，就不推薦 iCloud 了<br />
+但相較其他美企，又稍微好一點<br />
+於是沒在欠換名單內</p>
+<h4 id="pcloud">pCloud</h4>
+<p>說來話長，簡言之不推薦<br />
+pCloud 外宣自己是<a href="https://www.pcloud.com/company/about.html">瑞士公司</a>、有跨平台服務、<a href="https://www.pcloud.com/Europe">客戶端加密</a><br />
+且最獨特的行銷，就是「終身方案」<br />
+I.e. 付一次錢，享有終身儲存空間</p>
+<p>聽起來不賴，為何不推薦呢？</p>
+<p>因為：</p>
+<ul>
+<li>
+<p>公司<a href="https://www.experte.com/cloud-storage/pcloud">不透明</a>，許多資訊無從得知</p>
+</li>
+<li>
+<p>閉源，程式碼未公開</p>
+</li>
+<li>
+<p>營運團隊主要在<a href="https://www.reddit.com/r/pcloud/comments/11kbyjd/some_concerns/">保加利亞</a>，資料儲存在盧森堡、<strong>美國</strong><br />
+主打「瑞士公司」有誤導之虞，保加利亞和瑞士法規差異甚大<br />
+資料存在美國，更要擔心<strong>美國政府</strong>，莫忘 <a href="https://epic.org/documents/epic-v-doj-prism/">NSA 稜鏡計劃</a><br />
+<em># 善意提醒，保加利亞親俄</em></p>
+</li>
+<li>
+<p>免費帳戶有置入廣告，想當然爾追蹤器們...<br />
+<em># 而且只有 5GB，還不如選 Proton Drive</em></p>
+</li>
+<li>
+<p>加密功能須另購，不是訂閱、購買就享有</p>
+</li>
+<li>
+<p><strong>帳戶停權爭議</strong>：<br />
+<a href="https://www.reddit.com/r/DataHoarder/comments/n9shfp/pcloud_subscribers_accounts_terminated_with_no/">許多</a>用戶<a href="https://www.reddit.com/r/pcloud/comments/rhbw4p/lost_720_to_pcloud_black_friday_deal_account_just/">反映</a>，買了終身方案且添購加密服務</p>
+<ul>
+<li>有人被無預警停權，沒任何通知<br />
+且保證退費期內解約，仍未退費</li>
+<li>有人被警告，上傳內容侵害版權，因而停權<br />
+首先，客戶端加密，他們何以得知侵權？打自己臉？<br />
+<em># 要碼 pCloud 羅織罪名，要碼加密是假的、有後門</em><br />
+其次，有人上傳「公領域文件 (沒版權)」、「合法購買內容」，卻仍遭停權<br />
+意見反映無效，其他檔案也被刪<br />
+<em># 顯然編造藉口，只是想停你權</em></li>
+</ul>
+<p>從前有人好奇，「終身方案」如何永續經營？<br />
+畢竟那像老鼠會，若無新人加入，遲早會垮<br />
+現在知道了，他們收錢、停權，近乎當強盜<br />
+所以提供終身制，仍可持續獲利，畢竟拿錢不做事</p>
+</li>
+</ul>
+<p>劣跡斑斑的公司，自然不值得推薦<br />
+你當然能碰運氣，說不定停權沒停到你<br />
+但爭議多、誤導行銷、閉源...，至少我不信任 pCloud</p>
+<hr />
+<h4 id="lan-ren-bao">懶人包</h4>
+<ul>
+<li>雲端先來：
+<ul>
+<li>願意付費、喜歡整合服務 → <a href="https://proton.me/drive">Proton Drive</a></li>
+<li>開發者想自架 → <a href="https://nextcloud.com/">Nextcloud</a></li>
+<li>免費仔、有習慣雲端者 → <a href="https://cryptomator.org/">Cryptomator</a> + 你原本的雲端<br />
+或選 <a href="https://filen.io/">Filen</a> / <a href="https://proton.me/drive">Proton Drive</a></li>
+<li>蕭貪免費仔 (？) → <a href="https://mega.io/">Mega</a></li>
+</ul>
+</li>
+<li>檔案分享：
+<ul>
+<li>高風險人士 → 不用想，就是 <a href="https://onionshare.org/">OnionShare</a></li>
+<li>一般人 → <a href="https://syncthing.net/">Syncthing</a><br />
+甘冒風險者，<a href="https://github.com/mozilla/send">Firefox Send</a> 也行</li>
+</ul>
+</li>
+<li>相片軟體：
+<ul>
+<li>開發者想自架 → <a href="https://immich.app/">Immich</a></li>
+<li>想簡單換 Google 相簿、免費仔、願意訂閱者 → <a href="https://ente.io/">Ente Photo</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>不想被大企業偷窺，早點替換才是王道</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="demeta-ti-huan-lian-shu-he-xiao-hong-shu">deMeta - 替換臉書 (和小紅書)</h1>
+<blockquote>
+<p>按讚粉絲團、標兩個朋友，就有小禮物喔！</p>
+</blockquote>
+<p>老派行銷很愛這招，但你的資訊也會因此暴露<br />
+Meta 可推知你當時位置、有興趣的東西、在參加的活動...<br />
+有位朋友曾說：</p>
+<blockquote>
+<p>我這輩子最討厭的事，就是別人叫我用臉書打卡</p>
+</blockquote>
+<p>看完 Meta 的黑歷史，或許你會心有戚戚焉</p>
+<h3 id="xian-shang-tu-zai-lai-xi-shu-zui-zhuang">先上圖，再來細數罪狀</h3>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./assets/deMeta/deMeta-Facebook.png" alt="deMeta Macroblog" /><br />
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup><br />
+<sup>non-profit 指「不以營利為目的」</sup><br />
+<sup>End-to-end encrypted chat 指私訊有端對端加密</sup></p>
+<h3 id="fei-huan-bu-ke">非換不可</h3>
+<h4 id="fei-si-bu-ke-lian-shu-aka-fb-facebook">非死不可 (臉書 aka FB = Facebook)</h4>
+<p>Facebook 經公司重整，母集團變成 Meta<br />
+不過重整前後，都有許多<strong>惡質</strong>操作<br />
+<em># 沒錯就是惡質，看下去就知道</em><br />
+最知名的莫過於<a href="https://www.wired.com/gallery/cambridge-analytica-explainer/">劍橋分析</a>案：<br />
+2015 年開始，<a href="https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election">劍橋分析</a>和 Facebook 合作<br />
+在用戶「不知情」的情況下蒐集個資，並用於政治廣告投放<br />
+至 2018 年被吹哨者踢爆時，約有 8700 萬人受害<br />
+且該事件被認為，可能影響 2016 美國大選、英國脫歐結果<br />
+想當然爾<a href="https://www.bbc.com/news/technology-45976300">被罰</a>了，但付出<a href="https://www.bbc.com/news/technology-64075067">巨額代價</a>下，官方態度如何呢？<br />
+Facebook 可<a href="https://www.bbc.com/news/technology-64075067">不認錯</a>，還<a href="https://www.reuters.com/legal/government/facebook-must-face-dc-attorney-generals-lawsuit-tied-cambridge-analytica-scandal-2025-07-31/">宣稱</a>已明確讓用戶知情<br />
+跟創辦人祖克柏<a href="https://www.brennancenter.org/our-work/analysis-opinion/facebooks-data-mishap-and-case-regulation">不同調</a>，顯然投資人比道德和用戶重要</p>
+<p>再來就是個資掌握<br />
+Facebook 的<a href="https://proton.me/blog/facebook-data-privacy-revelation">資料</a>，除了用戶自行提供外，還有第三方來源<br />
+例如許多網站使用 <a href="https://themarkup.org/show-your-work/2022/04/28/how-we-built-a-meta-pixel-inspector">Pixel Inspector</a>，或其他 Meta 追蹤器<br />
+你可能想：「好吧！頂多是 Meta、美國政府拿到我的個資，很糟嗎？」<br />
+別傻了，<strong>Meta 拿到就是全世界都知道</strong><br />
+Meta 的工程師<a href="https://www.documentcloud.org/documents/21716382-facebook-data-lineage-internal-document/">說</a>，連他們也無法掌握所有資料流向<br />
+其中有段覆水難收的<a href="https://www.vice.com/en/article/facebook-doesnt-know-what-it-does-with-your-data-or-where-it-goes/">比喻</a>：</p>
+<blockquote>
+<p>想像你拿一罐墨水，裡面有第一方、第三方、機敏資料...。你把墨水倒進湖中，它會四處流竄...。你如何能收回傾覆的墨色？如何能確保，它只會流到被允許的位置？</p>
+</blockquote>
+<p>鞭辟入裏，不愧是 Facebook 內部員工，很清楚公司搞了什麼勾當<br />
+你提供給 Facebook 的資料，可能被官方、廣告合作商、大概還有美國政府取用<br />
+至於第三方怎麼用、是否散佈、有無多重轉售，恐怕無人知曉</p>
+<p>不介意個人化廣告，就沒關係了對吧？</p>
+<p>不是喔，不是這樣的喔！<br />
+前陣子 Meta 被<a href="https://proton.me/blog/meta-scam-ads">踢爆</a>，高達 10% 的收入來自詐騙、不法事業或違禁品廣告<br />
+<em># 直接詐騙、無牌網路博弈、色情、違禁醫療用品都有</em><br />
+不只臉書，<a href="https://www.bnext.com.tw/article/85542/meta-china-ads-anti-fraud-cut">旗下產品</a>都沒能倖免<br />
+來看看路透社的<a href="https://www.reuters.com/investigations/meta-is-earning-fortune-deluge-fraudulent-ads-documents-show-2025-11-06/">報導</a> (各方幾乎都引用該文)：</p>
+<ul>
+<li>2024 年的收益，超過 10% 來自詐騙、違法業務的廣告<br />
+10% 是什麼概念呢？<br />
+那可是 160 億美元，足夠全資買下華航 30 幾次</li>
+<li>系統判斷 95% 以上機率可能是詐騙、不法的內容，照樣給刊<br />
+是的，他們<strong>有發現</strong>問題<br />
+但比起趕走金主，他們決定大削一筆：向灰色廣告投放者收更多錢<br />
+Meta 號稱此為「金融懲罰」，用以降低不法廣告投放率<br />
+結果變成「有錢就能刊」，何況詐騙所得之高，多付點錢登廣告不成阻礙</li>
+<li>即使多名用戶檢舉，不處理還是不處理<br />
+Meta 內部統計，每週有十萬個「有效回報」指出問題<br />
+但公司不是忽略、就是拒絕，96% 的回報都石沉大海<br />
+還有用戶帳號被盜，且冒名者開始向他親友行騙，不斷回報都被 Meta 擱置<br />
+直到巨額損失出現後，替身帳號才被處置</li>
+</ul>
+<p>路透報導來自 Meta 內部文件、後續採訪，足以反映公司長期態度<br />
+<em># 還有內部人員說，在 Meta 刊詐騙廣告比登到 Google 容易多了</em><br />
+用戶不重要，錢才是關鍵，不論合法與否<br />
+甚至把處理劣質廣告的部門裁光了，顯然對 Meta 來說這不太重要<br />
+還相信 Meta 是良心企業的，不如相信我是外星人 (？)</p>
+<p>再來就是帳號安全性問題<br />
+你的帳號不是你的帳號，是 Meta 的帳號<br />
+和 <a href="https://www.dcard.tw/f/talk/p/259668996">Threads</a> 一樣，Facebook 三不五時刪文、<a href="https://vocus.cc/article/614c8f37fd897800018bbf57">禁言</a>、封帳<br />
+社團大規模<a href="https://www.nownews.com/news/6699567">滅絕</a>，連<a href="https://www.ireland-live.ie/news/carlow-live/1943078/we-lost-business-carlow-woman-hits-out-at-meta-for-disabling-business-accounts.html">企業帳號</a>也沒能倖免<br />
+<a href="https://www.dcard.tw/f/talk/p/257537402">理由</a>千奇百怪，最常見的莫過於「<a href="https://www.cbc.ca/news/canada/funktasy-meta-ban-9.6932525">性化兒童</a>」<br />
+但當事人什麼也沒做，甚至是公開的營銷、<a href="https://www.bbc.com/news/articles/cz6nyzvge79o">慈善</a>帳號<br />
+常見的救濟手段，是拍身分證、臉照驗證你是真實用戶<br />
+<em># 那可是超敏感的個資，尤其 Meta 善於外洩，誰敢交付？</em><br />
+重點是送出機敏個資後，<strong>不見得會有回應、解封</strong><br />
+想找客服，除非你是商業帳號 i.e. 付錢，不然求神拜佛比較實際</p>
+<p>帳號被祖，再辦一個不就行了？</p>
+<p>如果你只潛水，確實另創新帳、加回朋友即可<br />
+但許多人存放家族遊玩影像，互動文章、影片也都在上面<br />
+珍貴的記憶，沒備份就再也回不來了<br />
+何況商家帳號，短暫下架即可能錯過生意<br />
+還有個大問題：<br />
+若你在其他網站，曾按下「以 Facebook 連動登入」<br />
+則臉書被祖，代表失去一堆下游帳號</p>
+<p>夠慘了嗎？<br />
+好戲還在後頭</p>
+<p>從前美國國安局的 <a href="https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data">PRISM 監聽醜聞</a>，Facebook 也沒缺席<br />
+和 <a href="https://www.theguardian.com/world/2013/jun/07/google-facebook-prism-surveillance-program">Google</a>、<a href="https://www.theguardian.com/world/2013/jun/07/prism-tech-giants-shock-nsa-data-mining">蘋果</a>一樣，<a href="https://www.cnet.com/tech/services-and-software/facebook-ceo-denies-knowledge-of-nsas-prism-program/">祖克柏否認</a>捲入稜鏡監聽計劃<br />
+結果只是<a href="https://www.theatlantic.com/technology/2013/06/how-google-and-facebook-cooperated-nsa-and-prism/314459/">玩文字遊戲</a>，每個都樂於<a href="https://www.infosecurity-magazine.com/news/operation-prism-nsa-and-fbi-monitoring-activity/">配合政府</a>，用戶才不是他們在乎的事</p>
+<p>壞處寫太多，快變成一篇文了，總之不換對不起自己</p>
+<h4 id="mao-yu-lu-xiao-hong-shu-rednote"><del>毛語錄</del>小紅書 (RedNote)</h4>
+<p>小紅書 (RedNote)，是中國行吟信息科技旗下的軟體<br />
+<em># 人家中國公司所以叫「信息」，有意見去找它</em><br />
+結合影音、相片和文章，是多功能社群平台<br />
+中國、台灣、馬來西亞華人，月活躍用戶約三億<br />
+美國則有<a href="https://proton.me/blog/tiktok-ban-rednote-privacy-concerns">一億七千多萬</a>用戶，不少來自抖音難民<br />
+使用者以<a href="https://apnews.com/article/china-xiaohongshu-tiktok-ban-refugees-c7f440803128ef50f0ade44d16068f01"><strong>年輕女性</strong></a>居多，常拿來查日用品、旅遊、美妝等相關資訊</p>
+<p>看起來很正常，有問題嗎？<br />
+問題可大了！</p>
+<ul>
+<li>多倫多大學公民實驗室<a href="https://citizenlab.ca/research/network-security-issues-in-rednote/">發現</a>，小紅書上的影音、圖文等內容，用 <strong>http 明文傳遞</strong><br />
+代表共用網路者、電信商、政府等，都能自由取得你傳輸的資訊<br />
+<em># 你用學校或咖啡廳免費 Wi-Fi，就會有其他人共用網路</em><br />
+門戶洞開的程度，已不是「漏洞」等級了<br />
+「洞」代表結構有缺陷，這連結構都沒有<br />
+形同住宅沒牆壁，誰想看都行<br />
+使用 http 實作，不太可能是無心之過<br />
+現代網站已預設 https，經加密才傳輸內容<br />
+看看瀏覽器網址列，有個鎖頭標誌代表 https<br />
+若不慎進到 http 網站，瀏覽器還會跳警告<br />
+小紅書捨棄現代標準，跑去用舊時代的做法，動機不明</li>
+<li>中國線上服務，要求全網實名制<br />
+這是中國法規，至少國內有要求 (其他線上服務亦同)<br />
+外國人有機會被抽到實名<a href="https://www.reddit.com/r/rednote/comments/1oh2jme/why_did_rednote_make_itself_so_accessible_to/">驗證</a>，沒驗證可能無法使用特定功能<br />
+<em># 和台灣社群平台 Dcard 有異曲同工之妙</em><br />
+牆內用戶要求臉照 + 身分證，外國人則給護照號碼<br />
+對國外的政策似乎常常改，時緊時鬆所以你也許遇不到<br />
+海外新戶註冊相對容易，門號驗證即可<br />
+也能綁定 Apple、微信註冊<br />
+<em># 上述代表小紅書、<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./chinese-service-risk.md">中國政府</a>會有你的門號，甚至身分證、護照等個資</em><br />
+就算無視對岸掌握情資的風險，任何機構蒐集過多個資，就有機會外洩<br />
+2025 中國就發生，世上最大的單一來源<a href="https://spycloud.com/blog/inside-the-chinese-data-leak/">個資外洩</a><br />
+40 <strong>億</strong>筆外洩紀錄，包含身分證號、信用卡資訊、住址、門號、出生年月日...<br />
+你能想到的機敏資訊幾乎都有，涵蓋銀行、微信、就業單位等各種來源<br />
+集中化的資料庫，很可能是用於管控、<a href="https://cybernews.com/security/chinese-data-leak-billiones-records-exposed/">監聽</a>人民，只是剛好出意外<br />
+老話一句，不該蒐集的個資，就不要蒐集<br />
+沒蒐集就不會外洩，被威脅也沒東西可交</li>
+<li>電子前鋒基金會 (EFF)<a href="https://www.eff.org/deeplinks/2025/02/crimson-memo-analyzing-privacy-impact-xiaohongshu-aka-red-note">調查</a>，同樣指出諸多缺陷：
+<ul>
+<li>小紅書確實用 http 傳資料，獨立驗證公民實驗室結果</li>
+<li>索取過多權限，尤其「背景執行時的手機位置」<br />
+意思是就算沒在滑，小紅書仍會回傳你的地點 (連 Meta 都沒那麼誇張)<br />
+其他如月曆、聯絡人、手機檔案同樣都<a href="https://reports.exodus-privacy.eu.org/en/reports/560194/">要求</a>讀寫權限</li>
+<li>除了背後的行吟、中國政府，小紅書還會和：
+<ul>
+<li>字節跳動 (抖音母公司)</li>
+<li>騰訊</li>
+<li>Facebook</li>
+<li>Google<br />
+等多家公司共享用戶個資，別以為選中資就能脫離美國巨頭</li>
+</ul>
+</li>
+<li>沒上膛的槍<br />
+Android 版用 <a href="https://github.com/sisong/ApkDiffPatch">APK patch</a>，可繞過 Google Play 安全掃描直接更新程式碼<br />
+意思是少了把關者，官方能偷偷注入惡意程式碼、追蹤器<br />
+當然，他們不一定會那麼做，但誰能保證不被濫用呢？<br />
+APK patch 原本用意是更新，卻可用於注入攻擊 (injection attack)<br />
+就像一把沒上膛的槍，何時擊發無從得知</li>
+</ul>
+</li>
+<li>我國<a href="https://www.cna.com.tw/news/ahel/202512030203.aspx">資安檢測</a>，15 項指標全數未過，比抖音還危險<br />
+包含蒐集位置、剪貼簿、截圖、過度<a href="https://apps.apple.com/us/app/rednote/id741292507">要求權限</a>、蒐集生物 (臉部)資訊...</li>
+</ul>
+<p><del>看來名字有個「書」字的社群平台，都是大地雷</del></p>
+<h3 id="ti-dai-pin-lai-la">替代品來啦！</h3>
+<p>臉書、小紅書可發長文，也可放多媒體，算全功能部落格 (Macroblog)<br />
+替代品就以類似性質者為主，定位比較接近</p>
+<h4 id="friendica"><a href="https://friendi.ca/">Friendica</a></h4>
+<p>語意類似「朋友們的國度」，是聯邦宇宙 (Fediverse)的臉書替代品<br />
+本身為<a href="https://github.com/friendica/friendica">開源</a>、非營利專案，由社群維運<br />
+<em># Fediverse 介紹請見<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./deMeta-microblog.md#Mastodon">這篇</a></em><br />
+簡言之就是路人都能自架服務，且可和相容的社群媒體互動<br />
+有點像你可以用臉書帳號，到別人的<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./deMeta-microblog.md#Mastodon">推特</a>、甚至 <a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./deGoogle-video-platform.md">Youtube</a> 留言<br />
+<em># Fediverse 的平台都互通，而 Friendica 和 Hubzilla、Diaspora* 也能通</em><br />
+Friendica 最初由網景 (Netscape)工程師 <a href="https://github.com/macgirvin">Macgirvin</a> 發起，後由社群接手推動<br />
+<em># 網景是 Mozilla 前身，<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./deGoogle-browser.md#Firefox">Firefox</a>、<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./deGoogle-email.md#Thunderbird">Thunderbird</a> 為該機構代表作</em><br />
+介面和功能與臉書相似，算最直接的開源替代品<br />
+用戶可細緻調整身份權限，讓家人、朋友、特定人士、公開訪客看到不同內容<br />
+<em># 同檔案、連結，但不同人造訪會看到不同東西，<del>避免你不堪的家庭秘辛曝光</del></em><br />
+缺點：</p>
+<ul>
+<li>有些別人架好的 instance 版本過舊，可能有體驗不佳、漏洞尚存的問題<br />
+找人多、版本有跟上的伺服器註冊，就比較不用擔心</li>
+<li>私訊「無」端對端加密<br />
+所以私人對話小心點，伺服器擁有者技術上能解碼 (自己架站就不怕)</li>
+</ul>
+<p>自由、免費軟體的好處，就是沒商業模式<br />
+不會出現廣告、或任何官方推銷</p>
+<h4 id="diaspora"><a href="https://diasporafoundation.org/">Diaspora*</a></h4>
+<p>名字意思是人口大外移，劍指 Facebook<br />
+<a href="https://github.com/diaspora/diaspora">開源</a>、非營利，伺服器可自架 (i.e. 去中心化)<br />
+從前有四位紐約大學學生，不滿主流社群平台對隱私的侵害<br />
+發動目標一萬美元的群眾募資，想開發尊重隱私的替代品<br />
+結果募得 20 萬，顯示隱私的價值實為可觀<br />
+<em># 諷刺的是，有部分還是祖克柏捐的</em><br />
+Diaspora* 於焉誕生，基本上就是介面不同的 Friendica<br />
+但不支援 Fediverse 的 ActivityPub，協議稍嫌封閉<br />
+<em># 只能通 Friendica 和 <a href="https://hubzilla.org/page/info/home">Hubzilla</a>，不支援 Mastodon 或其他專案</em><br />
+功能取名比較特別：</p>
+<ul>
+<li>Pod：公開實例，即其他人架的服務點<br />
+一般稱為 Instance，Diaspora* 比較特立獨行</li>
+<li>Aspects：身份別，即 profile<br />
+和 Friendica 類似，可選讓朋友、家人、外人看到不同身份</li>
+</ul>
+<p>因為強調「用戶才是資料擁有者」，所以上傳的影音都能再下載<br />
+而且不要求真實身份，你愛用化名就用<br />
+缺點：</p>
+<ul>
+<li>相較其他 Fediverse 專案，生態系較封閉<br />
+但還是比臉書那類「中心化」者，要開放、民主得多</li>
+<li>私訊<strong>無</strong>端對端加密</li>
+</ul>
+<p>發文可用 Markdown，創作很方便<br />
+開發由 Diaspora* 基金會負責，沒商業模式 (硬要說就是群眾捐助)</p>
+<h4 id="movim"><a href="https://movim.eu/">Movim</a></h4>
+<p>在上一篇<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./deMeta-microblog.md">換 Threads</a> 提過<br />
+因為有長文、短文模式，同時滿足 macro- 和 micro- blog，就再提一次<br />
+是<a href="https://github.com/movim/movim">開源</a>、免費、社群驅動的專案，在歐洲較活躍<br />
+可自架服務，但使用 XMPP 而非 ActivityPub，所以要橋接器才能進入聯邦宇宙<br />
+<em># 你也可以不進聯邦宇宙，在不同 Movim 伺服器互動不受影響</em><br />
+最大優點是私訊「有」端對端加密，細節可見<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./deMeta-microblog.md">前文</a><br />
+缺點：</p>
+<ul>
+<li>旗艦伺服器在歐洲，選它可能會有點延遲<br />
+<em># 你也可以選其他伺服器，享受「分散式」的好處</em></li>
+<li>XMPP 和 Fediverse 未直接互通</li>
+</ul>
+<p>不過 XMPP 也有一票粉絲，可算偏門生態系</p>
+<h4 id="gotosocial"><a href="https://gotosocial.org/">GoToSocial</a></h4>
+<p>上次也<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./deMeta-microblog.md">介紹過</a>，就是欠自架的 Fediverse 開源專案<br />
+架站所需資源甚少，是設計給朋友圈自己玩沙用的<br />
+不過因為是聯邦宇宙，你也可以從此出發到<del>更遙遠的彼方</del>其他服務，例如 Mastodon<br />
+缺點：</p>
+<ul>
+<li>需自行架設服務</li>
+<li>仍在 beta 測試，可能遇到功能不穩</li>
+<li>只有後端<br />
+不過可和第三方前端互通，意思是別人幫你把 app 寫好了</li>
+<li>mp4 的 metadata 尚無法自動清除 (其他圖像都可)</li>
+<li>私訊<strong>無</strong>端對端加密</li>
+</ul>
+<p>有長短文模式，符合臉書 macroblog 性質</p>
+<h4 id="minds"><a href="https://www.minds.com/">Minds</a></h4>
+<p>美國人創立的去中心化平台，<a href="https://github.com/minds">開源</a>、演算法透明、且無個人化廣告<br />
+建構在以太坊區塊鏈上，<a href="https://wefunder.com/minds">起初</a>用 Nostr 協議，後來也支援 ActivityPub<br />
+<em># 就是能通 Fediverse 啦！</em><br />
+演算法基本上就是時序倒排，越新的能見度越高<br />
+伺服器可自架、容許匿名註冊、承諾<a href="https://thinkbiganalytics.com/minds">不賣</a>用戶個資<br />
+私訊端對端加密，隱私保障相對完整<br />
+相較其他區塊鏈的「絕對自由」機制，Minds 有輕度內容審查<br />
+若內容被舉報，系統會隨機挑 12 位用戶評選，75% 以上反對才會推翻原決定<br />
+不過恐怖主義、造假內容、惡意攻擊等， Minds 管理員有權直接 ban 用戶、內容<br />
+雖然可善盡管理，但也存在極權隱憂<br />
+<em># 只要有極權後門，哪天就能亂祖人</em><br />
+最特別之處，莫過於商業模式：</p>
+<ul>
+<li>互動即可賺取虛擬貨幣<br />
+有點像之前介紹過的<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/demeta-macroblog/./deGoogle-video-platform.md#odysee">奧德視</a>，算一種鼓勵內容創作、用戶參與的機制</li>
+<li>對等 (peer-to-peer)廣告<br />
+此非個人化廣告、也不是傳統行銷，而是用戶能花代幣增加貼文聲量<br />
+「花錢 (虛擬貨幣)增加曝光量」，有點廣告的意味</li>
+<li>訂閱費<br />
+用戶可訂閱 Minds plus、Pro，享有更多<a href="https://www.minds.com/about/plus">特權</a><br />
+E.g. 築付費牆、出金 (換代幣成法幣)、宣傳粉絲頁等<br />
+Pro 有點貴，每月 50 美金或每年 480 美金</li>
+<li>付費牆的收益抽成</li>
+</ul>
+<p>畢竟 Minds 是「營利事業」，所以有商業模式</p>
+<p>缺點：</p>
+<ul>
+<li>美國企業，受制美國法律<br />
+有金流、管理員特權，就容易被政府操弄<br />
+若遇到稜鏡計畫或類似監聽法案，結果恐怕和 Facebook 相去不遠</li>
+<li>免費戶最長上傳 20 分鐘影片，且儲存期限 30 天</li>
+<li>加密機制安全性問題<br />
+Minds 加密強度<a href="https://www.vice.com/en/article/that-social-network-app-backed-by-anonymous-uses-weak-encryption/">低於</a>業界標準，雖非直接代表漏洞，但防護較薄弱<br />
+且用戶端程式會盲目接收金鑰，若伺服器被掌控 / 惡意操作，用戶端風險較高<br />
+I.e. 你得信任伺服器，但上面提過站方有很高權限，設計上不太安全<br />
+開源本該是「做好詳盡防護，並讓大家抓漏」<br />
+但 Minds 比較像「設計亂糟糟，直接端出來給駭客鑽」</li>
+</ul>
+<p>雖然漏洞補了不少，但是否要進場最好審慎評估</p>
+<p>原本還想介紹 Steemit，但起初是美企、後來被中國裔幣圈巨頭收購<br />
+fork 又有資安問題，不太值得推薦</p>
+<br/>
+<hr />
+<br/>
+<h3 id="lan-ren-bao">懶人包</h3>
+<ul>
+<li>一般用戶，只想平行移轉：
+<ul>
+<li>喜歡 Fediverse → <a href="https://friendi.ca/">Friendica</a></li>
+<li>接受隔牆加入 Fediverse → <a href="https://diasporafoundation.org/">Diaspora*</a></li>
+<li>不介意美企、有商業模式 → <a href="https://www.minds.com/">Minds</a></li>
+<li>想要端對端加密私訊 → <a href="https://movim.eu/">Movim</a></li>
+</ul>
+</li>
+<li>開發者，想自行架站：
+<ul>
+<li>只想跟小圈圈玩沙 → <a href="https://gotosocial.org/">GoToSocial</a></li>
+<li>想架完整站點：
+<ul>
+<li>喜歡 Fediverse → <a href="https://friendi.ca/">Friendica</a>  / <a href="https://www.minds.com/">Minds</a></li>
+<li>搭橋加 Fediverse → <a href="https://diasporafoundation.org/">Diaspora*</a></li>
+<li>想要端對端加密私訊 → <a href="https://movim.eu/">Movim</a> / <a href="https://www.minds.com/">Minds</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br/>
+<hr />
+<br/>
+<p>本篇多以社群為主，對於想專心寫文的人來說，或許不那麼切合<br />
+<em># 不過若你接受在臉書上撰文，那些絕對夠用</em></p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>私路 - 隱私之路</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/print.css" media="print">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/poole.css">
+      <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;Codeglacier.codeberg.page&#x2F;privacy_guides_tw"><h1>私路 - 隱私之路</h1></a>
+                            
+                            <p class="lead">正體中文的數位隱私教育素材</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title"></h1>
+  <span class="post-date">2024-01-01</span>
+  <h1 id="degoogle-ti-huan-hui-yi-ruan-ti">deGoogle - 替換會議軟體</h1>
+<blockquote>
+<p>我們用 Zoom 面試，到時候記得上線</p>
+</blockquote>
+<p>線上會議軟體，主流莫過於 Google Meet、Cisco Webex、Microsoft Teams 和 Zoom<br />
+但此類軟體，全都有<a href="https://www.consumerreports.org/electronics-computers/video-conferencing-services/videoconferencing-privacy-issues-google-microsoft-webex-a7383469308/">隱私缺陷</a></p>
+<h4 id="xian-kan-tu-zai-shuo">先看圖再說</h4>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-meet/./assets/deGoogle/deGoogle-meet.png" alt="deGoogle meet" /><br />
+<sup>製圖：移幣 aka 我</sup><br />
+<sup>FOSS 指免費開源軟體 (Free and Open Source Software)</sup><br />
+<sup>non-profit 指不以營利為目的</sup></p>
+<h3 id="qian-huan-chan-pin">欠換產品</h3>
+<h4 id="google-meet">Google Meet</h4>
+<p>這就不用提了，Google Meet 無端對端加密，官方能取得會議資料<br />
+會儲存<a href="https://support.google.com/meet/answer/10382037?hl=en">地理位置</a>，IP、參與者名單、通話時長等 <a href="https://support.google.com/meet/answer/9852160?hl=en">metadata</a>，近期搜尋的<a href="https://support.google.com/a/answer/7582940?hl=en">聯絡人</a>也會記錄<br />
+且 Google <a href="https://cybernews.com/security/billions-credentials-exposed-infostealers-data-leak/">素行不良</a>、服務又不開源，難道它講什麼我們就信什麼？<br />
+<em># 詐騙都沒那麼容易取信</em></p>
+<h4 id="microsoft-teams">Microsoft Teams</h4>
+<p>微軟不遑多讓，預設蒐集用戶<a href="https://www.theguardian.com/australia-news/2025/may/19/nsw-education-department-caught-unaware-after-microsoft-teams-began-collecting-students-biometric-data">影像、音訊</a><br />
+Metadata <a href="https://www.mozillafoundation.org/en/privacynotincluded/teams/">幾乎全拿</a>，用於廣告行銷、和夥伴 (e.g. Meta)共用<br />
+<em># 還會結合第三方來源，取得你沒給的資料</em><br />
+對「資料如何用於 AI」也很不透明，是否以之訓練模型很難說<br />
+微軟的<a href="https://www.virtru.com/blog/industry-updates/microsoft-data-breaches-2025">劣跡</a>和 Google 同個等級，難道還不換？</p>
+<h4 id="zoom">Zoom</h4>
+<p>這就<a href="https://www.ithome.com.tw/news/137076">更精彩</a>了<br />
+Google 是官方會濫用個資，微軟更會分給合作者<br />
+Zoom 則是除了<strong>自己拿，還附贈一堆漏洞，毫無安全性可言</strong></p>
+<ul>
+<li>惡名昭彰的 <a href="https://www.cbc.ca/news/science/zoombombing-fbi-warning-1.5519024">Zoom bombing</a> (Zoom 炸彈攻擊)，指未經授權的使用者亂入會議<br />
+不速之客能劫持更高權限，恣意踢出與會人、播放各種惡意內容</li>
+<li>安裝檔未經授權就會在背景運作、允許惡意程式碼注入 (故<a href="https://www.ithome.com.tw/news/136851">被台灣政府禁用</a>)<br />
+<em># 台灣<a href="https://www.washingtonpost.com/education/2020/04/04/school-districts-including-new-york-citys-start-banning-zoom-because-online-security-issues/">非特例</a>，<a href="https://stuyspec.com/article/zoom-banned-due-to-privacy-concerns">美國</a>、<a href="https://www.mlex.com/mlex/articles/2143442/teams-and-zoom-banned-from-schools-in-german-state-hesse">德國</a>等多方，都有學校、<a href="https://www.reuters.com/article/us-spacex-zoom-video-commn/elon-musks-spacex-bans-zoom-over-privacy-concerns-memo-idUSKBN21J71H/">各級機關</a>禁用 Zoom 的<a href="https://www.buzzfeednews.com/article/pranavdixit/google-bans-zoom">案例</a></em></li>
+</ul>
+<hr />
+<p><em>事件說明，可略</em><br />
+技術上來說，Zoom 繞過 Safari 安全網，暗地<a href="https://www.howtogeek.com/427964/how-to-see-if-zoom-is-running-a-secret-web-server-on-your-mac-and-remove-it/">埋設後門</a><br />
+在 Mac 下載 Zoom 並執行時，會一併在背景啟動 localhost server (本地伺服器)<br />
+瀏覽網頁時，若有 iframe 嵌入 Zoom，且裝置相機未鎖定<br />
+鏡頭就會被自動打開、同時將你<a href="https://appleinsider.com/articles/19/07/10/apple-removes-zoom-web-server-in-stealth-mac-update">拖入會議</a><br />
+不僅如此，<strong>即使拆除 Zoom 應用程式，本地伺服器仍會存在</strong><br />
+甚至<strong>在背景「偷偷裝回」Zoom</strong>，簡直就是惡意軟體<br />
+連蘋果都罕見<a href="https://techcrunch.com/2019/07/10/apple-silent-update-zoom-app/">採取行動</a>，發佈自動更新將 Zoom 背景伺服器拆除<br />
+<em># 此類更新會自動下載，用戶毋需做任何事，以往多用於排除惡意軟體</em></p>
+<hr />
+<ul>
+<li>當然，用個資搞廣告、和第三方分享，他們<a href="https://www.reco.ai/hub/zoom-privacy-issues#:~:text=Zoom%20has%20also%20faced%20issues%20with%20its,can%20be%20exploited%20if%20not%20carefully%20managed.">也沒少做</a></li>
+<li>Zoom 曾號稱端對端加密，結果被發現只加密聊天室，會議本體<a href="https://proton.me/blog/zoom-85-million-settlement">未落實</a><br />
+加上未經用戶同意就<a href="https://arstechnica.com/tech-policy/2021/08/zoom-to-pay-85m-for-lying-about-encryption-and-sending-data-to-facebook-and-google/">與 Google、Facebook 分享資料</a>，賠上 8500 萬美元</li>
+<li>原本說用 AES 256 做加密，卻<a href="https://citizenlab.ca/2020/04/move-fast-roll-your-own-crypto-a-quick-look-at-the-confidentiality-of-zoom-meetings/">被踢爆</a>只用 AES 128，<strong>公然謊言行銷</strong><br />
+簡單說就是加密金鑰強度差異，但資安為「非黑即白」<br />
+「強度不足易被破解」形同沒做，就像關了家門卻沒鎖上<br />
+你說「我有關門哪！」，東西就被偷了誰管你有沒有關門？<br />
+更糟的是，此舉誤導用戶產生「安全的錯覺」，可能致使機敏資料流出<br />
+即「你以為門鎖了，所以把鑽戒、金條放桌上」，徒增被盜風險<br />
+若你知道門沒鎖，貴重物品還會亂放嗎？</li>
+</ul>
+<p>值得一提的是，Zoom 雖於美國上市，但在中國有三間公司、700 多位員工<br />
+部分伺服器設於中國，也曾將資料<a href="https://citizenlab.ca/2020/04/move-fast-roll-your-own-crypto-a-quick-look-at-the-confidentiality-of-zoom-meetings/">送中</a><br />
+簡言之，就是<a href="https://citizenlab.ca/2020/04/move-fast-roll-your-own-crypto-a-quick-look-at-the-confidentiality-of-zoom-meetings/">美皮中骨</a>的假面公司<br />
+若美國政府要求，Zoom 會<a href="https://www.theverge.com/2020/6/3/21279355/zoom-end-encryption-calls-fbi-police-free-users">配合</a>交出用戶資料<br />
+<em># I.e. 貼心提醒，<a href="https://tw.news.yahoo.com/%E4%BB%80%E9%BA%BC%E6%98%AF%E7%BE%8E%E5%9C%8B%E7%9A%84prism-%E7%A8%9C%E9%8F%A1%E8%A8%88%E7%95%AB-%E9%80%99%E6%98%AF%E7%8F%BE%E4%BB%8A%E5%B8%B8%E4%B8%8A%E7%B6%B2%E8%B7%AF-%E3%80%81-%E5%B8%B8%E7%94%A8%E6%89%8B%E6%A9%9F%E7%9A%84%E6%88%91%E5%80%91%E6%87%89%E8%A9%B2%E8%A6%81%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B%E7%9A%84%E7%BE%8E%E5%9C%8B%E6%9C%80%E9%AB%98%E6%A9%9F%E5%AF%86%E7%9B%A3%E8%81%BD%E8%A8%88%E7%95%AB-132129828.html">稜鏡計劃</a>就是<strong>美國</strong>國安局伸髒手進<strong>美國企業</strong>搞的</em><br />
+中國政府也能干涉，例如<a href="https://cn.nytimes.com/technology/20200612/zoom-china-tiananmen-square/zh-hant/">停止 64 學運領袖帳號</a><br />
+<strong>Zoom 是家「結合中資、美帝一切缺點的公司」，厲不厲害呀？</strong><br />
+軟體安全性漏洞，說是無心之過也罷<br />
+誤導行銷、政治干預、個資濫用、後門埋設...，顯然是蓄意為之<br />
+如此惡質的公司，能不換嗎？</p>
+<h4 id="cisco-webex">Cisco Webex</h4>
+<p>Cisco (思科)同樣是美商，收購 Webex 後維運該服務<br />
+隱私政策稱不上透明，卻很愛用「安全」、「隱私」當<a href="https://help.webex.com/en-us/article/nv2hm53/Webex-Security-and-Privacy">行銷口號</a><br />
+蒐集哪些資料、metadata，拿個資來<a href="https://privacy.commonsense.org/privacy-report/Cisco-Webex">做什麼</a>、與誰分享，都<a href="https://www.consumerreports.org/media-room/press-releases/2020/05/cisco-clarifies-privacy-policy-for-webex-videoconferencing-after-cr-study/">不清楚</a><br />
+Cisco Webex 也出過<a href="https://www.techzine.eu/blogs/privacy-compliance/120809/sensitive-metadata-cisco-webex-was-childs-play-to-find-but-how/">安全性漏洞</a>，<a href="https://compciti.com/news-release-cisco-webex-security-issue/">瀏覽器外掛</a>、<a href="https://www.securityweek.com/cisco-webex-vulnerability-exploited-join-meetings-without-password/">亂入訪客</a>、<a href="https://www.grcworldforums.com/privacy-and-technology/vulnerability-found-within-cisco-webex-and-zoom/75.article">ID 保護</a>...<br />
+<del>所以才叫「Cisco Webex，思科 - 違背個資」</del><br />
+雖沒 Zoom 嚴重，漏洞也多已修復<br />
+看在不透明隱私政策、非開源、美企的份上，仍該換一下</p>
+<p>怎沒提蘋果 Facetime？</p>
+<p>Apple 也是美企，但預設端對端加密、蒐集有限度 metadata<br />
+<em># Metadata 包括如何時通話、通話多久等</em><br />
+官方隱私政策說明，最多保留 30 天<br />
+不值得推薦，但也沒到欠換的程度<br />
+<em># 果粉可以歡呼了</em></p>
+<h3 id="ti-dai-pin-men">替代品們</h3>
+<h4 id="mirotalk"><a href="https://p2p.mirotalk.com/newcall">MiroTalk</a></h4>
+<p>MiroTalk 是社群自發建立的專案，開源、重隱私，且<strong>無須下載 app</strong><br />
+仰賴 WebRTC (Web Real-Time Communication)技術，用瀏覽器即可<br />
+免帳號、免登入、免瀏覽器外掛，支援各大平台 (有瀏覽器就行)<br />
+伺服器僅確認與會者、讓用戶得以對接，之後就採對等網路 (peer-to-peer, p2p)通訊<br />
+簡單來說，就是伺服器當月老，幫用戶牽線便功成身退<br />
+用戶彼此私下聯繫 (p2p)，和伺服器再無瓜葛<br />
+因伺服器不儲存資料，媒合完資料就消失了<br />
+<em># 即 STUN server (Session Traversal Utilities for NAT)</em><br />
+通訊層加密、p2p，達成<strong>端對端加密</strong></p>
+<p>擔心伺服器被駭怎麼辦？</p>
+<p>別怕，p2p 讓參與者對接後，根本沒伺服器的事<br />
+若擔心 metadata 被儲存，可<strong>自架伺服器</strong><br />
+缺點是 p2p 靠與會者互傳資訊，人數上升時負載會暴增，較適合小型會議<br />
+MiroTalk 作者早就想過，於是他開發了多款變體：<br />
+<em># 以下依「人數少到多」排列</em></p>
+<ul>
+<li><a href="https://c2c.mirotalk.com/">MiroTalk c2c</a> (Cam-to-Cam)：專為「一對一視訊」打造</li>
+<li><a href="https://github.com/miroslavpejic85/mirotalk">MiroTalk p2p</a>：上文介紹者</li>
+<li><a href="https://sfu.mirotalk.com/">MiroTalk SFU</a> (Selective Forwarding Unit)：用戶將資料傳到 SFU 伺服器，由伺服器選擇性 (selective)轉發給特定與會者<br />
+適合中大型會議，靠伺服器解決前述負載問題<br />
+<em># 建構在 <a href="https://github.com/versatica/mediasoup?tab=readme-ov-file">Mediasoup</a> 上，亦可直接用 <a href="https://mediasoup.org/">mediasoup</a></em></li>
+<li><a href="https://bro.mirotalk.com/">MiroTalk bro</a> (<del>brother</del> broadcast)：由單一廣播者發訊，其餘人口僅收聽<br />
+廣播、單向傳遞訊息時可用</li>
+</ul>
+<p>若想靠帳號管理使用者，亦可架 <a href="https://github.com/miroslavpejic85/mirotalkwebrtc">MiroTalk WEB</a> 平台以實現<br />
+各種場景都能應對，功能十分完善<br />
+缺點：</p>
+<ul>
+<li>還沒找到</li>
+</ul>
+<p>MiroTalk 也支援 iframe 嵌入網頁，對前端開發者很友善<br />
+點擊連結、發起通話，即可使用<br />
+夠簡單吧！</p>
+<h4 id="bigbluebutton"><a href="https://bigbluebutton.org/">BigBlueButton</a></h4>
+<p>BigBlueButton 直翻大藍鈕 (縮寫 BBB)，2007 年加拿大學界推出的開源專案<br />
+開發者覺得</p>
+<blockquote>
+<p>發起線上會議，應像按下一顆藍色大按鈕一樣簡單</p>
+</blockquote>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-meet/./assets/ref_images/bigbluebotton-meme.jpg" alt="smash a blue button" /><br />
+目標受眾是教學者，例如學校老師<br />
+主要<a href="https://bigbluebutton.org/tutorials/">功能</a>：</p>
+<ul>
+<li>線上會議<br />
+課堂也能算一種會議，對吧？</li>
+<li>螢幕分享<br />
+若無法分享螢幕，還要它幹嘛？</li>
+<li>白板<br />
+除了基本繪圖、擦除等功能，亦可和學生協作<br />
+老師能個別輔導，讓虛擬課堂更逼真</li>
+<li>分組討論室 (Breakout Rooms)<br />
+主持人能創建討論室，將參與者分派入小組進行協作<br />
+才不會所有參與者在同個空間討論，人多嘴雜互相干擾<br />
+且討論室內能共享筆記、白板，形同獨立小型會議<br />
+討論環節結束時，再將眾人拉回大會議室<br />
+<em># 可設定討論時長，時間到由系統自動終止</em></li>
+<li>私訊功能<br />
+可傳悄悄話給特定與會者，例如<del>小情人</del>同學</li>
+<li>匿名投票<br />
+可用於課堂互動，多選題也支援</li>
+<li>學習分析儀表板<br />
+不開攝影機、不時刻緊盯，仍可掌握學生參與度、學習成效</li>
+</ul>
+<p>可說是線上課程完善套組，台灣有<a href="https://moodletest.ncnu.edu.tw/mod/folder/view.php?id=653513">多所大學</a>已投入使用<br />
+<em># BBB 和許多學校的線上平台「moodle」相容，可無痛整合</em><br />
+缺點：</p>
+<ul>
+<li>無端對端加密<br />
+但伺服器可自架，若機構擔心安全問題，自行維運內部服務即可<br />
+<em># 有<a href="https://nlnet.nl/project/BBBsecureChat/">其他機構</a>為 BBB 開發端對端加密，不過原始碼似乎不見了</em></li>
+<li>架構龐大，稍嫌笨重<br />
+若只想和朋友視訊、三五人線上開會，整套系統未免太臃腫</li>
+<li>有技術門檻</li>
+</ul>
+<p>企業內部遠端會議、教育機構線上教學，不妨試試 BBB</p>
+<h4 id="brie-fi"><a href="https://brie.fi/ng">brie.fi</a></h4>
+<p>德國社群開發者創立的專案，開源、非營利，讀作 <a href="https://github.com/holtwick/briefing/">briefing</a> (拆成 brie.fi/ng)<br />
+若要衍生閉源產品，可購買白標 (一次性付 499 歐元)<br />
+原理和 MiroTalk 幾乎一樣，靠 WebRTC 直接用瀏覽器通話<br />
+免下載、p2p (對等網路)，伺服器可自架 (而且很簡單)<br />
+也因對等網路、通訊層加密，達成端對端加密<br />
+但沒擴展出其他版本，僅適合較少參與者的會議<br />
+缺點：</p>
+<ul>
+<li>不適合太多人的會議 (e.g. 二三十人)</li>
+</ul>
+<p>不知為何明明設計給瀏覽器，官方卻開發了 <a href="https://apps.apple.com/app/briefing-video-chat/id1510803601">iOS app</a><br />
+直接點<a href="https://brie.fi/ng">連結</a>發起會議即可，應用程式實則多餘</p>
+<h4 id="nextcloud-talk"><a href="https://nextcloud.com/talk/">Nextcloud Talk</a></h4>
+<p>又是老面孔，Nextcloud，下一朵雲 (？)</p>
+<hr />
+<p>背景簡介，<del>不爽</del>可略：<br />
+受開發者歡迎的德國公司，產品 100% 開源<br />
+Nextcloud 是整合雲端服務，類似 Google 或微軟的雲端<br />
+有各種工具，包括文件編輯、雲端儲存、Email 收發等<br />
+當然，也包括視訊會議服務 Nextcloud Talk<br />
+任何人皆可自行架設，且<strong>開源版和企業版<code>沒有差別</code></strong><br />
+<em># 官方也鼓勵大眾自架服務喔！</em><br />
+商業模式為協助企業架設伺服器、排除問題等，簡言之就是賣服務<br />
+故無隱藏費用，也不貪個資</p>
+<hr />
+<p>回到正題，Nextcloud Talk 是其整合服務中的一項<br />
+同樣用 WebRTC、DTLS/SRTP 加密傳輸<br />
+I.e. 只需瀏覽器，不必另外下載 app<br />
+小型會議會用 p2p，伺服器僅媒合用戶 (和前述 MiroTalk、brie.fi/ng 一樣)<br />
+<em># p2p 指對等網路 (peer-to-peer)，即與會者對接，不經伺服器</em><br />
+藉傳輸層加密、p2p 達成端對端加密<br />
+有大型會議需求的話，可裝高效後端 (<a href="https://portal.nextcloud.com/article/Nextcloud-Talk/High-Performance-Backend/Installation-of-Nextcloud-Talk-High-Performance-Backend">high performance backend</a>, HPB)<br />
+<em># 超過 10 人以上，可能就需要 HPB</em><br />
+由伺服器協調流量，並提供錄影、電話撥入 (類似 Google meet)功能<br />
+且支援檔案分享、白板、投票與文字聊天等<br />
+體驗很完整，也很安全<br />
+但現階段文字訊息無端對端加密，會儲存在伺服器中<br />
+<em># 若自架伺服器，就不擔心資料被偷</em><br />
+缺點：</p>
+<ul>
+<li>須自行架設伺服器，有技術門檻</li>
+<li>文字尚無端對端加密<br />
+伺服器自架則不必擔心第三方盜取</li>
+<li>小型會議才有端對端加密 (因為才是 p2p)<br />
+大型會議只有傳輸層加密，第三方無法介入，但伺服器擁有者能窺探</li>
+</ul>
+<p>裝置有瀏覽器就能加入會議，各大桌面平台也有 app 可下載 (非必須)</p>
+<h4 id="proton-meet"><a href="https://proton.me/meet">Proton Meet</a></h4>
+<p>隱私平台 Proton 的產品，前端<a href="https://github.com/ProtonMeet">開源</a><br />
+通訊用 MLS 協議端對端加密，所以伺服器看不到與會者在<del>密謀犯案</del>做什麼<br />
+<em># 影像、音訊、和聊天室都端對端加密</em><br />
+免費版單次通聯最多一小時、至多 50 人參與，且不必登入就能用 (這會隨商模動態改變)<br />
+可從手機或電腦應用程式、瀏覽器加入，也能排定在 Proton 月曆的議程中<br />
+缺點：</p>
+<ul>
+<li>一般訂閱的額度上限，和免費版相同<br />
+需額外訂閱此產品，或訂 Workspace 方案才有包含</li>
+</ul>
+<h4 id="jitsi"><a href="https://jitsi.org/">Jitsi</a></h4>
+<p>最知名的開源會議軟體，莫過於 Jitsi<br />
+<em># Jitsi 是保加利亞語「電線」之意</em><br />
+功能完善、支援端對端加密、伺服器<a href="https://github.com/jitsi/jitsi-meet">可自架</a>，也可用<a href="https://meet.jit.si/">官方服務</a></p>
+<hr />
+<p>講古 (可略)：<br />
+Jitsi 最初由獨立團隊開發， 2015 年被 Atlassian 收購，為旗下 HipChat 加入視訊功能<br />
+但之後 Atlassian 把 HipChat、Stride 賣給 Slack，Jitsi 留著就沒用了<br />
+於是 2018 年 8x8 買下 Jitsi，承諾維持其開源性質，因此開發者沒跑光<br />
+從此 Jitsi 變成 8x8 的開源專案，至今仍是開源會議的首選之一</p>
+<hr />
+<p>Jitsi 在「一對一」視訊時，採 p2p 對等網路<br />
+也就是伺服器僅媒合用戶，不經手視訊內容<br />
+而傳輸層有加密，藉此達成端對端加密<br />
+用 WebRTC 做視訊，因此瀏覽器即可加入 (和前幾者相似)<br />
+多人會議時，則使用 Jitsi 影片橋接 (Jitsi Videobridge, JVB)<br />
+伺服器轉發串流資訊給眾人，不會儲存經手資料</p>
+<p>若伺服器擁有者，惡意儲存怎麼辦？</p>
+<p>Jitsi 也想到了，有兩個方法可解：</p>
+<ul>
+<li><del>轟炸伺服器中心</del></li>
+<li>自架伺服器，總不會偷自己資料吧！</li>
+<li>Chromium 83+ 的瀏覽器，可用 Insertable Streams 做端對端加密</li>
+</ul>
+<p><em># Chromium 是一種瀏覽器核心，可參考我<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-meet/./deGoogle-browser.md">替換瀏覽器</a>一文</em><br />
+由用戶端以每場會議的共用對稱金鑰，對媒體再行加密<br />
+確保伺服器的 Jitsi Videobridge 無法解密，只能轉發<br />
+<em># 端對端加密用 olm protocol</em><br />
+<strong>簡言之，<a href="https://brave.com/">Brave</a>、Chrome、Edge 等瀏覽器，能開啟端對端加密</strong><br />
+後來<strong>行動版應用程式，也支援端對端加密</strong><br />
+<em>注意：端對端加密僅限影音。文字聊天、投票功能不在保護傘下<br />
+且 20 人以上會議，端對端加密效果有限</em><br />
+缺點：</p>
+<ul>
+<li>用官方服務發起會議，「須以 Google、Facebook 或 Github」連動登入<br />
+<em># Github 是程式碼託管服務，已被微軟收購，三者都不是好選擇</em><br />
+官方說法是避免濫用，所以要求身份驗證 (i.e. 登入)<br />
+不然從前，隨便個誰都能濫啟會議<br />
+有人問過官方，能否加上 email 登入選項<br />
+官方強硬回絕了，所以短期內應該都不用想</li>
+<li><strong>美國公司</strong>，若無端對端加密則官方服務風險高</li>
+<li>只在一對一視訊時，採 p2p 達成端對端加密</li>
+<li>端對端加密僅支援 Chromium 系列瀏覽器<br />
+重視隱私者，只剩 <a href="https://brave.com/zh-tw/download/">Brave</a>、<a href="https://www.bromite.org/">Bromite</a> 等少數選擇<br />
+因為多數<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-meet/./deGoogle-browser.md">隱私瀏覽器</a>，都基於 <a href="https://www.firefox.com/zh-TW/">Firefox</a></li>
+</ul>
+<p>好處是開源、可自架服務，多數問題能因此解決<br />
+Jitsi 架構完善，不少會議服務也是從 Jitsi 衍生而來<br />
+例如 <a href="https://calyxinstitute.org/projects/digital-services/calyx-meet">Calyx meet</a> (似乎掛了)、下文介紹的 Brave Talk<br />
+也有許多<a href="https://meet.init7.net/en/">第三方</a>，架設 <a href="https://pads.ccc.de/jitsiliste">Jitsi instances</a> 供大眾免費使用<br />
+<strong><em># 第三方是否有惡意，本篇不作任何保證</em></strong></p>
+<h4 id="brave-talk"><a href="https://talk.brave.com/">Brave Talk</a></h4>
+<p>此 Brave 即瀏覽器的那家 Brave，他們也有會議服務<br />
+Brave Talk 建構在 Jitsi 上，但移除了遙測<br />
+官方<a href="https://brave.com/blog/brave-talk-launch/">宣稱</a>不會儲存任何資料、metadata (e.g. 通話對象、時長等)<br />
+支援端對端加密，但須手動開啟<br />
+<em># 端對端加密仍在測試，有時會不穩定</em><br />
+4 人以下會議免費，用瀏覽器即可加入，且不限時長<br />
+更多人則需訂閱，畢竟他們是公司，不是非營利機構<br />
+<em># 現有 AI 新功能 <a href="https://support.brave.app/hc/en-us/articles/25728936518285-How-to-use-Leo-with-Brave-Talk">Leo</a> 加入，可做會議記錄</em><br />
+缺點：</p>
+<ul>
+<li>美國公司</li>
+<li>免費版有人數上限 (4 人以下)</li>
+<li><del>發起會議須用 Brave 瀏覽器</del>現已可用其他瀏覽器發起<br />
+<em># 其他人可用任意瀏覽器加入</em></li>
+<li>端對端加密非預設開啟，且仍為實驗功能</li>
+</ul>
+<p>鑑於 Brave Talk <a href="https://github.com/brave/brave-talk">開源</a>、隱私政策友善，所以還是予以介紹</p>
+<p>Proton (質子科技)也出了 <a href="https://proton.me/meet">Proton Meet</a>，<a href="https://github.com/ProtonMeet">開源</a>、可免費使用
+不過除非專門訂閱此服務，不然訂閱 Proton 生態系或免費用戶，最多都只能用 50 分鐘</p>
+<hr />
+<h3 id="lan-ren-bao">懶人包</h3>
+<p>選擇障礙？<br />
+可參考以下推薦：</p>
+<ul>
+<li><strong>少數</strong>朋友私下視訊：
+<ul>
+<li>極簡主義、不想下載軟體 → <a href="https://p2p.mirotalk.com/newcall">MiroTalk</a> / <a href="https://brie.fi/ng">brie.fi</a> / <a href="https://talk.brave.com/">Brave Talk</a></li>
+<li>開發者，有在玩 Nextcloud → <a href="https://nextcloud.com/talk/">Nextcloud Talk</a></li>
+<li>有自己的 <a href="https://jitsi.org/">Jitsi</a> 伺服器 → <a href="https://jitsi.org/">Jitsi</a></li>
+</ul>
+</li>
+<li><del>詐團</del>公司 / 機構 / 朋友<strong>多人會議</strong>：
+<ul>
+<li>能自架伺服器 → <a href="https://jitsi.org/">Jitsi</a> / <a href="https://nextcloud.com/talk/">Nextcloud Talk</a> / <a href="https://sfu.mirotalk.com/">MiroTalk SFU</a><br />
+若有細緻協作需求 → <a href="https://bigbluebutton.org/">BigBlueButton</a></li>
+<li>想用現成服務 → <a href="https://proton.me/meet">Proton Meet</a></li>
+</ul>
+</li>
+<li>教育機構會議、<strong>線上教學</strong> → <a href="https://bigbluebutton.org/">BigBlueButton</a><br />
+<a href="https://p2p.mirotalk.com/newcall">MiroTalk</a>、<a href="https://brie.fi/ng">brie.fi</a>、<a href="https://talk.brave.com/">Brave Talk</a> 算最簡單的，進官網、點擊發起會議即可<br />
+若無法自架伺服器，<a href="https://jitsi.org/">Jitsi</a> 官方登入途徑有隱私疑慮，但操作同樣簡單<br />
+<a href="https://bigbluebutton.org/">BigBlueButton</a>、<a href="https://nextcloud.com/talk/">Nextcloud Talk</a> 對一般大眾可能有點難度</li>
+</ul>
+<hr />
+<h3 id="ba">跋</h3>
+<p>咱<a href="https://www.cna.com.tw/news/ahel/202512230371.aspx">葉次長</a>曾對 Zoom 發表<a href="https://cofacts.tw/article/36r3h86c3wj7q">高見</a>，他做了<strong>不詳盡</strong>的調查，便一路滑坡到底<br />
+稱此「非資安問題，而是政治問題」，實則不想改變，所以只找有利觀點說服自己<br />
+忽略 Zoom 一路不慎、受迫、甚至蓄意的惡質行為<br />
+也完全不提威脅模式 (threat model)，即不同人、不同內容的風險殊異<br />
+應以適當方式處理，而非全用相同手段<br />
+<em># 例如險境中的人權倡議者需要 <a href="https://www.torproject.org/download/">Tor 瀏覽器</a>，一般人用 <a href="https://mullvad.net/en/browser">Mullvad</a> 可能就足夠</em><br />
+葉直接宣告「線上就是不安全」，既然其他選擇也不安全，那繼續用 Zoom 也一樣<br />
+<em># 他說自己會繼續用 Zoom，問題是他所謂「其他選項」，皆為本篇屏棄者</em><br />
+如同「反正走在路上都可能被車撞，那乾脆走車道，不必特地走人行道」一樣荒謬<br />
+<em># 請問走人行道和走車道，兩者風險孰高孰低？</em></p>
+<p>本篇揭露的資訊，顯見 Zoom 存在重大缺陷 (不論系統設計、經營理念、或政治因素)<br />
+若評估後仍決定用 Zoom，那是你的選擇<br />
+如果是「什麼都不知道，隨便選個用」，那連「對自己負責」都稱不上</p>
+<p>相信重視隱私的人，看完這篇後能做出明智的決定</p>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>
