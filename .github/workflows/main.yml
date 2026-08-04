@@ -1,0 +1,39 @@
+name: Mirror repo from freeland to leecher and HF
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * *' # 每小時執行八次
+  workflow_dispatch:     # 腳動觸發
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest # 用 Arch Linux
+    steps:
+    - name: Mirror repository
+      run: |
+        git clone --mirror https://codeberg.org/Codeglacier/privacy_guides_tw.git
+        cd privacy_guides_tw.git
+        git remote set-url --push origin https://x-access-token:${{ secrets.SYNC_TOKEN }}@github.com/Hieraaetus-moorei/privacy_guides_tw.git
+        git push --mirror
+      env:
+        GITHUB_TOKEN: ${{ secrets.SYNC_TOKEN }}
+
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: huggingface/hub-sync@v0.1.0
+        with:
+          github_repo_id: ${{ github.repository }}
+          huggingface_repo_id: cointeleporting/privacy_guides_tw
+          hf_token: ${{ secrets.HF_TOKEN }}
+          repo_type: dataset
+
+      - uses: huggingface/hub-sync@v0.1.0
+        with:
+          github_repo_id: ${{ github.repository }}
+          huggingface_repo_id: twinkle-ai/tw-privacy-guides
+          hf_token: ${{ secrets.HF_TOKEN }}
+          repo_type: dataset
