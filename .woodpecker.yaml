@@ -3,7 +3,11 @@ when:
   branch:
     exclude: pages
 
-# Clone recursively to fully clone the themes given as Git submodules
+# Shared volume + working directory for all steps in this workflow
+workspace:
+  base: /woodpecker
+  path: src/privacy_guides_tw
+
 clone:
   git:
     image: woodpeckerci/plugin-git
@@ -21,7 +25,7 @@ steps:
       - rsync -av assets/ static/
       - git clone --depth 1 https://github.com/getzola/hyde.git themes/hyde
       - |
-        cat > config.toml <<'EOF'
+        cat > config.toml <<EOF
         title = "私路 - 隱私之路"
         description = "正體中文的數位隱私教育素材"
         default_language = "zh_TW"
@@ -44,7 +48,7 @@ steps:
         github_alerts = false
 
         [markdown.highlighting]
-        theme = "hyde"
+        theme = "css"
         extra_languages = []
         prettify = true
         line_numbers = false
@@ -58,6 +62,7 @@ steps:
     image: alpine:edge
     commands:
       - apk add --no-cache zola
+      - test -f config.toml && test -d themes/hyde || { echo "workspace NOT shared with prepare"; ls -la; exit 1; }
       - zola build
     when:
       event: [push, pull_request]
