@@ -48,9 +48,7 @@ steps:
         lazy_async_image = false
         insert_anchor_links = "none"
         github_alerts = false
-
-        [markdown.highlighting]
-        theme = "solarized-dark"
+        highlight_theme = "solarized-dark"
         EOF
     when:
       event: [push, pull_request]
