@@ -51,13 +51,13 @@ steps:
       event: [push, pull_request]
 
   # Build Zola static files
-  build:
-    image: alpine:edge
-    commands:
-      - apk add zola
-      - zola build
-    when:
-      event: [push, pull_request]
+   build:
+     image: alpine:edge
+     commands:
+       - apk add zola
+       - zola build --base-url "https://${CI_REPO_OWNER}.codeberg.page/${CI_REPO_NAME}"
+     when:
+       event: [push, pull_request]
 
   publish:
     image: bitnami/git
