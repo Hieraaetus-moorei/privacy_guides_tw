@@ -22,6 +22,7 @@ steps:
       - apk add --no-cache git rsync zola
       - mkdir -p content static themes
       - rsync -av --exclude='README.md' --exclude='assets/' *.md content/
+      - "sed -i '1i\\+++\\n+++' content/*.md"
       - rsync -av assets/ static/
       - git clone --depth 1 https://github.com/getzola/hyde.git themes/hyde
       - |
