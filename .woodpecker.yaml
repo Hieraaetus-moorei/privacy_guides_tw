@@ -27,8 +27,25 @@ steps:
         theme = "hyde"  # Built-in theme; replace if needed
         output_dir = "public"
         
-        [markdown]
-        highlight_code = true
+         [markdown]
+         render_emoji = false
+         external_links_target_blank = false
+         external_links_no_follow = false
+         external_links_no_referrer = false
+         external_links_external = false
+         smart_punctuation = false
+         definition_list = false
+         bottom_footnotes = false
+         lazy_async_image = false
+         insert_anchor_links = "none"
+         github_alerts = false
+
+         [markdown.highlighting]
+         theme = "css"
+         extra_languages = []
+         prettify = true
+         line_numbers = false
+         hide_lines = false
         EOF
     when:
       event: [push, pull_request]
