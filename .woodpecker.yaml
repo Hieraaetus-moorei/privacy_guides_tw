@@ -24,13 +24,13 @@ steps:
       - rsync -av --exclude='README.md' --exclude='assets/' *.md content/
       - for f in content/*.md; do printf '+++\ndate = "2024-01-01"\n+++\n\n' > "$f.tmp" && cat "$f" >> "$f.tmp" && mv "$f.tmp" "$f"; done
       - rsync -av assets/ static/
-      - git clone --depth 1 https://github.com/getzola/hyde.git themes/hyde
+       - git clone --depth 1 https://github.com/hulufei/solar-theme-zola.git themes/solar-theme-zola
       - |
         cat > config.toml <<EOF
         title = "私路 - 隱私之路"
         description = "正體中文的數位隱私教育素材"
         default_language = "zh_TW"
-        theme = "hyde"
+         theme = "solar-theme-zola"
 
         base_url = "https://${CI_REPO_OWNER}.codeberg.page/${CI_REPO_NAME}"
         output_dir = "public"
@@ -59,7 +59,7 @@ steps:
     image: alpine:edge
     commands:
       - apk add --no-cache zola
-      - test -f config.toml && test -d themes/hyde || { echo "workspace NOT shared with prepare"; ls -la; exit 1; }
+       - test -f config.toml && test -d themes/solar-theme-zola || { echo "workspace NOT shared with prepare"; ls -la; exit 1; }
       - zola build
     when:
       event: [push, pull_request]
