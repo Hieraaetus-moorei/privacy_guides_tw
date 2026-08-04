@@ -22,7 +22,7 @@ steps:
       - apk add --no-cache git rsync zola
       - mkdir -p content static themes
       - rsync -av --exclude='README.md' --exclude='assets/' *.md content/
-      - for f in content/*.md; do printf '+++\n+++\n' > "$f.tmp" && cat "$f" >> "$f.tmp" && mv "$f.tmp" "$f"; done
+      - for f in content/*.md; do printf '+++\ndate = "2024-01-01"\n+++\n\n' > "$f.tmp" && cat "$f" >> "$f.tmp" && mv "$f.tmp" "$f"; done
       - rsync -av assets/ static/
       - git clone --depth 1 https://github.com/getzola/hyde.git themes/hyde
       - |
