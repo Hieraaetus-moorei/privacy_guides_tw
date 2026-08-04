@@ -8,59 +8,59 @@ clone:
   git:
     image: woodpeckerci/plugin-git
     settings:
-      recursive: true
+      recursive: false
 
 steps:
   # Ephemerally restructure for Zola
   prepare:
     image: alpine:edge
     commands:
-      - apk add rsync
-      - mkdir -p content static
+      - apk add --no-cache git rsync zola
+      - mkdir -p content static themes
       - rsync -av --exclude='README.md' --exclude='assets/' *.md content/
       - rsync -av assets/ static/
+      - git clone --depth 1 https://github.com/getzola/hyde.git themes/hyde
       - |
-        cat <<EOF > config.toml
+        cat > config.toml <<'EOF'
         title = "私路 - 隱私之路"
         description = "正體中文的數位隱私教育素材"
         default_language = "zh_TW"
         theme = "hyde"
 
         base_url = "https://${CI_REPO_OWNER}.codeberg.page/${CI_REPO_NAME}"
-
         output_dir = "public"
-        
-         [markdown]
-         render_emoji = false
-         external_links_target_blank = false
-         external_links_no_follow = false
-         external_links_no_referrer = false
-         external_links_external = false
-         smart_punctuation = false
-         definition_list = false
-         bottom_footnotes = false
-         lazy_async_image = false
-         insert_anchor_links = "none"
-         github_alerts = false
 
-         [markdown.highlighting]
-         theme = "hyde"
-         extra_languages = []
-         prettify = true
-         line_numbers = false
-         hide_lines = false
+        [markdown]
+        render_emoji = false
+        external_links_target_blank = false
+        external_links_no_follow = false
+        external_links_no_referrer = false
+        external_links_external = false
+        smart_punctuation = false
+        definition_list = false
+        bottom_footnotes = false
+        lazy_async_image = false
+        insert_anchor_links = "none"
+        github_alerts = false
+
+        [markdown.highlighting]
+        theme = "hyde"
+        extra_languages = []
+        prettify = true
+        line_numbers = false
+        hide_lines = false
         EOF
     when:
       event: [push, pull_request]
 
   # Build Zola static files
   build:
-     image: alpine:edge
-     commands:
-       - apk add zola
-       - zola build --base-url "https://${CI_REPO_OWNER}.codeberg.page/${CI_REPO_NAME}"
-     when:
-       event: [push, pull_request]
+    image: alpine:edge
+    commands:
+      - apk add --no-cache zola
+      - zola build --base-url "https://${CI_REPO_OWNER}.codeberg.page/${CI_REPO_NAME}"
+    when:
+      event: [push, pull_request]
 
   publish:
     image: bitnami/git
@@ -70,6 +70,7 @@ steps:
       CBTOKEN:
         from_secret: "codeberg_token"
     commands:
+
       # Configure Git
       - git config --global user.email "$${CBMAIL}"
       - git config --global user.name "Woodpecker CI"
