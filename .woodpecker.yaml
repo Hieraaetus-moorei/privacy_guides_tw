@@ -51,7 +51,7 @@ steps:
       event: [push, pull_request]
 
   # Build Zola static files
-    build:
+  build:
      image: alpine:edge
      commands:
        - apk add zola
