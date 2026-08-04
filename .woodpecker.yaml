@@ -48,11 +48,7 @@ steps:
         github_alerts = false
 
         [markdown.highlighting]
-        theme = "css"
-        extra_languages = []
-        prettify = true
-        line_numbers = false
-        hide_lines = false
+        theme = "one-dark-pro"
         EOF
     when:
       event: [push, pull_request]
