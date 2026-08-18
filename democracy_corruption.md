@@ -215,6 +215,24 @@ _# 德國海盜黨員，提倡數位隱私和自由，也帶頭串連民眾反�
 但更噁的 Chat Control 2.0 (強制掃描、要求加密後門)還在激烈論辯、談判  
 所以革命尚未成功，同志仍須努力  
 
+<br/>
+
+### 瑞士案例  
+瑞士從前因為中立和地處歐盟附近，法規對隱私、個資友善，且不易受外力脅迫，堪稱大監控世界的隱私避風港  
+不過 2025 年時，瑞士不少政客試圖修法[大幅擴張監控權](https://tuta.com/blog/switzerland-surveillance-plan)  
+想瓦解端對端加密 (要求訊息明文儲存或廠商須可解密)、強迫 VPN 公司記錄用戶資訊  
+結果引來民意、人權團體、商業公司大反撲，最後[成功擋下](https://www.techradar.com/vpn/vpn-privacy-security/switzerland-will-revise-proposed-law-change-after-backlash-from-tech-industry)噁心法案  
+* [民團](https://www.techradar.com/vpn/vpn-privacy-security/a-violation-of-fundamental-rights-civil-society-calls-on-switzerland-to-abandon-data-retention-proposals)：國際特赦組織瑞士分部、歐洲數位人權、國際隱私與演算法觀察等 19 個團體  
+    民團很重要，因為除了專家雲集，還能進行倡議凝聚民意  
+* [商業公司](https://www.techradar.com/vpn/vpn-privacy-security/secure-encryption-and-online-anonymity-are-now-at-risk-in-switzerland-heres-what-you-need-to-know)：Proton、Threema、NymVPN  
+    這是個有趣的推力，因為上述幾家幾乎可說是隱私界科技巨頭  
+    他們威脅政府，如果強推監控就出走  
+    等於宣告惡法的經濟後果，工作機會和稅收勢必也會減少很多  
+
+公司和民團們都形成聯盟，對政府施加龐大民意、經濟壓力，終迫使政客屈服  
+民團說明法案會迫害人權、公司則預告了經濟損失  
+既無法促進經濟又公然違背道德，自然很難支撐下去  
+
 ---
 
 ### 採取行動  
