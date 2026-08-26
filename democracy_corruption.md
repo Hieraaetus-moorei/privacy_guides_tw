@@ -90,6 +90,7 @@ _# 美國先例：FBI、[ICE](https://www.eff.org/deeplinks/2026/01/report-ice-u
 
 此手段惡名昭彰，還有個名詞專門描述：「監控蠕變 ([Surveillance Creep](https://dunhamconnect.com/blog/the-danger-of-surveillance-creep))」  
 起初用善意當藉口包裝，未來則逐漸擴權、侵吞人民隱私與自由  
+_# 想一窺各國政府、企業已成形的監控網，可到監控觀察 ([surveillancewatch.io](https://www.surveillancewatch.io/entities))逛逛_  
 
 想當初中國、俄羅斯也是找各種藉口，築防火長城、禁 VPN、強推全網實名制  
 說是防諜、杜絕假訊息、境外勢力煽動，但司馬昭之心誰看不出目的  
