@@ -205,45 +205,19 @@ Bitwarden 是開源、知名的密碼管理軟體，訂閱制收費
     好處是開源，至少能審核安全性  
     _# 相較之下，Proton 是瑞士公司，不受制於美國法律_  
 
-#### [Spectre](https://spectre.app/)  
-直翻幽靈，嚴格來說不算密碼管理軟體  
+#### [LessPass](https://lesspass.com/)  
+嚴格來說不算密碼管理軟體  
 
 不是密碼管理軟體，放這幹嘛！？  
 
 別急，就像[聯合國秘書長說的](https://www.un.org/sg/en/content/sg/speeches/2023-10-24/secretary-generals-remarks-the-security-council-the-middle-east%C2%A0)，事出必有因 (？)  
-Spectre 是「密碼演算器」，可以做相似的事  
-開發哲學是：「唯一不會被偷、勒索、遺忘的密碼，只有不存在的密碼」  
-> The only password that can’t be lost, stolen, seized, ransomed or left on the bus, is a password that doesn’t exist.  
-
-[原理](https://spectre.app/#algorithm)是透過密碼學[演算法](https://spectre.app/spectre-algorithm.pdf)，「生成」密碼：  
-使用者只需填入姓名 (或暱稱)、固定秘密 (可想成主密碼)  
-演算法會生成一把主鑰，碰到每個網站再依主鑰生成「唯一」、「不可逆推」的密碼  
-如此一來，就算某個網站出事，其他帳號仍非常安全  
+LessPass 是「密碼演算器」，用「生成」取代「儲存」  
+因為唯一不會被偷、勒索、遺忘的密碼，只有不存在的密碼  
+原理是透過主鑰、網址等資訊，演算出唯一、不可逆推的密碼  
+運算離線、且沒把密碼存下來  
 密碼不儲存在任何地方，就無法被偷  
 _# 此做法稱為「無狀態 (Stateless)」密碼管理_  
-
----
-
-講古：  
-比利時裔[加拿大人](https://lhunath.com/)開發，專案[開源](https://gitlab.com/spectre.app/)、支援各大電腦與手機平台  
-_# 作者專攻資安領域，自稱夢想家、理想主義者_  
-原本名為「One Password」，因其只需一支密碼  
-後更名為「Master Password」 (主密碼)，從 App Store 開始上架  
-後來經過重構，程式邏輯優化、介面現代化，擴展到各平台  
-品牌也重塑為 Spectre，至今已有十年歷史  
-
----
-
-缺點：  
-* 使用有些微門檻  
-    * Windows 用戶須先下載 Java  
-    * Mac 套件管理工具 [Homebrew](https://brew.sh/) 似乎不支援了，得由蘋果 App Store 下載  
-* 主程式年久未維護，穩定與安全性堪慮  
-
-
-#### [LessPass](https://lesspass.com/)  
-原理和 Spectre 相似，都用「生成」取代「儲存」密碼  
-一樣是[開源](https://github.com/lesspass/lesspass)、社群專案，支援手機平台、瀏覽器外掛  
+專案[開源](https://github.com/lesspass/lesspass)、社群驅動，支援手機平台、瀏覽器外掛  
 _# Android 版在 [F-Droid](https://f-droid.org/) 也能下載_  
 創建者是法國人 [Guillaume Vincent](https://github.com/guillaumevincent)，紅帽 (Red Hat)公司首席軟體工程師  
 _# 熟悉開源的人鐵定不陌生，此紅帽即為 Linux 發行版那家公司_  
@@ -256,7 +230,6 @@ _# 可離線使用，此處指網頁伺服器_
 * 無桌面程式  
 
 叫 'Less' 有種「少即是多」的意味，沒密碼就不用記密碼、不怕外洩  
-而且還有在積極維護，選 LessPass 比 Spectre 更安全  
 
 ---
 
@@ -270,7 +243,6 @@ _# 可離線使用，此處指網頁伺服器_
 * 已在用 Bitwarden、可能需要中文社群支援 → [Bitwarden](https://bitwarden.com/)  
     _# Bitwarden 在台灣知名度不低，隨便搜都有很多文章_  
 * 喜歡酷玩意 → [LessPass](https://lesspass.com/)  
-    * 有技術能力、願意冒風險 → [Spectre](https://spectre.app/)  
 
 ---
 
