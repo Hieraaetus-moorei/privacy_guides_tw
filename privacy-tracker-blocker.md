@@ -201,16 +201,17 @@ EFF 算數位隱私先行者，做很多倡議、調查和報告，是值得敬�
 想「系統性」移除廣告，從源頭做起很重要  
 廣告來自網路，所以阻截特定網域，就能擋掉不少廣告  
 有些 VPN 提供此類功能，如 [ProtonVPN](https://protonvpn.com/)、[Mullvad VPN](https://mullvad.net/en)  
-也可以從 DNS 過濾，[Mullvad](https://mullvad.net/en)、[AdGuard DNS](https://adguard-dns.io/en/public-dns.html) 都支援  
+也可以從 DNS 過濾，~~[Mullvad](https://mullvad.net/en)、~~[AdGuard DNS](https://adguard-dns.io/en/public-dns.html) 都支援  
 _# DNS (Domain Name System)，用於翻譯主機名稱和 IP  
 例如你在網址列打 dns.google，實際上電腦看到的是 8.8.8.8_  
-[Mullvad](https://mullvad.net/en) 和 [AdGuard DNS](https://adguard-dns.io/en/public-dns.html)，都有**免費**、公開的伺服器  
+~~[Mullvad](https://mullvad.net/en) 和~~ [AdGuard DNS](https://adguard-dns.io/en/public-dns.html)，都有**免費**、公開的伺服器  
 如果你用 [FireFox](https://www.firefox.com/)，可在設定裡搜尋 DNS，然後選 DNS over HTTPS  
 接著有個 choose provider (選擇服務提供者)區塊，選「自訂」  
 把以下網域打進去，就能從 DNS 層級攔截部分廣告了：  
-* [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls)：`https://base.dns.mullvad.net/dns-query`  
+* ~~[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls)：`https://base.dns.mullvad.net/dns-query`~~  
 * [AdGuard](https://adguard-dns.io/en/welcome.html)：`https://dns.adguard.com/dns-query`  
 
+_# Mullvad 在 2026 年下旬[終止](https://mullvad.net/en/blog/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead) public DNS 服務_  
 兩者都開源、聲稱不會留紀錄，不過 [Mullvad](https://mullvad.net/en) 經第三方審核，更可信賴  
 _# 你也可以把作業系統 DNS 改掉，鑑於太離題日後再提_  
 
