@@ -84,6 +84,7 @@ _# 美國先例：FBI、[ICE](https://www.eff.org/deeplinks/2026/01/report-ice-u
 * 任何系統都有可能被駭，集中高價值個資形同幫駭客養肥羊  
     ~~數位黃金到處存，是我一定駭爆~~  
     這不是危言聳聽，Discord 就因身份驗證引來[駭客攻擊](https://arstechnica.com/tech-policy/2026/02/discord-faces-backlash-over-age-checks-after-data-breach-exposed-70000-ids/)  
+    其他驗證機構[也是](https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/)，[案例](https://xident.io/blog/age-verification-data-retention-breach-wave-2026/)要多少[有多少](https://www.govinfosecurity.com/id-verification-firm-idscannet-confirms-data-breach-a-32804)  
 * 為了內容分級，把全國不分年齡的人民個資都攤在風險下，**不符合比例原則必要性**  
     _# 顯然這並非侵害最小的方法_  
     要知道，放到數位世界的東西，想完全抹除會非常困難  

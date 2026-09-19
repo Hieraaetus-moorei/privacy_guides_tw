@@ -79,6 +79,8 @@ AI 產業和傳統軟體開發，對「開源」的詮釋略有不同
 各位常聽到的 Meta Llama、Stable Diffusion 模型，就是權重、程式碼開源，但訓練資料不公開的經典案例 (Black Forest Labs 比較誠實，說旗下的 [Flux](https://huggingface.co/black-forest-labs/FLUX.1-dev) 是「[開放權重](https://bfl.ai/blog/flux-1-kontext-dev)」模型)  
 DeepSeek 旗下的 Janus 系列製圖模型，則是僅開放模型權重，其他都不給看  
 [Nvidia](https://huggingface.co/nvidia/OpenMath-Nemotron-14B)、[TII](https://huggingface.co/datasets/tiiuae/falcon-refinedweb) 則部分模型有公開訓練資料、權重、程式碼、甚至訓練細節，是少見的慷慨做法  
+後來在規範逐漸成形後，Nvidia 開始用 [OpenMDW](https://openmdw.ai/license/1-1/) 授權開源  
+和傳統開源大同小異，只是多了版權提醒，要使用者勿將著作權保護的素材練進模型  
 
 ---
 
