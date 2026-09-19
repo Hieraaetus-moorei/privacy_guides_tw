@@ -46,6 +46,7 @@ If you're concerning about privacy but unsure where to start, we will help you e
 - [Tracker and Ad Blocker](./privacy-tracker-blocker.md)  
 - [Short Video Social Platform](./deMeta-img-and-short.md)  
 - [Messenger](./deMeta-messenger.md)  
+- [AI web Chat](./deGoogle-gemini.md)  
 
 *I'll keep updating this repo to provide systemic education materials for digital privacy in traditional Chinese*  
 

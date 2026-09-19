@@ -44,6 +44,7 @@
 - [廣告攔截器](./privacy-tracker-blocker.md)  
 - [短影音社群](./deMeta-img-and-short.md)  
 - [通訊軟體](./deMeta-messenger.md)  
+- [AI 對話服務](./deGoogle-gemini.md)  
 
 *會不定期加入新篇章，提供系統性的數位隱私中文學習素材*  
 
