@@ -383,6 +383,17 @@ _# 也可串接 [Orbot app](https://orbot.app/en/)，連線至 Tor 網路_
 
 習慣 Chromium 生態系，一樣能取回隱私  
 
+#### [IronFox](https://ironfoxoss.org/)  
+移除遙測、增強網路指紋防護、社群驅動的[開源](https://gitlab.com/ironfox-oss/IronFox)專案  
+主打安全和隱私，指紋防護可細緻調整，非 Firefox 的全有全無  
+安全瀏覽模式透過 IronFox 代理伺服器訪問 Google，用最低限度隱私代價換取安全性  
+預設關閉時清除瀏覽記錄、快取、下載紀錄...，對 Firefox 做了超多[隱私強化](https://ironfoxoss.org/docs/features/)，可說是手機版的 LibreWolf  
+
+缺點：  
+* 預設**不給裝外掛**，想裝 uBlock Origin 須先手動開啟權限  
+   算防呆機制，預防使用者亂裝一堆東西  
+* 僅支援 Android  
+
 #### [Firefox Focus](https://www.firefox.com/en-US/browsers/mobile/focus/)  
 專注版 Firefox 是 Moziila 推出、給行動裝置的瀏覽器  
 沒預裝 uBlock Origin，但有內建較弱的追蹤器攔截器  
@@ -464,13 +475,13 @@ uBlock Origin 也手動安裝即可
 * 想要所有平台體驗近似，且只要一個瀏覽器 → [Brave](https://brave.com/) / [Waterfox](https://www.waterfox.net/) / [Cromite](https://github.com/uazo/cromite)  
 * 喜歡高度客製化  
    * 電腦版 → [Floorp](https://floorp.app/) / [Zen](https://zen-browser.app/)  
-   * 手機 [Waterfox](https://www.waterfox.net/) / [Firefox](https://www.firefox.com/) ([focus](https://www.firefox.com/browsers/mobile/focus/))  
+   * 手機 [Waterfox](https://www.waterfox.net/) / [Firefox](https://www.firefox.com/) ([focus](https://www.firefox.com/browsers/mobile/focus/)) / [IronFox](https://ironfoxoss.org/)  
 * 倡議者、人權記者 → 不用說，就是 [Tor](https://www.torproject.org/download/)  
 * 偏激隱私仔 (例如我)：  
    各瀏覽器有不同優勢，沒規定只能選一個  
    **許多開發者會裝 4、5 個瀏覽器**，區隔不同用途  
    例如平時習慣 [Floorp](https://floorp.app/)、預設開啟網頁用 [LibreWolf](https://librewolf.net/) / [Mullvad](https://mullvad.net/en/browser)、裝 [Brave](https://brave.com/) 使用 Chromium 功能、為非作歹高隱私需求活動用 [Tor](https://www.torproject.org/download/)...  
-   至於行動裝置，選擇較少更要精打細算 ([Brave](https://brave.com/) / [Waterfox](https://www.waterfox.net/) / [Tor](https://www.torproject.org/download/) / [Cromite](https://github.com/uazo/cromite))  
+   而行動裝置選擇較少，更要精打細算 ([Brave](https://brave.com/) / [Waterfox](https://www.waterfox.net/) / [Tor](https://www.torproject.org/download/) / [Cromite](https://github.com/uazo/cromite) / [IronFox](https://ironfoxoss.org/))  
 
 ---
 
