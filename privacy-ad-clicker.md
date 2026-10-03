@@ -26,7 +26,7 @@ _# 如果你已知數位廣告運作機制，請直接跳過本段落_
 * 平台，例如 Youtube  
 * 創作者，例如[李宏毅](https://www.youtube.com/@HungyiLeeNTU) (他沒開分潤平台還是會投廣告)  
 * 閱聽人，例如你我  
-* 廣告刊登者，例如無國界醫生、IKEA (如果平台是[臉書](./deMeta-macroblog.md)，就還有詐騙、博弈產業)  
+* 廣告刊登者，例如無國界醫生、IKEA (如果平台是[臉書](./deMeta-macroblog.md#非死不可-臉書-aka-fb--facebook)，就還有詐騙、博弈產業)  
 
 IKEA 拍廣告、創作者生產內容 → Youtube 投放廣告、閱聽人消費內容  
 金流：  

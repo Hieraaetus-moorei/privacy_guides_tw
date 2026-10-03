@@ -82,7 +82,7 @@ Tuta 的加密演算法，就算量子電腦問世仍屬安全 (學術圈有探�
 如果你偏好下載手機 app，Tuta 可說是個好選擇  
 因為多數其他 email 客戶端，「跳通知」功能來自 Google / Apple  
 而 Tuta 用自家服務，所以沒閉源成分  
-_# 因此可從 [F-droid](./deGoogle-appStore.md) 下載_  
+_# 因此可從 [F-droid](./deGoogle-appStore.md#f-droid) 下載_  
 
 ### [Nextcloud](https://nextcloud.com/)  
 Nextcloud 也是德國公司，產品 100% 開源，主張整合雲端服務**去中心化** (≈民主化)  

@@ -143,9 +143,9 @@ _# 插上一個東西才能用，像特務片那樣，酷吧？_
 想要功能強大、可自訂的密碼管理軟體，非此莫屬  
 
 #### [Proton Pass](https://proton.me/pass)  
-Proton 老面孔了，公司背景在 [Email 那篇](./deGoogle-email.md)介紹過  
+Proton 老面孔了，公司背景在 [Email 那篇](./deGoogle-email.md#proton-mail)介紹過  
 主打開源、保障隱私，有各種常用線上服務  
-_# [Email](./deGoogle-email.md)、[雲端硬碟](./deGoogle-drive-and-album.md)、[月曆](./deGoogle-calendar.md)... 都有_  
+_# [Email](./deGoogle-email.md#proton-mail)、[雲端硬碟](./deGoogle-drive-and-album.md#proton-drive)、[月曆](./deGoogle-calendar.md#proton-calendar)... 都有_  
 Proton Pass 開源、端對端加密，支援電腦、手機、瀏覽器  
 瀏覽器外掛可獨立作業，不需先下載電腦端軟體  
 線上、離線服務都行，還能多設一層密碼保護  
@@ -188,7 +188,7 @@ _# 這樣就算滑手機時突然被搶，也不怕密碼外流_
     iOS 系列有相應替代品，但鑒於生態系閉鎖、強制綁蘋果商店、與 GPL 授權不相容  
     此處就不特別提，要怪請怪蘋果 (蘋果稅阻卻許多開發者)  
 可從 Google Play、[F-Droid](https://f-droid.org/) 下載 (官方建議從 F-Droid)  
-_# [F-Droid](https://f-droid.org/) 是免費開源軟體商店，本身也開源、去 Google 化，可見[這篇](./deGoogle-appStore.md)_  
+_# [F-Droid](https://f-droid.org/) 是免費開源軟體商店，本身也開源、去 Google 化，可見[這篇](./deGoogle-appStore.md#f-droid)_  
 
 #### [Bitwarden](https://bitwarden.com/)  
 Bitwarden 是開源、知名的密碼管理軟體，訂閱制收費  

@@ -20,7 +20,7 @@ Mac (電腦)、iOS (手機)下載軟體，都得從官方商店下載
 電腦還能用指令解決，手動移除系統的「損毀標記」  
 例如：  
 `brew install librewolf --no-quarantine`  
-<sup>用 [Homebrew](https://brew.sh/) 下載 [LibreWolf](./deGoogle-browser.md)，並信任來源</sup>  
+<sup>用 [Homebrew](https://brew.sh/) 下載 [LibreWolf](./deGoogle-browser.md#librewolf)，並信任來源</sup>  
 <sup>不過今年蘋果強制軟體簽核，沒交蘋果稅的不能用了</sup>  
 但 iPhone 除非破解系統或歐盟用戶，否則軟體只能從 App Store 下載  
 _# 歐盟反壟斷法，讓該地重獲自由_  

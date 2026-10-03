@@ -77,7 +77,7 @@ HeliBoard 可自訂：
     東亞語言支援都較弱，尚在發展階段  
 
 僅上架 [F-Droid](https://f-droid.org/packages/helium314.keyboard/)，要跑對地方才能下載唷！  
-_# 不知道 F-Droid 的，可參閱[前篇文章](./deGoogle-appStore.md)_  
+_# 不知道 F-Droid 的，可參閱[前篇文章](./deGoogle-appStore.md#f-droid)_  
 
 #### [FlorisBoard](https://florisboard.org/)  
 同樣為社群驅動的[開源專案](https://github.com/florisboard/florisboard)，成立 FlorisBoard.org 管理開發流程  
@@ -299,7 +299,7 @@ QuickType 隱私政策較理想：
 ---
 
 細心的讀者可能有發現，以往圖片常加皇冠、偷渡推薦次序  
-_# 例如 [Searxng](./deGoogle-search-engine.md)、[Proton Mail](./deGoogle-email.md)、[F-Droid](./deGoogle-appStore.md)_  
+_# 例如 [Searxng](./deGoogle-search-engine.md#searxng-前身為-searx)、[Proton Mail](./deGoogle-email.md#proton-mail)、[F-Droid](./deGoogle-appStore.md#f-droid)_  
 但鍵盤使用因人而異，本篇沒納入這種考量  
 [HeliBoard](https://f-droid.org/packages/helium314.keyboard/)、[FlorisBoard](https://f-droid.org/packages/dev.patrickgold.florisboard/) 很推薦給英文使用者  
 [Futo](https://futo.org/) 若非美企，其實也很推薦  

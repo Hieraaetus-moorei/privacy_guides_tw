@@ -167,7 +167,7 @@ _# 人家中國公司所以叫「信息」，有意見去找它_
 本身為[開源](https://github.com/friendica/friendica)、非營利專案，由社群維運  
 _# Fediverse 介紹請見[這篇](./deMeta-microblog.md#Mastodon)_  
 簡言之就是路人都能自架服務，且可和相容的社群媒體互動  
-有點像你可以用臉書帳號，到別人的[推特](./deMeta-microblog.md#Mastodon)、甚至 [Youtube](./deGoogle-video-platform.md) 留言  
+有點像你可以用臉書帳號，到別人的[推特](./deMeta-microblog.md#Mastodon)、甚至 [Youtube](./deGoogle-video-platform.md#peertube) 留言  
 _# Fediverse 的平台都互通，而 Friendica 和 Hubzilla、Diaspora* 也能通_  
 Friendica 最初由網景 (Netscape)工程師 [Macgirvin](https://github.com/macgirvin) 發起，後由社群接手推動  
 _# 網景是 Mozilla 前身，[Firefox](./deGoogle-browser.md#Firefox)、[Thunderbird](./deGoogle-email.md#Thunderbird) 為該機構代表作_  
@@ -215,7 +215,7 @@ _# 只能通 Friendica 和 [Hubzilla](https://hubzilla.org/page/info/home)，不
 是[開源](https://github.com/movim/movim)、免費、社群驅動的專案，在歐洲較活躍  
 可自架服務，但使用 XMPP 而非 ActivityPub，所以要橋接器才能進入聯邦宇宙  
 _# 你也可以不進聯邦宇宙，在不同 Movim 伺服器互動不受影響_  
-最大優點是私訊「有」端對端加密，細節可見[前文](./deMeta-microblog.md)  
+最大優點是私訊「有」端對端加密，細節可見[前文](./deMeta-microblog.md#movim)  
 缺點：  
 * 旗艦伺服器在歐洲，選它可能會有點延遲  
     _# 你也可以選其他伺服器，享受「分散式」的好處_  
@@ -224,7 +224,7 @@ _# 你也可以不進聯邦宇宙，在不同 Movim 伺服器互動不受影響_
 不過 XMPP 也有一票粉絲，可算偏門生態系  
 
 #### [GoToSocial](https://gotosocial.org/)  
-上次也[介紹過](./deMeta-microblog.md)，就是欠自架的 Fediverse 開源專案  
+上次也[介紹過](./deMeta-microblog.md#gotosocial)，就是欠自架的 Fediverse 開源專案  
 架站所需資源甚少，是設計給朋友圈自己玩沙用的  
 不過因為是聯邦宇宙，你也可以從此出發到~~更遙遠的彼方~~其他服務，例如 Mastodon  
 缺點：  

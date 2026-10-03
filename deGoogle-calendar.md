@@ -29,7 +29,7 @@ _# 端對端加密代表只有你、經授權者能看到內容，即便公司�
 沒錯，又是 Proton！  
 專做隱私產品，自然常常出現  
 Proton 是瑞士公司，從加密郵件起家  
-_# Proton 品牌故事，可參見我[介紹 Email 的文章](./deGoogle-email.md)_  
+_# Proton 品牌故事，可參見我[介紹 Email 的文章](./deGoogle-email.md#proton-mail)_  
 日曆開源、端對端加密  
 [免費版](https://proton.me/pricing)可創三個日曆，欲分享則須訂閱  
 _# 訂閱可享有 Proton 生態系服務_  
@@ -113,7 +113,7 @@ Thunderbird (直翻雷鳥) 是萬用郵件前端，可連接各家 email 信箱
 缺點：  
 * 非獨立日曆，跟郵件 app 同捆  
     對某些人可能是優點，兩個願望一次滿足  
-    我[替換郵件](./deGoogle-email.md)那篇文，有介紹 [Thunderbird](https://www.thunderbird.net/en-US/)  
+    我[替換郵件](./deGoogle-email.md#thunderbird)那篇文，有介紹 [Thunderbird](https://www.thunderbird.net/)  
 * 日曆無端對端加密  
 * 尚無 iOS 版 (仍在開發中)  
     _# 官方[說法](https://blog.thunderbird.net/2025/06/thunderbird-mobile-progress-report-may-2025/)：預計 2025 年底進入 alpha 測試_  

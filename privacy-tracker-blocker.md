@@ -28,7 +28,7 @@ _# 本篇未受任何贊助，~~沒人要給我錢嗚嗚嗚~~_
 地表最強廣告攔截器，常簡稱 uBO  
 uBO 是瀏覽器外掛，Google 調整 Chrome 之後不再支援  
 但 [Brave](https://brave.com/)、[Firefox](https://www.firefox.com/) 系列瀏覽器都完整支援，**免費**、**開源**、積極維護  
-_# 瀏覽器細節請參見[前文](./deGoogle-browser.md)，過去就介紹過 uBlock Origin_  
+_# 瀏覽器細節請參見[前文](./deGoogle-browser.md)，過去就介紹過 [uBlock Origin](./deGoogle-browser.md#ublock-origin-ubo-關瀏覽器選擇什麼事)_  
 
 ![神級廣告攔截器 - uBlock Origin](https://raw.githubusercontent.com/gorhill/uBlock/master/src/img/ublock.svg)  
 
@@ -91,7 +91,7 @@ _# 你就會知道自己信任的網站，多數其實是偷窺狂_
 所以無法裝到其他瀏覽器上，但也因此攻擊面積較小 (更保障資安)  
 客製化能力有限，不過下載瀏覽器後開箱即可用，不必手動調整  
 你想調也可以，Brave Shield 支援網路指紋隨機化、阻擋腳本  
-_# 看不懂可以當沒這回事，或參考[這篇](./deGoogle-browser.md)學更多_  
+_# 看不懂可以當沒這回事，或參考[這篇](./deGoogle-browser.md#瀏覽網路會留下指紋-fingerprint)學更多_  
 手機和電腦都能下載，是個~~臃腫~~多功能的瀏覽器  
 
 ### 懶人包  

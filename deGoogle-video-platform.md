@@ -301,7 +301,7 @@ Invidious 有的功能，Piped 大致都有，還能跨越年齡限制
 社群做的**電腦版** Youtube app，[開源](https://github.com/FreeTubeApp/FreeTube)、免費  
 可避開 Youtube 廣告、追蹤器，甚至不用帳號  
 支援 SponsorBlock 和訂閱頻道，也能透過 Invidious 代理連線至 Youtube  
-_# 否則會直接依賴 Youtube，所以官方建議翻 VPN 或 [Tor](./deGoogle-browser.md)_  
+_# 否則會直接依賴 Youtube，所以官方建議翻 VPN 或 [Tor](./deGoogle-browser.md#tor-是什麼)_  
 Windows、MacOS、多種 Linux 分支都能用  
 
 缺點：  
@@ -320,7 +320,7 @@ Windows、MacOS、多種 Linux 分支都能用
 無廣告、可匯入播放清單、能追頻道，同樣不需 Youtube 帳號  
 且不只 Youtube，NewPipe 也支援 [PeerTube](https://joinpeertube.org/) 和諸多平台，功能很多樣  
 優勢是效能高 (幾乎無延遲)、服務穩定，可從 [F-Droid](https://f-droid.org/packages/org.schabi.newpipe/) 取得  
-_# F-Droid 是開源 Google Play 替代品，詳情請見[這篇](./deGoogle-appStore.md)_  
+_# F-Droid 是開源 Google Play 替代品，詳情請見[這篇](./deGoogle-appStore.md#f-droid)_  
 連 Piped 都採相同 API，Android 玩家值得一試  
 
 缺點：  
@@ -447,7 +447,7 @@ _# 這應該算公開的秘密了_
 ### [uBlock Origin](https://ublockorigin.com/)  
 簡稱 UBO，堪稱地表最強內容攔截器，是個瀏覽器外掛  
 能高效擋下追蹤器、廣告，卻幾乎不影響使用體驗  
-開源、完全免費，詳情見我的[瀏覽器介紹](./deGoogle-browser.md)  
+開源、完全免費，詳情見我的[瀏覽器介紹](./deGoogle-browser.md#ublock-origin-ubo-關瀏覽器選擇什麼事)  
 找個 Firefox 基底的瀏覽器，加裝 uBlock Origin，就進入無廣告世界啦！  
 _# 連 Youtube 廣告，也完全不會感覺到喔！_  
 

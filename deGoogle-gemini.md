@@ -47,7 +47,7 @@ _# 很想跟他說「就算喜歡 AI 的人，也不會選你家 AI」_
 Meta AI 客服只要用 VPN 翻到該用戶大略位置再請 AI 協助，就能**取得別人的帳號**  
 受害者眾多，官方卻沒積極應對，直到[歐巴馬](https://www.theguardian.com/technology/2026/jun/01/meta-ai-hack-obama-sephora-instagram)等知名人物也被盜帳，才正視問題  
 _# 省省吧，此漏洞已修補_  
-再說 Meta [劣跡](./deMeta-macroblog.md)[罄竹難書](./deMeta-messenger.md)，看名字就知道要換  
+再說 Meta [劣跡](./deMeta-macroblog.md#非死不可-臉書-aka-fb--facebook)[罄竹難書](./deMeta-messenger.md#facebook-和-igmessenger)，看名字就知道要換  
 
 #### Perplexity  
 除了資料預設會拿來練 AI，也會用 cookies、pixel (網路指紋手段)追蹤用戶  
@@ -67,7 +67,7 @@ _# 不過有不少營收來自企業、開發者高額訂閱_
 2. 身份驗證  
     官方表明，特定服務可能會要求實名制驗證  
     和這陣子的[狂潮](./online-kyc-origin.md)一樣，索取政府 ID、可能還要臉照，重點是驗證服務商為 [Persona](https://support.claude.com/en/articles/14328960-identity-verification-on-claude)  
-    _# 壞消息：Persona 就是[外洩](./deMeta-messenger.md) Discord 實名制個資的公司_  
+    _# 壞消息：Persona 就是[外洩](./deMeta-messenger.md#discord) Discord 實名制個資的公司_  
     說法當然是防濫用，但你什麼時候會遇到，沒人知道  
 3. 研究、改善服務  
     Anthropic 可拿對話紀錄、用戶回饋來研究及改善模型  
@@ -377,7 +377,7 @@ Phala Network 也用 TEE、是 Venice.ai 的供應商
 Chutes.ai 去中心化最徹底，Phala 只做一半、NEAR AI 沒開放散戶加入  
 
 Duck.ai  
-知名隱私服務商 [DuckDuckGo](./deGoogle-search-engine.md) 的 AI 服務，免費用量還算多，也可付費升級  
+知名隱私服務商 [DuckDuckGo](./deGoogle-search-engine.md#duckduckgo) 的 AI 服務，免費用量還算多，也可付費升級  
 提供 GPT、Claude、Mistral、Gemma 等多種模型，不需登入就能用  
 DuckDuckGo 作代理伺服器，除去可辨識個資再送到 AI 供應商後端  
 沒推薦是因為**整個架構閉源**，隱私完全寄託在對 DuckDuckGo、模型商的信任上  

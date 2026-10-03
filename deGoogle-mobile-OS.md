@@ -95,7 +95,7 @@ _# 超連結為替換文章_
 如果你姑息，Google 會[未經授權偷拿資料](https://cybermagazine.com/news/why-has-google-been-ordered-to-pay-android-users-us-314-6m)  
 當 Android 手機閑置時，許多個資已暗中傳回 Google  
 _# Google 因此被加州法院罰 3 億多美金_  
-加上[之前提過](./deGoogle-appStore.md)，Google 準備限縮 Android 開放性  
+加上[之前提過](./deGoogle-appStore.md#google-play)，Google 準備限縮 Android 開放性  
 將來恐怕只能從 Google Play 下載軟體，變成近乎蘋果的封閉體系  
 屆時 Google 大概會進一步打壓，任何有競爭力的替代商店  
 若真走到那步田地，本篇的替代 ROM 會是重要救星  
@@ -131,7 +131,7 @@ _# Alexa 是亞馬遜公司的智慧助手_
 畢竟多數軟韌體閉源，外界無從審核  
 尊不尊重隱私，全憑公司一張嘴  
 此外，App Store 閉鎖體系、橫徵暴斂蘋果稅，都對開源社群極不友善  
-_# 除了歐盟用戶，其餘果~~盤~~粉[下載軟體](./deGoogle-appStore.md)多半逃不過官方魔爪_  
+_# 除了歐盟用戶，其餘果~~盤~~粉[下載軟體](./deGoogle-appStore.md#app-store)多半逃不過官方魔爪_  
 還沒完，iOS 也有個 Android 的弊病 - 預載軟體拆不掉  
 你不喜歡 Safari、Siri，頂多只能「關閉」  
 意思是，它們沉眠於手機中，但無法直接刪除  
@@ -268,7 +268,7 @@ GrapheneOS 改自 AOSP (Android Open Source Project，就是 Android 啦！)
     甚至在自己頻道帶風向，讓疲於查證者誤信挑唆  
     _# 問題是 CalyxOS 社群很正常，也沒針對 GrapheneOS_  
     後來甚至攻擊**不相干的路人**，包括 [Signal](https://signal.org/)、[Mozilla](https://www.mozilla.org)、[隱私倡議者](https://sethforprivacy.com/archives/community-drama-and-mobile-os/)等  
-    _# Signal 是隱私通訊軟體，以後會講；Mozilla 就是[推出 Firefox](./deGoogle-browser.md) 那家_  
+    _# Signal 是隱私通訊軟體，以後會講；Mozilla 就是[推出 Firefox](./deGoogle-browser.md#firefox) 那家_  
     受害者過多，無法一一枚舉  
     請他提出證據，只會得到迴避、跳針  
     _# 跟我認識的一位教授，有 87% 像_  
@@ -300,11 +300,11 @@ iodé 指「碘化 (iodised)」，旨在去除 Android 剝削隱私的「毒性�
     microG 是 Google Play Service 的開源、隱私替代前端  
     代理用戶連線至 Google，最小化資料傳遞  
     會幫你偽造身份、地點，讓 Google 拿到假的資訊  
-    類似[之前提](./deGoogle-appStore.md)的 Aurora Store，不過非商店本身，而是服務  
+    類似[之前提](./deGoogle-appStore.md#aurora-store)的 Aurora Store，不過非商店本身，而是服務  
     _# 畢竟有些 app 沒 Google Play Service 幾乎無法運作_  
     當初設計給 LineageOS，身為分支當然也支援  
 * 拔除所有 Google 服務，以開源 app 替代  
-    例如改自 Firefox 的瀏覽器、Thunderbird [郵件](./deGoogle-email.md)、Heliboard [鍵盤](./deGoogle-keyboard.md)...  
+    例如改自 Firefox 的瀏覽器、Thunderbird [郵件](./deGoogle-email.md#thunderbird)、Heliboard [鍵盤](./deGoogle-keyboard.md#heliboard)...  
     舊版曾有少量閉源軟體，2022 開始已全用開源選擇  
 * 即時網路連線分析  
     內建[連線分析器](https://www.maxmind.com/en/home)，會圖形化標示應用程式的網路連線  
@@ -406,7 +406,7 @@ _# 簡單說就是 Murena 幫你重灌了_
     缺點是台灣已絕版，只能找存貨、海外購買  
 * 預裝**閉源**軟體  
 Magic Earch，類似 Google 地圖 / 地球  
-資料基於 [OpenStreetMap](./deGoogle-map.md)，但軟體本身**不**開源  
+資料基於 [OpenStreetMap](./deGoogle-map.md#openstreetmap)，但軟體本身**不**開源  
 * 安全性更新延遲  
     沒辦法，和 iodéOS 一樣，得等 LineageOS 整併 AOSP 更新，才輪到他們  
     有時動輒數月，安全風險較高  
@@ -611,7 +611,7 @@ _# 就是「你要試可以試，卡關別找我」的意思_
     但 Mozilla 有自己的商業模式，沒辦法配合  
     於是他們就換成 Epiphany，預設搜尋引擎為 DuckDuckGo  
     _# Firefox 預設用 Google，很受隱私社群反感_  
-    當然，也支援 [Tor](https://docs.puri.sm/Software/PureOS/Tips/Tor.html) 連線 (詳見[前文](./deGoogle-browser.md))  
+    當然，也支援 [Tor](https://docs.puri.sm/Software/PureOS/Tips/Tor.html) 連線 (詳見[前文](./deGoogle-browser.md#tor-是什麼))  
 * [PureBoot](https://puri.sm/pureos/pureboot/) 可信任開機鏈 (這條看不懂可跳過，一般人不會用到)  
     * [Coreboot](https://puri.sm/projects/coreboot/)：代替 BIOS 的開源韌體  
     * [Heads](https://puri.sm/posts/demonstrating-tamper-detection-with-heads/) + TPM 2.0：使開機過程可驗證，並揭露竄改 (若有)  
@@ -746,7 +746,7 @@ _# 但 DNS 預設靠 Google 解析_
     可備份資料到 USB 硬碟、Nextcloud，且匯出前先加密  
 * 預設 app  
     * [Signal](https://signal.org/) messenger 類似 Line、What's app 的通訊軟體，但開源、保護隱私  
-        _# 代替電話、簡訊軟體，詳見[這篇](./deMeta-messenger.md)_  
+        _# 代替電話、簡訊軟體，詳見[這篇](./deMeta-messenger.md#signal-molly)_  
 * [F-Droid](https://f-droid.org/)、[Aurora Store](https://f-droid.org/en/packages/com.aurora.store/)  
     兩者皆為 [Google Play 開源替代品](./deGoogle-appStore.md)  
     F-Droid 上都是免費開源軟體，Aurora Store 則匿名取用 Google Play 的 app  
@@ -754,7 +754,7 @@ _# 但 DNS 預設靠 Google 解析_
     基於 Chromium 的開源瀏覽器，會擋廣告、追蹤器  
 * [Tor 瀏覽器](https://www.torproject.org/download/#android)  
     透過洋蔥路由連網，多層加密、高度匿蹤  
-    _# 參閱我之前[替換瀏覽器文章](./deGoogle-browser.md)_  
+    _# 參閱我之前[替換瀏覽器文章](./deGoogle-browser.md#tor-browser)_  
 * 全硬碟加密 (現為逐檔加密)  
 
 ---

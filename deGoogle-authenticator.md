@@ -304,7 +304,7 @@ _# 免費帳號就行，畢竟沒登入誰知道你哪位_
 _# Proton 訂閱方案「不包含」此產品，所以本篇歸為**非營利**_  
 
 #### [Ente Auth](https://ente.io/auth/)  
-即 [Ente Photo](https://ente.io/) 那家公司，背景可見[這篇](./deGoogle-drive-and-album.md)  
+即 [Ente Photo](https://ente.io/) 那家公司，背景可見[這篇](./deGoogle-drive-and-album.md#ente-photo)  
 支援各大主流平台，手機電腦都行  
 _# [Android](https://f-droid.org/packages/io.ente.auth/)、[iOS](https://apps.apple.com/us/app/ente-auth-2fa-authenticator/id6444121398)、[Linux](https://github.com/ente-io/ente/releases?q=tag%3Aauth-v4)、[Mac](https://github.com/ente-io/ente/releases/download/auth-v4.4.4/ente-auth-v4.4.4.dmg)、[Windows](https://github.com/ente-io/ente/releases/download/auth-v4.4.4/ente-auth-v4.4.4.dmg)_  
 免費、[開源](https://github.com/ente-io/ente)、不需帳號，提供端對端加密的雲端備份  

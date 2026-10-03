@@ -19,7 +19,7 @@ _# Meta 會轉移去偷 (Meta 幾乎可當偷個資、窺探的同義詞)你的 
 
 #### Instagram (IG)  
 以防有人不知道，IG 和 Facebook 一樣，都是 Meta 的產品  
-Meta 在隱私、[資安](https://thehackernews.com/2024/09/meta-fined-91-million-for-storing.html)上都[劣跡斑斑](./deMeta-macroblog.md)，例如用明文儲存密碼、默許詐騙廣告肆虐  
+Meta 在隱私、[資安](https://thehackernews.com/2024/09/meta-fined-91-million-for-storing.html)上都[劣跡斑斑](./deMeta-macroblog.md#非死不可-臉書-aka-fb--facebook)，例如用明文儲存密碼、默許詐騙廣告肆虐  
 Facebook 和 IG 都是，光密碼問題就[被罰](https://www.pcmag.com/news/meta-faces-101-million-fine-for-storing-facebook-passwords-in-plaintext) 9000 多萬歐元  
 _# 明文儲存代表公司和員工能用你的密碼登入，當然，跑進伺服器的駭客也行_  
 後來 IG 又[未經允許](https://www.gdprregister.eu/news/instagram-unauthorized-camera-access/)，[偷拿](https://www.cnet.com/tech/mobile/lawsuit-accuses-instagram-of-peeping-with-iphone-camera/)用戶相機權限，被集體訴訟告上加州法庭  
@@ -97,7 +97,7 @@ _# 壞消息，上述資訊 IG、臉書的內建瀏覽器也會拿_
 聯邦宇宙 (fediverse) 是一系列使用相同協定的專案，服務可互通  
 伺服器可自架，也有別人架好的能直接用，沒單一實體掌控整個生態  
 簡單說就是「能選要辦哪家的 IG 帳，還能用 IG 追別人推特」  
-_# 不只先前介紹的 [Mastodon](./deMeta-microblog.md)、[Friendica](./deMeta-macroblog.md)，就連 Meta 的 Threads 也通喔！_  
+_# 不只先前介紹的 [Mastodon](./deMeta-microblog.md#mastodon)、[Friendica](./deMeta-macroblog.md#friendica)，就連 Meta 的 Threads 也通喔！_  
 功能、介面和 IG 相似，只是少了廣告和追蹤器  
 
 缺點：  

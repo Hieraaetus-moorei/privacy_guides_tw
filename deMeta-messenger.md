@@ -74,7 +74,7 @@ _# 不過 IG 端對端加密預設關閉、深藏在設定裡，多數人大概�
 * [亂祖](https://www.nownews.com/news/6699567)帳號  
 * ...  
 
-爭議過多，有興趣可見[前文](./deMeta-macroblog.md)  
+爭議過多，有興趣可見[前文](./deMeta-macroblog.md#非死不可-臉書-aka-fb--facebook)  
 Meta 每隔一陣子就會搞事，說不定你讀本篇時又有新黑料  
 多數人應該都知道，Meta 是偷窺狂  
 所以還選擇繼續用、甚至下載 app 的人，不是暴露癖、暴露慾就是暴露狂  
@@ -243,7 +243,7 @@ iCloud 好歹能開進階資料保護 (ADP)，Google 雲端則是[被監控](htt
 賺錢，對 Line 來說比用戶權益和體驗更重要  
 
 #### Snapchat  
-Snapchat 在[前文](./deMeta-img-and-short.md)詳述過，在此不贅述，有興趣可自行參考  
+Snapchat 在[前文](./deMeta-img-and-short.md#snapchat)詳述過，在此不贅述，有興趣可自行參考  
 
 #### WeChat (微信)  
 我是不知道，重視隱私的人怎麼會選[中國軟體](./chinese-service-risk.md)  
@@ -562,7 +562,7 @@ _# 一旦量子電腦問世，依賴質數相乘加密的演算法，會幾乎�
     否則有人傳訊息來時，App 不會跳出提醒  
     但 Google 和蘋果的通知服務非開源，用了就會含閉源成分  
     [官方說法](https://getsession.org/faq)：為推送通知，Google 和蘋果會得到你的 IP，蘋果還會額外拿到發送通知的 token  
-    _# 這也是 Session 上不了 [F-droid](./deGoogle-appStore.md) 的原因_  
+    _# 這也是 Session 上不了 [F-droid](./deGoogle-appStore.md#f-droid) 的原因_  
     若你很介意 IP 暴露，可以：  
     * 開 VPN   
     * 選 slow mode  
