@@ -531,7 +531,7 @@ pmOS 支援多種桌面環境，[主流 Linux 介面](https://postmarketos.org/b
 * 與傳統手機介面差異大，轉換成本較高  
 
 由於名字太難唸，今年有[改名打算](https://postmarketos.org/blog/2025/03/04/pmOS-update-2025-02/)  
-不知未來會改叫什麼，prior-marketOS？  
+~~不知未來會改叫什麼，prior-marketOS？~~ 已改名叫 [Nura](https://nura.eco/)  
 
 #### [Mobian](https://mobian-project.org/)  
 行動 (Mobile)版 Debain → Mobian  
