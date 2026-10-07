@@ -23,6 +23,7 @@
 - [民主國家擁抱監控](./democracy_corruption.md)  
 - [網路實名浪潮起因](./online-kyc-origin.md)  
 - [零信任](./zero-trust_persecurity-delusion.md)  
+- [資料別亂給](./privacy-do-NOT-give-data.md)  
 
 ### 尊重、保障隱私的免費開源選擇  
 - [搜尋引擎](./deGoogle-search-engine.md)  

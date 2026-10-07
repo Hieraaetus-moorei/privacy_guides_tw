@@ -25,6 +25,7 @@ If you're concerning about privacy but unsure where to start, we will help you e
 - [Democratic Countries Embraced Surveillance](./democracy_corruption.md)  
 - [Dark side behind online KYC tide](./online-kyc-origin.md)
 - [Zero Trust](./zero-trust_persecurity-delusion.md)  
+- [don't give out data](./privacy-do-NOT-give-data.md)  
 
 ### Privacy-Preserving Free and Open Source Choices  
 - [Search Engine](./deGoogle-search-engine.md)  
