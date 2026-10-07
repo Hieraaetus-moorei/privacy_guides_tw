@@ -27,6 +27,16 @@ steps:
       - rsync -av assets/ static/
       - git clone --depth 1 https://github.com/hulufei/solar-theme-zola.git themes/solar-theme-zola
       - sed -i 's/config\.markdown\.highlight_theme/config.markdown.highlighting.theme/g' themes/solar-theme-zola/templates/index.html
+      # Adapt the frozen (since 2023) theme for Zola 0.23 / Tera 2:
+      # - blocks may only sit at top level, inside another block, or inside a filter section;
+      #   nothing overrides sidebar_nav, so drop its wrapper tags
+      - sed -i -e '/{% block sidebar_nav %}/d' -e '/{% endblock sidebar_nav %}/d' themes/solar-theme-zola/templates/index.html
+      # - config.generate_rss vanished from the serialized config long ago; Tera 2 hard-errors
+      #   on undefined fields while Tera 1 silently treated them as falsy
+      - sed -i 's/config\.generate_rss/config.generate_feeds/g' themes/solar-theme-zola/templates/index.html
+      # - paginator does not exist on the non-paginated home section; guard the field accesses
+      - sed -i 's/{% if paginator\.pages %}/{% if paginator %}/' themes/solar-theme-zola/templates/index.html
+      - sed -i 's/{% if paginator\.previous or paginator\.next %}/{% if paginator and (paginator.previous or paginator.next) %}/' themes/solar-theme-zola/templates/index.html
       - |
         cat > config.toml <<EOF
         title = "私路 - 隱私之路"
@@ -55,6 +65,7 @@ steps:
 
         [extra]
         highlight_theme = "solarized-dark"
+        site_menus = []
         EOF
     when:
       event: [push, pull_request]
@@ -64,6 +75,7 @@ steps:
     image: alpine:edge
     commands:
       - apk add --no-cache zola
+      - zola --version
       - test -f config.toml && test -d themes/solar-theme-zola || { echo "workspace NOT shared with prepare"; ls -la; exit 1; }
       - zola build
     when:
