@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>私路 - 隱私之路</title>
+
+    <!-- CSS -->
+    
+    <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/colors-dark.css">
+    
+    
+
+    
+
+    
+    
+  </head>
+  <body>
+    <header id="header">
+      <h1><a href="https://Codeglacier.codeberg.page/privacy_guides_tw">私路 - 隱私之路</a></h1>
+      <p>正體中文的數位隱私教育素材</p>
+    </header>
+    <div id="page">
+      <div id="sidebar">
+        
+          
+        
+      </div>
+      <div id="content">
+        
+<article class="post">
+  <h1><a href="https://Codeglacier.codeberg.page/privacy_guides_tw/privacy-ad-clicker/">擋廣告還能幫助創作者 - AdNauseam  </a></h1>
+
+  <div class="post-content"><blockquote>
+<p>裝廣告攔截器是在傷害創作者</p>
+</blockquote>
+<p>有些人認為，創作者收益比觀眾隱私重要<br />
+不過「擋廣告」不代表扼殺金流，兩者可以並存</p>
+<br/>
+<h3 id="lan-ren-bao">懶人包</h3>
+<p>使用 <a href="https://www.firefox.com/">Firefox</a> 家族的瀏覽器，然後安裝 <a href="https://addons.mozilla.org/en-US/firefox/addon/adnauseam/">AdNauseam</a> 外掛<br />
+完成，夠懶了吧！<br />
+<em># 記得玩一玩設定，確保攔截最大化、自動點擊運作無礙</em></p>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/privacy-ad-clicker/./assets/adnauseam.gif" alt="AdNauseam 標誌" /></p>
+<br/>
+<h3 id="shu-wei-guang-gao-ru-he-yun-zuo">數位廣告如何運作</h3>
+<p><em># 如果你已知數位廣告運作機制，請直接跳過本段落</em><br />
+許多內容創作者會在第三方平台發布作品，例如 Youtube、推特、臉書<br />
+營運者提供平台、創作者產出內容、閱聽人享受服務，看起來很美好<br />
+問題是平台有營運成本、內容創作者也想賺錢，所以需要商業模式支撐<br />
+平台於是投放廣告，和創作者拆分收益<br />
+所有參與者：</p>
+<ul>
+<li>平台，例如 Youtube</li>
+<li>創作者，例如<a href="https://www.youtube.com/@HungyiLeeNTU">李宏毅</a> (他沒開分潤平台還是會投廣告)</li>
+<li>閱聽人，例如你我</li>
+<li>廣告刊登者，例如無國界醫生、IKEA (如果平台是<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/privacy-ad-clicker/./deMeta-macroblog.md#%E9%9D%9E%E6%AD%BB%E4%B8%8D%E5%8F%AF-%E8%87%89%E6%9B%B8-aka-fb--facebook">臉書</a>，就還有詐騙、博弈產業)</li>
+</ul>
+<p>IKEA 拍廣告、創作者生產內容 → Youtube 投放廣告、閱聽人消費內容<br />
+金流：<br />
+閱聽人觀看 / 點擊廣告 → IKEA 按曝光率付 Google 錢 → Google 和創作者近乎對半分<br />
+廣告攔截器阻斷「觀看、點擊」，上游斷炊自然使創作者、Google 拿不到錢<br />
+解決方案很多種，例如贊助創作者、付費訂閱制、業配 (獲利最多的方法)...<br />
+或者，安裝 <a href="https://addons.mozilla.org/en-US/firefox/addon/adnauseam/">AdNauseam</a></p>
+<h3 id="adnauseam-guang-gao-dian-ji-qi"><a href="https://adnauseam.io/">AdNauseam</a> - 廣告點擊器</h3>
+<p>Ad nauseam 源自拉丁文，指討論到爛、很煩的東西，此處引申為廣告<br />
+開頭「Ad」剛好也是廣告的縮寫，雙關廣告的煩人特質<br />
+特別之處在於，AdNauseam 並「非」廣告攔截器，而是<strong>廣告點擊器</strong><br />
+<a href="https://github.com/dhowe/AdNauseam/">開源</a>、從<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/privacy-ad-clicker/./privacy-tracker-blocker.md#ublock-origin">神級廣告攔截器</a> <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/">uBlock Origin</a> 分支而來，是瀏覽器外掛<br />
+和廣告攔截器相同，都會比對清單、攔截廣告<br />
+不過廣告攔截器把請求阻斷就停了，抹去廣告、保障用戶隱私、也省下流量<br />
+而 AdNauseam 會額外「蒐集」被擋掉的廣告，在背景一一「點擊」<br />
+<em># 即代替你造訪<strong>每個</strong>廣告連結</em><br />
+使用者只會發現廣告都消失，和一般廣告攔截器體驗差不多<br />
+<em># 也可以自行查看<a href="https://wiwi.blog/blog/adnauseam/">戰果</a>，就能知道點了多少廣告</em></p>
+<p>為什麼要點擊每一個廣告？<br />
+因為要塞假資訊給廣告端點，同時活化金流鏈<br />
+支持創作者又<em>危害</em>廣告商，最小程度犧牲隱私和瀏覽體驗<br />
+廣告全都被點閱，創造比一般曝光更多的收益，創作者和平台都能拿到錢<br />
+但因為沒人購買商品，長期下來會拉低平台的轉換率<br />
+IKEA 花一堆錢卻沒廣告效果，Google 的議價能力就會降低<br />
+對個人化廣告的商業模式來說，是積極的打擊行為</p>
+<p>缺點是廣告商還是會拿到活動紀錄，畢竟造訪了廣告端點<br />
+不過無差別點擊廣告的好處，就是至少不會暴露偏好</p>
+<br/>
+<hr />
+<br/>
+<p>對願意犧牲部分隱私，換取支持創作者、反擊侵略性廣告的人來說，AdNauseam 正合用</p>
+</div>
+
+  <p class="meta">Posted on <span class="postdate">1989-06-04</span></p>
+</article>
+
+      </div>
+      <footer id="footer">
+        <p class="copyright">
+          
+            Powered by <a href="https://www.getzola.org/">Zola</a> and the
+            <a href="https://github.com/hulufei/solar-theme-zola">Solar</a>-theme.
+          
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

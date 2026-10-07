@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>私路 - 隱私之路</title>
+
+    <!-- CSS -->
+    
+    <link rel="stylesheet" href="https://Codeglacier.codeberg.page/privacy_guides_tw/colors-dark.css">
+    
+    
+
+    
+
+    
+    
+  </head>
+  <body>
+    <header id="header">
+      <h1><a href="https://Codeglacier.codeberg.page/privacy_guides_tw">私路 - 隱私之路</a></h1>
+      <p>正體中文的數位隱私教育素材</p>
+    </header>
+    <div id="page">
+      <div id="sidebar">
+        
+          
+        
+      </div>
+      <div id="content">
+        
+<article class="post">
+  <h1><a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-gemini/">deGoogle Gemini (和 GPT 等聊天夥伴)  </a></h1>
+
+  <div class="post-content"><blockquote>
+<p>你的隱私，由你掌控</p>
+</blockquote>
+<p>那是 OpenAI 消費者隱私權<a href="https://openai.com/zh-Hant/consumer-privacy/">頁面</a>的標語，不錯的笑話<br />
+<em># 這篇是要換的是聊天夥伴，不包含程式碼工具、周邊代理人生態系</em></p>
+<h3 id="kan-tu-shuo-gu-shi">看圖說故事</h3>
+<p><img src="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-gemini/./assets/deGoogle/deGoogle-gemini.png" alt="deGoogle Gemini" /><br />
+<sup>FOSS 指「免費開源軟體」，此處標準為「隱私關鍵部分」開源</sup><br />
+<sup>non-profit 指「不以營利為目的」</sup></p>
+<h3 id="lan-ren-bao">懶人包</h3>
+<ul>
+<li>線上服務
+<ul>
+<li>想要端對端加密和言論、生圖自由 → <a href="https://venice.ai/">Venice AI</a></li>
+<li>本來就在用 Brave 瀏覽器 → <a href="https://brave.com/leo/">Brave Leo</a></li>
+<li>Proton 粉絲<del>，喜歡廣告不實的產品</del> → <a href="https://lumo.proton.me/">Lumo</a></li>
+</ul>
+</li>
+<li>地端 AI
+<ul>
+<li>一般大眾：
+<ul>
+<li>追求簡單易用 → <a href="https://www.jan.ai/">Jan</a></li>
+<li>考慮外掛擴展功能 → <a href="https://github.com/oobabooga/textgen">TextGen</a></li>
+</ul>
+</li>
+<li>開發者：
+<ul>
+<li>想自己接介面 → <a href="https://www.librechat.ai/">LibreChat</a> / <a href="https://openwebui.com/">Open WebUI</a> + 以下擇一</li>
+<li>效率至上 → <a href="https://llama.app/">Llama.cpp</a></li>
+<li>喜歡 Rust → <a href="https://github.com/ericlbuehler/mistral.rs">Mistral.rs</a></li>
+<li>偏好簡易方案 → <a href="https://ollama.com/">Ollama</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="wei-shen-mo-gai-huan">為什麼該換</h3>
+<h4 id="gemini-chatgpt-grok">Gemini、ChatGPT、Grok</h4>
+<p>2026 年初，Google (Gemini)、OpenAI (ChatGPT)、xAI (Grok)和美國政府<a href="https://www.nbcnews.com/tech/tech-news/trump-bans-anthropic-government-use-rcna261055">達成協議</a><br />
+提供政府尤其戰爭部「不受限的使用權」，用於武器化和監控大眾，因此<a href="https://www.bbc.com/news/articles/cjrq1vwe73po">各賺 2 億美元</a><br />
+換句話說，除了公司會看到你的對話，政府也會用來監控<br />
+<em># 約都簽了，應該不用更多替換理由</em></p>
+<h4 id="copilot">Copilot</h4>
+<p>微軟則是<a href="https://www.computerworld.com/article/2140187/microsoft-makes-windows-recall-opt-in-after-privacy-security-backlash.html">強行綑綁</a> Copilot 和 Windows Recall 塞給<del>盤子</del>使用者，消費者巨大反彈下才撤回，改採「自願加入」制<br />
+<em># Recall 簡言之就是每 20 秒截圖你的螢幕，拿來「改善服務」</em><br />
+除了拿資料來練模型、和廣告商等<a href="https://www.zdnet.com/article/best-and-worst-ai-for-your-privacy-ranked/">第三方</a>共享，還會<strong>跟資料仲介 (data broker)<a href="https://blog.incogni.com/gen-ai-llm-privacy-ranking-2026/">買個資</a></strong><br />
+做一堆骯髒事引來罵名後，微軟 AI 部主管還<a href="https://www.pcmag.com/news/microsoft-exec-asks-why-arent-more-people-impressed-with-ai">發文</a>說不懂為什麼人們不喜歡 AI<br />
+<em># 很想跟他說「就算喜歡 AI 的人，也不會選你家 AI」</em></p>
+<h4 id="meta-ai">Meta AI</h4>
+<p>和 Gemini 一樣，會<a href="https://9to5mac.com/2026/03/25/ai-chatbot-privacy-ratings-for-the-most-popular-iphone-apps/">蒐集</a>包括財務狀況、種族、性取向、懷孕或生育、身心障礙、宗教或哲學信仰、工會會員資格、政治觀點、基因資訊或生物識別等資料<br />
+對話紀錄包括文字、圖片，預設都會用來<a href="https://www.axios.com/2026/08/17/secrets-share-ai-openai-meta-google-anthropic">練模型</a>、<a href="https://www.axios.com/2026/08/17/secrets-share-ai-openai-meta-google-anthropic">推個人化廣告</a><br />
+資安更是糟糕<br />
+搜刮資料卻不妥善保存，曾發生<a href="https://alternativeto.net/news/2025/6/hundreds-of-private-chats-are-being-exposed-in-meta-ai-s-new-app-amid-major-privacy-flaw/">聊天資訊外洩</a>，你和 AI <del>見不得人的</del>對話意外全公開<br />
+Meta AI 客服只要用 VPN 翻到該用戶大略位置再請 AI 協助，就能<strong>取得別人的帳號</strong><br />
+受害者眾多，官方卻沒積極應對，直到<a href="https://www.theguardian.com/technology/2026/jun/01/meta-ai-hack-obama-sephora-instagram">歐巴馬</a>等知名人物也被盜帳，才正視問題<br />
+<em># 省省吧，此漏洞已修補</em><br />
+再說 Meta <a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-gemini/./deMeta-macroblog.md#%E9%9D%9E%E6%AD%BB%E4%B8%8D%E5%8F%AF-%E8%87%89%E6%9B%B8-aka-fb--facebook">劣跡</a><a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-gemini/./deMeta-messenger.md#facebook-%E5%92%8C-igmessenger">罄竹難書</a>，看名字就知道要換</p>
+<h4 id="perplexity">Perplexity</h4>
+<p>除了資料預設會拿來練 AI，也會用 cookies、pixel (網路指紋手段)追蹤用戶<br />
+而且會和第三方共享、推送個人化廣告，但沒指名第三方是誰<br />
+甚至和微軟一樣，會從其他公司、公開資料、社群、合作夥伴取得使用者資訊<br />
+這可不是陰謀論、東窗事發，是官方<a href="https://www.perplexity.ai/hub/legal/privacy-notice">隱私政策</a>自己闡明</p>
+<h4 id="claude">Claude</h4>
+<p>背後公司 Anthropic <em>曾經</em>很有骨氣，<a href="https://www.anthropic.com/news/statement-department-of-war">拒絕</a>美國政府、戰爭部的監控和殺戮鏈邀約<br />
+選擇人權而非 <a href="https://www.eff.org/deeplinks/2026/03/anthropic-dod-conflict-privacy-protections-shouldnt-depend-decisions-few-powerful">2 億美元</a>利益，因此獲得用戶大舉進駐，超車 OpenAI 的營收規模<br />
+<em># 不過有不少營收來自企業、開發者高額訂閱</em><br />
+但那些事蹟和隱私保障沒太大關係，頂多達到最低標準而已<br />
+<a href="https://www.anthropic.com/legal/archive/d254257b-3920-4d8c-842d-b193c7372ba9">2026 年初</a>隱私政策<a href="https://www.anthropic.com/legal/privacy">更新</a>後，公司為自己擴了不少權</p>
+<ol>
+<li>配合政府<br />
+從前只在收到法院傳票時，才會和主管機關分享資料<br />
+新版則讓 Anthropic「善意信念」評估後，就能<strong>主動</strong>向當局揭露用戶個資</li>
+<li>身份驗證<br />
+官方表明，特定服務可能會要求實名制驗證<br />
+和這陣子的<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-gemini/./online-kyc-origin.md">狂潮</a>一樣，索取政府 ID、可能還要臉照，重點是驗證服務商為 <a href="https://support.claude.com/en/articles/14328960-identity-verification-on-claude">Persona</a><br />
+<em># 壞消息：Persona 就是<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-gemini/./deMeta-messenger.md#discord">外洩</a> Discord 實名制個資的公司</em><br />
+說法當然是防濫用，但你什麼時候會遇到，沒人知道</li>
+<li>研究、改善服務<br />
+Anthropic 可拿對話紀錄、用戶回饋來研究及改善模型<br />
+就算勾選拒絕，只要被判定對話可能違規，官方一樣有權審查、研究、用於改善服務<br />
+「從第三方獲取個資」這點，Anthropic 同樣淪陷了</li>
+</ol>
+<p>更誇張的是，上述規定<strong>溯及既往</strong><br />
+所以只要你用過 Claude，就算之後停用，還是會自動「被同意」那些新政策<br />
+此外，2026 年和政府發生爭端前，Anthropic 就與資料仲介 (data broker)Palantir <a href="https://fedscoop.com/palantir-anthropic-google-government-ai-claude-partnership/">合作</a><br />
+這層<a href="https://www.businesswire.com/news/home/20241107699415/en/Anthropic-and-Palantir-Partner-to-Bring-Claude-AI-Models-to-AWS-for-U.S.-Government-Intelligence-and-Defense-Operations">夥伴關係</a>，顯然和他們提倡的「人權」背道而馳<br />
+<em># Palantir 是新型 data broker，整合民眾個資並建立可輕鬆查詢的系統<br />
+<a href="https://www.eff.org/deeplinks/2026/01/report-ice-using-palantir-tool-feeds-medicaid-data">美國政府</a>是主要客戶之一，<strong>直接</strong>助長政府<a href="https://www.amnestyusa.org/press-releases/usa-global-tech-made-by-palantir-and-babel-street-pose-surveillance-threats-to-pro-palestine-student-protestors-migrants/">監控</a><br />
+Palantir 很會洗地，雖然他們和傳統資料仲介不同，但一樣剝削人們隱私</em></p>
+<p>Anthropic 就像 AI 世界的蘋果，比競爭者<strong>稍微</strong>隱私友善，但也僅止於稍微<br />
+<em># 這段篇幅較多，是為了避免讀者有「Anthropic 尊重隱私」的誤解</em></p>
+<h4 id="qwen-deepseek-deng-zhong-guo-fu-wu">Qwen、DeepSeek 等中國服務</h4>
+<p><em># 這裡指官方服務，把開源模型拉下來自己跑不在此限</em><br />
+如 <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek</a> 隱私政策所述，資料全數存在中國，該國政府能<a href="https://anonyome.com/knowledge-center/ai-privacy/deepseek-privacy/">要求存取</a><br />
+阿里巴巴 (Qwen)、Zai、Kimi 等大同小異，都會面臨<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-gemini/./chinese-service-risk.md">政府索資</a>的風險<br />
+DeepSeek 還會蒐集<a href="https://dontlooksecurity.substack.com/p/reviewing-deepseeks-privacy-policy">打字頻率和模式</a>、Qwen 會和集團公司共享資料 (且資料保存期限、分享對象、蒐集項目都相對模糊)<br />
+想用那些模型，最好選第三方供應商或自行架設</p>
+<h4 id="mistral">Mistral</h4>
+<p>法國 AI 公司，<em>號稱</em>遵守歐盟 GDPR，但<a href="https://www.reddit.com/r/MistralAI/comments/1whxzef/mistral_doesnt_give_us_sovereignty_or_respect_our/">隱私問題</a>依然存在<br />
+官方服務 Le Chat (現更名為 Vibe)從前相對乾淨、可選退出模型訓練<br />
+某天開始，突然冒出 100 多個追蹤器，主要是 sentry.io、intercom.io<br />
+cloudflareinsights.com (即 Cloudflare)則是一直都存在<br />
+多數都是美國公司的追蹤器服務，i.e. 引入第三方來拿你資料<br />
+<em># 2026 下旬追蹤器<strong>數量</strong>有變少，但只是換成漸進式載入，上述品項都還在</em><br />
+和政府也有軍事<a href="https://thedefensepost.com/2026/05/29/mistral-ai-defense-customers-policy/">合作</a>，目前還沒明確幫助監控的跡象，但技術上可行</p>
+<br/>
+<p>如果嫌上述不夠，還有更多替換理由：</p>
+<ul>
+<li>不防呆，<strong>全部</strong>公司技術上都能取得個資、對話紀錄等資訊，背後的政府當然也可以</li>
+<li>Gemini、Meta AI、Copilot 和 Perplexity 會蒐集「<a href="https://9to5mac.com/2026/03/25/ai-chatbot-privacy-ratings-for-the-most-popular-iphone-apps/">精確位置資訊</a>」</li>
+<li><a href="https://reports.exodus-privacy.eu.org/en/reports/com.openai.chatgpt/latest/">各家</a>的手機 <a href="https://reports.exodus-privacy.eu.org/en/reports/com.anthropic.claude/latest/">App</a>，幾乎都要求<a href="https://reports.exodus-privacy.eu.org/en/reports/ai.mistral.chat/latest/">過量權限</a></li>
+<li>「不拿你的資料訓練模型」只是承諾而非技術保證，再說「不練模型」不代表不能用來行銷、建檔、分享、保存、合成訓練資料...</li>
+</ul>
+<br/>
+<hr />
+<br/>
+<h3 id="ti-dai-pin">替代品</h3>
+<h4 id="venice-ai"><a href="https://venice.ai/">Venice.ai</a></h4>
+<p>架構非開源的美國企業，主打抗審查、保障隱私</p>
+<p>閉源還拿出來講，找死！？</p>
+<p>別激動，因為有很聰明的方式，能提供可驗證的隱私保障<br />
+Venice.ai 的後端主要是 NEAR AI 和 Phala Network，兩者都提供 TEE<br />
+<em># TEE 指可信執行環境 (Trusted Execution Environment)，在硬體層級提供密碼學驗證<br />
+可從遠端驗證內部程式碼、模型權重是否受篡改</em><br />
+架構像是：<br />
+你的輸入 → Venice.ai 代理伺服器 → TEE<br />
+模型運算結果 → Venice.ai 代理伺服器 → 你<br />
+Venice.ai 是電信局，幫你和<del>外遇對象</del>模型供應商互通有無<br />
+純 TEE 只確保服務供應者沒偷換模型，不過 TEE 能疊加端對端加密 (E2EE)<br />
+端對端加密可最小化對廠商的信任，就算 Venice.ai 想偷看也只會讀到亂碼</p>
+<hr />
+<p>Venice.ai 端對端加密流程 (沒興趣者可略)</p>
+<ol>
+<li>客戶端發送請求到代理伺服器，過程除了標準 HTTPS 還會經額外加密，Venice.ai 只能看到亂碼<br />
+<em># 加密鏈：ECDH → HKDF → AES-256-GCM</em></li>
+<li>代理伺服器會除去可識別個人資訊 (PII)，例如 IP、帳號、session ID 等<br />
+雖然這段實作非開源，但因為端對端加密，最糟也只會「未匿名」<br />
+prompt、模型回應仍是機密，不會被使用者以外的人看到</li>
+<li>匿名化的請求送達 GPU，在 TEE 孤島內解密、計算答覆，重新加密後傳出<br />
+回答在客戶端才解密，代理伺服器一樣無法窺探<br />
+GPU 完成計算、送出回答後就拋棄資料，是可驗證的零資料保留 (Zero Data Retention)</li>
+</ol>
+<p>結果即：內容只有你和模型能看到，而 GPU 運算後就拋棄資料，無法被硬體擁有者、Venice.ai 存取，所以實際上只有你自己會讀到明碼</p>
+<hr />
+<p>不只語言模型，生成圖片、影片的 AI 模型 Venice.ai 也都有<br />
+更棒的是，語言、圖片模型沒有站方的文字獄<br />
+平台支援多元方式付款，例如信用卡、虛擬貨幣，用以最大化抗審查<br />
+<em># 不然 <a href="https://www.polygon.com/news/616835/visa-mastercard-steam-itchio-campaign-adult-games/">Visa</a>、<a href="https://kotaku.com/steam-itch-io-sex-game-nsfw-censor-visa-mastercard-1851787281">Mastercard</a> 等公司，常用「斷金流」手斷到處行使<a href="https://www.theguardian.com/world/2025/jul/29/mastercard-visa-backlash-adult-games-removed-online-stores-steam-itchio-ntwnfb">言論審查</a></em></p>
+<p>缺點：</p>
+<ul>
+<li>免費版有原生內容審查，付費才會取得全部自由<br />
+付費也只有開源模型能抗審查，閉源模型得看供應商臉色</li>
+<li>並非所有模型都支援端對端加密、預設開啟，用之前要看清楚</li>
+<li>只有 TEE、端對端加密能驗證，除去 PII 的步驟須信任 Venice.ai</li>
+<li>閉源模型如 GPT、Claude 等不適用 TEE 和端對端加密，因為後端在 OpenAI、Anthropic 這類<del>邪惡</del>公司家裡</li>
+<li>線上服務有 Cloudflare 當中間人<br />
+好處是，有端對端加密就不怕被偷窺</li>
+</ul>
+<p>Venice.ai 有自己的區塊鏈和虛擬貨幣，可以靠質押獲得獎勵、省訂閱費</p>
+<br/>
+<h4 id="brave-leo"><a href="https://brave.com/leo/">Brave Leo</a></h4>
+<p>Brave 瀏覽器內建的 AI 助手，前端<a href="https://github.com/brave/brave-browser/wiki/Brave-Leo">開源</a>、但關鍵隱私架構<strong>目前</strong>仍閉源<br />
+免費版可日常使用，付費享有更多額度、更好的模型<br />
+付款後會配發一組隨機號碼，憑該碼使用付費服務<br />
+<em># 這樣就不用綁帳號、個資</em><br />
+架構如下：<br />
+你的輸入 → Brave 代理伺服器 → 語言模型<br />
+模型運算結果 → Brave 代理伺服器 → 你<br />
+多數模型含 Claude 都<a href="https://support.brave.app/hc/en-us/articles/26727364100493-What-are-the-differences-between-Leo-s-AI-Models">架在</a> Brave 自家設施上，少數由 NEAR AI TEE 供應<br />
+聊天記錄儲存在瀏覽器裡，發送請求時才傳到 Brave 伺服器<br />
+Brave 伺服器去除可識別個人資料 (PII)，所以模型不知道誰在發問，只知道「有人」在發問<br />
+對話零資料保留 (zero data retention)，計算完回覆就拋棄<br />
+看起來很理想，但並非零信任，因為 Brave 代理伺服器閉源、<strong>無</strong>端對端加密<br />
+自家架模型的設施也不開源，無法判斷隱私政策是否落實<br />
+即使 NEAR AI TEE，回傳的密碼學資訊也靠 Brave 伺服器驗證，並非你的瀏覽器<br />
+<em># 官方<a href="https://brave.com/blog/browser-ai-tee/">說</a>現在是 stage 1，未來會把驗證往瀏覽器端移動，i.e. 由用戶驗證</em><br />
+換句話說，你得信任 Brave 不會偷窺、有落實隱私政策、 TEE 驗證結果可靠<br />
+何況沒端對端加密，技術上官方能解碼內容<br />
+<em># 不過使用者可自備 API key 或用地端模型，這樣就不必信任 Brave</em></p>
+<p>缺點：</p>
+<ul>
+<li>有輕微安全柵欄，模型可能拒答「有害內容」<br />
+如果選 Claude 則審查嚴重，畢竟是 Anthropic 的產品</li>
+<li>非零信任，關鍵部分非開源<br />
+就看官方何時會進入下一階段，把 TEE 驗證搬到瀏覽器裡</li>
+<li><strong>沒</strong>端對端加密</li>
+<li>目前僅少數模型有 TEE</li>
+<li>美國企業，受制美國政府、有監控風險</li>
+<li><a href="https://brave.com/">Brave 瀏覽器</a>才能使用<br />
+好處是瀏覽器開源、保護隱私</li>
+</ul>
+<p><a href="https://brave.com/download-nightly/">Brave Nightly</a> (測試版)支援 AI 自動瀏覽，有興趣可玩玩</p>
+<br/>
+<h4 id="lumo"><a href="https://lumo.proton.me/">Lumo</a></h4>
+<p>隱私服務公司 Proton 的 AI 產品，前端<a href="https://github.com/ProtonLumo">開源</a><br />
+<a href="https://proton.me/blog/lumo-security-model">架構</a>像：<br />
+使用者 → Proton 後端 → 語言模型伺服器<br />
+語言模型伺服器 → Proton 後端 → 使用者<br />
+除了用戶端程式碼外，剩下的都<strong>閉源、由 Proton 掌控</strong><br />
+<em># 本系列其他文章對 Proton 讚譽有加，但 Lumo 可說是他們最糟的產品</em><br />
+語言模型伺服器會將 PGP 公鑰昭告天下，用戶訊息發送前，先 AES 後 PGP 加密才寄出<br />
+訊息送達後端時，Proton 只會看到密文，但轉發給語言模型時會<strong>解密成明文</strong><br />
+語言模型運算完重新加密後才回傳，對話資訊也隨即拋棄<br />
+問題來了，語言模型伺服器不開源、非 TEE、無法驗證、由 Proton 持有<br />
+從「Proton 的後端」變成「另一個 Proton 的後端」，實質上沒太大差別<br />
+換句話說，沒技術上的防呆機制，官方想解密、取資料，理論上能做到</p>
+<p>缺點：</p>
+<ul>
+<li><strong>未</strong>匿名化</li>
+<li><strong>沒</strong>端對端加密</li>
+<li><strong>非</strong>零信任</li>
+<li>極度不透明
+<ul>
+<li>宣稱使用開源模型、也給了個<a href="https://proton.me/support/lumo-privacy">清單</a>，Lumo 介面卻沒蛛絲馬跡<br />
+使用者無從得知在用哪個模型，也沒辦法自行選擇<br />
+官方給模型取了<a href="https://proton.me/support/lumo-models">新名字</a>，但背後是用別人的模型<br />
+不是故意設計得不透明、就是有另行微調過<br />
+Proton 未曾釋出任何模型權重，若執行了微調，等同使用自家<strong>閉源</strong>模型<br />
+<em># 截稿日為止，世上沒任何一個開源模型叫 Lumo Lite、Lumo Max</em></li>
+<li>搜尋引擎安全性未可知<br />
+Lumo 有<a href="https://proton.me/blog/lumo-2">網路搜尋</a>功能，但 Proton 未公開使用哪個搜尋引擎、是否為第三方<br />
+如果靠其他搜尋服務，則用戶的問題、檢索關鍵字都可能被第三者記錄下來<br />
+就算 Proton 用 no log 約束自己，也難保藏鏡人會拿那些資料做什麼</li>
+<li>不誠實行銷<br />
+我曾在社群發問，官方強調 Lumo 有 zero access encryption、no log 政策<br />
+可是 zero access 僅「對話紀錄」享有，運算過程仍是破口<br />
+而政策終究只是政策，非技術保障的安全性<br />
+還有 Lumo 1.0、1.4、2.0 <a href="https://proton.me/blog/lumo-2-design">宣稱</a>變聰明，殊不知只是換模型<br />
+官方四處用「開源」、「隱私」<a href="https://proton.me/business/blog/lumo-data-visualizations">大外宣</a>，關鍵安全設施卻閉源、所謂開源模型也極度不透明，有誤導之嫌</li>
+<li>架構設在歐洲<br />
+從前歐洲是個<em>表面上</em>尊重隱私的地區，但 2026 狂推 <a href="https://www.patrick-breyer.de/en/posts/chat-control/">Chat Control</a>、<a href="https://fightchatcontrol.eu/chat-control-overview">Chat Control 2.0</a>、<a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-gemini/./democracy_corruption.md">年齡驗證和實名制</a>，甚至在歐盟議會否決 Chat Control 後<a href="https://reptile.haus/journal/eu-chat-control-development-team-privacy-scanning-2026/">耍陰招</a>強行<a href="https://www.euronews.com/next/2026/07/10/chat-control-10-passed-the-european-parliament-through-the-back-door">通關</a><br />
+<em># 有沒有覺得「不是表決多數贏就可以」很眼熟啊！</em><br />
+誰知道歐洲各國政府會不會強索資料，何況 Lumo 並非零信任，等於留下後門隱憂</li>
+</ul>
+</li>
+<li>如果沒付費，對話紀錄只保留一週</li>
+<li>生圖和文字回答，都可能被過濾「有害內容」</li>
+</ul>
+<p>話雖如此，鑑於隱私政策友善、破口不大，還是放上來</p>
+<br/>
+<hr />
+<br/>
+<p>接下來就是地端方案，i.e. 在自己電腦裡架 AI<br />
+<em># 別生氣，有很簡單的選項</em></p>
+<h4 id="jan"><a href="https://www.jan.ai/">Jan</a></h4>
+<p>珍 (？)，最簡單的地端模型方案，<a href="https://github.com/janhq/jan">開源</a>、免費、支援各大電腦平台、介面友善<br />
+自帶模型架設、互動體驗等全套服務，也可接 API 使用外部模型<br />
+<em># API 不綁定供應商，愛用誰家都可以</em><br />
+官方有微調<a href="https://huggingface.co/janhq">一些小模型</a>，主要對問答、遵從指示優化<br />
+下載後開箱即用，適合新手上路<br />
+主要開發者是越南人，除了官方 API 外似乎沒商業模式</p>
+<p>缺點：</p>
+<ul>
+<li>進階功能如 RAG、長期記憶等，通常不會立刻跟上潮流</li>
+</ul>
+<p>還沒找到其他缺點，而且開發者們很友善，有 bug、想要的功能都可以直接反映</p>
+<br/>
+<h4 id="textgen"><a href="https://github.com/oobabooga/textgen">TextGen</a></h4>
+<p>跨平台、開源、親民的 AI 聊天 app<br />
+除了支援多種後端、語言模型 API、能做微調，也可以接圖像生成模型<br />
+使用難度低，基本上<a href="https://github.com/oobabooga/textgen/releases">下載</a>、解壓縮就完成了<br />
+有保留擴展性給<a href="https://github.com/oobabooga/textgen/wiki/07-%E2%80%90-Extensions">外掛</a>，想加新功能也行</p>
+<p>缺點：</p>
+<ul>
+<li>維護頻率較低<br />
+畢竟是社群專案，開發者有空才會處理<br />
+<em># 作者也活躍在 <a href="https://github.com/unslothai/unsloth">unsloth</a> 專案，算很積極的開發者</em></li>
+</ul>
+<h4 id="llama-cpp-he-mistral-rs"><a href="https://llama.app/">Llama.cpp</a> 和 <a href="https://github.com/ericlbuehler/mistral.rs">Mistral.rs</a></h4>
+<p>說到散戶架設語言模型，就不得不提 Llama.cpp<br />
+社群驅動的<a href="https://github.com/ggml-org/llama.cpp">開源</a>專案，開發者們創立 <a href="https://github.com/ggml-org">ggml</a>，致力於 AI 邊緣推論<br />
+從無到有以 C++ 寫成的引擎，效率絕佳，許多專案都拿來當後端<br />
+<em># 例如 TextGen、從前的 Ollama</em><br />
+普通消費級電腦就能跑，也可以靠 GPU 加速<br />
+<em># 好消息，蘋果 Metal 也是首要支援對象</em><br />
+開源模型都能架，除了當 API 後端，也可以從瀏覽器造訪本地 8080 port 開始對話<br />
+技術文件很齊全、學習資源多，量化等基礎功能都沒少，可說是本地推論的代名詞</p>
+<p>缺點：</p>
+<ul>
+<li>ggml 被美企 Hugging Face 收購、創辦人也加入該公司<br />
+不過 Hugging Face 是開源 AI 平台，致力於推動開放生態系<br />
+且 Llama.cpp 沒導入任何商業模式，目前幾乎還是慈善事業<br />
+2026 Hugging Face 將併入 Nvidia，如果會維持開放性，可能就不算缺點</li>
+<li>都靠指令操作，對大眾可能沒那麼友善</li>
+</ul>
+<p>Mistral.rs 和 Llama.cpp 大同小異，只是由不同開發者所建，連取名都用相似邏輯<br />
+<em># Mistral.rs 用 Rust 寫成，主打「彈性」而非「效率」</em><br />
+截稿前還是社群專案，維護者也比較少</p>
+<h4 id="ollama"><a href="https://ollama.com/">Ollama</a></h4>
+<p>同名公司擁有的<a href="https://github.com/ollama/ollama">開源</a>專案，能架語言模型 API、也有官方雲端服務、內建對話介面<br />
+<em># 雲端要錢、非開源，不在本篇講述範圍內</em><br />
+支援各平台、多數開源模型，開發者們很活躍、學習資源也多</p>
+<p>缺點：</p>
+<ul>
+<li>推論 (inference)效率較差，產 token 速度慢<br />
+從前推論引擎是 Llama.cpp，後來自行改寫，但以 Go 為主的框架有先天效能瓶頸</li>
+<li>靠指令操作，對大眾不那麼友善</li>
+</ul>
+<p><em>據說</em>是簡單的本地方案，但效率比 Llama.cpp 低、沒 Jan 親民<br />
+專案本身沒什麼問題，只是個人找不到好理由用它</p>
+<br/>
+<hr />
+<br/>
+<p>本地和雲端服務都有了，接下來只是不同使用者介面，<del>以防上述太醜用不習慣</del></p>
+<h4 id="librechat"><a href="https://www.librechat.ai/">LibreChat</a></h4>
+<p>從前是社群<a href="https://github.com/danny-avila/LibreChat">開源</a>專案，提供統一聊天介面，可以自由串接 API<br />
+<em># 介面非常像 ChatGPT，從 OpenAI 搬家的轉換成本不高</em><br />
+2026 年由美商 ClickHouse <a href="https://clickhouse.com/blog/librechat-open-source-agentic-data-stack">收購</a>，截稿前仍開源、積極維護<br />
+<em># ClickHouse 由俄商 Yandex 開發釋出，和<a href="https://clickhouse.com/blog/clickhouse-and-alibaba-cloud-revolutionizing-data-analytics-in-china">阿里巴巴</a>雲端合作，總部在美國</em><br />
+可以自架 API 後端或用任何你習慣的服務，接到 LibreChat 進行對話</p>
+<p>缺點：</p>
+<ul>
+<li>美企持有<br />
+好處是開源，有問題都能發現</li>
+</ul>
+<br/>
+<h4 id="open-webui"><a href="https://openwebui.com/">Open WebUI</a></h4>
+<p>美企擁有的<a href="https://github.com/open-webui/open-webui">開源</a>前端介面，需要自己找後端 API<br />
+開發者基數大、維護也算積極，但商用有特別規範，不是傳統的真開源</p>
+<p>缺點：</p>
+<ul>
+<li>美企持有<br />
+至少開源降低了不少風險</li>
+<li>非真開源<br />
+大規模商用、改品牌名稱都有限制，除非另外簽企業合約 i.e. 付錢</li>
+<li>貢獻者須簽署 <a href="https://raw.githubusercontent.com/open-webui/open-webui/refs/heads/main/CONTRIBUTOR_LICENSE_AGREEMENT">CLA</a>，授權 Open WebUI 拿你的程式碼做任何事<br />
+要求讓渡權利卻沒全開源，不是很符合開源精神</li>
+</ul>
+<br/>
+<hr />
+<br/>
+<h3 id="lou-wang-zhi-yu">漏網之魚</h3>
+<h4 id="chutes-ai"><a href="https://chutes.ai/">Chutes.ai</a></h4>
+<p><a href="https://github.com/chutesai">開源</a>、去中心化的 AI 網路，可訂閱也可按用量計費<br />
+對使用者來說，和一般 AI 服務沒太大差別<br />
+不過後面沒有一個「公司實體」，而是區塊鏈自動運作<br />
+有 GPU 的人都能架設節點加入，強制參與者使用 TEE 確保服務完整性<br />
+供應 GPU / 模型的人，可獲得虛擬貨幣回饋，即「靠 GPU 架模型來<a href="https://github.com/chutesai/chutes-miner">挖礦</a>」<br />
+抗審查、安全、也因競價機制通常比主流服務更便宜</p>
+<p>那怎麼沒推薦？</p>
+<p>跟 NEAR AI、Phala Network 一樣，Chutes.ai <strong>沒</strong>免費方案，不符合 FOSS 條件<br />
+<em># 如果你願意付錢，那就沒差</em></p>
+<h4 id="near-ai"><a href="https://near.ai/">NEAR AI</a></h4>
+<p>NEAR AI 提供一般推論服務、GPU 出租<br />
+且後端使用 TEE，是 Brave Leo、Venice AI 的供應商</p>
+<h4 id="phala-network"><a href="https://phala.com/">Phala Network</a></h4>
+<p>Phala Network 也用 TEE、是 Venice.ai 的供應商<br />
+半去中心化，想加入挖礦須經官方團隊審核</p>
+<p>如果接受付費服務，上述三個也都提供隱私保障<br />
+Chutes.ai 去中心化最徹底，Phala 只做一半、NEAR AI 沒開放散戶加入</p>
+<p>Duck.ai<br />
+知名隱私服務商 <a href="https://Codeglacier.codeberg.page/privacy_guides_tw/degoogle-gemini/./deGoogle-search-engine.md#duckduckgo">DuckDuckGo</a> 的 AI 服務，免費用量還算多，也可付費升級<br />
+提供 GPT、Claude、Mistral、Gemma 等多種模型，不需登入就能用<br />
+DuckDuckGo 作代理伺服器，除去可辨識個資再送到 AI 供應商後端<br />
+沒推薦是因為<strong>整個架構閉源</strong>，隱私完全寄託在對 DuckDuckGo、模型商的信任上<br />
+GPT、Claude 等閉源模型綁定 OpenAI 和 Anthropic，開源模型則由 Together AI 提供<br />
+所以</p>
+<ol>
+<li>須信任 DuckDuckGo 會匿名化使用者個資</li>
+<li>須信任 OpenAI / Anthropic / Together AI 不會保留紀錄、不拿來練模型</li>
+</ol>
+<p>所有參與者都是<strong>美國公司</strong>、<strong>全架構閉源</strong>，唯一比官方服務好的地方，就只有 DuckDuckGo 的信譽</p>
+<p>LM Studio<br />
+有玩開源的人，應該很期待看到這東西<br />
+但很可惜，<strong>LM Studio 非開源</strong><br />
+<a href="https://github.com/lmstudio-ai">程式碼倉庫</a>只有部分組件開源，不符合 FOSS 條件</p>
+<br/>
+<hr />
+<br/>
+<p>目前還沒有很完美的選擇，就看未來會不會有新挑戰者</p>
+</div>
+
+  <p class="meta">Posted on <span class="postdate">1989-06-04</span></p>
+</article>
+
+      </div>
+      <footer id="footer">
+        <p class="copyright">
+          
+            Powered by <a href="https://www.getzola.org/">Zola</a> and the
+            <a href="https://github.com/hulufei/solar-theme-zola">Solar</a>-theme.
+          
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
