@@ -22,7 +22,7 @@
     * [7-11](https://cybernews.com/cybercrime/7-eleven-confirms-april-cyberattack-shinyhunters/)  
     * 還有本系列曾舉的一堆科技公司  
 * 政府單位  
-    * [FBI](https://www.npr.org/2026/09/30/nx-s1-5985202/fbi-hack-shinyhunters) (是的，情報單位也會被駭)  
+    * [FBI](https://www.npr.org/2026/09/30/nx-s1-5985202/fbi-hack-shinyhunters) (是的，[情報單位](https://www.theregister.com/security/2026/09/22/shinyhunters-claims-fbi-hack-this-is-not-financially-motivated/5298385)也會被駭)  
     * [五角大廈](https://cybersecuritynews.com/pentagon-data-breach/)，即美國政府 (還好啦，被偷 **200 多萬人**個資而已)  
     * [歐盟理事會](https://cybernews.com/news/european-commission-aws-cloud-breach-stolen-data/)  
 * 駭客，e.g. [TeamPCP](https://www.secureinseconds.com/blog/2026-08-27-teampcp-arrest-deanonymization-defense)  
