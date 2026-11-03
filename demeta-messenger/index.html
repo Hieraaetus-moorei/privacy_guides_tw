@@ -744,12 +744,12 @@ iOS 限制 app 在背景運作的能力，所以仍得靠 APNs 推送<br />
 <hr />
 <p>不過辦 Signal 帳號需要電話號碼，社群多次反映官方仍維持此做法<br />
 強制拿門號能防濫用，缺點是有門號即可定位用戶<br />
+<em># 優點是 Signal 在 Intel SGX 飛地內處理聯絡人配對，確保「就算官方想偷看也沒輒」</em><br />
 而且有些人沒有門號，但那些人可能更需要通訊安全<br />
 <em># E.g. 戰亂地區、言論管制區，或受暴兒少</em></p>
 <p>後來 Signal 也推出備份功能，把對話以端對端加密存在雲端<br />
 就算換裝置也能還原對話，不怕資料意外遺失<br />
-不過此功能似乎還在 beta 測試，要手動開啟才會生效<br />
-且備份多媒體有容量限制，付費方案額度比較充足<br />
+不過備份多媒體有容量限制，付費方案額度比較充足<br />
 <em># Signal 非營利，付費只是支持理念，不想付自行備份即可</em></p>
 <p>缺點：</p>
 <ul>
@@ -833,8 +833,10 @@ Molly 率先提供此功能，平板連線都不成問題<br />
 <li>僅支援 Android</li>
 <li>依舊會連回 Signal 後端，因此仍是<strong>集中化服務、需要門號</strong></li>
 <li>若未串連 UnifiedPush，會回退使用 Signal 的通知模組，i.e. Google FCM</li>
+<li>更新較慢，因為須先整合上游 Signal 的變動</li>
 </ul>
-<p>最糟大不了跟 Signal 一樣，所以多數情況都是 Molly 更理想</p>
+<p>從前 Molly 比較理想，但 2026 更新曾落後一個月以上<br />
+漏洞空窗期太長，風險大幅增加</p>
 <h4 id="wire"><a href="https://wire.com/">Wire</a></h4>
 <p>總部在瑞士、註冊在德國的公司，由 Skype 創辦人成立<br />
 有端對端加密、完美向前保密 (Perfect Forward Secrecy, PFS)、<a href="https://wire.com/en/security">量子</a>時代安全性<br />
