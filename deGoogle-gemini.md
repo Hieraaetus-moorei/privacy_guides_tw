@@ -129,7 +129,7 @@ _# TEE 指可信執行環境 (Trusted Execution Environment)，在硬體層級�
     你的輸入 → Venice.ai 代理伺服器 → TEE  
     模型運算結果 → Venice.ai 代理伺服器 → 你  
     Venice.ai 是電信局，幫你和~~外遇對象~~模型供應商互通有無  
-純 TEE 只確保服務供應者沒偷換模型，不過 TEE 能疊加端對端加密 (E2EE)  
+TEE 確保服務供應者沒偷換模型，也疊加端對端加密 (E2EE)  
 端對端加密可最小化對廠商的信任，就算 Venice.ai 想偷看也只會讀到亂碼  
 
 ---  
@@ -151,14 +151,14 @@ Venice.ai 端對端加密流程 (沒興趣者可略)
 不只語言模型，生成圖片、影片的 AI 模型 Venice.ai 也都有  
 更棒的是，語言、圖片模型沒有站方的文字獄  
 平台支援多元方式付款，例如信用卡、虛擬貨幣，用以最大化抗審查  
-_# 不然 [Visa](https://www.polygon.com/news/616835/visa-mastercard-steam-itchio-campaign-adult-games/)、[Mastercard](https://kotaku.com/steam-itch-io-sex-game-nsfw-censor-visa-mastercard-1851787281) 等公司，常用「斷金流」手斷到處行使[言論審查](https://www.theguardian.com/world/2025/jul/29/mastercard-visa-backlash-adult-games-removed-online-stores-steam-itchio-ntwnfb)_  
+_# 不然 [Visa](https://www.polygon.com/news/616835/visa-mastercard-steam-itchio-campaign-adult-games/)、[Mastercard](https://kotaku.com/steam-itch-io-sex-game-nsfw-censor-visa-mastercard-1851787281) 等公司，常用「斷金流」手段到處行使[言論審查](https://www.theguardian.com/world/2025/jul/29/mastercard-visa-backlash-adult-games-removed-online-stores-steam-itchio-ntwnfb)_  
 
 缺點：  
 * 免費版有原生內容審查，付費才會取得全部自由  
     付費也只有開源模型能抗審查，閉源模型得看供應商臉色  
 * 並非所有模型都支援端對端加密、預設開啟，用之前要看清楚  
 * 只有 TEE、端對端加密能驗證，除去 PII 的步驟須信任 Venice.ai  
-* 閉源模型如 GPT、Claude 等不適用 TEE 和端對端加密，因為後端在 OpenAI、Anthropic 這類~~邪惡~~公司家裡  
+* 閉源模型如 GPT、Claude 等不適用 TEE，因為後端在 OpenAI、Anthropic 這類~~邪惡~~公司家裡  
 * 線上服務有 Cloudflare 當中間人  
     好處是，有端對端加密就不怕被偷窺  
 
@@ -183,12 +183,11 @@ Brave 伺服器去除可識別個人資料 (PII)，所以模型不知道誰在�
 即使 NEAR AI TEE，回傳的密碼學資訊也靠 Brave 伺服器驗證，並非你的瀏覽器  
 _# 官方[說](https://brave.com/blog/browser-ai-tee/)現在是 stage 1，未來會把驗證往瀏覽器端移動，i.e. 由用戶驗證_  
 換句話說，你得信任 Brave 不會偷窺、有落實隱私政策、 TEE 驗證結果可靠  
-何況沒端對端加密，技術上官方能解碼內容  
 _# 不過使用者可自備 API key 或用地端模型，這樣就不必信任 Brave_  
 
 缺點：  
 * 有輕微安全柵欄，模型可能拒答「有害內容」  
-    如果選 Claude 則審查嚴重，畢竟是 Anthropic 的產品  
+    選 Claude 則文字獄更重，畢竟是 Anthropic 的產品  
 * 非零信任，關鍵部分非開源  
     就看官方何時會進入下一階段，把 TEE 驗證搬到瀏覽器裡  
 * **沒**端對端加密  
