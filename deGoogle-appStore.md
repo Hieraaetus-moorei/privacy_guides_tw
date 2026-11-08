@@ -22,8 +22,8 @@ Mac (電腦)、iOS (手機)下載軟體，都得從官方商店下載
 `brew install librewolf --no-quarantine`  
 <sup>用 [Homebrew](https://brew.sh/) 下載 [LibreWolf](./deGoogle-browser.md#librewolf)，並信任來源</sup>  
 <sup>不過今年蘋果強制軟體簽核，沒交蘋果稅的不能用了</sup>  
-但 iPhone 除非破解系統或歐盟用戶，否則軟體只能從 App Store 下載  
-_# 歐盟反壟斷法，讓該地重獲自由_  
+但 iPhone 除非破解系統，否則軟體只能從 App Store 下載  
+_# 例外：歐盟 DMA、日本 MSCA、巴西 CADE 訴訟，讓該地重獲自由_  
 如政府有背後[政治考量](https://rsf.org/en/apple-s-complicity-russian-censorship-rsf-calls-tech-giant-refuse-compliance-regulators-do-not)，蘋果也樂於[下架程式](https://www.businessinsider.com/apple-iceblock-app-big-tech-power-censorship-donald-trump-bondi-2025-10)，是個中心化獨裁園地  
 _# 有沒有很熟悉呀？跟**隔壁國家** 87% 像呢！_  
 
@@ -184,12 +184,11 @@ Apt- 前綴即取自 apt，-oide 有「類似物」之意，表示「類似 Apt 
 ---
 
 有個大好消息：**Aptoide 也有 iOS 版！**  
-壞消息是：僅限歐盟用戶  
+壞消息是：僅限歐盟、日本、巴西用戶  
 《歐盟數位市場法》 (DMA)使蘋果開放歐洲市場，[其他應用程式商店](https://connect.aptoide.com/blog/aptoide-ios)可進駐  
 Aptoide 於是踏入 iPhone，是少數跨平台的選項  
 缺點：  
-* iOS 版目前僅支援歐盟  
-    今年初才正式入歐，燒滾滾的呢！  
+* iOS 版支援地區有限    
 * 設定可能要摸索一下  
     但熟悉後，大概會愛上它  
 
@@ -326,7 +325,7 @@ App Store 的替代品較受限，畢竟 iOS 閉源、生態系不開放
 * 開發者，想自架服務  
     * 只用免費開源軟體 → [F-Droid](https://f-droid.org/)  
     * 不設限 → [Aptoide](https://en.aptoide.com/)  
-* 同時有 iPhone 和 Android 的歐盟人，想用同個商店 → [Aptoide](https://en.aptoide.com/)  
+* 同時有 iPhone 和 Android 的歐盟、巴西、日本人 → [Aptoide](https://en.aptoide.com/)  
 * 不爽集中化管理，想直接下載安裝檔 → [Obtainium](https://obtainium.imranr.dev/)  
     不靠 [Obtainium](https://obtainium.imranr.dev/)，直接到程式碼倉庫拉 APK 檔也行  
     _# APK 檔為 Android 套件包，用來安裝軟體_  
@@ -336,7 +335,7 @@ App Store 的替代品較受限，畢竟 iOS 閉源、生態系不開放
 搭配 [F-Droid](https://f-droid.org/) 或 [Obtainium](https://obtainium.imranr.dev/)，在其餘軟體獲得更多隱私  
 
 #### iOS  
-* 歐盟用戶  
+* 歐盟、日本、巴西用戶  
     * 想自架伺服器 → [Aptoide](https://en.aptoide.com/ios/)  
     * 一般大眾 → [AltStore PAL](https://altstore.io/) / [Aptoide](https://en.aptoide.com/ios/)  
 * 家有電腦、能自架伺服器 → [AltStore](https://altstore.io/)  
